@@ -1,0 +1,68 @@
+.machine-card {
+	border-radius: 5px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	overflow: hidden;
+
+	&-header {
+		text-align: center;
+		font-weight: 500;
+		background-color: #ffffff;
+		padding: 5px 0;
+		cursor: pointer;
+	}
+
+	&-body {
+		background-color: #797979;
+		padding: 4px;
+		position: relative;
+
+		.background {
+			border-radius: 5px;
+			background-color: #579294;
+
+			&[bg="green"] {
+				background-color: #20A551;
+			}
+
+			&[bg="orange"] {
+				background-color: #FCB73F;
+			}
+
+			&[bg="red"] {
+				background-color: #FB0D1B;
+			}
+
+            &[bg="gray"] {
+				background-color: #878787;
+			}
+
+			.percent {
+				text-align: center;
+				border-top-left-radius: 3px;
+				border-top-right-radius: 3px;
+				color: white;
+				font-weight: 800;
+				font-size: 65px;
+			}
+
+			.info {
+                height: 23.57px;
+				text-align: center;
+				font-weight: 500;
+				border-bottom-left-radius: 3px;
+				border-bottom-right-radius: 3px;
+			}
+		}
+	}
+
+	&-footer {
+		background-color: #e0dae7;
+
+		.text {
+			font-size: 20px;
+			font-weight: 800;
+			text-align: center;
+			width: 50%;
+		}
+	}
+}

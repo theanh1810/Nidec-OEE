@@ -1,0 +1,31 @@
+.oee-card {
+    border-radius: 3px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    overflow: hidden;
+    &-header {
+        text-align: center;
+        font-weight: 500;
+        background-color: white;
+        padding: 5px 0;
+    }
+    &-body {
+        background-color: #787878;
+        padding: 5px;
+        .percent {
+            text-align: center;
+            border-radius: 3px;
+            color: white;
+            font-weight: 800;
+            font-size: 65px;
+            &[bg="green"] {
+                background-color: #20A551;
+            }
+            &[bg="orange"] {
+                background-color: #FCB73F;
+            }
+            &[bg="red"] {
+                background-color: #FB0D1B;
+            }
+        }
+    }
+}

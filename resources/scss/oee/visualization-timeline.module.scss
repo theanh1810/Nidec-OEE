@@ -1,0 +1,191 @@
+.visualization-timeline {
+    background-color: #000000;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 3px;
+    color: white;
+
+    .chart {
+        height: 140px;
+    }
+
+    .grid-container {
+        height: 140px;
+        padding-top: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr .5fr .5fr .5fr;
+        grid-template-areas:
+            "a a b c c"
+            "d d e f f"
+            "g g h l l";
+        min-height: 80%;
+        max-height: 80%;
+
+        .border {
+            border: 1px solid #C2C2C2;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .grid-item-1 {
+            background-color: #353434;
+            grid-area: a;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .font-1 {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .grid-item-2 {
+            font-weight: bold;
+            grid-area: b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .font-2 {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .grid-item-3 {
+            background-color: #4673bd;
+            font-weight: bold;
+            grid-area: c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .font-3 {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .grid-item-4 {
+            background-color: #353434;
+            grid-area: d;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .font-4 {
+            font-size: 15px;
+        }
+
+        .grid-item-5 {
+            font-weight: bold;
+            grid-area: e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .font-5 {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .grid-item-6 {
+            background-color: #62369c;
+            font-weight: bold;
+            grid-area: f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .font-6 {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .grid-item-7 {
+            background-color: #353434;
+            grid-area: g;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .font-7 {
+            font-size: 15px;
+        }
+
+        .grid-item-8 {
+            font-weight: bold;
+            grid-area: h;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .font-8 {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .grid-item-9 {
+            background-color: #324faa;
+            font-weight: bold;
+            grid-area: l;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .font-9 {
+            font-weight: bold;
+            font-size: 15px;
+        }
+    }
+
+    .flex-container {
+        display: flex;
+
+        .flex-item1 {
+            width: 300px;
+        }
+
+        .flex-item2 {
+            flex-grow: 1;
+        }
+    }
+
+    .chart-container {
+        display: grid;
+        grid-template-columns: 85% 15%;
+    }
+
+    .chart-pie-container {
+        position: relative;
+    }
+    .chart-pei {
+        height: 140px;
+    }
+    .status-block {
+        display: block;
+        background-color: #579294;
+        color: black;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: max-content;
+    }
+
+}

@@ -1,0 +1,37 @@
+{
+  "name": "node_server",
+  "version": "1.0.0",
+  "description": "nidec oee",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "prod": "pm2 start ecosystem.config.js",
+    "stop": "pm2 stop all",
+    "list": "pm2 ls",
+    "help": "pm2 --help",
+    "monitor": "pm2 monit",
+    "reset": "pm2 reset all"
+  },
+  "author": "vu toan trung",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cron": "^2.0.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "moment": "^2.29.3",
+    "morgan": "^1.10.0",
+    "mssql": "^8.1.2",
+    "pm2": "^5.2.0",
+    "rotating-file-stream": "^3.0.4",
+    "sequelize": "^6.33.0",
+    "socket.io": "^4.5.1",
+    "socket.io-client": "^4.5.1",
+    "tedious": "^16.4.1",
+    "winston": "^3.8.1",
+    "winston-daily-rotate-file": "^4.7.1"
+  }
+}
