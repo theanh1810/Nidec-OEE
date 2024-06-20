@@ -44,11 +44,14 @@ module.exports = {
                 products.push(product);
                 cavity = `CAV: ${plan.Cavity_Real}/${bom.Cavity}`;
                 p += Math.floor(
-                    (86400 /
+                    (current.diff(startTime, "seconds", true) /
                         bom.Cycle_Time)
                 )*plan.Cavity_Real;
                 a += Number(plan.Quantity_Production);
-                t += Number(plan.Quantity);
+                t += Math.floor(
+                    (86400 /
+                        bom.Cycle_Time)
+                )*plan.Cavity_Real;
             }
         }
 

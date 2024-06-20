@@ -9,7 +9,7 @@ const calculateTPA = async (planIsRunning, bom) => {
         const current = moment()
         const timeStart = moment(plan.Time_Real_Start)
         cavity = `CAV: ${plan.Cavity_Real}/${bom.Cavity}`;
-        t += Number(plan.Quantity)
+        t += Math.floor((86400 / bom.Cycle_Time))*plan.Cavity_Real
         a += Number(plan.Quantity_Production)
         p += Math.floor((current.diff(timeStart, 'seconds', true) / bom.Cycle_Time))*plan.Cavity_Real
     }

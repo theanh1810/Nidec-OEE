@@ -139,7 +139,6 @@ const VisualizationTimeline = ({ data, index }) => {
         machineCardInit(data.ID)
             .then((res) => {
                 const { production } = res.data;
-
                 if (production) {
                     setA(production.a);
                     setT(production.t);
@@ -456,38 +455,38 @@ const VisualizationTimeline = ({ data, index }) => {
                         </div>
                         <div style={{display: "flex", height: '33.33%'}}>
                             <div
-                                className={`${styles["grid-item-1"]} ${styles["border"]} col-lg-8`}
+                                className={`${styles["grid-item-4"]} ${styles["border"]} col-lg-8`}
                                 title={product}
                             >
-                                <div className={`${styles["font-1"]}`}>{product}</div>
+                                <div className={`${styles["font-4"]}`}>{product}</div>
                             </div>
                             <div
-                                className={`${styles["grid-item-2"]} ${styles["border"]} col-lg-2`}
+                                className={`${styles["grid-item-5"]} ${styles["border"]} col-lg-2`}
                             >
-                                <div className={`${styles["font-2"]}`}>P</div>
+                                <div className={`${styles["font-5"]}`}>P</div>
                             </div>
                             <div
-                                className={`${styles["grid-item-3"]} ${styles["border"]} col-lg-2`}
+                                className={`${styles["grid-item-6"]} ${styles["border"]} col-lg-2`}
                             >
-                                <div className={`${styles["font-3"]}`}>{p}</div>
+                                <div className={`${styles["font-6"]}`}>{p}</div>
                             </div>
                         </div>
                         <div style={{display: "flex", height: '33.34%'}}>
                             <div
-                                className={`${styles["grid-item-1"]} ${styles["border"]} col-lg-8`}
+                                className={`${styles["grid-item-7"]} ${styles["border"]} col-lg-8`}
                                 title={cavity}
                             >
-                                <div className={`${styles["font-1"]}`}>{cavity}</div>
+                                <div className={`${styles["font-7"]}`}>{cavity}</div>
                             </div>
                             <div
-                                className={`${styles["grid-item-2"]} ${styles["border"]} col-lg-2`}
+                                className={`${styles["grid-item-8"]} ${styles["border"]} col-lg-2`}
                             >
-                                <div className={`${styles["font-2"]}`}>A</div>
+                                <div className={`${styles["font-8"]}`}>A</div>
                             </div>
                             <div
-                                className={`${styles["grid-item-3"]} ${styles["border"]} col-lg-2`}
+                                className={`${styles["grid-item-9"]} ${styles["border"]} col-lg-2`}
                             >
-                                <div className={`${styles["font-3"]}`}>{a}</div>
+                                <div className={`${styles["font-9"]}`}>{a}</div>
                             </div>
                         </div>
                     </div>

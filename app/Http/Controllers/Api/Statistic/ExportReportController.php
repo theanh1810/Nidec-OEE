@@ -73,12 +73,11 @@ class ExportReportController extends Controller
 
         $this->exportReport->setName($name);
         $this->exportReport->setPath($path);
-        $this->exportReport->setTitle([ 'Date', 'Shift', 'Machine', 'Stop Time', 'Error Code', 'Error Type' ]);
+        $this->exportReport->setTitle([ 'Date', 'Machine', 'Stop Time', 'Error Code', 'Error Type' ]);
         $this->exportReport->setDatasheet($datasheet['runtimeHistory']);
         $this->exportReport->export(function($data) {
             return [
                 $data["Time_Created"],
-                $data["Shift_Name"] . ":" . $data["Shift_Start"] . "~" . $data["Shift_End"],
                 $data["Machine_Name"],
                 $data["Duration"],
                 $data["Status_Name"],

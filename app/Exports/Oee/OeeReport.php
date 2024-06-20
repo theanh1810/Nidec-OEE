@@ -3,6 +3,7 @@
 namespace App\Exports\Oee;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\IOFactory;
+use PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter;
 
 class OeeReport
 {
@@ -79,7 +80,7 @@ class OeeReport
 
         $sheet->getStyle($this->col["start"].$this->row["start"].':'.$this->col["end"].$this->row["start"])
               ->getFont()->setBold(true);
-
+        $sheet->setAutoFilter('A1:E1');
         $writer = IOFactory::createWriter($spreadsheet, 'Xlsx');
         $writer->save(public_path("{$this->path}/{$this->name}"));
     }

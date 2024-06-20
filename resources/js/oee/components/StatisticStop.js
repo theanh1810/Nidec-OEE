@@ -20,7 +20,6 @@ const StatisticStop = ({ data, onExport }) => {
     
     const columns = [
         { name: t('Date'),                             selector: row => moment(row.Time_Created).format('YYYY-MM-DD').toString(), sortable: true},
-        { name: t('Shift'),                            selector: row => `${row.Shift_Name}: ${row.Shift_Start}~${row.Shift_End}`},
         { name: t('Machine'),                          selector: row => row.Machine_Name,                                         sortable: true},
         { name: `${t('Stop Time')} (${t('minutes')})`, selector: row => Math.floor(row.Duration * 100) / 100,                     sortable: true},
         { name: t('Error Code'),                       selector: row => row.Status_Name},

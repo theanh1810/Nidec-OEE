@@ -22,6 +22,7 @@
 
         .grid-item-1 {
             background-color: #353434;
+            grid-area: a;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
@@ -37,6 +38,7 @@
 
         .grid-item-2 {
             font-weight: bold;
+            grid-area: b;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -50,12 +52,97 @@
         .grid-item-3 {
             background-color: #4673bd;
             font-weight: bold;
+            grid-area: c;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         .font-3 {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .grid-item-4 {
+            background-color: #353434;
+            grid-area: d;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .font-4 {
+            font-size: 15px;
+        }
+
+        .grid-item-5 {
+            font-weight: bold;
+            grid-area: e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .font-5 {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .grid-item-6 {
+            background-color: #62369c;
+            font-weight: bold;
+            grid-area: f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .font-6 {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .grid-item-7 {
+            background-color: #353434;
+            grid-area: g;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .font-7 {
+            font-size: 15px;
+        }
+
+        .grid-item-8 {
+            font-weight: bold;
+            grid-area: h;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .font-8 {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .grid-item-9 {
+            background-color: #324faa;
+            font-weight: bold;
+            grid-area: l;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .font-9 {
             font-weight: bold;
             font-size: 15px;
         }
