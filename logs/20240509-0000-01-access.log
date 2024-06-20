@@ -1,0 +1,10 @@
+{"ip":"::ffff:192.168.1.205","method":"GET","url":"/","status":"200","res":577,"response":"14.161"}
+{"ip":"::ffff:192.168.1.205","method":"GET","url":"/static/css/main.e3c9ba58.css","status":"200","res":24400,"response":"4.731"}
+{"ip":"::ffff:192.168.1.205","method":"GET","url":"/static/js/main.72b76b2a.js","status":"200","res":1217385,"response":"4.187"}
+{"ip":"::ffff:192.168.1.205","method":"POST","url":"/api/auth/verify","status":"401","response":"2.580"}
+{"ip":"::ffff:192.168.1.205","method":"GET","url":"/favicon.ico","status":"200","res":24838,"response":"7.928"}
+{"ip":"::ffff:192.168.1.205","method":"GET","url":"/favicon.ico","status":"304","response":"2.752"}
+{"ip":"::ffff:192.168.1.205","method":"GET","url":"/static/media/JTUSjIg1_i6t8kCHKm459Wlhyw.b66f2d18f66f15c3ac56.woff2","status":"200","res":30928,"response":"3.830"}
+{"ip":"::ffff:192.168.1.205","method":"POST","url":"/api/auth/login","status":"200","res":"225","response":"147.475"}
+{"ip":"::ffff:192.168.1.205","method":"POST","url":"/api/auth/verify","status":"200","response":"3.728"}
+{"ip":"::ffff:192.168.1.205","method":"GET","url":"/static/media/LOGO.0d092af5609857e24e50.png","status":"200","res":27670,"response":"5.166"}

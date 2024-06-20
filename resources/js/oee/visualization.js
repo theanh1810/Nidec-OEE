@@ -32,12 +32,12 @@ const MachineCardLayout = ({ machines }) => {
 
 const MachineChartLayout = ({ machines }) => {
     const renderMachines = machines.map((machine, index) => (
-        <Col key={`machine-timeline-${machine.ID}`} span={24}>
-            <VisualizationTimeline data={machine} index={index} />
+        <Col style={{height: '23%'}} key={`machine-timeline-${machine.ID}`} span={24}>
+            <VisualizationTimeline  data={machine} index={index} />
         </Col>
     ));
 
-    return <Row gutter={[10, 10]}>{renderMachines}</Row>;
+    return <Row style={{height: '100%'}} gutter={[10, 10]}>{renderMachines}</Row>;
 };
 const DefectiveChartLayout = () => {
     return (
@@ -76,7 +76,7 @@ const Visualization = () => {
         if (data.line.ID !== line?.ID) {
             setLine(data.line);
         }
-        setMachines(data.machines);
+        setMachines(data.machines?.sort());
         if (data.interval !== intervalLayout) {
             setIntervalLayout(data.interval);
         }

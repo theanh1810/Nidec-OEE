@@ -1,0 +1,7 @@
+C:\STI-MES\Nidec-Iot-Gateway/logs\20240502-0748-01-access.log
+C:\STI-MES\Nidec-Iot-Gateway/logs\20240503-0754-01-access.log
+C:\STI-MES\Nidec-Iot-Gateway/logs\20240506-0750-01-access.log
+C:\STI-MES\Nidec-Iot-Gateway/logs\20240507-0000-01-access.log
+C:\STI-MES\Nidec-Iot-Gateway/logs\20240508-0000-01-access.log
+C:\STI-MES\Nidec-Iot-Gateway/logs\20240509-0000-01-access.log
+C:\STI-MES\Nidec-Iot-Gateway/logs\20240513-0750-01-access.log

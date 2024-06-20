@@ -22,7 +22,6 @@ var OeeReportByMachine = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.lazy
 var OeeReportByDay = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.lazy)(function () {
   return __webpack_require__.e(/*! import() */ "resources_js_oee_components_OeeReportByDay_js").then(__webpack_require__.bind(__webpack_require__, /*! ./OeeReportByDay */ "./resources/js/oee/components/OeeReportByDay.js"));
 });
-
 var OeeReport = function OeeReport() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
     className: "row",
@@ -32,7 +31,6 @@ var OeeReport = function OeeReport() {
     })
   });
 };
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (OeeReport);
 
 /***/ })

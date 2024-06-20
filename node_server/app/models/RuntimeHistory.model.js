@@ -20,9 +20,7 @@ const Model = Db.define('RuntimeHistory', {
 	IsDelete: { type: BOOLEAN, allowNull: false }
 }, {
 	tableName: 'Runtime_History',
-	timestamps: true,
-	createdAt: 'Time_Created',
-	updatedAt: 'Time_Updated'
+	timestamps: false
 })
 
 

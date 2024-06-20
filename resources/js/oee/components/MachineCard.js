@@ -5,7 +5,7 @@ import styles from '../../../scss/oee/machine-card.module.scss'
 
 const MachineCard = ({ data }) => {
 	const { machineCardInit, cancel } = useInitMachine()
-	const { socket, mode } = useContext(VisualizationContext)
+	const { socket, mode = 'day' } = useContext(VisualizationContext)
 	const [oee, setOee] = useState('--')
 	const [product, setProduct] = useState('--')
 	const [plan, setPlan] = useState('--')
@@ -23,6 +23,7 @@ const MachineCard = ({ data }) => {
 				}
 				if (production) {
 					setActual(production.a)
+					console.log('1', production.p);
 					setPlan(production.p)
 					setProduct(() => production.products.map(product => product.Name).join(' | '))
 				}
@@ -36,6 +37,7 @@ const MachineCard = ({ data }) => {
 		}
 		if ('production' in msg) {
 			const { p, a } = msg.production
+			console.log('2', p);
 			setPlan(p)
 			setActual(a)
 		}

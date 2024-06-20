@@ -21,6 +21,7 @@ class CommandProductionDetail extends Model
 	  	,'Command_ID'
 		,'Mold_ID'
 		,'Quantity_Mold'
+		,'Materials_ID'
         ,'Product_ID'
         ,'Part_Action'
         ,'Process_ID'

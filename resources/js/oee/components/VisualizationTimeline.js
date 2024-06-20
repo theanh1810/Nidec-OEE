@@ -164,7 +164,7 @@ const VisualizationTimeline = ({ data, index }) => {
                 axisLabel: {
                     margin: 2,
                     lineHeight: 10,
-                    fontSize: 9,
+                    fontSize: 11,
                     show: index === 0,
                     color: "rgba(255, 255, 255, 1)",
                     fontWeight: "bold",
@@ -436,53 +436,59 @@ const VisualizationTimeline = ({ data, index }) => {
                     style={{ marginRight: 5 }}
                 >
                     <div className={styles["grid-container"]}>
-                        <div
-                            className={`${styles["grid-item-1"]} ${styles["border"]}`}
-                            title={data.Name}
-                        >
-                            <div className={`${styles["font-1"]}`}>{data.Name}</div>
+                        <div style={{display: "flex", height: '33.33%'}}>
+                            <div
+                                className={`${styles["grid-item-1"]} ${styles["border"]} col-lg-8`}
+                                title={data.Name}
+                            >
+                                <div className={`${styles["font-1"]}`}>{data.Name}</div>
+                            </div>
+                            <div
+                                className={`${styles["grid-item-2"]} ${styles["border"]} col-lg-2`}
+                            >
+                                <div className={`${styles["font-2"]}`}>T</div>
+                            </div>
+                            <div
+                                className={`${styles["grid-item-3"]} ${styles["border"]} col-lg-2`}
+                            >
+                                <div className={`${styles["font-3"]}`}>{t}</div>
+                            </div>
                         </div>
-                        <div
-                            className={`${styles["grid-item-2"]} ${styles["border"]}`}
-                        >
-                            <div className={`${styles["font-2"]}`}>T</div>
+                        <div style={{display: "flex", height: '33.33%'}}>
+                            <div
+                                className={`${styles["grid-item-1"]} ${styles["border"]} col-lg-8`}
+                                title={product}
+                            >
+                                <div className={`${styles["font-1"]}`}>{product}</div>
+                            </div>
+                            <div
+                                className={`${styles["grid-item-2"]} ${styles["border"]} col-lg-2`}
+                            >
+                                <div className={`${styles["font-2"]}`}>P</div>
+                            </div>
+                            <div
+                                className={`${styles["grid-item-3"]} ${styles["border"]} col-lg-2`}
+                            >
+                                <div className={`${styles["font-3"]}`}>{p}</div>
+                            </div>
                         </div>
-                        <div
-                            className={`${styles["grid-item-3"]} ${styles["border"]}`}
-                        >
-                            <div className={`${styles["font-3"]}`}>{t}</div>
-                        </div>
-                        <div
-                            className={`${styles["grid-item-4"]} ${styles["border"]}`}
-                            title={product}
-                        >
-                            <div className={`${styles["font-4"]}`}>{product}</div>
-                        </div>
-                        <div
-                            className={`${styles["grid-item-5"]} ${styles["border"]}`}
-                        >
-                            <div className={`${styles["font-5"]}`}>P</div>
-                        </div>
-                        <div
-                            className={`${styles["grid-item-6"]} ${styles["border"]}`}
-                        >
-                            <div className={`${styles["font-6"]}`}>{p}</div>
-                        </div>
-                        <div
-                            className={`${styles["grid-item-7"]} ${styles["border"]}`}
-                            title={cavity}
-                        >
-                            <div className={`${styles["font-7"]}`}>{cavity}</div>
-                        </div>
-                        <div
-                            className={`${styles["grid-item-8"]} ${styles["border"]}`}
-                        >
-                            <div className={`${styles["font-8"]}`}>A</div>
-                        </div>
-                        <div
-                            className={`${styles["grid-item-9"]} ${styles["border"]}`}
-                        >
-                            <div className={`${styles["font-9"]}`}>{a}</div>
+                        <div style={{display: "flex", height: '33.34%'}}>
+                            <div
+                                className={`${styles["grid-item-1"]} ${styles["border"]} col-lg-8`}
+                                title={cavity}
+                            >
+                                <div className={`${styles["font-1"]}`}>{cavity}</div>
+                            </div>
+                            <div
+                                className={`${styles["grid-item-2"]} ${styles["border"]} col-lg-2`}
+                            >
+                                <div className={`${styles["font-2"]}`}>A</div>
+                            </div>
+                            <div
+                                className={`${styles["grid-item-3"]} ${styles["border"]} col-lg-2`}
+                            >
+                                <div className={`${styles["font-3"]}`}>{a}</div>
+                            </div>
                         </div>
                     </div>
                 </div>

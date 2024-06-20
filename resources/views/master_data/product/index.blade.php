@@ -46,6 +46,9 @@
 					<button type="button"  class="btn btn-warning btn-history" style="width: 80px">
 						{{__('History')}}
 					</button>
+					<button type="button"  class="btn btn-warning btn-export-excel" style="width: 100px">
+						{{__('Export')}} {{__('Excel')}}
+					</button>
 				</div>
 				@include('basic.alert')
 			<table class="table table-product table-bordered table-striped text-nowrap w-100" style="vertical-align: middle !important"></table>
@@ -54,4 +57,14 @@
 @endsection
 @push('scripts')
     <script src="{{ asset('js/master-data/product.js') }}"></script>
+	<script>
+        $('.btn-export-excel').on('click', function(e) {
+            e.preventDefault();
+            var fill_symbols = ($('.symbols').val() == undefined) ? '' : $('.symbols').val();
+            var url = "{{route('masterData.product.export_file', ['template' => 0])}}";
+            url = url + '&symbols=' + fill_symbols;
+            window.location.href = url;
+        });
+
+    </script>
 @endpush

@@ -118,6 +118,7 @@ class MasterMachineLibraries
             ) {
                 $machine = MasterMachine::where('ID', $id)->update([
                     'Stock_Min'        => $request->Stock_Min,
+                    'Name'             => $request->Symbols,
                     'Symbols'          => $request->Symbols,
                     // 'MAC'              => $request->MAC,
                     'Note'             => $request->Note,

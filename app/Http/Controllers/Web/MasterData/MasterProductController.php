@@ -8,7 +8,7 @@ use App\Libraries\MasterData\MasterProductLibraries;
 use App\Libraries\MasterData\MasterUnitLibraries;
 use App\Libraries\MasterData\MasterMaterialsLibraries;
 use App\Exports\MasterData\MasterProductExport;
-
+use App\Exports\MasterData\MasterDataExport;
 use App\Models\MasterData\MasterProduct;
 use App\Models\MasterData\MasterMaterials;
 use App\Models\MasterData\MasterBOM;
@@ -23,13 +23,15 @@ class MasterProductController extends Controller
         MasterProductLibraries $masterProductLibraries,
         MasterUnitLibraries $masterUnitLibraries,
         MasterProductExport  $masterProductExport,
-        MasterMaterialsLibraries $MasterMaterialsLibraries
+        MasterMaterialsLibraries $MasterMaterialsLibraries,
+        MasterDataExport $masterDataExport
+        
     ) {
         $this->middleware('auth');
         $this->product = $masterProductLibraries;
         $this->unit    = $masterUnitLibraries;
         $this->materials = $MasterMaterialsLibraries;
-        $this->export = $masterProductExport;
+        $this->export = $masterDataExport;
     }
 
     public function index(Request $request)
@@ -141,7 +143,6 @@ class MasterProductController extends Controller
     }
     public function export_file(Request $request)
     {
-        $data = $this->product->filter($request);
-        $this->export->export($data,$request);
+        $data =  $this->export->product_export_file_excel($request);
     }
 }

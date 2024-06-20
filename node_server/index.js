@@ -13,6 +13,6 @@ const machineLoopService = require('./app/services/machineLoopService')
         require('./server/socket').start()
         machineLoopService.start()
     } catch(err) {
-        console.log(err)
+        console.log("index.js", err)
     }
 })()

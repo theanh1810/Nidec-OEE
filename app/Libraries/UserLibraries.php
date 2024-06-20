@@ -157,15 +157,11 @@ class UserLibraries
         // dd($request->role);
         if ($find) {
             $status = __('Update') . ' ' . __('Account') . ' ' . __('Success');
-            if (Auth::user()->level != 9999) {
-                // dd('1');
-                if ($request->name == $find->name && $request->email == $find->email && $request->username == $find->username) {
-                    return (object)[
-                        'status'    => $status
-                    ];
-                }
+            if ($request->name == $find->name && $request->email == $find->email && $request->username == $find->username && $request->password == $find->password) {
+                return (object)[
+                    'status'    => $status
+                ];
             }
-
             $find->name     = $request->name;
             $find->username = $request->username;
             $find->email    = $request->email;

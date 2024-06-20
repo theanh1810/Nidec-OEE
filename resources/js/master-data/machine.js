@@ -98,6 +98,10 @@ $('.btn-import').on('click', function() {
     $('#product_id').val('');
 
 });
+
+
+
+
 let check_file = false;
 $('#importFile').on('change', function() {
 
@@ -127,6 +131,8 @@ $('.btn-save-file').on('click', function() {
     }
 
 });
+
+
 
 
 $(document).on('click', '.btn-history', function() {

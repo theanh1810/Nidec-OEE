@@ -42,7 +42,10 @@
                 @endif
                 <a href="#" class="btn btn-warning btn-history w-10">
                     {{ __('History') }}
-                </a>
+                </a>					
+                <button type="button"  class="btn btn-warning btn-export-excel" style="width: 100px">
+					{{__('Export')}} {{__('Excel')}}
+                </button>
             </div>
             @include('basic.alert')
             <table class="table table-machine table-bordered table-striped text-nowrap w-100"></table>
@@ -52,4 +55,14 @@
 
 @push('scripts')
     <script src="{{ asset('js/master-data/machine.js') }}"></script>
+    <script>
+        $('.btn-export-excel').on('click', function(e) {
+            e.preventDefault();
+            var fill_symbols = ($('.symbols').val() == undefined) ? '' : $('.symbols').val();
+            var url = "{{route('masterData.machine.export_file', ['template' => 0])}}";
+            url = url + '&symbols=' + fill_symbols;
+            window.location.href = url;
+        });
+
+    </script>
 @endpush

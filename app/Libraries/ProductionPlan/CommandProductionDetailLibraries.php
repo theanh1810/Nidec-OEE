@@ -22,6 +22,7 @@ use PhpOffice\PhpSpreadsheet\Style;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 use Maatwebsite\Excel\Concerns\WithStyles;
 use App\Models\History\HistoriesImportFile;
+use App\Models\MasterData\MasterMaterials;
 use PhpOffice\PhpSpreadsheet\Reader\IReadFilter;
 
 use Box\Spout\Reader\Common\Creator\ReaderEntityFactory;
@@ -326,7 +327,7 @@ class CommandProductionDetailLibraries
         $product = null;
         $machine = null;
         $mold    = null;
-
+        $material = null;
         $visit = 0;
         $key = 1;
         $date   = $request->Year . '-' . sprintf("%02d", $request->Month).'%';
@@ -377,40 +378,50 @@ class CommandProductionDetailLibraries
                             if ($value[2]) {
                                 $mold    = $listMold->where('Name', $value[2])->first();
                                 if (!$mold) {
-                                    $er = __('Mold') . " : " . $value[2] . ' ' . __('Not Exit');
+                                    $er =__('Row').($key + 1).'/'.__('Columns').' 3. '. __('Mold') . " : " . $value[2] . ' ' . __('Not Exit');
                                     array_push($err, $er);
                                 }
                             } else {
-                                $er = __('Mold') . " : " . __('Location') . ' ' . ($key + 1) . ' ' . __('Not Exit');
+                                $er = __('Row').($key + 1).'/'.__('Columns').' 3. '. __('Mold') . " : " . __('Location') . ' ' . ($key + 1) . ' ' . __('Not Exit');
+                                array_push($err, $er);
+                            }
+                            if($value[10]){
+                                $material = MasterMaterials::where('Symbols', $value[10])->first();
+                                if (empty($material)) {
+                                    $er = __('Row').($key + 1).'/'.__('Columns').' 3. '. __('Material') . " : " . $value[9] . ' ' . __('Not Exit');
+                                    array_push($err, $er);
+                                }
+                            }else{
+                                $er = __('Row').($key + 1).'/'.__('Columns').' 10. '. __('Material') . " : " . __('Location') . ' ' . ($key + 1) . ' ' . __('Not Exit');
                                 array_push($err, $er);
                             }
                             if ($value[12]) {
                                 $machine    = $listMachine->where('Name', $value[12])->first();
-                                if (!$machine) {
-                                    $er = __('Machine') . " : " . $value[12] . ' ' . __('Not Exit');
+                                if (empty($machine)) {
+                                    $er = __('Row').($key + 1).'/'.__('Columns').' 12. '. __('Machine') . " : " . $value[12] . ' ' . __('Not Exit');
                                     array_push($err, $er);
                                 }
                             } else {
-                                $er = __('Machine') . " : " . __('Location') . ' ' . ($key + 1) . ' ' . __('Not Exit');
+                                $er = __('Row').($key + 1).'/'.__('Columns').' 12. '. __('Machine') . " : " . __('Location') . ' ' . ($key + 1) . ' ' . __('Not Exit');
                                 array_push($err, $er);
                             }
                             if ($value[3]) {
                                 $product = $listProduct->where('Symbols', $value[3])->first();
-                                if ($product) {
+                                if (!empty($product)) {
                                     if ($product && $machine && $mold) {
                                         $check_bom = $listBOM->where('Product_BOM_ID', $product->ID)->where('Mold_ID', $mold->ID)->first();
                                         if (!$check_bom) {
-                                            return  __('Mold') . ' ' . $value[2] . "  " . __('Not In') . "  " . __('BOM') . ' ' . $value[3];
+                                            return  __('Row').($key + 1).'/'.__('Columns').' 4. '. __('Mold') . ' ' . $value[2] . "  " . __('Not In') . "  " . __('BOM') . ' ' . $value[3];
                                         } else {
                                             $check = true;
                                         }
                                     }
                                 } else {
-                                    $er = __('Product') . " : " . $value[3] . ' ' . __('Not Exit');
+                                    $er = __('Row').($key + 1).'/'.__('Columns').' 4. '. __('Product') . " : " . $value[3] . ' ' . __('Not Exit');
                                     array_push($err, $er);
                                 }
                             } else {
-                                $er = __('Product') . " : " . __('Location') . ' ' . ($key + 1) . ' ' . __('Not Exit');
+                                $er = __('Row').($key + 1).'/'.__('Columns').' 4. '. __('Product') . " : " . __('Location') . ' ' . ($key + 1) . ' ' . __('Not Exit');
                                 array_push($err, $er);
                             }
                             if ($check) {
@@ -435,7 +446,7 @@ class CommandProductionDetailLibraries
                                                         'Version'       => $value[6],
                                                         'His'           => $value[7],
                                                         'MPMT'           => $value[9],
-                                                        'MaterialCode'           => $value[10],
+                                                        'MaterialCode'           => $value[9],
                                                         'Note'          => __('Update') . ' ' . __('With Excel'),
                                                         'User_Updated'    => $user_updated,
                                                     ]);
@@ -464,6 +475,7 @@ class CommandProductionDetailLibraries
                                                 'Command_ID'    => $request->Plan_ID,
                                                 'Mold_ID'       => $mold->ID,
                                                 'Product_ID'    => $product->ID,
+                                                'Materials_ID'  => $material->ID,
                                                 'Part_Action'   => $machine->ID,
                                                 'Quantity'      => $value[$i + ($visit - 1)],
                                                 'Date'          => $date,
@@ -478,7 +490,7 @@ class CommandProductionDetailLibraries
                                                 'User_Updated'    => $user_updated,
                                                 'IsDelete'        => 0,
                                                 'MPMT'           => $value[9],
-                                                'MaterialCode'           => $value[10],
+                                                'MaterialCode'           => $material->Symbols,
                                                 'Cavity_Real' => $bom->Cavity
                                             ]);
                                             CommandProductionDetail::create($dataSave);
@@ -514,7 +526,6 @@ class CommandProductionDetailLibraries
                 'IsDelete'        => 0
             ]);
         } catch (\Exception $e) {
-            dd($e);
             return ['danger' => __('Error') . ' ' . __('Plan') . ' ' . __('Production')];
         }
         return $err;

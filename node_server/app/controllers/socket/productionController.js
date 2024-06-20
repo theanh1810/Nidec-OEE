@@ -7,7 +7,7 @@ const runtimeHistory = require("../../models/runtimeHistory");
 const oeeDay = require("../../models/oeeDay");
 const oeeShift = require("../../models/oeeShift");
 const productDefectiveLog = require("../../models/productDefectiveLog");
-
+const moment = require('moment')
 const getProductionLog = require("../../business/productionLog/getProductionLog");
 const getOee = require("../../business/oee/getOee");
 const getPlannedTime = require("../../business/getPlannedTime");
@@ -34,6 +34,7 @@ module.exports = {
         try {
             const { machineId, Plan_Id: id } = payload;
             const stt = 1;
+            const current = moment();
             const planIsRunnings = await commandProductionDetail()
                 .where("IsDelete", "=", 0)
                 .where("Part_Action", "=", machineId)
@@ -121,14 +122,14 @@ module.exports = {
                     paramsDay.total += Number(productionLog.Total);
                     paramsDay.ng += Number(productionLog.NG);
                     paramsDay.netRuntime +=
-                        (((Number(productionLog.Total)-Number(productionLog.NG))/productionLog.Cavity) *
-                        (Number(productionLog.Cycletime)));
+                        (((Number(productionLog.Total)-Number(productionLog.NG))/planIsRunning.Cavity_Real) *
+                        (Number(productionLog.Cycletime)/60));
                     if (productionLog.Master_Shift_ID == shift.ID) {
                         paramsShift.total += Number(productionLog.Total);
                         paramsShift.ng += Number(productionLog.NG);
                         paramsShift.netRuntime +=
-                        (((Number(productionLog.Total)-Number(productionLog.NG))/productionLog.Cavity) *
-                        (Number(productionLog.Cycletime)));
+                        (((Number(productionLog.Total)-Number(productionLog.NG))/planIsRunning.Cavity_Real) *
+                        (Number(productionLog.Cycletime)/60));
                     }
                 }
 
@@ -141,11 +142,11 @@ module.exports = {
                     }
                 }
 
-                paramsDay.fullRunTime = getFullRuntime(planIsRunning.Time_Real_Start);
-                paramsShift.fullRunTime = getFullRuntime(planIsRunning.Time_Real_Start);
+                // paramsDay.fullRunTime = getFullRuntime(planIsRunning.Time_Real_Start);
+                // paramsShift.fullRunTime = getFullRuntime(planIsRunning.Time_Real_Start);
 
-                paramsDay.plannedTime = await getPlannedTime("day")();
-                paramsShift.plannedTime = await getPlannedTime("shift")();
+                paramsDay.plannedTime = await getPlannedTime("day")(current);
+                paramsShift.plannedTime = await getPlannedTime("shift")(current);
                 console.log('paramsDay:',paramsDay);
                 const resultOeeDay = caculateOee.call(paramsDay);
                 const resultOeeShift = caculateOee.call(paramsShift);
@@ -211,6 +212,7 @@ module.exports = {
                 IBUTSU,
                 Orther,
             } = payload;
+            const current = moment();
 
             const plan = await commandProductionDetail()
                 .where("IsDelete", "=", 0)
@@ -710,13 +712,13 @@ module.exports = {
                     paramsDay.total += Number(productionLog.Total);
                     paramsDay.ng += Number(productionLog.NG);
                     paramsDay.netRuntime +=
-                    ((Number(productionLog.Total)-Number(productionLog.NG)) *
+                    (((Number(productionLog.Total)-Number(productionLog.NG))/plan.Cavity_Real) *
                     (Number(productionLog.Cycletime)/60));
                     if (productionLog.Master_Shift_ID == shift.ID) {
                         paramsShift.total += Number(productionLog.Total);
                         paramsShift.ng += Number(productionLog.NG);
                         paramsShift.netRuntime +=
-                        ((Number(productionLog.Total)-Number(productionLog.NG)) *
+                        (((Number(productionLog.Total)-Number(productionLog.NG))/plan.Cavity_Real) *
                         (Number(productionLog.Cycletime)/60));
                     }
                 }
@@ -730,11 +732,11 @@ module.exports = {
                     }
                 }
 
-                paramsDay.fullRunTime = getFullRuntime(plan.Time_Real_Start);
-                paramsShift.fullRunTime = getFullRuntime(plan.Time_Real_Start);
+                // paramsDay.fullRunTime = getFullRuntime(plan.Time_Real_Start);
+                // paramsShift.fullRunTime = getFullRuntime(plan.Time_Real_Start);
 
-                paramsDay.plannedTime = await getPlannedTime("day")();
-                paramsShift.plannedTime = await getPlannedTime("shift")();
+                paramsDay.plannedTime = await getPlannedTime("day")(current);
+                paramsShift.plannedTime = await getPlannedTime("shift")(current);
 
                 const resultOeeDay = caculateOee.call(paramsDay);
                 const resultOeeShift = caculateOee.call(paramsShift);

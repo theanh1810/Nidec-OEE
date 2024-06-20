@@ -94,7 +94,7 @@ const Report = () => {
                 </nav>
                 <div className={`${styles["content"]} tab-content mt-2`}>
                     <div className="tab-pane fade show active" id="oee">
-                        <OeeReport />
+                        {OeeReport ? <OeeReport /> : ''}
                     </div>
                     <div
                         className='tab-pane fade'

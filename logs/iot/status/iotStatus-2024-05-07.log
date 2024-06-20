@@ -1,0 +1,121 @@
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"disconnected\"}","timestamp":"2024-05-07 08:06:29"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 08:06:43"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 08:42:48"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 08:42:50"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 08:42:50"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"disconnected\"}","timestamp":"2024-05-07 09:29:05"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 09:29:18"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 09:48:21"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 09:48:22"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 09:48:22"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 09:54:47"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 09:54:49"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 09:54:49"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 10:05:36"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 10:05:38"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 10:05:38"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 10:27:21"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 10:27:23"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 10:27:23"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 10:46:17"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 10:46:18"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 10:46:18"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 10:51:33"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 10:51:34"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 10:51:35"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 10:54:01"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 10:54:02"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 10:54:02"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 11:10:38"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 11:10:39"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 11:10:40"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 11:11:25"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 11:11:26"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 11:11:27"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 11:13:29"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 11:13:31"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 11:13:40"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 11:14:53"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 11:14:55"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 11:14:55"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 11:15:59"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 11:16:01"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 11:16:01"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 11:17:12"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 11:17:13"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 11:17:13"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 11:36:17"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 11:36:19"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 11:36:19"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"disconnected\"}","timestamp":"2024-05-07 11:41:50"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 11:42:04"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"disconnected\"}","timestamp":"2024-05-07 11:45:02"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 11:45:17"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"disconnected\"}","timestamp":"2024-05-07 11:49:52"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 11:50:08"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"disconnected\"}","timestamp":"2024-05-07 13:01:20"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:01:35"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"disconnected\"}","timestamp":"2024-05-07 13:04:48"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:04:59"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"disconnected\"}","timestamp":"2024-05-07 13:10:20"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:10:35"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"disconnected\"}","timestamp":"2024-05-07 13:13:52"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:14:04"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"disconnected\"}","timestamp":"2024-05-07 13:21:53"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:22:06"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 13:26:02"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:26:03"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:26:04"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"disconnected\"}","timestamp":"2024-05-07 13:29:32"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:29:45"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 13:32:04"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:32:06"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:32:06"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 13:35:58"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:35:59"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:36:00"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 13:36:47"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:36:49"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:36:49"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 13:41:22"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:41:24"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:41:24"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 13:42:37"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:42:39"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:42:39"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 13:43:28"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:43:30"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:43:30"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:43:59"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"disconnected\"}","timestamp":"2024-05-07 13:48:54"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:49:05"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"disconnected\"}","timestamp":"2024-05-07 13:52:50"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:53:04"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"disconnected\"}","timestamp":"2024-05-07 13:55:37"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:55:48"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 13:58:19"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:58:21"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 13:58:21"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 14:09:26"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 14:09:28"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 14:09:28"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 14:09:32"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 14:09:33"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 14:09:33"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 14:10:23"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 14:10:24"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 14:10:24"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 15:29:49"}
+{"level":"info","message":"ooe init call status","timestamp":"2024-05-07 15:35:22"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 15:35:24"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 15:35:24"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"disconnected\"}","timestamp":"2024-05-07 15:37:24"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 15:39:01"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 15:39:24"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 15:39:24"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"disconnected\"}","timestamp":"2024-05-07 15:39:57"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"disconnected\"}","timestamp":"2024-05-07 15:40:13"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 15:40:34"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 15:40:34"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:58:BC\",\"Name\":\"MAY-TEST-1\",\"status\":\"connected\"}","timestamp":"2024-05-07 17:14:22"}
+{"level":"info","message":"{\"MAC\":\"C8:2E:18:EB:59:A8\",\"Name\":\"MAY-TEST-2\",\"status\":\"connected\"}","timestamp":"2024-05-07 17:14:27"}

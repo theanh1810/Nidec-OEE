@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[217],{87217:(e,n,s)=>{s.r(n),s.d(n,{default:()=>l});var c=s(96540),r=s(74848),a=(0,c.lazy)((function(){return s.e(573).then(s.bind(s,69573))}));const l=function(){return(0,r.jsx)("div",{className:"row",children:(0,r.jsx)("div",{className:"col-12",children:(0,r.jsx)(a,{})})})}}}]);

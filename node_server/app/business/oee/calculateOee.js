@@ -25,7 +25,7 @@ const caculateOee = function() {
     return {
         Oee: oee,
         A: Math.floor(a * 10000) / 100,
-        P: Math.floor(p * 10000) / 100,
+        P: ((Math.floor(p * 10000) / 100) > 100) ? 100 : Math.floor(p * 10000) / 100,
         Q: Math.floor(q * 10000) / 100,
     }
 }

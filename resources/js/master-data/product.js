@@ -125,6 +125,8 @@ $(document).on('click', '.btn-delete', function() {
 });
 
 
+
+
 $('.btn-import').on('click', function() {
     $('#modalImport').modal();
     $('#importFile').val('');

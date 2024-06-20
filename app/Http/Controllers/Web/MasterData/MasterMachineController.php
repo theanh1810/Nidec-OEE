@@ -8,17 +8,22 @@ use App\Imports\MasterData\MasterDataImport;
 use App\Libraries\MasterData\MasterLineLibraries;
 use App\Libraries\MasterData\MasterMachineLibraries;
 use App\Libraries\MasterData\MasterUnitLibraries;
+use App\Exports\MasterData\MasterDataExport;
+
 use App\Libraries\MasterData\MasterSupplierLibraries;
 use App\Models\MasterData\MasterLine;
 
 class MasterMachineController extends Controller
 {
+    private $export;
+
     public function __construct(
         MasterDataImport $masterDataImport,
         MasterMachineLibraries $MasterMachineLibraries,
         MasterUnitLibraries $masterUnitLibraries,
         MasterSupplierLibraries $masterSupplierLibraries,
-        MasterLineLibraries $masterLineLibraries
+        MasterLineLibraries $masterLineLibraries,
+        MasterDataExport $masterDataExport
     ) {
         $this->middleware('auth');
         $this->import    = $masterDataImport;
@@ -26,6 +31,7 @@ class MasterMachineController extends Controller
         $this->unit      = $masterUnitLibraries;
         $this->supplier  = $masterSupplierLibraries;
         $this->line  = $masterLineLibraries;
+        $this->export = $masterDataExport;
     }
 
     public function index(Request $request)
@@ -109,9 +115,7 @@ class MasterMachineController extends Controller
 
     public function export_file(Request $request)
     {
-        $data = $this->machine->filter_machine($request);
-        // dd($data);
-        $this->export->export($data, $request);
+        $data =  $this->export->product_export_file_excel($request);
     }
 
     public function destroy(Request $request)

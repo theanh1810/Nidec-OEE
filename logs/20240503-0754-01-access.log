@@ -1,0 +1,11 @@
+{"ip":"::ffff:192.168.1.63","method":"GET","url":"/","status":"200","res":577,"response":"6.582"}
+{"ip":"::ffff:192.168.1.63","method":"GET","url":"/static/css/main.e3c9ba58.css","status":"200","res":24400,"response":"2.682"}
+{"ip":"::ffff:192.168.1.63","method":"GET","url":"/static/js/main.72b76b2a.js","status":"200","res":1217385,"response":"3.115"}
+{"ip":"::ffff:192.168.1.63","method":"POST","url":"/api/auth/verify","status":"401","response":"1.958"}
+{"ip":"::ffff:192.168.1.63","method":"GET","url":"/favicon.ico","status":"200","res":24838,"response":"2.488"}
+{"ip":"::ffff:192.168.1.63","method":"GET","url":"/favicon.ico","status":"304","response":"3.254"}
+{"ip":"::ffff:192.168.1.63","method":"GET","url":"/static/media/JTUSjIg1_i6t8kCHKm459Wlhyw.b66f2d18f66f15c3ac56.woff2","status":"200","res":30928,"response":"1.972"}
+{"ip":"::ffff:192.168.1.63","method":"POST","url":"/api/auth/login","status":"200","res":"225","response":"150.855"}
+{"ip":"::ffff:192.168.1.63","method":"POST","url":"/api/auth/verify","status":"200","response":"4.755"}
+{"ip":"::ffff:192.168.1.63","method":"GET","url":"/static/media/LOGO.0d092af5609857e24e50.png","status":"200","res":27670,"response":"2.831"}
+{"ip":"::ffff:192.168.1.63","method":"GET","url":"/api/iot","status":"200","res":"2901","response":"36.843"}
