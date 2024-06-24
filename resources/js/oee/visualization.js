@@ -32,7 +32,7 @@ const MachineCardLayout = ({ machines }) => {
 
 const MachineChartLayout = ({ machines }) => {
     const renderMachines = machines.map((machine, index) => (
-        <Col style={{height: '23%'}} key={`machine-timeline-${machine.ID}`} span={24}>
+        <Col style={{height: '18%'}} key={`machine-timeline-${machine.ID}`} span={24}>
             <VisualizationTimeline  data={machine} index={index} />
         </Col>
     ));

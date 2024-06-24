@@ -78,6 +78,10 @@ const VisualizationDefectiveReport = () => {
             {
                 type: "category",
                 data: chartDatasheets?.category,
+                axisLabel: {
+                    lineHeight: 17,
+                    fontSize: 14
+                }
             },
         ],
         yAxis: [

@@ -1,1 +1,402 @@
-(()=>{var t={92838:(t,e,n)=>{"use strict";n.r(e),n.d(e,{default:()=>a});var i=n(15112),r={};Object.keys(i.default).forEach((function(t){r[t]=t}));const a=r},57775:(t,e,n)=>{"use strict";n.r(e),n.d(e,{default:()=>i});const i={}},15112:(t,e,n)=>{"use strict";var i;function r(t){return r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},r(t)}function a(t,e,n){return(e=function(t){var e=function(t,e){if("object"!=r(t)||!t)return t;var n=t[Symbol.toPrimitive];if(void 0!==n){var i=n.call(t,e||"default");if("object"!=r(i))return i;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===e?String:Number)(t)}(t,"string");return"symbol"==r(e)?e:e+""}(e))in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}n.r(e),n.d(e,{default:()=>o});const o=(a(a(a(a(a(a(a(a(a(a(i={"Number of records _MENU_":"Số lượng bản ghi _MENU_","Showing _START_ to _END_ of _TOTAL_ entries":"Bản ghi từ _START_ đến _END_ của _TOTAL_ bản ghi",Name:"Tên",Symbols:"Mã",Type:"Loại",Note:"Ghi chú","User Created":"Người tạo","Time Created":"Thời gian tạo","User Updated":"Người cập nhật","Time Updated":"Thời gian cập nhật",Action:"Hành Động",Edit:"Sửa",Delete:"Xóa","Start Time":"Thời Gian Bắt Đầu","End Time":"Thời Gian Kết Thúc","Cycle Time":"Chu Kì Sản Xuất 1 Sản Phẩm ",Detail:"Chi Tiết",Month:"Tháng",Year:"Năm","Location Take Materials":"Vị Trí Lấy Hàng","Materials Return Location":"Vị Trí Trả Hàng",Destroy:"Hủy"},"Detail","Chi Tiết"),"Success","Hoàn Thành"),"Product","Sản Phẩm"),"Machine","Máy Sản Xuất"),"Dont Production","Chưa Sản Xuất"),"Are Production","Đang Sản Xuất"),"Success Production","Hoàn Thành Sản Xuất"),"Status","Trạng Thái"),"Export","Xuất Kho"),"Materials","Nguyên Vật Liệu"),a(a(a(a(a(a(a(a(a(a(i,"Dont Export","Chưa Xuất"),"Are Export","Đang Xuất"),"Success Export","Hoàn Thành Xuất"),"Stock Min","Tồn Giới Hạn"),"Cavity","Cavity"),"Mold","Khuôn"),"Quantity Mold","Số Lượng Khuôn"),"Quantity","Số Lượng"),"Date","Ngày"),"Unit","Đơn Vị Tính"),a(a(a(a(a(a(a(a(a(a(i,"Parking","Đơn Vị Đóng Gói"),"History","Lịch Sử"),"Return","Khôi Phục"),"Update","Cập Nhật"),"Delete","Xóa"),"Processing","Đang Thực Hiện"),"Enable","Kích Hoạt"),"Disable","Vô Hiệu Hóa"),"Part","Bộ Phận"),"Time Start","Thời Gian Bắt Đầu"),a(a(a(a(a(a(a(a(a(a(i,"Time End","Thời Gian Kết Thúc"),"Manager AGV","Người Quản Lý AGV"),"Maintenance Time","Thời Gian Bảo Trì"),"Maintenance Date","Ngày Bảo Dưỡng"),"Warehouse","Kho"),"Plan","Kế Hoạch"),"Production","Sản Xuất"),"Output","Sản Lượng"),"End","Kết Thúc"),"Error","Lỗi"),a(a(a(a(a(a(a(a(a(a(i,"Time Real Start","Bắt Đầu Thực Tế"),"Time Real End","Kết Thúc Thực Tế"),"Symbols Plan","Mã Chỉ Thị"),"Infor","Thông Tin"),"Normal","Xuất Thường"),"Cancel","Hủy"),"Confirm","Xác nhận"),"Close","Đóng"),"Start","Bắt Đầu"),"User Name","Tên Đăng Nhập"),a(a(a(a(a(a(a(a(a(a(i,"ENABLE","Kích Hoạt"),"DISABLE","Không Kích Hoạt"),"Action Name","Kiểu Hành Động"),"INSERT","Thêm Mới"),"Insert","Thêm Mới"),"OEE","Hiệu Suất Tổng Thể"),"Availability","Khả Dụng"),"Performance","Hiệu Suất"),"Quality","Chất Lượng"),"shift","ca"),a(a(a(a(a(a(a(a(a(a(i,"Shift","ca"),"day","ngày"),"Description","Chú Thích"),"Find AGV","Tìm AGV"),"Role","Vai Trò"),"Waiting for AGV","Chờ AGV"),"AGV Shipping","AGV Đang Chuyển Hàng"),"IsDelete","Xóa"),"To","Tới"),"Command","Lệnh"),a(a(a(a(a(a(a(a(a(a(i,"INSERT_USER","Thêm Mới Tài Khoản"),"INSERT_ROLE","Thêm Mới Vai Trò"),"Update_User","Cập Nhật Tài Khoản"),"Delete_Role","Xóa Vai Trò"),"Command AGV Was Destroy","Lệnh AGV đã bị hủy"),"Select machine","Chọn máy sản xuất"),"Loading data","Đang tải dữ liệu"),"Mold code","Mã khuôn"),"Actual start time","Bắt đầu thực tế"),"Cycle time","Thời gian đóng mở khuôn"),a(a(a(a(a(a(a(a(a(a(i,"Quantity NG","Số lượng sản phẩm lỗi"),"Quantity NG of","Số lượng sản phẩm lỗi của"),"OEE parameter chart","Biểu đồ thông số hiệu suất OEE"),"Active timeline chart","Biểu đồ thời gian hoạt động"),"minute","phút"),"minutes","phút"),"hour","giờ"),"Machine stop logs","Dừng máy"),"Defective products","Sản phẩm lỗi"),"Statistical chart of OEE by machine","Biểu đồ thống kê hiệu suất theo máy"),a(a(a(a(a(a(a(a(a(a(i,"Statistical chart of OEE by day","Biểu đồ thống kê hiệu suất theo ngày"),"View","Xem"),"Rows per page","Số lượng bản ghi"),"Error stop and no-error stop rate chart","Biểu đồ tỷ lệ dừng lỗi và không lỗi"),"Machine error rate chart","Biểu đồ tỷ lệ lỗi máy sản xuất"),"No-error stop rate chart","Biểu đồ tỷ lệ dừng không lỗi"),"Machine stop rate chart due to quality","Biểu đồ tỷ lệ dừng máy cho chất lượng"),"Statistics chart of machine time stop","Biểu đồ thống kê thời gian dừng máy"),"Statistics chart of defective product","Biểu đồ thống kê sản phẩm lỗi"),"Stop Time","Thời Gian Dừng"),a(a(a(a(a(a(a(a(a(a(i,"Error Code","Mã Lỗi"),"Error Type","Loại Lỗi"),"Quantity Error","Số lượng lỗi"),"Iot disconnect","Mất kết nối Iot"),"All machine","Tất cả máy sản xuất"),"Quantity produced","Số lượng đã sản xuất"),"Quantity produced of","Số lượng đã sản xuất của"),"run","Chạy"),"stopError","Dừng do lỗi"),"stopNotError","Dừng không lỗi"),a(a(a(a(a(a(a(a(a(a(i,"stop due to error","Dừng do lỗi"),"stop not error","Dừng không lỗi"),"stop due to quality","Dừng do chất lượng"),"machine stop","Dừng máy"),"products","sản phẩm"),"Export excel","Xuất excel"),"Duration","Thời lượng"),"Total stop time","Tổng thời gian dừng"),"Line","Line sản xuất"),"Monitor","Giám sát máy sản xuất"),a(a(a(a(a(a(a(a(i,"Monitor Line","Giám sát máy sản xuất"),"Data analysis","Phân tích dữ liệu"),"Check all","Chọn tất cả"),"Submit","Nhập"),"Disconnected","Máy tắt"),"RUNNING","Máy chạy"),"ERROR","Máy lỗi"),"STOP","Máy dừng"))},25304:(t,e,n)=>{var i={"./en.js":92838,"./ko.js":57775,"./vi.js":15112};function r(t){var e=a(t);return n(e)}function a(t){if(!n.o(i,t)){var e=new Error("Cannot find module '"+t+"'");throw e.code="MODULE_NOT_FOUND",e}return i[t]}r.keys=function(){return Object.keys(i)},r.resolve=a,t.exports=r,r.id=25304}},e={};function n(i){var r=e[i];if(void 0!==r)return r.exports;var a=e[i]={exports:{}};return t[i](a,a.exports,n),a.exports}n.d=(t,e)=>{for(var i in e)n.o(e,i)&&!n.o(t,i)&&Object.defineProperty(t,i,{enumerable:!0,get:e[i]})},n.o=(t,e)=>Object.prototype.hasOwnProperty.call(t,e),n.r=t=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},(()=>{"use strict";var t=document.querySelector("html").getAttribute("lang"),e={},i=n(25304);i.keys().forEach((function(t){var n=t.replace(/(^.\/)|(.js$)/g,"");e[n]=i(t).default}));const r=function(n){return e[t][n]||n};function a(t){return a="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},a(t)}function o(t,e,n){return(e=function(t){var e=function(t,e){if("object"!=a(t)||!t)return t;var n=t[Symbol.toPrimitive];if(void 0!==n){var i=n.call(t,e||"default");if("object"!=a(i))return i;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===e?String:Number)(t)}(t,"string");return"symbol"==a(e)?e:e+""}(e))in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}$(".select2").select2();var u="".concat(window.location.origin,"/api/settings/shift"),l=("".concat(window.location.origin,"/setting/setting-shift/show"),"".concat(window.location.origin,"/api/settings/shift/history"));"".concat(window.location.origin,"/setting/setting-shift/return");console.log(u);var c=$(".table-shift").DataTable({scrollX:!0,aaSorting:[],language:{lengthMenu:r("Number of records _MENU_"),info:r("Showing _START_ to _END_ of _TOTAL_ entries"),paginate:{previous:"‹",next:"›"}},processing:!0,serverSide:!0,dom:'rt<"bottom"flp><"clear">',searching:!1,ordering:!1,lengthMenu:[10,15,20,25,50],ajax:{url:u,dataSrc:"data",data:function(t){delete t.columns,delete t.order,delete t.search,t.page=t.start/t.length+1,t.name=$(".name").val()}},columns:[{data:"Name",defaultContent:"",title:r("Name")},{data:"Start_Time",defaultContent:"",title:r("Start Time")},{data:"End_Time",defaultContent:"",title:r("End Time")},{data:"Note",defaultContent:"",title:r("Note")},{data:"user_created.username",defaultContent:"",title:r("User Created")},{data:"Time_Created",defaultContent:"",title:r("Time Created")},{data:"user_updated.username",defaultContent:"",title:r("User Updated")},{data:"Time_Updated",defaultContent:"",title:r("Time Updated")},{data:"ID",title:r("Action"),render:function(t){var e="";return role_delete&&(e=e+'<button id="del-'+t+'" class="btn btn-danger btn-delete" style="width: 80px">\n                    '+r("Delete")+"\n                    </button>\n                    "),e}}]});$("table").on("page.dt",(function(){console.log(c.page.info())})),$(".filter").on("click",(function(){c.ajax.reload()})),$(document).on("click",".btn-delete",(function(){var t=$(this).attr("id"),e=$(this).parent().parent().children("td").first().text();$("#modalRequestDel").modal(),$("#nameDel").text(e),$("#idDel").val(t.split("-")[1])})),$(document).on("click",".btn-history",(function(){$("#modalTableHistory").modal(),d.ajax.reload()}));var d=$(".table-his").DataTable(o(o(o(o({scrollX:!0,searching:!1,ordering:!1,language:{lengthMenu:r("Number of records _MENU_"),info:r("Showing _START_ to _END_ of _TOTAL_ entries"),paginate:{previous:"‹",next:"›"}},processing:!0,serverSide:!0},"searching",!1),"lengthMenu",[10,20,30,40,50]),"ajax",{url:l,dataSrc:"data",data:function(t){delete t.columns,delete t.order,delete t.search,t.page=t.start/t.length+1,t.shiftid=$("#idUnit").val()}}),"columns",[{data:"ID_Main",defaultContent:"",title:"ID"},{data:"Data_Table",defaultContent:"",title:r("Name"),render:function(t){return JSON.parse(t).Name}},{data:"Data_Table",defaultContent:"",title:r("Start Time"),render:function(t){return JSON.parse(t).Start_Time}},{data:"Data_Table",defaultContent:"",title:r("End Time"),render:function(t){return JSON.parse(t).End_Time}},{data:"Data_Table",defaultContent:"",title:r("Note"),render:function(t){return JSON.parse(t).Note}},{data:"Action_Name",defaultContent:"",title:r("Action Name"),render:function(t){return r(t)}},{data:"Data_Table",defaultContent:"",title:r("User Updated"),render:function(t){return JSON.parse(t).User_Updated}},{data:"Data_Table",defaultContent:"",title:r("Time Updated"),render:function(t){var e=JSON.parse(t);return moment(e.Time_Updated,"MMMM Do YYYY h:mm:ss a").format("YYYY-MM-DD HH:mm:ss")}}]))})()})();
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./resources/js/lang/index.js":
+/*!************************************!*\
+  !*** ./resources/js/lang/index.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var lang = document.querySelector('html').getAttribute('lang');
+var translations = {};
+var requireModules = __webpack_require__("./resources/js/lang/translations sync \\.js$");
+requireModules.keys().forEach(function (modulePath) {
+  var key = modulePath.replace(/(^.\/)|(.js$)/g, '');
+  translations[key] = requireModules(modulePath)["default"];
+});
+var t = function t(text) {
+  return translations[lang][text] || text;
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (t);
+
+/***/ }),
+
+/***/ "./resources/js/lang/translations/en.js":
+/*!**********************************************!*\
+  !*** ./resources/js/lang/translations/en.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _vi__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vi */ "./resources/js/lang/translations/vi.js");
+
+var en = {};
+Object.keys(_vi__WEBPACK_IMPORTED_MODULE_0__["default"]).forEach(function (key) {
+  en[key] = key;
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (en);
+
+/***/ }),
+
+/***/ "./resources/js/lang/translations/ko.js":
+/*!**********************************************!*\
+  !*** ./resources/js/lang/translations/ko.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+
+/***/ }),
+
+/***/ "./resources/js/lang/translations/vi.js":
+/*!**********************************************!*\
+  !*** ./resources/js/lang/translations/vi.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var _NumberOfRecords_M;
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_NumberOfRecords_M = {
+  "Number of records _MENU_": "Số lượng bản ghi _MENU_",
+  "Showing _START_ to _END_ of _TOTAL_ entries": "Bản ghi từ _START_ đến _END_ của _TOTAL_ bản ghi",
+  "Name": "Tên",
+  "Symbols": "Mã",
+  "Type": "Loại",
+  "Note": "Ghi chú",
+  "User Created": "Người tạo",
+  "Time Created": "Thời gian tạo",
+  "User Updated": "Người cập nhật",
+  "Time Updated": "Thời gian cập nhật",
+  "Action": "Hành Động",
+  "Edit": "Sửa",
+  "Delete": "Xóa",
+  "Start Time": "Thời Gian Bắt Đầu",
+  "End Time": "Thời Gian Kết Thúc",
+  "Cycle Time": "Chu Kì Sản Xuất 1 Sản Phẩm ",
+  "Detail": "Chi Tiết",
+  "Month": "Tháng",
+  "Year": "Năm",
+  "Location Take Materials": "Vị Trí Lấy Hàng",
+  "Materials Return Location": "Vị Trí Trả Hàng",
+  "Destroy": "Hủy"
+}, _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Detail", "Chi Tiết"), "Success", "Hoàn Thành"), "Product", "Sản Phẩm"), "Machine", "Máy Sản Xuất"), "Dont Production", "Chưa Sản Xuất"), "Are Production", "Đang Sản Xuất"), "Success Production", "Hoàn Thành Sản Xuất"), "Status", "Trạng Thái"), "Export", "Xuất Kho"), "Materials", "Nguyên Vật Liệu"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Dont Export", "Chưa Xuất"), "Are Export", "Đang Xuất"), "Success Export", "Hoàn Thành Xuất"), "Stock Min", "Tồn Giới Hạn"), "Cavity", "Cavity"), "Mold", "Khuôn"), "Quantity Mold", "Số Lượng Khuôn"), "Quantity", "Số Lượng"), "Date", "Ngày"), "Unit", "Đơn Vị Tính"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Parking", "Đơn Vị Đóng Gói"), "History", "Lịch Sử"), "Return", "Khôi Phục"), "Update", "Cập Nhật"), "Delete", "Xóa"), "Processing", "Đang Thực Hiện"), "Enable", "Kích Hoạt"), "Disable", "Vô Hiệu Hóa"), "Part", "Bộ Phận"), "Time Start", "Thời Gian Bắt Đầu"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Time End", "Thời Gian Kết Thúc"), "Manager AGV", "Người Quản Lý AGV"), "Maintenance Time", "Thời Gian Bảo Trì"), "Maintenance Date", "Ngày Bảo Dưỡng"), "Warehouse", "Kho"), "Plan", "Kế Hoạch"), "Production", "Sản Xuất"), "Output", "Sản Lượng"), "End", "Kết Thúc"), "Error", "Lỗi"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Time Real Start", "Bắt Đầu Thực Tế"), "Time Real End", "Kết Thúc Thực Tế"), "Symbols Plan", "Mã Chỉ Thị"), "Infor", "Thông Tin"), "Normal", "Xuất Thường"), "Cancel", "Hủy"), "Confirm", "Xác nhận"), "Close", "Đóng"), "Start", "Bắt Đầu"), "User Name", "Tên Đăng Nhập"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "ENABLE", "Kích Hoạt"), "DISABLE", "Không Kích Hoạt"), "Action Name", "Kiểu Hành Động"), "INSERT", "Thêm Mới"), "Insert", "Thêm Mới"), "OEE", "Hiệu Suất Tổng Thể"), "Availability", "Khả Dụng"), "Performance", "Hiệu Suất"), "Quality", "Chất Lượng"), "shift", "ca"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Shift", "ca"), "day", "ngày"), "Description", "Chú Thích"), "Find AGV", "Tìm AGV"), "Role", "Vai Trò"), "Waiting for AGV", "Chờ AGV"), "AGV Shipping", "AGV Đang Chuyển Hàng"), "IsDelete", "Xóa"), "To", "Tới"), "Command", "Lệnh"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "INSERT_USER", "Thêm Mới Tài Khoản"), "INSERT_ROLE", "Thêm Mới Vai Trò"), "Update_User", "Cập Nhật Tài Khoản"), "Delete_Role", "Xóa Vai Trò"), "Command AGV Was Destroy", "Lệnh AGV đã bị hủy"), "Select machine", "Chọn máy sản xuất"), "Loading data", "Đang tải dữ liệu"), "Mold code", "Mã khuôn"), "Actual start time", "Bắt đầu thực tế"), "Cycle time", "Thời gian đóng mở khuôn"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Quantity NG", "Số lượng sản phẩm lỗi"), "Quantity NG of", "Số lượng sản phẩm lỗi của"), "OEE parameter chart", "Biểu đồ thông số hiệu suất OEE"), "Active timeline chart", "Biểu đồ thời gian hoạt động"), "minute", "phút"), "minutes", "phút"), "hour", "giờ"), "Machine stop logs", "Dừng máy"), "Defective products", "Sản phẩm lỗi"), "Statistical chart of OEE by machine", "Biểu đồ thống kê hiệu suất theo máy"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Statistical chart of OEE by day", "Biểu đồ thống kê hiệu suất theo ngày"), "View", "Xem"), "Rows per page", "Số lượng bản ghi"), "Error stop and no-error stop rate chart", "Biểu đồ tỷ lệ dừng lỗi và không lỗi"), "Machine error rate chart", "Biểu đồ tỷ lệ lỗi máy sản xuất"), "No-error stop rate chart", "Biểu đồ tỷ lệ dừng không lỗi"), "Machine stop rate chart due to quality", "Biểu đồ tỷ lệ dừng máy cho chất lượng"), "Statistics chart of machine time stop", "Biểu đồ thống kê thời gian dừng máy"), "Statistics chart of defective product", "Biểu đồ thống kê sản phẩm lỗi"), "Stop Time", "Thời Gian Dừng"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Error Code", "Mã Lỗi"), "Error Type", "Loại Lỗi"), "Quantity Error", "Số lượng lỗi"), "Iot disconnect", "Mất kết nối Iot"), "All machine", "Tất cả máy sản xuất"), "Quantity produced", "Số lượng đã sản xuất"), "Quantity produced of", "Số lượng đã sản xuất của"), "run", "Chạy"), "stopError", "Dừng do lỗi"), "stopNotError", "Dừng không lỗi"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "stop due to error", "Dừng do lỗi"), "stop not error", "Dừng không lỗi"), "stop due to quality", "Dừng do chất lượng"), "machine stop", "Dừng máy"), "products", "sản phẩm"), "Export excel", "Xuất excel"), "Duration", "Thời lượng"), "Total stop time", "Tổng thời gian dừng"), "Line", "Line sản xuất"), "Monitor", "Giám sát máy sản xuất"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Monitor Line", "Giám sát máy sản xuất"), "Data analysis", "Phân tích dữ liệu"), "Check all", "Chọn tất cả"), "Submit", "Nhập"), "Disconnected", "Máy tắt"), "RUNNING", "Máy chạy"), "ERROR", "Máy lỗi"), "STOP", "Máy dừng"));
+
+/***/ }),
+
+/***/ "./resources/js/lang/translations sync \\.js$":
+/*!*****************************************************************!*\
+  !*** ./resources/js/lang/translations/ sync nonrecursive \.js$ ***!
+  \*****************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var map = {
+	"./en.js": "./resources/js/lang/translations/en.js",
+	"./ko.js": "./resources/js/lang/translations/ko.js",
+	"./vi.js": "./resources/js/lang/translations/vi.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./resources/js/lang/translations sync \\.js$";
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+(() => {
+"use strict";
+/*!*******************************************!*\
+  !*** ./resources/js/master-data/shift.js ***!
+  \*******************************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _lang__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../lang */ "./resources/js/lang/index.js");
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+$('.select2').select2();
+
+var route = "".concat(window.location.origin, "/api/settings/shift");
+var route_show = "".concat(window.location.origin, "/setting/setting-shift/show");
+var route_his = "".concat(window.location.origin, "/api/settings/shift/history");
+var route_return = "".concat(window.location.origin, "/setting/setting-shift/return");
+console.log(route);
+var table = $('.table-shift').DataTable({
+  scrollX: true,
+  // infoCallback: ( settings, start, end, max, total, pre ) => {
+  //     console.log({settings, start, end, max, total, pre})
+  // },
+  aaSorting: [],
+  language: {
+    lengthMenu: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Number of records _MENU_'),
+    info: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Showing _START_ to _END_ of _TOTAL_ entries'),
+    paginate: {
+      previous: '‹',
+      next: '›'
+    }
+  },
+  processing: true,
+  serverSide: true,
+  dom: 'rt<"bottom"flp><"clear">',
+  searching: false,
+  ordering: false,
+  lengthMenu: [10, 15, 20, 25, 50],
+  ajax: {
+    url: route,
+    dataSrc: 'data',
+    data: function data(d) {
+      delete d.columns;
+      delete d.order;
+      delete d.search;
+      d.page = d.start / d.length + 1;
+      d.name = $('.name').val();
+    }
+  },
+  columns: [
+  // { data: 'ID', defaultContent: '', title: 'ID' },
+  {
+    data: 'Name',
+    defaultContent: '',
+    title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Name')
+  },
+  // { data: 'Symbols', defaultContent: '', title: t('Symbols') },
+  {
+    data: 'Start_Time',
+    defaultContent: '',
+    title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Start Time')
+  }, {
+    data: 'End_Time',
+    defaultContent: '',
+    title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('End Time')
+  }, {
+    data: 'Note',
+    defaultContent: '',
+    title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Note')
+  }, {
+    data: 'user_created.username',
+    defaultContent: '',
+    title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('User Created')
+  }, {
+    data: 'Time_Created',
+    defaultContent: '',
+    title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Time Created')
+  }, {
+    data: 'user_updated.username',
+    defaultContent: '',
+    title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('User Updated')
+  }, {
+    data: 'Time_Updated',
+    defaultContent: '',
+    title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Time Updated')
+  }, {
+    data: 'ID',
+    title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Action'),
+    render: function render(data) {
+      var bt = "";
+      if (role_delete) {
+        bt = bt + "<button id=\"del-" + data + "\" class=\"btn btn-danger btn-delete\" style=\"width: 80px\">\n                    " + (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Delete') + "\n                    </button>\n                    ";
+      }
+      return bt;
+    }
+  }]
+});
+$('table').on('page.dt', function () {
+  console.log(table.page.info());
+});
+$('.filter').on('click', function () {
+  table.ajax.reload();
+});
+$(document).on('click', '.btn-delete', function () {
+  var id = $(this).attr('id');
+  var name = $(this).parent().parent().children('td').first().text();
+  $('#modalRequestDel').modal();
+  $('#nameDel').text(name);
+  $('#idDel').val(id.split('-')[1]);
+});
+$(document).on('click', '.btn-history', function () {
+  $('#modalTableHistory').modal();
+  tablehis.ajax.reload();
+});
+var tablehis = $('.table-his').DataTable(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
+  scrollX: true,
+  searching: false,
+  ordering: false,
+  language: {
+    lengthMenu: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Number of records _MENU_'),
+    info: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Showing _START_ to _END_ of _TOTAL_ entries'),
+    paginate: {
+      previous: '‹',
+      next: '›'
+    }
+  },
+  processing: true,
+  serverSide: true
+}, "searching", false), "lengthMenu", [10, 20, 30, 40, 50]), "ajax", {
+  url: route_his,
+  dataSrc: 'data',
+  data: function data(d) {
+    delete d.columns;
+    delete d.order;
+    delete d.search;
+    d.page = d.start / d.length + 1;
+    d.shiftid = $('#idUnit').val();
+  }
+}), "columns", [{
+  data: 'ID_Main',
+  defaultContent: '',
+  title: 'ID'
+}, {
+  data: 'Data_Table',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Name'),
+  render: function render(data) {
+    var datas = JSON.parse(data);
+    return datas.Name;
+  }
+}, {
+  data: 'Data_Table',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Start Time'),
+  render: function render(data) {
+    var datas = JSON.parse(data);
+    return datas.Start_Time;
+  }
+}, {
+  data: 'Data_Table',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('End Time'),
+  render: function render(data) {
+    var datas = JSON.parse(data);
+    return datas.End_Time;
+  }
+}, {
+  data: 'Data_Table',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Note'),
+  render: function render(data) {
+    var datas = JSON.parse(data);
+    return datas.Note;
+  }
+}, {
+  data: 'Action_Name',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Action Name'),
+  render: function render(data) {
+    return (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])(data);
+  }
+}, {
+  data: 'Data_Table',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('User Updated'),
+  render: function render(data) {
+    var datas = JSON.parse(data);
+    return datas.User_Updated;
+  }
+}, {
+  data: 'Data_Table',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Time Updated'),
+  render: function render(data) {
+    var datas = JSON.parse(data);
+    var timeupdated = moment(datas.Time_Updated, 'MMMM Do YYYY h:mm:ss a').format('YYYY-MM-DD HH:mm:ss');
+    return timeupdated;
+  }
+}]));
+})();
+
+/******/ })()
+;

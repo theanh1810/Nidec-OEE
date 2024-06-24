@@ -1,1 +1,378 @@
-(()=>{var t={92838:(t,n,e)=>{"use strict";e.r(n),e.d(n,{default:()=>r});var i=e(15112),o={};Object.keys(i.default).forEach((function(t){o[t]=t}));const r=o},57775:(t,n,e)=>{"use strict";e.r(n),e.d(n,{default:()=>i});const i={}},15112:(t,n,e)=>{"use strict";var i;function o(t){return o="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},o(t)}function r(t,n,e){return(n=function(t){var n=function(t,n){if("object"!=o(t)||!t)return t;var e=t[Symbol.toPrimitive];if(void 0!==e){var i=e.call(t,n||"default");if("object"!=o(i))return i;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===n?String:Number)(t)}(t,"string");return"symbol"==o(n)?n:n+""}(n))in t?Object.defineProperty(t,n,{value:e,enumerable:!0,configurable:!0,writable:!0}):t[n]=e,t}e.r(n),e.d(n,{default:()=>a});const a=(r(r(r(r(r(r(r(r(r(r(i={"Number of records _MENU_":"Số lượng bản ghi _MENU_","Showing _START_ to _END_ of _TOTAL_ entries":"Bản ghi từ _START_ đến _END_ của _TOTAL_ bản ghi",Name:"Tên",Symbols:"Mã",Type:"Loại",Note:"Ghi chú","User Created":"Người tạo","Time Created":"Thời gian tạo","User Updated":"Người cập nhật","Time Updated":"Thời gian cập nhật",Action:"Hành Động",Edit:"Sửa",Delete:"Xóa","Start Time":"Thời Gian Bắt Đầu","End Time":"Thời Gian Kết Thúc","Cycle Time":"Chu Kì Sản Xuất 1 Sản Phẩm ",Detail:"Chi Tiết",Month:"Tháng",Year:"Năm","Location Take Materials":"Vị Trí Lấy Hàng","Materials Return Location":"Vị Trí Trả Hàng",Destroy:"Hủy"},"Detail","Chi Tiết"),"Success","Hoàn Thành"),"Product","Sản Phẩm"),"Machine","Máy Sản Xuất"),"Dont Production","Chưa Sản Xuất"),"Are Production","Đang Sản Xuất"),"Success Production","Hoàn Thành Sản Xuất"),"Status","Trạng Thái"),"Export","Xuất Kho"),"Materials","Nguyên Vật Liệu"),r(r(r(r(r(r(r(r(r(r(i,"Dont Export","Chưa Xuất"),"Are Export","Đang Xuất"),"Success Export","Hoàn Thành Xuất"),"Stock Min","Tồn Giới Hạn"),"Cavity","Cavity"),"Mold","Khuôn"),"Quantity Mold","Số Lượng Khuôn"),"Quantity","Số Lượng"),"Date","Ngày"),"Unit","Đơn Vị Tính"),r(r(r(r(r(r(r(r(r(r(i,"Parking","Đơn Vị Đóng Gói"),"History","Lịch Sử"),"Return","Khôi Phục"),"Update","Cập Nhật"),"Delete","Xóa"),"Processing","Đang Thực Hiện"),"Enable","Kích Hoạt"),"Disable","Vô Hiệu Hóa"),"Part","Bộ Phận"),"Time Start","Thời Gian Bắt Đầu"),r(r(r(r(r(r(r(r(r(r(i,"Time End","Thời Gian Kết Thúc"),"Manager AGV","Người Quản Lý AGV"),"Maintenance Time","Thời Gian Bảo Trì"),"Maintenance Date","Ngày Bảo Dưỡng"),"Warehouse","Kho"),"Plan","Kế Hoạch"),"Production","Sản Xuất"),"Output","Sản Lượng"),"End","Kết Thúc"),"Error","Lỗi"),r(r(r(r(r(r(r(r(r(r(i,"Time Real Start","Bắt Đầu Thực Tế"),"Time Real End","Kết Thúc Thực Tế"),"Symbols Plan","Mã Chỉ Thị"),"Infor","Thông Tin"),"Normal","Xuất Thường"),"Cancel","Hủy"),"Confirm","Xác nhận"),"Close","Đóng"),"Start","Bắt Đầu"),"User Name","Tên Đăng Nhập"),r(r(r(r(r(r(r(r(r(r(i,"ENABLE","Kích Hoạt"),"DISABLE","Không Kích Hoạt"),"Action Name","Kiểu Hành Động"),"INSERT","Thêm Mới"),"Insert","Thêm Mới"),"OEE","Hiệu Suất Tổng Thể"),"Availability","Khả Dụng"),"Performance","Hiệu Suất"),"Quality","Chất Lượng"),"shift","ca"),r(r(r(r(r(r(r(r(r(r(i,"Shift","ca"),"day","ngày"),"Description","Chú Thích"),"Find AGV","Tìm AGV"),"Role","Vai Trò"),"Waiting for AGV","Chờ AGV"),"AGV Shipping","AGV Đang Chuyển Hàng"),"IsDelete","Xóa"),"To","Tới"),"Command","Lệnh"),r(r(r(r(r(r(r(r(r(r(i,"INSERT_USER","Thêm Mới Tài Khoản"),"INSERT_ROLE","Thêm Mới Vai Trò"),"Update_User","Cập Nhật Tài Khoản"),"Delete_Role","Xóa Vai Trò"),"Command AGV Was Destroy","Lệnh AGV đã bị hủy"),"Select machine","Chọn máy sản xuất"),"Loading data","Đang tải dữ liệu"),"Mold code","Mã khuôn"),"Actual start time","Bắt đầu thực tế"),"Cycle time","Thời gian đóng mở khuôn"),r(r(r(r(r(r(r(r(r(r(i,"Quantity NG","Số lượng sản phẩm lỗi"),"Quantity NG of","Số lượng sản phẩm lỗi của"),"OEE parameter chart","Biểu đồ thông số hiệu suất OEE"),"Active timeline chart","Biểu đồ thời gian hoạt động"),"minute","phút"),"minutes","phút"),"hour","giờ"),"Machine stop logs","Dừng máy"),"Defective products","Sản phẩm lỗi"),"Statistical chart of OEE by machine","Biểu đồ thống kê hiệu suất theo máy"),r(r(r(r(r(r(r(r(r(r(i,"Statistical chart of OEE by day","Biểu đồ thống kê hiệu suất theo ngày"),"View","Xem"),"Rows per page","Số lượng bản ghi"),"Error stop and no-error stop rate chart","Biểu đồ tỷ lệ dừng lỗi và không lỗi"),"Machine error rate chart","Biểu đồ tỷ lệ lỗi máy sản xuất"),"No-error stop rate chart","Biểu đồ tỷ lệ dừng không lỗi"),"Machine stop rate chart due to quality","Biểu đồ tỷ lệ dừng máy cho chất lượng"),"Statistics chart of machine time stop","Biểu đồ thống kê thời gian dừng máy"),"Statistics chart of defective product","Biểu đồ thống kê sản phẩm lỗi"),"Stop Time","Thời Gian Dừng"),r(r(r(r(r(r(r(r(r(r(i,"Error Code","Mã Lỗi"),"Error Type","Loại Lỗi"),"Quantity Error","Số lượng lỗi"),"Iot disconnect","Mất kết nối Iot"),"All machine","Tất cả máy sản xuất"),"Quantity produced","Số lượng đã sản xuất"),"Quantity produced of","Số lượng đã sản xuất của"),"run","Chạy"),"stopError","Dừng do lỗi"),"stopNotError","Dừng không lỗi"),r(r(r(r(r(r(r(r(r(r(i,"stop due to error","Dừng do lỗi"),"stop not error","Dừng không lỗi"),"stop due to quality","Dừng do chất lượng"),"machine stop","Dừng máy"),"products","sản phẩm"),"Export excel","Xuất excel"),"Duration","Thời lượng"),"Total stop time","Tổng thời gian dừng"),"Line","Line sản xuất"),"Monitor","Giám sát máy sản xuất"),r(r(r(r(r(r(r(r(i,"Monitor Line","Giám sát máy sản xuất"),"Data analysis","Phân tích dữ liệu"),"Check all","Chọn tất cả"),"Submit","Nhập"),"Disconnected","Máy tắt"),"RUNNING","Máy chạy"),"ERROR","Máy lỗi"),"STOP","Máy dừng"))},25304:(t,n,e)=>{var i={"./en.js":92838,"./ko.js":57775,"./vi.js":15112};function o(t){var n=r(t);return e(n)}function r(t){if(!e.o(i,t)){var n=new Error("Cannot find module '"+t+"'");throw n.code="MODULE_NOT_FOUND",n}return i[t]}o.keys=function(){return Object.keys(i)},o.resolve=r,t.exports=o,o.id=25304}},n={};function e(i){var o=n[i];if(void 0!==o)return o.exports;var r=n[i]={exports:{}};return t[i](r,r.exports,e),r.exports}e.d=(t,n)=>{for(var i in n)e.o(n,i)&&!e.o(t,i)&&Object.defineProperty(t,i,{enumerable:!0,get:n[i]})},e.o=(t,n)=>Object.prototype.hasOwnProperty.call(t,n),e.r=t=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},(()=>{"use strict";var t=document.querySelector("html").getAttribute("lang"),n={},i=e(25304);i.keys().forEach((function(t){var e=t.replace(/(^.\/)|(.js$)/g,"");n[e]=i(t).default}));const o=function(e){return n[t][e]||e};$(".select2").select2();var r="".concat(window.location.origin,"/api/warehouse-system/export");"".concat(window.location.origin,"/setting/setting-unit/show");console.log(r);var a=$("table").DataTable({scrollX:!0,aaSorting:[],language:{lengthMenu:o("Number of records _MENU_"),info:o("Showing _START_ to _END_ of _TOTAL_ entries"),paginate:{previous:"‹",next:"›"}},processing:!0,serverSide:!0,searching:!1,lengthMenu:[10,15,20,25,50],dom:'rt<"bottom"flp><"clear">',ajax:{url:r,dataSrc:"data",data:function(t){t.page=t.start/t.length+1,t.materials=$(".materials").val(),t.machine=$(".machine").val(),t.status=$(".status").val(),t.type=$(".Type").val()}},columns:[{data:"ID",defaultContent:"",title:"ID"},{data:"plan.Symbols",defaultContent:"",title:o("Symbols Plan"),render:function(t){if(t){var n=t.split("--");return"<p>"+n[0]+"</p><p>-"+n[1]+"-"+n[2]+"</p>"}return""}},{data:"product.Symbols",defaultContent:"",title:o("Product"),render:function(t){return"<p>"+t+"</p>"}},{data:"machine.Name",defaultContent:"",title:o("Machine")},{data:"Quantity_Export",defaultContent:"",title:o("Quantity")+" "+o("Export")+"(Kg)",render:function(t){return t?"<p>"+parseFloat(t)+"</p>":0}},{data:"Type",title:o("Type"),render:function(t,n){return 1==t?o("AGV"):2==t?o("Normal"):""}},{data:"Note",title:o("Note"),render:function(t){return o(t)}},{data:"user_updated.username",defaultContent:"",title:o("User Updated")},{data:"Time_Updated",defaultContent:"",title:o("Time Updated")},{data:"Status",title:o("Status"),render:function(t,n){return 0==t?'<p style="color:red">'+o("Dont Export")+"</p>":1==t?'<p style="color:blue">'+o("Are Export")+"("+o("Waiting for AGV")+")</p>":2==t?'<p style="color:blue">'+o("Are Export")+"("+o("AGV Shipping")+")</p>":'<p style="color:green">'+o("Success Export")+"</p>"}},{data:{id:"ID",status:"Status"},title:o("Action"),render:function(t){return 0==t.Status?'\n                    <button id="ex-'+t.ID+'" class="btn btn-success btn-export" >\n                    '+o("Export")+'\n                    </button>\n                    <button id="del-'+t.ID+'" class="btn btn-danger btn-delete" >\n                    '+o("Cancel")+"\n                    </button>\n                ":1==t.Status&&2==t.Type?'<button id="suc-'+t.ID+'" class="btn btn-success btn-success" >\n                    '+o("Success")+"\n                    </button>":""}}]});$("table").on("page.dt",(function(){console.log(a.page.info())})),$(".filter").on("click",(function(){a.ajax.reload()})),$(document).on("click",".btn-delete",(function(){var t=$(this).attr("id"),n=($(this).parent().parent().children("td").first().text(),$(this).closest("tr").find("td:eq(1)").text());$("#modalRequestCan").modal(),$("#nameDel").text(n),$("#idCan").val(t.split("-")[1])})),$(document).on("click",".btn-export",(function(){var t=$(this).attr("id"),n=$(this).closest("tr"),e=(n.find("td:eq(0)").html(),n.find("td:eq(2)").text()),i=n.find("td:eq(3)").text();$(this).parent().parent().children("td").first().text();$("#modalAddOrUpdate").modal(),$("#Machine").val(i),$("#Materials").val(e),$("#idex").val(t.split("-")[1])}));var u=0;socket.on("export-materials",(function(t){u++,$("#modal_alert_export").modal(),$("#alert").text("Có "+u+" NVL cần Xuất"),a.ajax.reload()})),socket.on("update-status-agv",(function(t){console.log(t),a.ajax.reload()}))})()})();
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./resources/js/lang/index.js":
+/*!************************************!*\
+  !*** ./resources/js/lang/index.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var lang = document.querySelector('html').getAttribute('lang');
+var translations = {};
+var requireModules = __webpack_require__("./resources/js/lang/translations sync \\.js$");
+requireModules.keys().forEach(function (modulePath) {
+  var key = modulePath.replace(/(^.\/)|(.js$)/g, '');
+  translations[key] = requireModules(modulePath)["default"];
+});
+var t = function t(text) {
+  return translations[lang][text] || text;
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (t);
+
+/***/ }),
+
+/***/ "./resources/js/lang/translations/en.js":
+/*!**********************************************!*\
+  !*** ./resources/js/lang/translations/en.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _vi__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vi */ "./resources/js/lang/translations/vi.js");
+
+var en = {};
+Object.keys(_vi__WEBPACK_IMPORTED_MODULE_0__["default"]).forEach(function (key) {
+  en[key] = key;
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (en);
+
+/***/ }),
+
+/***/ "./resources/js/lang/translations/ko.js":
+/*!**********************************************!*\
+  !*** ./resources/js/lang/translations/ko.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+
+/***/ }),
+
+/***/ "./resources/js/lang/translations/vi.js":
+/*!**********************************************!*\
+  !*** ./resources/js/lang/translations/vi.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var _NumberOfRecords_M;
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_NumberOfRecords_M = {
+  "Number of records _MENU_": "Số lượng bản ghi _MENU_",
+  "Showing _START_ to _END_ of _TOTAL_ entries": "Bản ghi từ _START_ đến _END_ của _TOTAL_ bản ghi",
+  "Name": "Tên",
+  "Symbols": "Mã",
+  "Type": "Loại",
+  "Note": "Ghi chú",
+  "User Created": "Người tạo",
+  "Time Created": "Thời gian tạo",
+  "User Updated": "Người cập nhật",
+  "Time Updated": "Thời gian cập nhật",
+  "Action": "Hành Động",
+  "Edit": "Sửa",
+  "Delete": "Xóa",
+  "Start Time": "Thời Gian Bắt Đầu",
+  "End Time": "Thời Gian Kết Thúc",
+  "Cycle Time": "Chu Kì Sản Xuất 1 Sản Phẩm ",
+  "Detail": "Chi Tiết",
+  "Month": "Tháng",
+  "Year": "Năm",
+  "Location Take Materials": "Vị Trí Lấy Hàng",
+  "Materials Return Location": "Vị Trí Trả Hàng",
+  "Destroy": "Hủy"
+}, _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Detail", "Chi Tiết"), "Success", "Hoàn Thành"), "Product", "Sản Phẩm"), "Machine", "Máy Sản Xuất"), "Dont Production", "Chưa Sản Xuất"), "Are Production", "Đang Sản Xuất"), "Success Production", "Hoàn Thành Sản Xuất"), "Status", "Trạng Thái"), "Export", "Xuất Kho"), "Materials", "Nguyên Vật Liệu"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Dont Export", "Chưa Xuất"), "Are Export", "Đang Xuất"), "Success Export", "Hoàn Thành Xuất"), "Stock Min", "Tồn Giới Hạn"), "Cavity", "Cavity"), "Mold", "Khuôn"), "Quantity Mold", "Số Lượng Khuôn"), "Quantity", "Số Lượng"), "Date", "Ngày"), "Unit", "Đơn Vị Tính"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Parking", "Đơn Vị Đóng Gói"), "History", "Lịch Sử"), "Return", "Khôi Phục"), "Update", "Cập Nhật"), "Delete", "Xóa"), "Processing", "Đang Thực Hiện"), "Enable", "Kích Hoạt"), "Disable", "Vô Hiệu Hóa"), "Part", "Bộ Phận"), "Time Start", "Thời Gian Bắt Đầu"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Time End", "Thời Gian Kết Thúc"), "Manager AGV", "Người Quản Lý AGV"), "Maintenance Time", "Thời Gian Bảo Trì"), "Maintenance Date", "Ngày Bảo Dưỡng"), "Warehouse", "Kho"), "Plan", "Kế Hoạch"), "Production", "Sản Xuất"), "Output", "Sản Lượng"), "End", "Kết Thúc"), "Error", "Lỗi"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Time Real Start", "Bắt Đầu Thực Tế"), "Time Real End", "Kết Thúc Thực Tế"), "Symbols Plan", "Mã Chỉ Thị"), "Infor", "Thông Tin"), "Normal", "Xuất Thường"), "Cancel", "Hủy"), "Confirm", "Xác nhận"), "Close", "Đóng"), "Start", "Bắt Đầu"), "User Name", "Tên Đăng Nhập"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "ENABLE", "Kích Hoạt"), "DISABLE", "Không Kích Hoạt"), "Action Name", "Kiểu Hành Động"), "INSERT", "Thêm Mới"), "Insert", "Thêm Mới"), "OEE", "Hiệu Suất Tổng Thể"), "Availability", "Khả Dụng"), "Performance", "Hiệu Suất"), "Quality", "Chất Lượng"), "shift", "ca"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Shift", "ca"), "day", "ngày"), "Description", "Chú Thích"), "Find AGV", "Tìm AGV"), "Role", "Vai Trò"), "Waiting for AGV", "Chờ AGV"), "AGV Shipping", "AGV Đang Chuyển Hàng"), "IsDelete", "Xóa"), "To", "Tới"), "Command", "Lệnh"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "INSERT_USER", "Thêm Mới Tài Khoản"), "INSERT_ROLE", "Thêm Mới Vai Trò"), "Update_User", "Cập Nhật Tài Khoản"), "Delete_Role", "Xóa Vai Trò"), "Command AGV Was Destroy", "Lệnh AGV đã bị hủy"), "Select machine", "Chọn máy sản xuất"), "Loading data", "Đang tải dữ liệu"), "Mold code", "Mã khuôn"), "Actual start time", "Bắt đầu thực tế"), "Cycle time", "Thời gian đóng mở khuôn"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Quantity NG", "Số lượng sản phẩm lỗi"), "Quantity NG of", "Số lượng sản phẩm lỗi của"), "OEE parameter chart", "Biểu đồ thông số hiệu suất OEE"), "Active timeline chart", "Biểu đồ thời gian hoạt động"), "minute", "phút"), "minutes", "phút"), "hour", "giờ"), "Machine stop logs", "Dừng máy"), "Defective products", "Sản phẩm lỗi"), "Statistical chart of OEE by machine", "Biểu đồ thống kê hiệu suất theo máy"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Statistical chart of OEE by day", "Biểu đồ thống kê hiệu suất theo ngày"), "View", "Xem"), "Rows per page", "Số lượng bản ghi"), "Error stop and no-error stop rate chart", "Biểu đồ tỷ lệ dừng lỗi và không lỗi"), "Machine error rate chart", "Biểu đồ tỷ lệ lỗi máy sản xuất"), "No-error stop rate chart", "Biểu đồ tỷ lệ dừng không lỗi"), "Machine stop rate chart due to quality", "Biểu đồ tỷ lệ dừng máy cho chất lượng"), "Statistics chart of machine time stop", "Biểu đồ thống kê thời gian dừng máy"), "Statistics chart of defective product", "Biểu đồ thống kê sản phẩm lỗi"), "Stop Time", "Thời Gian Dừng"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Error Code", "Mã Lỗi"), "Error Type", "Loại Lỗi"), "Quantity Error", "Số lượng lỗi"), "Iot disconnect", "Mất kết nối Iot"), "All machine", "Tất cả máy sản xuất"), "Quantity produced", "Số lượng đã sản xuất"), "Quantity produced of", "Số lượng đã sản xuất của"), "run", "Chạy"), "stopError", "Dừng do lỗi"), "stopNotError", "Dừng không lỗi"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "stop due to error", "Dừng do lỗi"), "stop not error", "Dừng không lỗi"), "stop due to quality", "Dừng do chất lượng"), "machine stop", "Dừng máy"), "products", "sản phẩm"), "Export excel", "Xuất excel"), "Duration", "Thời lượng"), "Total stop time", "Tổng thời gian dừng"), "Line", "Line sản xuất"), "Monitor", "Giám sát máy sản xuất"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Monitor Line", "Giám sát máy sản xuất"), "Data analysis", "Phân tích dữ liệu"), "Check all", "Chọn tất cả"), "Submit", "Nhập"), "Disconnected", "Máy tắt"), "RUNNING", "Máy chạy"), "ERROR", "Máy lỗi"), "STOP", "Máy dừng"));
+
+/***/ }),
+
+/***/ "./resources/js/lang/translations sync \\.js$":
+/*!*****************************************************************!*\
+  !*** ./resources/js/lang/translations/ sync nonrecursive \.js$ ***!
+  \*****************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var map = {
+	"./en.js": "./resources/js/lang/translations/en.js",
+	"./ko.js": "./resources/js/lang/translations/ko.js",
+	"./vi.js": "./resources/js/lang/translations/vi.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./resources/js/lang/translations sync \\.js$";
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+(() => {
+"use strict";
+/*!***********************************************************!*\
+  !*** ./resources/js/warehouse-system/export-materials.js ***!
+  \***********************************************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _lang__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../lang */ "./resources/js/lang/index.js");
+$('.select2').select2();
+
+var route = "".concat(window.location.origin, "/api/warehouse-system/export");
+var route_show = "".concat(window.location.origin, "/setting/setting-unit/show");
+console.log(route);
+var table = $('table').DataTable({
+  scrollX: true,
+  aaSorting: [],
+  language: {
+    lengthMenu: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Number of records _MENU_'),
+    info: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Showing _START_ to _END_ of _TOTAL_ entries'),
+    paginate: {
+      previous: '‹',
+      next: '›'
+    }
+  },
+  processing: true,
+  serverSide: true,
+  searching: false,
+  lengthMenu: [10, 15, 20, 25, 50],
+  dom: 'rt<"bottom"flp><"clear">',
+  ajax: {
+    url: route,
+    dataSrc: 'data',
+    data: function data(d) {
+      d.page = d.start / d.length + 1;
+      d.materials = $('.materials').val();
+      d.machine = $('.machine').val();
+      d.status = $('.status').val();
+      d.type = $('.Type').val();
+    }
+  },
+  columns: [{
+    data: 'ID',
+    defaultContent: '',
+    title: 'ID'
+  }, {
+    data: 'plan.Symbols',
+    defaultContent: '',
+    title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Symbols Plan'),
+    render: function render(data) {
+      if (data) {
+        var explode = data.split("--");
+        // console.log(explode);
+        return "<p>" + explode[0] + "</p><p>-" + explode[1] + "-" + explode[2] + "</p>";
+      } else {
+        return "";
+      }
+    }
+  }, {
+    data: 'product.Symbols',
+    defaultContent: '',
+    title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Product'),
+    render: function render(data) {
+      // console.log(data)
+      return "<p>" + data + "</p>";
+    }
+  }, {
+    data: 'machine.Name',
+    defaultContent: '',
+    title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Machine')
+  }, {
+    data: 'Quantity_Export',
+    defaultContent: '',
+    title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Quantity') + ' ' + (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Export') + '(Kg)',
+    render: function render(data) {
+      // console.log(data)
+      if (data) {
+        return "<p>" + parseFloat(data) + "</p>";
+      } else {
+        return 0;
+      }
+    }
+  }, {
+    data: 'Type',
+    title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Type'),
+    render: function render(data, status) {
+      if (data == 1) {
+        return (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('AGV');
+      } else if (data == 2) {
+        return (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Normal');
+      } else {
+        return "";
+      }
+    }
+  }, {
+    data: 'Note',
+    title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Note'),
+    render: function render(data) {
+      return (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])(data);
+    }
+  }, {
+    data: 'user_updated.username',
+    defaultContent: '',
+    title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('User Updated')
+  }, {
+    data: 'Time_Updated',
+    defaultContent: '',
+    title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Time Updated')
+  }, {
+    data: 'Status',
+    title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Status'),
+    render: function render(data, status) {
+      if (data == 0) {
+        return "<p style=\"color:red\">" + (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Dont Export') + "</p>";
+      } else if (data == 1) {
+        return "<p style=\"color:blue\">" + (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Are Export') + '(' + (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Waiting for AGV') + ')' + "</p>";
+      } else if (data == 2) {
+        return "<p style=\"color:blue\">" + (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Are Export') + '(' + (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('AGV Shipping') + ')' + "</p>";
+      } else {
+        return "<p style=\"color:green\">" + (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Success Export') + "</p>";
+      }
+    }
+  }, {
+    data: {
+      id: 'ID',
+      status: 'Status'
+    },
+    title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Action'),
+    render: function render(data) {
+      if (data.Status == 0) {
+        return "\n                    <button id=\"ex-" + data.ID + "\" class=\"btn btn-success btn-export\" >\n                    " + (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Export') + "\n                    </button>\n                    <button id=\"del-" + data.ID + "\" class=\"btn btn-danger btn-delete\" >\n                    " + (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Cancel') + "\n                    </button>\n                ";
+      } else if (data.Status == 1 && data.Type == 2) {
+        return "<button id=\"suc-" + data.ID + "\" class=\"btn btn-success btn-success\" >\n                    " + (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Success') + "\n                    </button>";
+      } else {
+        return "";
+      }
+    }
+  }]
+});
+$('table').on('page.dt', function () {
+  console.log(table.page.info());
+});
+$('.filter').on('click', function () {
+  table.ajax.reload();
+});
+$(document).on('click', '.btn-delete', function () {
+  var id = $(this).attr('id');
+  var name = $(this).parent().parent().children('td').first().text();
+  var currentRow = $(this).closest("tr");
+  var col1 = currentRow.find("td:eq(1)").text();
+  $('#modalRequestCan').modal();
+  $('#nameDel').text(col1);
+  $('#idCan').val(id.split('-')[1]);
+});
+$(document).on('click', '.btn-export', function () {
+  var id = $(this).attr('id');
+  var currentRow = $(this).closest("tr");
+  var col1 = currentRow.find("td:eq(0)").html();
+  var col2 = currentRow.find("td:eq(2)").text();
+  var col3 = currentRow.find("td:eq(3)").text();
+  var name = $(this).parent().parent().children('td').first().text();
+  $('#modalAddOrUpdate').modal();
+  $('#Machine').val(col3);
+  $('#Materials').val(col2);
+  $('#idex').val(id.split('-')[1]);
+});
+var mater = 0;
+socket.on('export-materials', function (message) {
+  mater++;
+  $('#modal_alert_export').modal();
+  $('#alert').text('Có ' + mater + ' NVL cần Xuất');
+  table.ajax.reload();
+});
+socket.on('update-status-agv', function (message) {
+  console.log(message);
+  table.ajax.reload();
+});
+})();
+
+/******/ })()
+;

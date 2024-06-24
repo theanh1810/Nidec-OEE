@@ -11,7 +11,7 @@ const moment = require('moment')
 const getProductionLog = require("../../business/productionLog/getProductionLog");
 const getOee = require("../../business/oee/getOee");
 const getPlannedTime = require("../../business/getPlannedTime");
-const getFullRuntime = require("../../business/getFullRunTime");
+const getFullRuntime = require("../../business/getFullRuntime");
 const getRuntimeHistory = require("../../business/runtimeHistory/getRuntimeHistory");
 const caculateOee = require("../../business/oee/calculateOee");
 const createProductionLog = require("../../business/productionLog/createProductionLog");
@@ -69,6 +69,7 @@ module.exports = {
                 };
                 const productionLogs = await getProductionLog(machineId, planIsRunning.ID);
                 const runtimes = await getRuntimeHistory(machineId, 1, planIsRunning.ID);
+                const runtimeHistories = await getRuntimeHistory(machineId);
 
                 io.emit(`plan-${planIsRunning.ID}`, {
                     quantity: planIsRunning.Quantity_Production,
@@ -118,6 +119,10 @@ module.exports = {
                     productionLogs.push(log);
                 }
 
+                const fullRuntimes = runtimeHistories.filter(
+                    (runtime) => runtime.IsRunning == 1
+                );
+
                 for (const productionLog of productionLogs) {
                     paramsDay.total += Number(productionLog.Total);
                     paramsDay.ng += Number(productionLog.NG);
@@ -142,12 +147,21 @@ module.exports = {
                     }
                 }
 
+                if (fullRuntimes.length) {
+                    for (const runtime of fullRuntimes) {
+                        paramsDay.fullRunTime += Number(runtime.Duration);
+                        if (runtime.Master_Shift_ID == shift.ID) {
+                            paramsShift.fullRunTime += Number(runtime.Duration);
+                        }
+                    }
+                }
+
                 // paramsDay.fullRunTime = getFullRuntime(planIsRunning.Time_Real_Start);
                 // paramsShift.fullRunTime = getFullRuntime(planIsRunning.Time_Real_Start);
 
                 paramsDay.plannedTime = await getPlannedTime("day")(current);
                 paramsShift.plannedTime = await getPlannedTime("shift")(current);
-                console.log('paramsDay:',paramsDay);
+                console.log('paramsDay:', paramsDay);
                 const resultOeeDay = caculateOee.call(paramsDay);
                 const resultOeeShift = caculateOee.call(paramsShift);
 

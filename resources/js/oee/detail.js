@@ -5,6 +5,7 @@ import getConnection from './socket'
 import t from '../lang'
 import useInitMachine from './api/useInitMachine'
 import useProduction from './api/useProduction'
+import { MinusSquareFilled } from '@ant-design/icons'
 const ProductionDetail = lazy(() => import('./components/ProductionDetail'))
 // const OeeChart = lazy(() => import('./components/OeeChart'))
 const TimelineChart = lazy(() => import('./components/TimelineChart'))
@@ -28,7 +29,6 @@ const Detail = () => {
 
     const handleSocket = (msg) => {
         const { value: mode } = selectedViewOption
-
         if(mode in msg) {
             const { Oee, A, P, Q } = msg[mode]
             setOee(Oee)

@@ -1,2 +1,7295 @@
-/*! For license information please see detail.js.LICENSE.txt */
-(()=>{var t={92838:(t,e,n)=>{"use strict";n.r(e),n.d(e,{default:()=>o});var r=n(15112),i={};Object.keys(r.default).forEach((function(t){i[t]=t}));const o=i},57775:(t,e,n)=>{"use strict";n.r(e),n.d(e,{default:()=>r});const r={}},15112:(t,e,n)=>{"use strict";var r;function i(t){return i="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},i(t)}function o(t,e,n){return(e=function(t){var e=function(t,e){if("object"!=i(t)||!t)return t;var n=t[Symbol.toPrimitive];if(void 0!==n){var r=n.call(t,e||"default");if("object"!=i(r))return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===e?String:Number)(t)}(t,"string");return"symbol"==i(e)?e:e+""}(e))in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}n.r(e),n.d(e,{default:()=>s});const s=(o(o(o(o(o(o(o(o(o(o(r={"Number of records _MENU_":"Số lượng bản ghi _MENU_","Showing _START_ to _END_ of _TOTAL_ entries":"Bản ghi từ _START_ đến _END_ của _TOTAL_ bản ghi",Name:"Tên",Symbols:"Mã",Type:"Loại",Note:"Ghi chú","User Created":"Người tạo","Time Created":"Thời gian tạo","User Updated":"Người cập nhật","Time Updated":"Thời gian cập nhật",Action:"Hành Động",Edit:"Sửa",Delete:"Xóa","Start Time":"Thời Gian Bắt Đầu","End Time":"Thời Gian Kết Thúc","Cycle Time":"Chu Kì Sản Xuất 1 Sản Phẩm ",Detail:"Chi Tiết",Month:"Tháng",Year:"Năm","Location Take Materials":"Vị Trí Lấy Hàng","Materials Return Location":"Vị Trí Trả Hàng",Destroy:"Hủy"},"Detail","Chi Tiết"),"Success","Hoàn Thành"),"Product","Sản Phẩm"),"Machine","Máy Sản Xuất"),"Dont Production","Chưa Sản Xuất"),"Are Production","Đang Sản Xuất"),"Success Production","Hoàn Thành Sản Xuất"),"Status","Trạng Thái"),"Export","Xuất Kho"),"Materials","Nguyên Vật Liệu"),o(o(o(o(o(o(o(o(o(o(r,"Dont Export","Chưa Xuất"),"Are Export","Đang Xuất"),"Success Export","Hoàn Thành Xuất"),"Stock Min","Tồn Giới Hạn"),"Cavity","Cavity"),"Mold","Khuôn"),"Quantity Mold","Số Lượng Khuôn"),"Quantity","Số Lượng"),"Date","Ngày"),"Unit","Đơn Vị Tính"),o(o(o(o(o(o(o(o(o(o(r,"Parking","Đơn Vị Đóng Gói"),"History","Lịch Sử"),"Return","Khôi Phục"),"Update","Cập Nhật"),"Delete","Xóa"),"Processing","Đang Thực Hiện"),"Enable","Kích Hoạt"),"Disable","Vô Hiệu Hóa"),"Part","Bộ Phận"),"Time Start","Thời Gian Bắt Đầu"),o(o(o(o(o(o(o(o(o(o(r,"Time End","Thời Gian Kết Thúc"),"Manager AGV","Người Quản Lý AGV"),"Maintenance Time","Thời Gian Bảo Trì"),"Maintenance Date","Ngày Bảo Dưỡng"),"Warehouse","Kho"),"Plan","Kế Hoạch"),"Production","Sản Xuất"),"Output","Sản Lượng"),"End","Kết Thúc"),"Error","Lỗi"),o(o(o(o(o(o(o(o(o(o(r,"Time Real Start","Bắt Đầu Thực Tế"),"Time Real End","Kết Thúc Thực Tế"),"Symbols Plan","Mã Chỉ Thị"),"Infor","Thông Tin"),"Normal","Xuất Thường"),"Cancel","Hủy"),"Confirm","Xác nhận"),"Close","Đóng"),"Start","Bắt Đầu"),"User Name","Tên Đăng Nhập"),o(o(o(o(o(o(o(o(o(o(r,"ENABLE","Kích Hoạt"),"DISABLE","Không Kích Hoạt"),"Action Name","Kiểu Hành Động"),"INSERT","Thêm Mới"),"Insert","Thêm Mới"),"OEE","Hiệu Suất Tổng Thể"),"Availability","Khả Dụng"),"Performance","Hiệu Suất"),"Quality","Chất Lượng"),"shift","ca"),o(o(o(o(o(o(o(o(o(o(r,"Shift","ca"),"day","ngày"),"Description","Chú Thích"),"Find AGV","Tìm AGV"),"Role","Vai Trò"),"Waiting for AGV","Chờ AGV"),"AGV Shipping","AGV Đang Chuyển Hàng"),"IsDelete","Xóa"),"To","Tới"),"Command","Lệnh"),o(o(o(o(o(o(o(o(o(o(r,"INSERT_USER","Thêm Mới Tài Khoản"),"INSERT_ROLE","Thêm Mới Vai Trò"),"Update_User","Cập Nhật Tài Khoản"),"Delete_Role","Xóa Vai Trò"),"Command AGV Was Destroy","Lệnh AGV đã bị hủy"),"Select machine","Chọn máy sản xuất"),"Loading data","Đang tải dữ liệu"),"Mold code","Mã khuôn"),"Actual start time","Bắt đầu thực tế"),"Cycle time","Thời gian đóng mở khuôn"),o(o(o(o(o(o(o(o(o(o(r,"Quantity NG","Số lượng sản phẩm lỗi"),"Quantity NG of","Số lượng sản phẩm lỗi của"),"OEE parameter chart","Biểu đồ thông số hiệu suất OEE"),"Active timeline chart","Biểu đồ thời gian hoạt động"),"minute","phút"),"minutes","phút"),"hour","giờ"),"Machine stop logs","Dừng máy"),"Defective products","Sản phẩm lỗi"),"Statistical chart of OEE by machine","Biểu đồ thống kê hiệu suất theo máy"),o(o(o(o(o(o(o(o(o(o(r,"Statistical chart of OEE by day","Biểu đồ thống kê hiệu suất theo ngày"),"View","Xem"),"Rows per page","Số lượng bản ghi"),"Error stop and no-error stop rate chart","Biểu đồ tỷ lệ dừng lỗi và không lỗi"),"Machine error rate chart","Biểu đồ tỷ lệ lỗi máy sản xuất"),"No-error stop rate chart","Biểu đồ tỷ lệ dừng không lỗi"),"Machine stop rate chart due to quality","Biểu đồ tỷ lệ dừng máy cho chất lượng"),"Statistics chart of machine time stop","Biểu đồ thống kê thời gian dừng máy"),"Statistics chart of defective product","Biểu đồ thống kê sản phẩm lỗi"),"Stop Time","Thời Gian Dừng"),o(o(o(o(o(o(o(o(o(o(r,"Error Code","Mã Lỗi"),"Error Type","Loại Lỗi"),"Quantity Error","Số lượng lỗi"),"Iot disconnect","Mất kết nối Iot"),"All machine","Tất cả máy sản xuất"),"Quantity produced","Số lượng đã sản xuất"),"Quantity produced of","Số lượng đã sản xuất của"),"run","Chạy"),"stopError","Dừng do lỗi"),"stopNotError","Dừng không lỗi"),o(o(o(o(o(o(o(o(o(o(r,"stop due to error","Dừng do lỗi"),"stop not error","Dừng không lỗi"),"stop due to quality","Dừng do chất lượng"),"machine stop","Dừng máy"),"products","sản phẩm"),"Export excel","Xuất excel"),"Duration","Thời lượng"),"Total stop time","Tổng thời gian dừng"),"Line","Line sản xuất"),"Monitor","Giám sát máy sản xuất"),o(o(o(o(o(o(o(o(r,"Monitor Line","Giám sát máy sản xuất"),"Data analysis","Phân tích dữ liệu"),"Check all","Chọn tất cả"),"Submit","Nhập"),"Disconnected","Máy tắt"),"RUNNING","Máy chạy"),"ERROR","Máy lỗi"),"STOP","Máy dừng"))},67526:(t,e)=>{"use strict";e.byteLength=function(t){var e=a(t),n=e[0],r=e[1];return 3*(n+r)/4-r},e.toByteArray=function(t){var e,n,o=a(t),s=o[0],h=o[1],c=new i(function(t,e,n){return 3*(e+n)/4-n}(0,s,h)),u=0,l=h>0?s-4:s;for(n=0;n<l;n+=4)e=r[t.charCodeAt(n)]<<18|r[t.charCodeAt(n+1)]<<12|r[t.charCodeAt(n+2)]<<6|r[t.charCodeAt(n+3)],c[u++]=e>>16&255,c[u++]=e>>8&255,c[u++]=255&e;2===h&&(e=r[t.charCodeAt(n)]<<2|r[t.charCodeAt(n+1)]>>4,c[u++]=255&e);1===h&&(e=r[t.charCodeAt(n)]<<10|r[t.charCodeAt(n+1)]<<4|r[t.charCodeAt(n+2)]>>2,c[u++]=e>>8&255,c[u++]=255&e);return c},e.fromByteArray=function(t){for(var e,r=t.length,i=r%3,o=[],s=16383,a=0,c=r-i;a<c;a+=s)o.push(h(t,a,a+s>c?c:a+s));1===i?(e=t[r-1],o.push(n[e>>2]+n[e<<4&63]+"==")):2===i&&(e=(t[r-2]<<8)+t[r-1],o.push(n[e>>10]+n[e>>4&63]+n[e<<2&63]+"="));return o.join("")};for(var n=[],r=[],i="undefined"!=typeof Uint8Array?Uint8Array:Array,o="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",s=0;s<64;++s)n[s]=o[s],r[o.charCodeAt(s)]=s;function a(t){var e=t.length;if(e%4>0)throw new Error("Invalid string. Length must be a multiple of 4");var n=t.indexOf("=");return-1===n&&(n=e),[n,n===e?0:4-n%4]}function h(t,e,r){for(var i,o,s=[],a=e;a<r;a+=3)i=(t[a]<<16&16711680)+(t[a+1]<<8&65280)+(255&t[a+2]),s.push(n[(o=i)>>18&63]+n[o>>12&63]+n[o>>6&63]+n[63&o]);return s.join("")}r["-".charCodeAt(0)]=62,r["_".charCodeAt(0)]=63},48287:(t,e,n)=>{"use strict";var r=n(67526),i=n(251),o=n(64634);function s(){return h.TYPED_ARRAY_SUPPORT?2147483647:1073741823}function a(t,e){if(s()<e)throw new RangeError("Invalid typed array length");return h.TYPED_ARRAY_SUPPORT?(t=new Uint8Array(e)).__proto__=h.prototype:(null===t&&(t=new h(e)),t.length=e),t}function h(t,e,n){if(!(h.TYPED_ARRAY_SUPPORT||this instanceof h))return new h(t,e,n);if("number"==typeof t){if("string"==typeof e)throw new Error("If encoding is specified then the first argument must be a string");return l(this,t)}return c(this,t,e,n)}function c(t,e,n,r){if("number"==typeof e)throw new TypeError('"value" argument must not be a number');return"undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer?function(t,e,n,r){if(e.byteLength,n<0||e.byteLength<n)throw new RangeError("'offset' is out of bounds");if(e.byteLength<n+(r||0))throw new RangeError("'length' is out of bounds");e=void 0===n&&void 0===r?new Uint8Array(e):void 0===r?new Uint8Array(e,n):new Uint8Array(e,n,r);h.TYPED_ARRAY_SUPPORT?(t=e).__proto__=h.prototype:t=f(t,e);return t}(t,e,n,r):"string"==typeof e?function(t,e,n){"string"==typeof n&&""!==n||(n="utf8");if(!h.isEncoding(n))throw new TypeError('"encoding" must be a valid string encoding');var r=0|d(e,n);t=a(t,r);var i=t.write(e,n);i!==r&&(t=t.slice(0,i));return t}(t,e,n):function(t,e){if(h.isBuffer(e)){var n=0|p(e.length);return 0===(t=a(t,n)).length||e.copy(t,0,0,n),t}if(e){if("undefined"!=typeof ArrayBuffer&&e.buffer instanceof ArrayBuffer||"length"in e)return"number"!=typeof e.length||(r=e.length)!=r?a(t,0):f(t,e);if("Buffer"===e.type&&o(e.data))return f(t,e.data)}var r;throw new TypeError("First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.")}(t,e)}function u(t){if("number"!=typeof t)throw new TypeError('"size" argument must be a number');if(t<0)throw new RangeError('"size" argument must not be negative')}function l(t,e){if(u(e),t=a(t,e<0?0:0|p(e)),!h.TYPED_ARRAY_SUPPORT)for(var n=0;n<e;++n)t[n]=0;return t}function f(t,e){var n=e.length<0?0:0|p(e.length);t=a(t,n);for(var r=0;r<n;r+=1)t[r]=255&e[r];return t}function p(t){if(t>=s())throw new RangeError("Attempt to allocate Buffer larger than maximum size: 0x"+s().toString(16)+" bytes");return 0|t}function d(t,e){if(h.isBuffer(t))return t.length;if("undefined"!=typeof ArrayBuffer&&"function"==typeof ArrayBuffer.isView&&(ArrayBuffer.isView(t)||t instanceof ArrayBuffer))return t.byteLength;"string"!=typeof t&&(t=""+t);var n=t.length;if(0===n)return 0;for(var r=!1;;)switch(e){case"ascii":case"latin1":case"binary":return n;case"utf8":case"utf-8":case void 0:return q(t).length;case"ucs2":case"ucs-2":case"utf16le":case"utf-16le":return 2*n;case"hex":return n>>>1;case"base64":return Y(t).length;default:if(r)return q(t).length;e=(""+e).toLowerCase(),r=!0}}function g(t,e,n){var r=!1;if((void 0===e||e<0)&&(e=0),e>this.length)return"";if((void 0===n||n>this.length)&&(n=this.length),n<=0)return"";if((n>>>=0)<=(e>>>=0))return"";for(t||(t="utf8");;)switch(t){case"hex":return B(this,e,n);case"utf8":case"utf-8":return k(this,e,n);case"ascii":return C(this,e,n);case"latin1":case"binary":return O(this,e,n);case"base64":return S(this,e,n);case"ucs2":case"ucs-2":case"utf16le":case"utf-16le":return P(this,e,n);default:if(r)throw new TypeError("Unknown encoding: "+t);t=(t+"").toLowerCase(),r=!0}}function y(t,e,n){var r=t[e];t[e]=t[n],t[n]=r}function m(t,e,n,r,i){if(0===t.length)return-1;if("string"==typeof n?(r=n,n=0):n>2147483647?n=2147483647:n<-2147483648&&(n=-2147483648),n=+n,isNaN(n)&&(n=i?0:t.length-1),n<0&&(n=t.length+n),n>=t.length){if(i)return-1;n=t.length-1}else if(n<0){if(!i)return-1;n=0}if("string"==typeof e&&(e=h.from(e,r)),h.isBuffer(e))return 0===e.length?-1:b(t,e,n,r,i);if("number"==typeof e)return e&=255,h.TYPED_ARRAY_SUPPORT&&"function"==typeof Uint8Array.prototype.indexOf?i?Uint8Array.prototype.indexOf.call(t,e,n):Uint8Array.prototype.lastIndexOf.call(t,e,n):b(t,[e],n,r,i);throw new TypeError("val must be string, number or Buffer")}function b(t,e,n,r,i){var o,s=1,a=t.length,h=e.length;if(void 0!==r&&("ucs2"===(r=String(r).toLowerCase())||"ucs-2"===r||"utf16le"===r||"utf-16le"===r)){if(t.length<2||e.length<2)return-1;s=2,a/=2,h/=2,n/=2}function c(t,e){return 1===s?t[e]:t.readUInt16BE(e*s)}if(i){var u=-1;for(o=n;o<a;o++)if(c(t,o)===c(e,-1===u?0:o-u)){if(-1===u&&(u=o),o-u+1===h)return u*s}else-1!==u&&(o-=o-u),u=-1}else for(n+h>a&&(n=a-h),o=n;o>=0;o--){for(var l=!0,f=0;f<h;f++)if(c(t,o+f)!==c(e,f)){l=!1;break}if(l)return o}return-1}function v(t,e,n,r){n=Number(n)||0;var i=t.length-n;r?(r=Number(r))>i&&(r=i):r=i;var o=e.length;if(o%2!=0)throw new TypeError("Invalid hex string");r>o/2&&(r=o/2);for(var s=0;s<r;++s){var a=parseInt(e.substr(2*s,2),16);if(isNaN(a))return s;t[n+s]=a}return s}function w(t,e,n,r){return V(q(e,t.length-n),t,n,r)}function _(t,e,n,r){return V(function(t){for(var e=[],n=0;n<t.length;++n)e.push(255&t.charCodeAt(n));return e}(e),t,n,r)}function E(t,e,n,r){return _(t,e,n,r)}function T(t,e,n,r){return V(Y(e),t,n,r)}function A(t,e,n,r){return V(function(t,e){for(var n,r,i,o=[],s=0;s<t.length&&!((e-=2)<0);++s)r=(n=t.charCodeAt(s))>>8,i=n%256,o.push(i),o.push(r);return o}(e,t.length-n),t,n,r)}function S(t,e,n){return 0===e&&n===t.length?r.fromByteArray(t):r.fromByteArray(t.slice(e,n))}function k(t,e,n){n=Math.min(t.length,n);for(var r=[],i=e;i<n;){var o,s,a,h,c=t[i],u=null,l=c>239?4:c>223?3:c>191?2:1;if(i+l<=n)switch(l){case 1:c<128&&(u=c);break;case 2:128==(192&(o=t[i+1]))&&(h=(31&c)<<6|63&o)>127&&(u=h);break;case 3:o=t[i+1],s=t[i+2],128==(192&o)&&128==(192&s)&&(h=(15&c)<<12|(63&o)<<6|63&s)>2047&&(h<55296||h>57343)&&(u=h);break;case 4:o=t[i+1],s=t[i+2],a=t[i+3],128==(192&o)&&128==(192&s)&&128==(192&a)&&(h=(15&c)<<18|(63&o)<<12|(63&s)<<6|63&a)>65535&&h<1114112&&(u=h)}null===u?(u=65533,l=1):u>65535&&(u-=65536,r.push(u>>>10&1023|55296),u=56320|1023&u),r.push(u),i+=l}return function(t){var e=t.length;if(e<=R)return String.fromCharCode.apply(String,t);var n="",r=0;for(;r<e;)n+=String.fromCharCode.apply(String,t.slice(r,r+=R));return n}(r)}e.hp=h,e.IS=50,h.TYPED_ARRAY_SUPPORT=void 0!==n.g.TYPED_ARRAY_SUPPORT?n.g.TYPED_ARRAY_SUPPORT:function(){try{var t=new Uint8Array(1);return t.__proto__={__proto__:Uint8Array.prototype,foo:function(){return 42}},42===t.foo()&&"function"==typeof t.subarray&&0===t.subarray(1,1).byteLength}catch(t){return!1}}(),s(),h.poolSize=8192,h._augment=function(t){return t.__proto__=h.prototype,t},h.from=function(t,e,n){return c(null,t,e,n)},h.TYPED_ARRAY_SUPPORT&&(h.prototype.__proto__=Uint8Array.prototype,h.__proto__=Uint8Array,"undefined"!=typeof Symbol&&Symbol.species&&h[Symbol.species]===h&&Object.defineProperty(h,Symbol.species,{value:null,configurable:!0})),h.alloc=function(t,e,n){return function(t,e,n,r){return u(e),e<=0?a(t,e):void 0!==n?"string"==typeof r?a(t,e).fill(n,r):a(t,e).fill(n):a(t,e)}(null,t,e,n)},h.allocUnsafe=function(t){return l(null,t)},h.allocUnsafeSlow=function(t){return l(null,t)},h.isBuffer=function(t){return!(null==t||!t._isBuffer)},h.compare=function(t,e){if(!h.isBuffer(t)||!h.isBuffer(e))throw new TypeError("Arguments must be Buffers");if(t===e)return 0;for(var n=t.length,r=e.length,i=0,o=Math.min(n,r);i<o;++i)if(t[i]!==e[i]){n=t[i],r=e[i];break}return n<r?-1:r<n?1:0},h.isEncoding=function(t){switch(String(t).toLowerCase()){case"hex":case"utf8":case"utf-8":case"ascii":case"latin1":case"binary":case"base64":case"ucs2":case"ucs-2":case"utf16le":case"utf-16le":return!0;default:return!1}},h.concat=function(t,e){if(!o(t))throw new TypeError('"list" argument must be an Array of Buffers');if(0===t.length)return h.alloc(0);var n;if(void 0===e)for(e=0,n=0;n<t.length;++n)e+=t[n].length;var r=h.allocUnsafe(e),i=0;for(n=0;n<t.length;++n){var s=t[n];if(!h.isBuffer(s))throw new TypeError('"list" argument must be an Array of Buffers');s.copy(r,i),i+=s.length}return r},h.byteLength=d,h.prototype._isBuffer=!0,h.prototype.swap16=function(){var t=this.length;if(t%2!=0)throw new RangeError("Buffer size must be a multiple of 16-bits");for(var e=0;e<t;e+=2)y(this,e,e+1);return this},h.prototype.swap32=function(){var t=this.length;if(t%4!=0)throw new RangeError("Buffer size must be a multiple of 32-bits");for(var e=0;e<t;e+=4)y(this,e,e+3),y(this,e+1,e+2);return this},h.prototype.swap64=function(){var t=this.length;if(t%8!=0)throw new RangeError("Buffer size must be a multiple of 64-bits");for(var e=0;e<t;e+=8)y(this,e,e+7),y(this,e+1,e+6),y(this,e+2,e+5),y(this,e+3,e+4);return this},h.prototype.toString=function(){var t=0|this.length;return 0===t?"":0===arguments.length?k(this,0,t):g.apply(this,arguments)},h.prototype.equals=function(t){if(!h.isBuffer(t))throw new TypeError("Argument must be a Buffer");return this===t||0===h.compare(this,t)},h.prototype.inspect=function(){var t="",n=e.IS;return this.length>0&&(t=this.toString("hex",0,n).match(/.{2}/g).join(" "),this.length>n&&(t+=" ... ")),"<Buffer "+t+">"},h.prototype.compare=function(t,e,n,r,i){if(!h.isBuffer(t))throw new TypeError("Argument must be a Buffer");if(void 0===e&&(e=0),void 0===n&&(n=t?t.length:0),void 0===r&&(r=0),void 0===i&&(i=this.length),e<0||n>t.length||r<0||i>this.length)throw new RangeError("out of range index");if(r>=i&&e>=n)return 0;if(r>=i)return-1;if(e>=n)return 1;if(this===t)return 0;for(var o=(i>>>=0)-(r>>>=0),s=(n>>>=0)-(e>>>=0),a=Math.min(o,s),c=this.slice(r,i),u=t.slice(e,n),l=0;l<a;++l)if(c[l]!==u[l]){o=c[l],s=u[l];break}return o<s?-1:s<o?1:0},h.prototype.includes=function(t,e,n){return-1!==this.indexOf(t,e,n)},h.prototype.indexOf=function(t,e,n){return m(this,t,e,n,!0)},h.prototype.lastIndexOf=function(t,e,n){return m(this,t,e,n,!1)},h.prototype.write=function(t,e,n,r){if(void 0===e)r="utf8",n=this.length,e=0;else if(void 0===n&&"string"==typeof e)r=e,n=this.length,e=0;else{if(!isFinite(e))throw new Error("Buffer.write(string, encoding, offset[, length]) is no longer supported");e|=0,isFinite(n)?(n|=0,void 0===r&&(r="utf8")):(r=n,n=void 0)}var i=this.length-e;if((void 0===n||n>i)&&(n=i),t.length>0&&(n<0||e<0)||e>this.length)throw new RangeError("Attempt to write outside buffer bounds");r||(r="utf8");for(var o=!1;;)switch(r){case"hex":return v(this,t,e,n);case"utf8":case"utf-8":return w(this,t,e,n);case"ascii":return _(this,t,e,n);case"latin1":case"binary":return E(this,t,e,n);case"base64":return T(this,t,e,n);case"ucs2":case"ucs-2":case"utf16le":case"utf-16le":return A(this,t,e,n);default:if(o)throw new TypeError("Unknown encoding: "+r);r=(""+r).toLowerCase(),o=!0}},h.prototype.toJSON=function(){return{type:"Buffer",data:Array.prototype.slice.call(this._arr||this,0)}};var R=4096;function C(t,e,n){var r="";n=Math.min(t.length,n);for(var i=e;i<n;++i)r+=String.fromCharCode(127&t[i]);return r}function O(t,e,n){var r="";n=Math.min(t.length,n);for(var i=e;i<n;++i)r+=String.fromCharCode(t[i]);return r}function B(t,e,n){var r=t.length;(!e||e<0)&&(e=0),(!n||n<0||n>r)&&(n=r);for(var i="",o=e;o<n;++o)i+=j(t[o]);return i}function P(t,e,n){for(var r=t.slice(e,n),i="",o=0;o<r.length;o+=2)i+=String.fromCharCode(r[o]+256*r[o+1]);return i}function N(t,e,n){if(t%1!=0||t<0)throw new RangeError("offset is not uint");if(t+e>n)throw new RangeError("Trying to access beyond buffer length")}function x(t,e,n,r,i,o){if(!h.isBuffer(t))throw new TypeError('"buffer" argument must be a Buffer instance');if(e>i||e<o)throw new RangeError('"value" argument is out of bounds');if(n+r>t.length)throw new RangeError("Index out of range")}function D(t,e,n,r){e<0&&(e=65535+e+1);for(var i=0,o=Math.min(t.length-n,2);i<o;++i)t[n+i]=(e&255<<8*(r?i:1-i))>>>8*(r?i:1-i)}function L(t,e,n,r){e<0&&(e=4294967295+e+1);for(var i=0,o=Math.min(t.length-n,4);i<o;++i)t[n+i]=e>>>8*(r?i:3-i)&255}function U(t,e,n,r,i,o){if(n+r>t.length)throw new RangeError("Index out of range");if(n<0)throw new RangeError("Index out of range")}function M(t,e,n,r,o){return o||U(t,0,n,4),i.write(t,e,n,r,23,4),n+4}function I(t,e,n,r,o){return o||U(t,0,n,8),i.write(t,e,n,r,52,8),n+8}h.prototype.slice=function(t,e){var n,r=this.length;if((t=~~t)<0?(t+=r)<0&&(t=0):t>r&&(t=r),(e=void 0===e?r:~~e)<0?(e+=r)<0&&(e=0):e>r&&(e=r),e<t&&(e=t),h.TYPED_ARRAY_SUPPORT)(n=this.subarray(t,e)).__proto__=h.prototype;else{var i=e-t;n=new h(i,void 0);for(var o=0;o<i;++o)n[o]=this[o+t]}return n},h.prototype.readUIntLE=function(t,e,n){t|=0,e|=0,n||N(t,e,this.length);for(var r=this[t],i=1,o=0;++o<e&&(i*=256);)r+=this[t+o]*i;return r},h.prototype.readUIntBE=function(t,e,n){t|=0,e|=0,n||N(t,e,this.length);for(var r=this[t+--e],i=1;e>0&&(i*=256);)r+=this[t+--e]*i;return r},h.prototype.readUInt8=function(t,e){return e||N(t,1,this.length),this[t]},h.prototype.readUInt16LE=function(t,e){return e||N(t,2,this.length),this[t]|this[t+1]<<8},h.prototype.readUInt16BE=function(t,e){return e||N(t,2,this.length),this[t]<<8|this[t+1]},h.prototype.readUInt32LE=function(t,e){return e||N(t,4,this.length),(this[t]|this[t+1]<<8|this[t+2]<<16)+16777216*this[t+3]},h.prototype.readUInt32BE=function(t,e){return e||N(t,4,this.length),16777216*this[t]+(this[t+1]<<16|this[t+2]<<8|this[t+3])},h.prototype.readIntLE=function(t,e,n){t|=0,e|=0,n||N(t,e,this.length);for(var r=this[t],i=1,o=0;++o<e&&(i*=256);)r+=this[t+o]*i;return r>=(i*=128)&&(r-=Math.pow(2,8*e)),r},h.prototype.readIntBE=function(t,e,n){t|=0,e|=0,n||N(t,e,this.length);for(var r=e,i=1,o=this[t+--r];r>0&&(i*=256);)o+=this[t+--r]*i;return o>=(i*=128)&&(o-=Math.pow(2,8*e)),o},h.prototype.readInt8=function(t,e){return e||N(t,1,this.length),128&this[t]?-1*(255-this[t]+1):this[t]},h.prototype.readInt16LE=function(t,e){e||N(t,2,this.length);var n=this[t]|this[t+1]<<8;return 32768&n?4294901760|n:n},h.prototype.readInt16BE=function(t,e){e||N(t,2,this.length);var n=this[t+1]|this[t]<<8;return 32768&n?4294901760|n:n},h.prototype.readInt32LE=function(t,e){return e||N(t,4,this.length),this[t]|this[t+1]<<8|this[t+2]<<16|this[t+3]<<24},h.prototype.readInt32BE=function(t,e){return e||N(t,4,this.length),this[t]<<24|this[t+1]<<16|this[t+2]<<8|this[t+3]},h.prototype.readFloatLE=function(t,e){return e||N(t,4,this.length),i.read(this,t,!0,23,4)},h.prototype.readFloatBE=function(t,e){return e||N(t,4,this.length),i.read(this,t,!1,23,4)},h.prototype.readDoubleLE=function(t,e){return e||N(t,8,this.length),i.read(this,t,!0,52,8)},h.prototype.readDoubleBE=function(t,e){return e||N(t,8,this.length),i.read(this,t,!1,52,8)},h.prototype.writeUIntLE=function(t,e,n,r){(t=+t,e|=0,n|=0,r)||x(this,t,e,n,Math.pow(2,8*n)-1,0);var i=1,o=0;for(this[e]=255&t;++o<n&&(i*=256);)this[e+o]=t/i&255;return e+n},h.prototype.writeUIntBE=function(t,e,n,r){(t=+t,e|=0,n|=0,r)||x(this,t,e,n,Math.pow(2,8*n)-1,0);var i=n-1,o=1;for(this[e+i]=255&t;--i>=0&&(o*=256);)this[e+i]=t/o&255;return e+n},h.prototype.writeUInt8=function(t,e,n){return t=+t,e|=0,n||x(this,t,e,1,255,0),h.TYPED_ARRAY_SUPPORT||(t=Math.floor(t)),this[e]=255&t,e+1},h.prototype.writeUInt16LE=function(t,e,n){return t=+t,e|=0,n||x(this,t,e,2,65535,0),h.TYPED_ARRAY_SUPPORT?(this[e]=255&t,this[e+1]=t>>>8):D(this,t,e,!0),e+2},h.prototype.writeUInt16BE=function(t,e,n){return t=+t,e|=0,n||x(this,t,e,2,65535,0),h.TYPED_ARRAY_SUPPORT?(this[e]=t>>>8,this[e+1]=255&t):D(this,t,e,!1),e+2},h.prototype.writeUInt32LE=function(t,e,n){return t=+t,e|=0,n||x(this,t,e,4,4294967295,0),h.TYPED_ARRAY_SUPPORT?(this[e+3]=t>>>24,this[e+2]=t>>>16,this[e+1]=t>>>8,this[e]=255&t):L(this,t,e,!0),e+4},h.prototype.writeUInt32BE=function(t,e,n){return t=+t,e|=0,n||x(this,t,e,4,4294967295,0),h.TYPED_ARRAY_SUPPORT?(this[e]=t>>>24,this[e+1]=t>>>16,this[e+2]=t>>>8,this[e+3]=255&t):L(this,t,e,!1),e+4},h.prototype.writeIntLE=function(t,e,n,r){if(t=+t,e|=0,!r){var i=Math.pow(2,8*n-1);x(this,t,e,n,i-1,-i)}var o=0,s=1,a=0;for(this[e]=255&t;++o<n&&(s*=256);)t<0&&0===a&&0!==this[e+o-1]&&(a=1),this[e+o]=(t/s|0)-a&255;return e+n},h.prototype.writeIntBE=function(t,e,n,r){if(t=+t,e|=0,!r){var i=Math.pow(2,8*n-1);x(this,t,e,n,i-1,-i)}var o=n-1,s=1,a=0;for(this[e+o]=255&t;--o>=0&&(s*=256);)t<0&&0===a&&0!==this[e+o+1]&&(a=1),this[e+o]=(t/s|0)-a&255;return e+n},h.prototype.writeInt8=function(t,e,n){return t=+t,e|=0,n||x(this,t,e,1,127,-128),h.TYPED_ARRAY_SUPPORT||(t=Math.floor(t)),t<0&&(t=255+t+1),this[e]=255&t,e+1},h.prototype.writeInt16LE=function(t,e,n){return t=+t,e|=0,n||x(this,t,e,2,32767,-32768),h.TYPED_ARRAY_SUPPORT?(this[e]=255&t,this[e+1]=t>>>8):D(this,t,e,!0),e+2},h.prototype.writeInt16BE=function(t,e,n){return t=+t,e|=0,n||x(this,t,e,2,32767,-32768),h.TYPED_ARRAY_SUPPORT?(this[e]=t>>>8,this[e+1]=255&t):D(this,t,e,!1),e+2},h.prototype.writeInt32LE=function(t,e,n){return t=+t,e|=0,n||x(this,t,e,4,2147483647,-2147483648),h.TYPED_ARRAY_SUPPORT?(this[e]=255&t,this[e+1]=t>>>8,this[e+2]=t>>>16,this[e+3]=t>>>24):L(this,t,e,!0),e+4},h.prototype.writeInt32BE=function(t,e,n){return t=+t,e|=0,n||x(this,t,e,4,2147483647,-2147483648),t<0&&(t=4294967295+t+1),h.TYPED_ARRAY_SUPPORT?(this[e]=t>>>24,this[e+1]=t>>>16,this[e+2]=t>>>8,this[e+3]=255&t):L(this,t,e,!1),e+4},h.prototype.writeFloatLE=function(t,e,n){return M(this,t,e,!0,n)},h.prototype.writeFloatBE=function(t,e,n){return M(this,t,e,!1,n)},h.prototype.writeDoubleLE=function(t,e,n){return I(this,t,e,!0,n)},h.prototype.writeDoubleBE=function(t,e,n){return I(this,t,e,!1,n)},h.prototype.copy=function(t,e,n,r){if(n||(n=0),r||0===r||(r=this.length),e>=t.length&&(e=t.length),e||(e=0),r>0&&r<n&&(r=n),r===n)return 0;if(0===t.length||0===this.length)return 0;if(e<0)throw new RangeError("targetStart out of bounds");if(n<0||n>=this.length)throw new RangeError("sourceStart out of bounds");if(r<0)throw new RangeError("sourceEnd out of bounds");r>this.length&&(r=this.length),t.length-e<r-n&&(r=t.length-e+n);var i,o=r-n;if(this===t&&n<e&&e<r)for(i=o-1;i>=0;--i)t[i+e]=this[i+n];else if(o<1e3||!h.TYPED_ARRAY_SUPPORT)for(i=0;i<o;++i)t[i+e]=this[i+n];else Uint8Array.prototype.set.call(t,this.subarray(n,n+o),e);return o},h.prototype.fill=function(t,e,n,r){if("string"==typeof t){if("string"==typeof e?(r=e,e=0,n=this.length):"string"==typeof n&&(r=n,n=this.length),1===t.length){var i=t.charCodeAt(0);i<256&&(t=i)}if(void 0!==r&&"string"!=typeof r)throw new TypeError("encoding must be a string");if("string"==typeof r&&!h.isEncoding(r))throw new TypeError("Unknown encoding: "+r)}else"number"==typeof t&&(t&=255);if(e<0||this.length<e||this.length<n)throw new RangeError("Out of range index");if(n<=e)return this;var o;if(e>>>=0,n=void 0===n?this.length:n>>>0,t||(t=0),"number"==typeof t)for(o=e;o<n;++o)this[o]=t;else{var s=h.isBuffer(t)?t:q(new h(t,r).toString()),a=s.length;for(o=0;o<n-e;++o)this[o+e]=s[o%a]}return this};var $=/[^+\/0-9A-Za-z-_]/g;function j(t){return t<16?"0"+t.toString(16):t.toString(16)}function q(t,e){var n;e=e||1/0;for(var r=t.length,i=null,o=[],s=0;s<r;++s){if((n=t.charCodeAt(s))>55295&&n<57344){if(!i){if(n>56319){(e-=3)>-1&&o.push(239,191,189);continue}if(s+1===r){(e-=3)>-1&&o.push(239,191,189);continue}i=n;continue}if(n<56320){(e-=3)>-1&&o.push(239,191,189),i=n;continue}n=65536+(i-55296<<10|n-56320)}else i&&(e-=3)>-1&&o.push(239,191,189);if(i=null,n<128){if((e-=1)<0)break;o.push(n)}else if(n<2048){if((e-=2)<0)break;o.push(n>>6|192,63&n|128)}else if(n<65536){if((e-=3)<0)break;o.push(n>>12|224,n>>6&63|128,63&n|128)}else{if(!(n<1114112))throw new Error("Invalid code point");if((e-=4)<0)break;o.push(n>>18|240,n>>12&63|128,n>>6&63|128,63&n|128)}}return o}function Y(t){return r.toByteArray(function(t){if((t=function(t){return t.trim?t.trim():t.replace(/^\s+|\s+$/g,"")}(t).replace($,"")).length<2)return"";for(;t.length%4!=0;)t+="=";return t}(t))}function V(t,e,n,r){for(var i=0;i<r&&!(i+n>=e.length||i>=t.length);++i)e[i+n]=t[i];return i}},251:(t,e)=>{e.read=function(t,e,n,r,i){var o,s,a=8*i-r-1,h=(1<<a)-1,c=h>>1,u=-7,l=n?i-1:0,f=n?-1:1,p=t[e+l];for(l+=f,o=p&(1<<-u)-1,p>>=-u,u+=a;u>0;o=256*o+t[e+l],l+=f,u-=8);for(s=o&(1<<-u)-1,o>>=-u,u+=r;u>0;s=256*s+t[e+l],l+=f,u-=8);if(0===o)o=1-c;else{if(o===h)return s?NaN:1/0*(p?-1:1);s+=Math.pow(2,r),o-=c}return(p?-1:1)*s*Math.pow(2,o-r)},e.write=function(t,e,n,r,i,o){var s,a,h,c=8*o-i-1,u=(1<<c)-1,l=u>>1,f=23===i?Math.pow(2,-24)-Math.pow(2,-77):0,p=r?0:o-1,d=r?1:-1,g=e<0||0===e&&1/e<0?1:0;for(e=Math.abs(e),isNaN(e)||e===1/0?(a=isNaN(e)?1:0,s=u):(s=Math.floor(Math.log(e)/Math.LN2),e*(h=Math.pow(2,-s))<1&&(s--,h*=2),(e+=s+l>=1?f/h:f*Math.pow(2,1-l))*h>=2&&(s++,h/=2),s+l>=u?(a=0,s=u):s+l>=1?(a=(e*h-1)*Math.pow(2,i),s+=l):(a=e*Math.pow(2,l-1)*Math.pow(2,i),s=0));i>=8;t[n+p]=255&a,p+=d,a/=256,i-=8);for(s=s<<i|a,c+=i;c>0;t[n+p]=255&s,p+=d,s/=256,c-=8);t[n+p-d]|=128*g}},64634:t=>{var e={}.toString;t.exports=Array.isArray||function(t){return"[object Array]"==e.call(t)}},25304:(t,e,n)=>{var r={"./en.js":92838,"./ko.js":57775,"./vi.js":15112};function i(t){var e=o(t);return n(e)}function o(t){if(!n.o(r,t)){var e=new Error("Cannot find module '"+t+"'");throw e.code="MODULE_NOT_FOUND",e}return r[t]}i.keys=function(){return Object.keys(r)},i.resolve=o,t.exports=i,i.id=25304}},e={};function n(r){var i=e[r];if(void 0!==i)return i.exports;var o=e[r]={exports:{}};return t[r](o,o.exports,n),o.exports}n.d=(t,e)=>{for(var r in e)n.o(e,r)&&!n.o(t,r)&&Object.defineProperty(t,r,{enumerable:!0,get:e[r]})},n.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(t){if("object"==typeof window)return window}}(),n.o=(t,e)=>Object.prototype.hasOwnProperty.call(t,e),n.r=t=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},(()=>{"use strict";var t={};n.r(t),n.d(t,{Decoder:()=>_t,Encoder:()=>vt,PacketType:()=>bt,protocol:()=>mt});var e=document.querySelector("html").getAttribute("lang"),r={},i=n(25304);i.keys().forEach((function(t){var e=t.replace(/(^.\/)|(.js$)/g,"");r[e]=i(t).default}));const o=function(t){return r[e][t]||t},s=Object.create(null);s.open="0",s.close="1",s.ping="2",s.pong="3",s.message="4",s.upgrade="5",s.noop="6";const a=Object.create(null);Object.keys(s).forEach((t=>{a[s[t]]=t}));const h={type:"error",data:"parser error"},c="function"==typeof Blob||"undefined"!=typeof Blob&&"[object BlobConstructor]"===Object.prototype.toString.call(Blob),u="function"==typeof ArrayBuffer,l=t=>"function"==typeof ArrayBuffer.isView?ArrayBuffer.isView(t):t&&t.buffer instanceof ArrayBuffer,f=({type:t,data:e},n,r)=>c&&e instanceof Blob?n?r(e):p(e,r):u&&(e instanceof ArrayBuffer||l(e))?n?r(e):p(new Blob([e]),r):r(s[t]+(e||"")),p=(t,e)=>{const n=new FileReader;return n.onload=function(){const t=n.result.split(",")[1];e("b"+(t||""))},n.readAsDataURL(t)};function d(t){return t instanceof Uint8Array?t:t instanceof ArrayBuffer?new Uint8Array(t):new Uint8Array(t.buffer,t.byteOffset,t.byteLength)}let g;const y="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",m="undefined"==typeof Uint8Array?[]:new Uint8Array(256);for(let t=0;t<64;t++)m[y.charCodeAt(t)]=t;const b="function"==typeof ArrayBuffer,v=(t,e)=>{if("string"!=typeof t)return{type:"message",data:_(t,e)};const n=t.charAt(0);if("b"===n)return{type:"message",data:w(t.substring(1),e)};return a[n]?t.length>1?{type:a[n],data:t.substring(1)}:{type:a[n]}:h},w=(t,e)=>{if(b){const n=(t=>{let e,n,r,i,o,s=.75*t.length,a=t.length,h=0;"="===t[t.length-1]&&(s--,"="===t[t.length-2]&&s--);const c=new ArrayBuffer(s),u=new Uint8Array(c);for(e=0;e<a;e+=4)n=m[t.charCodeAt(e)],r=m[t.charCodeAt(e+1)],i=m[t.charCodeAt(e+2)],o=m[t.charCodeAt(e+3)],u[h++]=n<<2|r>>4,u[h++]=(15&r)<<4|i>>2,u[h++]=(3&i)<<6|63&o;return c})(t);return _(n,e)}return{base64:!0,data:t}},_=(t,e)=>"blob"===e?t instanceof Blob?t:new Blob([t]):t instanceof ArrayBuffer?t:t.buffer,E=String.fromCharCode(30);function T(){return new TransformStream({transform(t,e){!function(t,e){c&&t.data instanceof Blob?t.data.arrayBuffer().then(d).then(e):u&&(t.data instanceof ArrayBuffer||l(t.data))?e(d(t.data)):f(t,!1,(t=>{g||(g=new TextEncoder),e(g.encode(t))}))}(t,(n=>{const r=n.length;let i;if(r<126)i=new Uint8Array(1),new DataView(i.buffer).setUint8(0,r);else if(r<65536){i=new Uint8Array(3);const t=new DataView(i.buffer);t.setUint8(0,126),t.setUint16(1,r)}else{i=new Uint8Array(9);const t=new DataView(i.buffer);t.setUint8(0,127),t.setBigUint64(1,BigInt(r))}t.data&&"string"!=typeof t.data&&(i[0]|=128),e.enqueue(i),e.enqueue(n)}))}})}let A;function S(t){return t.reduce(((t,e)=>t+e.length),0)}function k(t,e){if(t[0].length===e)return t.shift();const n=new Uint8Array(e);let r=0;for(let i=0;i<e;i++)n[i]=t[0][r++],r===t[0].length&&(t.shift(),r=0);return t.length&&r<t[0].length&&(t[0]=t[0].slice(r)),n}function R(t){if(t)return function(t){for(var e in R.prototype)t[e]=R.prototype[e];return t}(t)}R.prototype.on=R.prototype.addEventListener=function(t,e){return this._callbacks=this._callbacks||{},(this._callbacks["$"+t]=this._callbacks["$"+t]||[]).push(e),this},R.prototype.once=function(t,e){function n(){this.off(t,n),e.apply(this,arguments)}return n.fn=e,this.on(t,n),this},R.prototype.off=R.prototype.removeListener=R.prototype.removeAllListeners=R.prototype.removeEventListener=function(t,e){if(this._callbacks=this._callbacks||{},0==arguments.length)return this._callbacks={},this;var n,r=this._callbacks["$"+t];if(!r)return this;if(1==arguments.length)return delete this._callbacks["$"+t],this;for(var i=0;i<r.length;i++)if((n=r[i])===e||n.fn===e){r.splice(i,1);break}return 0===r.length&&delete this._callbacks["$"+t],this},R.prototype.emit=function(t){this._callbacks=this._callbacks||{};for(var e=new Array(arguments.length-1),n=this._callbacks["$"+t],r=1;r<arguments.length;r++)e[r-1]=arguments[r];if(n){r=0;for(var i=(n=n.slice(0)).length;r<i;++r)n[r].apply(this,e)}return this},R.prototype.emitReserved=R.prototype.emit,R.prototype.listeners=function(t){return this._callbacks=this._callbacks||{},this._callbacks["$"+t]||[]},R.prototype.hasListeners=function(t){return!!this.listeners(t).length};const C="undefined"!=typeof self?self:"undefined"!=typeof window?window:Function("return this")();function O(t,...e){return e.reduce(((e,n)=>(t.hasOwnProperty(n)&&(e[n]=t[n]),e)),{})}const B=C.setTimeout,P=C.clearTimeout;function N(t,e){e.useNativeTimers?(t.setTimeoutFn=B.bind(C),t.clearTimeoutFn=P.bind(C)):(t.setTimeoutFn=C.setTimeout.bind(C),t.clearTimeoutFn=C.clearTimeout.bind(C))}class x extends Error{constructor(t,e,n){super(t),this.description=e,this.context=n,this.type="TransportError"}}class D extends R{constructor(t){super(),this.writable=!1,N(this,t),this.opts=t,this.query=t.query,this.socket=t.socket}onError(t,e,n){return super.emitReserved("error",new x(t,e,n)),this}open(){return this.readyState="opening",this.doOpen(),this}close(){return"opening"!==this.readyState&&"open"!==this.readyState||(this.doClose(),this.onClose()),this}send(t){"open"===this.readyState&&this.write(t)}onOpen(){this.readyState="open",this.writable=!0,super.emitReserved("open")}onData(t){const e=v(t,this.socket.binaryType);this.onPacket(e)}onPacket(t){super.emitReserved("packet",t)}onClose(t){this.readyState="closed",super.emitReserved("close",t)}pause(t){}createUri(t,e={}){return t+"://"+this._hostname()+this._port()+this.opts.path+this._query(e)}_hostname(){const t=this.opts.hostname;return-1===t.indexOf(":")?t:"["+t+"]"}_port(){return this.opts.port&&(this.opts.secure&&Number(443!==this.opts.port)||!this.opts.secure&&80!==Number(this.opts.port))?":"+this.opts.port:""}_query(t){const e=function(t){let e="";for(let n in t)t.hasOwnProperty(n)&&(e.length&&(e+="&"),e+=encodeURIComponent(n)+"="+encodeURIComponent(t[n]));return e}(t);return e.length?"?"+e:""}}const L="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_".split(""),U=64,M={};let I,j=0,q=0;function Y(t){let e="";do{e=L[t%U]+e,t=Math.floor(t/U)}while(t>0);return e}function V(){const t=Y(+new Date);return t!==I?(j=0,I=t):t+"."+Y(j++)}for(;q<U;q++)M[L[q]]=q;let F=!1;try{F="undefined"!=typeof XMLHttpRequest&&"withCredentials"in new XMLHttpRequest}catch(t){}const H=F;function K(t){const e=t.xdomain;try{if("undefined"!=typeof XMLHttpRequest&&(!e||H))return new XMLHttpRequest}catch(t){}if(!e)try{return new(C[["Active"].concat("Object").join("X")])("Microsoft.XMLHTTP")}catch(t){}}function Q(){}const X=null!=new K({xdomain:!1}).responseType;class G extends R{constructor(t,e){super(),N(this,e),this.opts=e,this.method=e.method||"GET",this.uri=t,this.data=void 0!==e.data?e.data:null,this.create()}create(){var t;const e=O(this.opts,"agent","pfx","key","passphrase","cert","ca","ciphers","rejectUnauthorized","autoUnref");e.xdomain=!!this.opts.xd;const n=this.xhr=new K(e);try{n.open(this.method,this.uri,!0);try{if(this.opts.extraHeaders){n.setDisableHeaderCheck&&n.setDisableHeaderCheck(!0);for(let t in this.opts.extraHeaders)this.opts.extraHeaders.hasOwnProperty(t)&&n.setRequestHeader(t,this.opts.extraHeaders[t])}}catch(t){}if("POST"===this.method)try{n.setRequestHeader("Content-type","text/plain;charset=UTF-8")}catch(t){}try{n.setRequestHeader("Accept","*/*")}catch(t){}null===(t=this.opts.cookieJar)||void 0===t||t.addCookies(n),"withCredentials"in n&&(n.withCredentials=this.opts.withCredentials),this.opts.requestTimeout&&(n.timeout=this.opts.requestTimeout),n.onreadystatechange=()=>{var t;3===n.readyState&&(null===(t=this.opts.cookieJar)||void 0===t||t.parseCookies(n)),4===n.readyState&&(200===n.status||1223===n.status?this.onLoad():this.setTimeoutFn((()=>{this.onError("number"==typeof n.status?n.status:0)}),0))},n.send(this.data)}catch(t){return void this.setTimeoutFn((()=>{this.onError(t)}),0)}"undefined"!=typeof document&&(this.index=G.requestsCount++,G.requests[this.index]=this)}onError(t){this.emitReserved("error",t,this.xhr),this.cleanup(!0)}cleanup(t){if(void 0!==this.xhr&&null!==this.xhr){if(this.xhr.onreadystatechange=Q,t)try{this.xhr.abort()}catch(t){}"undefined"!=typeof document&&delete G.requests[this.index],this.xhr=null}}onLoad(){const t=this.xhr.responseText;null!==t&&(this.emitReserved("data",t),this.emitReserved("success"),this.cleanup())}abort(){this.cleanup()}}if(G.requestsCount=0,G.requests={},"undefined"!=typeof document)if("function"==typeof attachEvent)attachEvent("onunload",J);else if("function"==typeof addEventListener){addEventListener("onpagehide"in C?"pagehide":"unload",J,!1)}function J(){for(let t in G.requests)G.requests.hasOwnProperty(t)&&G.requests[t].abort()}const z="function"==typeof Promise&&"function"==typeof Promise.resolve?t=>Promise.resolve().then(t):(t,e)=>e(t,0),W=C.WebSocket||C.MozWebSocket;n(48287).hp;const Z="undefined"!=typeof navigator&&"string"==typeof navigator.product&&"reactnative"===navigator.product.toLowerCase();const tt={websocket:class extends D{constructor(t){super(t),this.supportsBinary=!t.forceBase64}get name(){return"websocket"}doOpen(){if(!this.check())return;const t=this.uri(),e=this.opts.protocols,n=Z?{}:O(this.opts,"agent","perMessageDeflate","pfx","key","passphrase","cert","ca","ciphers","rejectUnauthorized","localAddress","protocolVersion","origin","maxPayload","family","checkServerIdentity");this.opts.extraHeaders&&(n.headers=this.opts.extraHeaders);try{this.ws=Z?new W(t,e,n):e?new W(t,e):new W(t)}catch(t){return this.emitReserved("error",t)}this.ws.binaryType=this.socket.binaryType,this.addEventListeners()}addEventListeners(){this.ws.onopen=()=>{this.opts.autoUnref&&this.ws._socket.unref(),this.onOpen()},this.ws.onclose=t=>this.onClose({description:"websocket connection closed",context:t}),this.ws.onmessage=t=>this.onData(t.data),this.ws.onerror=t=>this.onError("websocket error",t)}write(t){this.writable=!1;for(let e=0;e<t.length;e++){const n=t[e],r=e===t.length-1;f(n,this.supportsBinary,(t=>{try{this.ws.send(t)}catch(t){}r&&z((()=>{this.writable=!0,this.emitReserved("drain")}),this.setTimeoutFn)}))}}doClose(){void 0!==this.ws&&(this.ws.close(),this.ws=null)}uri(){const t=this.opts.secure?"wss":"ws",e=this.query||{};return this.opts.timestampRequests&&(e[this.opts.timestampParam]=V()),this.supportsBinary||(e.b64=1),this.createUri(t,e)}check(){return!!W}},webtransport:class extends D{get name(){return"webtransport"}doOpen(){"function"==typeof WebTransport&&(this.transport=new WebTransport(this.createUri("https"),this.opts.transportOptions[this.name]),this.transport.closed.then((()=>{this.onClose()})).catch((t=>{this.onError("webtransport error",t)})),this.transport.ready.then((()=>{this.transport.createBidirectionalStream().then((t=>{const e=function(t,e){A||(A=new TextDecoder);const n=[];let r=0,i=-1,o=!1;return new TransformStream({transform(s,a){for(n.push(s);;){if(0===r){if(S(n)<1)break;const t=k(n,1);o=!(128&~t[0]),i=127&t[0],r=i<126?3:126===i?1:2}else if(1===r){if(S(n)<2)break;const t=k(n,2);i=new DataView(t.buffer,t.byteOffset,t.length).getUint16(0),r=3}else if(2===r){if(S(n)<8)break;const t=k(n,8),e=new DataView(t.buffer,t.byteOffset,t.length),o=e.getUint32(0);if(o>Math.pow(2,21)-1){a.enqueue(h);break}i=o*Math.pow(2,32)+e.getUint32(4),r=3}else{if(S(n)<i)break;const t=k(n,i);a.enqueue(v(o?t:A.decode(t),e)),r=0}if(0===i||i>t){a.enqueue(h);break}}}})}(Number.MAX_SAFE_INTEGER,this.socket.binaryType),n=t.readable.pipeThrough(e).getReader(),r=T();r.readable.pipeTo(t.writable),this.writer=r.writable.getWriter();const i=()=>{n.read().then((({done:t,value:e})=>{t||(this.onPacket(e),i())})).catch((t=>{}))};i();const o={type:"open"};this.query.sid&&(o.data=`{"sid":"${this.query.sid}"}`),this.writer.write(o).then((()=>this.onOpen()))}))})))}write(t){this.writable=!1;for(let e=0;e<t.length;e++){const n=t[e],r=e===t.length-1;this.writer.write(n).then((()=>{r&&z((()=>{this.writable=!0,this.emitReserved("drain")}),this.setTimeoutFn)}))}}doClose(){var t;null===(t=this.transport)||void 0===t||t.close()}},polling:class extends D{constructor(t){if(super(t),this.polling=!1,"undefined"!=typeof location){const e="https:"===location.protocol;let n=location.port;n||(n=e?"443":"80"),this.xd="undefined"!=typeof location&&t.hostname!==location.hostname||n!==t.port}const e=t&&t.forceBase64;this.supportsBinary=X&&!e,this.opts.withCredentials&&(this.cookieJar=void 0)}get name(){return"polling"}doOpen(){this.poll()}pause(t){this.readyState="pausing";const e=()=>{this.readyState="paused",t()};if(this.polling||!this.writable){let t=0;this.polling&&(t++,this.once("pollComplete",(function(){--t||e()}))),this.writable||(t++,this.once("drain",(function(){--t||e()})))}else e()}poll(){this.polling=!0,this.doPoll(),this.emitReserved("poll")}onData(t){((t,e)=>{const n=t.split(E),r=[];for(let t=0;t<n.length;t++){const i=v(n[t],e);if(r.push(i),"error"===i.type)break}return r})(t,this.socket.binaryType).forEach((t=>{if("opening"===this.readyState&&"open"===t.type&&this.onOpen(),"close"===t.type)return this.onClose({description:"transport closed by the server"}),!1;this.onPacket(t)})),"closed"!==this.readyState&&(this.polling=!1,this.emitReserved("pollComplete"),"open"===this.readyState&&this.poll())}doClose(){const t=()=>{this.write([{type:"close"}])};"open"===this.readyState?t():this.once("open",t)}write(t){this.writable=!1,((t,e)=>{const n=t.length,r=new Array(n);let i=0;t.forEach(((t,o)=>{f(t,!1,(t=>{r[o]=t,++i===n&&e(r.join(E))}))}))})(t,(t=>{this.doWrite(t,(()=>{this.writable=!0,this.emitReserved("drain")}))}))}uri(){const t=this.opts.secure?"https":"http",e=this.query||{};return!1!==this.opts.timestampRequests&&(e[this.opts.timestampParam]=V()),this.supportsBinary||e.sid||(e.b64=1),this.createUri(t,e)}request(t={}){return Object.assign(t,{xd:this.xd,cookieJar:this.cookieJar},this.opts),new G(this.uri(),t)}doWrite(t,e){const n=this.request({method:"POST",data:t});n.on("success",e),n.on("error",((t,e)=>{this.onError("xhr post error",t,e)}))}doPoll(){const t=this.request();t.on("data",this.onData.bind(this)),t.on("error",((t,e)=>{this.onError("xhr poll error",t,e)})),this.pollXhr=t}}},et=/^(?:(?![^:@\/?#]+:[^:@\/]*@)(http|https|ws|wss):\/\/)?((?:(([^:@\/?#]*)(?::([^:@\/?#]*))?)?@)?((?:[a-f0-9]{0,4}:){2,7}[a-f0-9]{0,4}|[^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/,nt=["source","protocol","authority","userInfo","user","password","host","port","relative","path","directory","file","query","anchor"];function rt(t){if(t.length>2e3)throw"URI too long";const e=t,n=t.indexOf("["),r=t.indexOf("]");-1!=n&&-1!=r&&(t=t.substring(0,n)+t.substring(n,r).replace(/:/g,";")+t.substring(r,t.length));let i=et.exec(t||""),o={},s=14;for(;s--;)o[nt[s]]=i[s]||"";return-1!=n&&-1!=r&&(o.source=e,o.host=o.host.substring(1,o.host.length-1).replace(/;/g,":"),o.authority=o.authority.replace("[","").replace("]","").replace(/;/g,":"),o.ipv6uri=!0),o.pathNames=function(t,e){const n=/\/{2,9}/g,r=e.replace(n,"/").split("/");"/"!=e.slice(0,1)&&0!==e.length||r.splice(0,1);"/"==e.slice(-1)&&r.splice(r.length-1,1);return r}(0,o.path),o.queryKey=function(t,e){const n={};return e.replace(/(?:^|&)([^&=]*)=?([^&]*)/g,(function(t,e,r){e&&(n[e]=r)})),n}(0,o.query),o}class it extends R{constructor(t,e={}){super(),this.binaryType="arraybuffer",this.writeBuffer=[],t&&"object"==typeof t&&(e=t,t=null),t?(t=rt(t),e.hostname=t.host,e.secure="https"===t.protocol||"wss"===t.protocol,e.port=t.port,t.query&&(e.query=t.query)):e.host&&(e.hostname=rt(e.host).host),N(this,e),this.secure=null!=e.secure?e.secure:"undefined"!=typeof location&&"https:"===location.protocol,e.hostname&&!e.port&&(e.port=this.secure?"443":"80"),this.hostname=e.hostname||("undefined"!=typeof location?location.hostname:"localhost"),this.port=e.port||("undefined"!=typeof location&&location.port?location.port:this.secure?"443":"80"),this.transports=e.transports||["polling","websocket","webtransport"],this.writeBuffer=[],this.prevBufferLen=0,this.opts=Object.assign({path:"/engine.io",agent:!1,withCredentials:!1,upgrade:!0,timestampParam:"t",rememberUpgrade:!1,addTrailingSlash:!0,rejectUnauthorized:!0,perMessageDeflate:{threshold:1024},transportOptions:{},closeOnBeforeunload:!1},e),this.opts.path=this.opts.path.replace(/\/$/,"")+(this.opts.addTrailingSlash?"/":""),"string"==typeof this.opts.query&&(this.opts.query=function(t){let e={},n=t.split("&");for(let t=0,r=n.length;t<r;t++){let r=n[t].split("=");e[decodeURIComponent(r[0])]=decodeURIComponent(r[1])}return e}(this.opts.query)),this.id=null,this.upgrades=null,this.pingInterval=null,this.pingTimeout=null,this.pingTimeoutTimer=null,"function"==typeof addEventListener&&(this.opts.closeOnBeforeunload&&(this.beforeunloadEventListener=()=>{this.transport&&(this.transport.removeAllListeners(),this.transport.close())},addEventListener("beforeunload",this.beforeunloadEventListener,!1)),"localhost"!==this.hostname&&(this.offlineEventListener=()=>{this.onClose("transport close",{description:"network connection lost"})},addEventListener("offline",this.offlineEventListener,!1))),this.open()}createTransport(t){const e=Object.assign({},this.opts.query);e.EIO=4,e.transport=t,this.id&&(e.sid=this.id);const n=Object.assign({},this.opts,{query:e,socket:this,hostname:this.hostname,secure:this.secure,port:this.port},this.opts.transportOptions[t]);return new tt[t](n)}open(){let t;if(this.opts.rememberUpgrade&&it.priorWebsocketSuccess&&-1!==this.transports.indexOf("websocket"))t="websocket";else{if(0===this.transports.length)return void this.setTimeoutFn((()=>{this.emitReserved("error","No transports available")}),0);t=this.transports[0]}this.readyState="opening";try{t=this.createTransport(t)}catch(t){return this.transports.shift(),void this.open()}t.open(),this.setTransport(t)}setTransport(t){this.transport&&this.transport.removeAllListeners(),this.transport=t,t.on("drain",this.onDrain.bind(this)).on("packet",this.onPacket.bind(this)).on("error",this.onError.bind(this)).on("close",(t=>this.onClose("transport close",t)))}probe(t){let e=this.createTransport(t),n=!1;it.priorWebsocketSuccess=!1;const r=()=>{n||(e.send([{type:"ping",data:"probe"}]),e.once("packet",(t=>{if(!n)if("pong"===t.type&&"probe"===t.data){if(this.upgrading=!0,this.emitReserved("upgrading",e),!e)return;it.priorWebsocketSuccess="websocket"===e.name,this.transport.pause((()=>{n||"closed"!==this.readyState&&(c(),this.setTransport(e),e.send([{type:"upgrade"}]),this.emitReserved("upgrade",e),e=null,this.upgrading=!1,this.flush())}))}else{const t=new Error("probe error");t.transport=e.name,this.emitReserved("upgradeError",t)}})))};function i(){n||(n=!0,c(),e.close(),e=null)}const o=t=>{const n=new Error("probe error: "+t);n.transport=e.name,i(),this.emitReserved("upgradeError",n)};function s(){o("transport closed")}function a(){o("socket closed")}function h(t){e&&t.name!==e.name&&i()}const c=()=>{e.removeListener("open",r),e.removeListener("error",o),e.removeListener("close",s),this.off("close",a),this.off("upgrading",h)};e.once("open",r),e.once("error",o),e.once("close",s),this.once("close",a),this.once("upgrading",h),-1!==this.upgrades.indexOf("webtransport")&&"webtransport"!==t?this.setTimeoutFn((()=>{n||e.open()}),200):e.open()}onOpen(){if(this.readyState="open",it.priorWebsocketSuccess="websocket"===this.transport.name,this.emitReserved("open"),this.flush(),"open"===this.readyState&&this.opts.upgrade){let t=0;const e=this.upgrades.length;for(;t<e;t++)this.probe(this.upgrades[t])}}onPacket(t){if("opening"===this.readyState||"open"===this.readyState||"closing"===this.readyState)switch(this.emitReserved("packet",t),this.emitReserved("heartbeat"),this.resetPingTimeout(),t.type){case"open":this.onHandshake(JSON.parse(t.data));break;case"ping":this.sendPacket("pong"),this.emitReserved("ping"),this.emitReserved("pong");break;case"error":const e=new Error("server error");e.code=t.data,this.onError(e);break;case"message":this.emitReserved("data",t.data),this.emitReserved("message",t.data)}}onHandshake(t){this.emitReserved("handshake",t),this.id=t.sid,this.transport.query.sid=t.sid,this.upgrades=this.filterUpgrades(t.upgrades),this.pingInterval=t.pingInterval,this.pingTimeout=t.pingTimeout,this.maxPayload=t.maxPayload,this.onOpen(),"closed"!==this.readyState&&this.resetPingTimeout()}resetPingTimeout(){this.clearTimeoutFn(this.pingTimeoutTimer),this.pingTimeoutTimer=this.setTimeoutFn((()=>{this.onClose("ping timeout")}),this.pingInterval+this.pingTimeout),this.opts.autoUnref&&this.pingTimeoutTimer.unref()}onDrain(){this.writeBuffer.splice(0,this.prevBufferLen),this.prevBufferLen=0,0===this.writeBuffer.length?this.emitReserved("drain"):this.flush()}flush(){if("closed"!==this.readyState&&this.transport.writable&&!this.upgrading&&this.writeBuffer.length){const t=this.getWritablePackets();this.transport.send(t),this.prevBufferLen=t.length,this.emitReserved("flush")}}getWritablePackets(){if(!(this.maxPayload&&"polling"===this.transport.name&&this.writeBuffer.length>1))return this.writeBuffer;let t=1;for(let n=0;n<this.writeBuffer.length;n++){const r=this.writeBuffer[n].data;if(r&&(t+="string"==typeof(e=r)?function(t){let e=0,n=0;for(let r=0,i=t.length;r<i;r++)e=t.charCodeAt(r),e<128?n+=1:e<2048?n+=2:e<55296||e>=57344?n+=3:(r++,n+=4);return n}(e):Math.ceil(1.33*(e.byteLength||e.size))),n>0&&t>this.maxPayload)return this.writeBuffer.slice(0,n);t+=2}var e;return this.writeBuffer}write(t,e,n){return this.sendPacket("message",t,e,n),this}send(t,e,n){return this.sendPacket("message",t,e,n),this}sendPacket(t,e,n,r){if("function"==typeof e&&(r=e,e=void 0),"function"==typeof n&&(r=n,n=null),"closing"===this.readyState||"closed"===this.readyState)return;(n=n||{}).compress=!1!==n.compress;const i={type:t,data:e,options:n};this.emitReserved("packetCreate",i),this.writeBuffer.push(i),r&&this.once("flush",r),this.flush()}close(){const t=()=>{this.onClose("forced close"),this.transport.close()},e=()=>{this.off("upgrade",e),this.off("upgradeError",e),t()},n=()=>{this.once("upgrade",e),this.once("upgradeError",e)};return"opening"!==this.readyState&&"open"!==this.readyState||(this.readyState="closing",this.writeBuffer.length?this.once("drain",(()=>{this.upgrading?n():t()})):this.upgrading?n():t()),this}onError(t){it.priorWebsocketSuccess=!1,this.emitReserved("error",t),this.onClose("transport error",t)}onClose(t,e){"opening"!==this.readyState&&"open"!==this.readyState&&"closing"!==this.readyState||(this.clearTimeoutFn(this.pingTimeoutTimer),this.transport.removeAllListeners("close"),this.transport.close(),this.transport.removeAllListeners(),"function"==typeof removeEventListener&&(removeEventListener("beforeunload",this.beforeunloadEventListener,!1),removeEventListener("offline",this.offlineEventListener,!1)),this.readyState="closed",this.id=null,this.emitReserved("close",t,e),this.writeBuffer=[],this.prevBufferLen=0)}filterUpgrades(t){const e=[];let n=0;const r=t.length;for(;n<r;n++)~this.transports.indexOf(t[n])&&e.push(t[n]);return e}}it.protocol=4;it.protocol;const ot="function"==typeof ArrayBuffer,st=t=>"function"==typeof ArrayBuffer.isView?ArrayBuffer.isView(t):t.buffer instanceof ArrayBuffer,at=Object.prototype.toString,ht="function"==typeof Blob||"undefined"!=typeof Blob&&"[object BlobConstructor]"===at.call(Blob),ct="function"==typeof File||"undefined"!=typeof File&&"[object FileConstructor]"===at.call(File);function ut(t){return ot&&(t instanceof ArrayBuffer||st(t))||ht&&t instanceof Blob||ct&&t instanceof File}function lt(t,e){if(!t||"object"!=typeof t)return!1;if(Array.isArray(t)){for(let e=0,n=t.length;e<n;e++)if(lt(t[e]))return!0;return!1}if(ut(t))return!0;if(t.toJSON&&"function"==typeof t.toJSON&&1===arguments.length)return lt(t.toJSON(),!0);for(const e in t)if(Object.prototype.hasOwnProperty.call(t,e)&&lt(t[e]))return!0;return!1}function ft(t){const e=[],n=t.data,r=t;return r.data=pt(n,e),r.attachments=e.length,{packet:r,buffers:e}}function pt(t,e){if(!t)return t;if(ut(t)){const n={_placeholder:!0,num:e.length};return e.push(t),n}if(Array.isArray(t)){const n=new Array(t.length);for(let r=0;r<t.length;r++)n[r]=pt(t[r],e);return n}if("object"==typeof t&&!(t instanceof Date)){const n={};for(const r in t)Object.prototype.hasOwnProperty.call(t,r)&&(n[r]=pt(t[r],e));return n}return t}function dt(t,e){return t.data=gt(t.data,e),delete t.attachments,t}function gt(t,e){if(!t)return t;if(t&&!0===t._placeholder){if("number"==typeof t.num&&t.num>=0&&t.num<e.length)return e[t.num];throw new Error("illegal attachments")}if(Array.isArray(t))for(let n=0;n<t.length;n++)t[n]=gt(t[n],e);else if("object"==typeof t)for(const n in t)Object.prototype.hasOwnProperty.call(t,n)&&(t[n]=gt(t[n],e));return t}const yt=["connect","connect_error","disconnect","disconnecting","newListener","removeListener"],mt=5;var bt;!function(t){t[t.CONNECT=0]="CONNECT",t[t.DISCONNECT=1]="DISCONNECT",t[t.EVENT=2]="EVENT",t[t.ACK=3]="ACK",t[t.CONNECT_ERROR=4]="CONNECT_ERROR",t[t.BINARY_EVENT=5]="BINARY_EVENT",t[t.BINARY_ACK=6]="BINARY_ACK"}(bt||(bt={}));class vt{constructor(t){this.replacer=t}encode(t){return t.type!==bt.EVENT&&t.type!==bt.ACK||!lt(t)?[this.encodeAsString(t)]:this.encodeAsBinary({type:t.type===bt.EVENT?bt.BINARY_EVENT:bt.BINARY_ACK,nsp:t.nsp,data:t.data,id:t.id})}encodeAsString(t){let e=""+t.type;return t.type!==bt.BINARY_EVENT&&t.type!==bt.BINARY_ACK||(e+=t.attachments+"-"),t.nsp&&"/"!==t.nsp&&(e+=t.nsp+","),null!=t.id&&(e+=t.id),null!=t.data&&(e+=JSON.stringify(t.data,this.replacer)),e}encodeAsBinary(t){const e=ft(t),n=this.encodeAsString(e.packet),r=e.buffers;return r.unshift(n),r}}function wt(t){return"[object Object]"===Object.prototype.toString.call(t)}class _t extends R{constructor(t){super(),this.reviver=t}add(t){let e;if("string"==typeof t){if(this.reconstructor)throw new Error("got plaintext data when reconstructing a packet");e=this.decodeString(t);const n=e.type===bt.BINARY_EVENT;n||e.type===bt.BINARY_ACK?(e.type=n?bt.EVENT:bt.ACK,this.reconstructor=new Et(e),0===e.attachments&&super.emitReserved("decoded",e)):super.emitReserved("decoded",e)}else{if(!ut(t)&&!t.base64)throw new Error("Unknown type: "+t);if(!this.reconstructor)throw new Error("got binary data when not reconstructing a packet");e=this.reconstructor.takeBinaryData(t),e&&(this.reconstructor=null,super.emitReserved("decoded",e))}}decodeString(t){let e=0;const n={type:Number(t.charAt(0))};if(void 0===bt[n.type])throw new Error("unknown packet type "+n.type);if(n.type===bt.BINARY_EVENT||n.type===bt.BINARY_ACK){const r=e+1;for(;"-"!==t.charAt(++e)&&e!=t.length;);const i=t.substring(r,e);if(i!=Number(i)||"-"!==t.charAt(e))throw new Error("Illegal attachments");n.attachments=Number(i)}if("/"===t.charAt(e+1)){const r=e+1;for(;++e;){if(","===t.charAt(e))break;if(e===t.length)break}n.nsp=t.substring(r,e)}else n.nsp="/";const r=t.charAt(e+1);if(""!==r&&Number(r)==r){const r=e+1;for(;++e;){const n=t.charAt(e);if(null==n||Number(n)!=n){--e;break}if(e===t.length)break}n.id=Number(t.substring(r,e+1))}if(t.charAt(++e)){const r=this.tryParse(t.substr(e));if(!_t.isPayloadValid(n.type,r))throw new Error("invalid payload");n.data=r}return n}tryParse(t){try{return JSON.parse(t,this.reviver)}catch(t){return!1}}static isPayloadValid(t,e){switch(t){case bt.CONNECT:return wt(e);case bt.DISCONNECT:return void 0===e;case bt.CONNECT_ERROR:return"string"==typeof e||wt(e);case bt.EVENT:case bt.BINARY_EVENT:return Array.isArray(e)&&("number"==typeof e[0]||"string"==typeof e[0]&&-1===yt.indexOf(e[0]));case bt.ACK:case bt.BINARY_ACK:return Array.isArray(e)}}destroy(){this.reconstructor&&(this.reconstructor.finishedReconstruction(),this.reconstructor=null)}}class Et{constructor(t){this.packet=t,this.buffers=[],this.reconPack=t}takeBinaryData(t){if(this.buffers.push(t),this.buffers.length===this.reconPack.attachments){const t=dt(this.reconPack,this.buffers);return this.finishedReconstruction(),t}return null}finishedReconstruction(){this.reconPack=null,this.buffers=[]}}function Tt(t,e,n){return t.on(e,n),function(){t.off(e,n)}}const At=Object.freeze({connect:1,connect_error:1,disconnect:1,disconnecting:1,newListener:1,removeListener:1});class St extends R{constructor(t,e,n){super(),this.connected=!1,this.recovered=!1,this.receiveBuffer=[],this.sendBuffer=[],this._queue=[],this._queueSeq=0,this.ids=0,this.acks={},this.flags={},this.io=t,this.nsp=e,n&&n.auth&&(this.auth=n.auth),this._opts=Object.assign({},n),this.io._autoConnect&&this.open()}get disconnected(){return!this.connected}subEvents(){if(this.subs)return;const t=this.io;this.subs=[Tt(t,"open",this.onopen.bind(this)),Tt(t,"packet",this.onpacket.bind(this)),Tt(t,"error",this.onerror.bind(this)),Tt(t,"close",this.onclose.bind(this))]}get active(){return!!this.subs}connect(){return this.connected||(this.subEvents(),this.io._reconnecting||this.io.open(),"open"===this.io._readyState&&this.onopen()),this}open(){return this.connect()}send(...t){return t.unshift("message"),this.emit.apply(this,t),this}emit(t,...e){if(At.hasOwnProperty(t))throw new Error('"'+t.toString()+'" is a reserved event name');if(e.unshift(t),this._opts.retries&&!this.flags.fromQueue&&!this.flags.volatile)return this._addToQueue(e),this;const n={type:bt.EVENT,data:e,options:{}};if(n.options.compress=!1!==this.flags.compress,"function"==typeof e[e.length-1]){const t=this.ids++,r=e.pop();this._registerAckCallback(t,r),n.id=t}const r=this.io.engine&&this.io.engine.transport&&this.io.engine.transport.writable;return this.flags.volatile&&(!r||!this.connected)||(this.connected?(this.notifyOutgoingListeners(n),this.packet(n)):this.sendBuffer.push(n)),this.flags={},this}_registerAckCallback(t,e){var n;const r=null!==(n=this.flags.timeout)&&void 0!==n?n:this._opts.ackTimeout;if(void 0===r)return void(this.acks[t]=e);const i=this.io.setTimeoutFn((()=>{delete this.acks[t];for(let e=0;e<this.sendBuffer.length;e++)this.sendBuffer[e].id===t&&this.sendBuffer.splice(e,1);e.call(this,new Error("operation has timed out"))}),r),o=(...t)=>{this.io.clearTimeoutFn(i),e.apply(this,t)};o.withError=!0,this.acks[t]=o}emitWithAck(t,...e){return new Promise(((n,r)=>{const i=(t,e)=>t?r(t):n(e);i.withError=!0,e.push(i),this.emit(t,...e)}))}_addToQueue(t){let e;"function"==typeof t[t.length-1]&&(e=t.pop());const n={id:this._queueSeq++,tryCount:0,pending:!1,args:t,flags:Object.assign({fromQueue:!0},this.flags)};t.push(((t,...r)=>{if(n!==this._queue[0])return;return null!==t?n.tryCount>this._opts.retries&&(this._queue.shift(),e&&e(t)):(this._queue.shift(),e&&e(null,...r)),n.pending=!1,this._drainQueue()})),this._queue.push(n),this._drainQueue()}_drainQueue(t=!1){if(!this.connected||0===this._queue.length)return;const e=this._queue[0];e.pending&&!t||(e.pending=!0,e.tryCount++,this.flags=e.flags,this.emit.apply(this,e.args))}packet(t){t.nsp=this.nsp,this.io._packet(t)}onopen(){"function"==typeof this.auth?this.auth((t=>{this._sendConnectPacket(t)})):this._sendConnectPacket(this.auth)}_sendConnectPacket(t){this.packet({type:bt.CONNECT,data:this._pid?Object.assign({pid:this._pid,offset:this._lastOffset},t):t})}onerror(t){this.connected||this.emitReserved("connect_error",t)}onclose(t,e){this.connected=!1,delete this.id,this.emitReserved("disconnect",t,e),this._clearAcks()}_clearAcks(){Object.keys(this.acks).forEach((t=>{if(!this.sendBuffer.some((e=>String(e.id)===t))){const e=this.acks[t];delete this.acks[t],e.withError&&e.call(this,new Error("socket has been disconnected"))}}))}onpacket(t){if(t.nsp===this.nsp)switch(t.type){case bt.CONNECT:t.data&&t.data.sid?this.onconnect(t.data.sid,t.data.pid):this.emitReserved("connect_error",new Error("It seems you are trying to reach a Socket.IO server in v2.x with a v3.x client, but they are not compatible (more information here: https://socket.io/docs/v3/migrating-from-2-x-to-3-0/)"));break;case bt.EVENT:case bt.BINARY_EVENT:this.onevent(t);break;case bt.ACK:case bt.BINARY_ACK:this.onack(t);break;case bt.DISCONNECT:this.ondisconnect();break;case bt.CONNECT_ERROR:this.destroy();const e=new Error(t.data.message);e.data=t.data.data,this.emitReserved("connect_error",e)}}onevent(t){const e=t.data||[];null!=t.id&&e.push(this.ack(t.id)),this.connected?this.emitEvent(e):this.receiveBuffer.push(Object.freeze(e))}emitEvent(t){if(this._anyListeners&&this._anyListeners.length){const e=this._anyListeners.slice();for(const n of e)n.apply(this,t)}super.emit.apply(this,t),this._pid&&t.length&&"string"==typeof t[t.length-1]&&(this._lastOffset=t[t.length-1])}ack(t){const e=this;let n=!1;return function(...r){n||(n=!0,e.packet({type:bt.ACK,id:t,data:r}))}}onack(t){const e=this.acks[t.id];"function"==typeof e&&(delete this.acks[t.id],e.withError&&t.data.unshift(null),e.apply(this,t.data))}onconnect(t,e){this.id=t,this.recovered=e&&this._pid===e,this._pid=e,this.connected=!0,this.emitBuffered(),this.emitReserved("connect"),this._drainQueue(!0)}emitBuffered(){this.receiveBuffer.forEach((t=>this.emitEvent(t))),this.receiveBuffer=[],this.sendBuffer.forEach((t=>{this.notifyOutgoingListeners(t),this.packet(t)})),this.sendBuffer=[]}ondisconnect(){this.destroy(),this.onclose("io server disconnect")}destroy(){this.subs&&(this.subs.forEach((t=>t())),this.subs=void 0),this.io._destroy(this)}disconnect(){return this.connected&&this.packet({type:bt.DISCONNECT}),this.destroy(),this.connected&&this.onclose("io client disconnect"),this}close(){return this.disconnect()}compress(t){return this.flags.compress=t,this}get volatile(){return this.flags.volatile=!0,this}timeout(t){return this.flags.timeout=t,this}onAny(t){return this._anyListeners=this._anyListeners||[],this._anyListeners.push(t),this}prependAny(t){return this._anyListeners=this._anyListeners||[],this._anyListeners.unshift(t),this}offAny(t){if(!this._anyListeners)return this;if(t){const e=this._anyListeners;for(let n=0;n<e.length;n++)if(t===e[n])return e.splice(n,1),this}else this._anyListeners=[];return this}listenersAny(){return this._anyListeners||[]}onAnyOutgoing(t){return this._anyOutgoingListeners=this._anyOutgoingListeners||[],this._anyOutgoingListeners.push(t),this}prependAnyOutgoing(t){return this._anyOutgoingListeners=this._anyOutgoingListeners||[],this._anyOutgoingListeners.unshift(t),this}offAnyOutgoing(t){if(!this._anyOutgoingListeners)return this;if(t){const e=this._anyOutgoingListeners;for(let n=0;n<e.length;n++)if(t===e[n])return e.splice(n,1),this}else this._anyOutgoingListeners=[];return this}listenersAnyOutgoing(){return this._anyOutgoingListeners||[]}notifyOutgoingListeners(t){if(this._anyOutgoingListeners&&this._anyOutgoingListeners.length){const e=this._anyOutgoingListeners.slice();for(const n of e)n.apply(this,t.data)}}}function kt(t){t=t||{},this.ms=t.min||100,this.max=t.max||1e4,this.factor=t.factor||2,this.jitter=t.jitter>0&&t.jitter<=1?t.jitter:0,this.attempts=0}kt.prototype.duration=function(){var t=this.ms*Math.pow(this.factor,this.attempts++);if(this.jitter){var e=Math.random(),n=Math.floor(e*this.jitter*t);t=1&Math.floor(10*e)?t+n:t-n}return 0|Math.min(t,this.max)},kt.prototype.reset=function(){this.attempts=0},kt.prototype.setMin=function(t){this.ms=t},kt.prototype.setMax=function(t){this.max=t},kt.prototype.setJitter=function(t){this.jitter=t};class Rt extends R{constructor(e,n){var r;super(),this.nsps={},this.subs=[],e&&"object"==typeof e&&(n=e,e=void 0),(n=n||{}).path=n.path||"/socket.io",this.opts=n,N(this,n),this.reconnection(!1!==n.reconnection),this.reconnectionAttempts(n.reconnectionAttempts||1/0),this.reconnectionDelay(n.reconnectionDelay||1e3),this.reconnectionDelayMax(n.reconnectionDelayMax||5e3),this.randomizationFactor(null!==(r=n.randomizationFactor)&&void 0!==r?r:.5),this.backoff=new kt({min:this.reconnectionDelay(),max:this.reconnectionDelayMax(),jitter:this.randomizationFactor()}),this.timeout(null==n.timeout?2e4:n.timeout),this._readyState="closed",this.uri=e;const i=n.parser||t;this.encoder=new i.Encoder,this.decoder=new i.Decoder,this._autoConnect=!1!==n.autoConnect,this._autoConnect&&this.open()}reconnection(t){return arguments.length?(this._reconnection=!!t,this):this._reconnection}reconnectionAttempts(t){return void 0===t?this._reconnectionAttempts:(this._reconnectionAttempts=t,this)}reconnectionDelay(t){var e;return void 0===t?this._reconnectionDelay:(this._reconnectionDelay=t,null===(e=this.backoff)||void 0===e||e.setMin(t),this)}randomizationFactor(t){var e;return void 0===t?this._randomizationFactor:(this._randomizationFactor=t,null===(e=this.backoff)||void 0===e||e.setJitter(t),this)}reconnectionDelayMax(t){var e;return void 0===t?this._reconnectionDelayMax:(this._reconnectionDelayMax=t,null===(e=this.backoff)||void 0===e||e.setMax(t),this)}timeout(t){return arguments.length?(this._timeout=t,this):this._timeout}maybeReconnectOnOpen(){!this._reconnecting&&this._reconnection&&0===this.backoff.attempts&&this.reconnect()}open(t){if(~this._readyState.indexOf("open"))return this;this.engine=new it(this.uri,this.opts);const e=this.engine,n=this;this._readyState="opening",this.skipReconnect=!1;const r=Tt(e,"open",(function(){n.onopen(),t&&t()})),i=e=>{this.cleanup(),this._readyState="closed",this.emitReserved("error",e),t?t(e):this.maybeReconnectOnOpen()},o=Tt(e,"error",i);if(!1!==this._timeout){const t=this._timeout,n=this.setTimeoutFn((()=>{r(),i(new Error("timeout")),e.close()}),t);this.opts.autoUnref&&n.unref(),this.subs.push((()=>{this.clearTimeoutFn(n)}))}return this.subs.push(r),this.subs.push(o),this}connect(t){return this.open(t)}onopen(){this.cleanup(),this._readyState="open",this.emitReserved("open");const t=this.engine;this.subs.push(Tt(t,"ping",this.onping.bind(this)),Tt(t,"data",this.ondata.bind(this)),Tt(t,"error",this.onerror.bind(this)),Tt(t,"close",this.onclose.bind(this)),Tt(this.decoder,"decoded",this.ondecoded.bind(this)))}onping(){this.emitReserved("ping")}ondata(t){try{this.decoder.add(t)}catch(t){this.onclose("parse error",t)}}ondecoded(t){z((()=>{this.emitReserved("packet",t)}),this.setTimeoutFn)}onerror(t){this.emitReserved("error",t)}socket(t,e){let n=this.nsps[t];return n?this._autoConnect&&!n.active&&n.connect():(n=new St(this,t,e),this.nsps[t]=n),n}_destroy(t){const e=Object.keys(this.nsps);for(const t of e){if(this.nsps[t].active)return}this._close()}_packet(t){const e=this.encoder.encode(t);for(let n=0;n<e.length;n++)this.engine.write(e[n],t.options)}cleanup(){this.subs.forEach((t=>t())),this.subs.length=0,this.decoder.destroy()}_close(){this.skipReconnect=!0,this._reconnecting=!1,this.onclose("forced close"),this.engine&&this.engine.close()}disconnect(){return this._close()}onclose(t,e){this.cleanup(),this.backoff.reset(),this._readyState="closed",this.emitReserved("close",t,e),this._reconnection&&!this.skipReconnect&&this.reconnect()}reconnect(){if(this._reconnecting||this.skipReconnect)return this;const t=this;if(this.backoff.attempts>=this._reconnectionAttempts)this.backoff.reset(),this.emitReserved("reconnect_failed"),this._reconnecting=!1;else{const e=this.backoff.duration();this._reconnecting=!0;const n=this.setTimeoutFn((()=>{t.skipReconnect||(this.emitReserved("reconnect_attempt",t.backoff.attempts),t.skipReconnect||t.open((e=>{e?(t._reconnecting=!1,t.reconnect(),this.emitReserved("reconnect_error",e)):t.onreconnect()})))}),e);this.opts.autoUnref&&n.unref(),this.subs.push((()=>{this.clearTimeoutFn(n)}))}}onreconnect(){const t=this.backoff.attempts;this._reconnecting=!1,this.backoff.reset(),this.emitReserved("reconnect",t)}}const Ct={};function Ot(t,e){"object"==typeof t&&(e=t,t=void 0);const n=function(t,e="",n){let r=t;n=n||"undefined"!=typeof location&&location,null==t&&(t=n.protocol+"//"+n.host),"string"==typeof t&&("/"===t.charAt(0)&&(t="/"===t.charAt(1)?n.protocol+t:n.host+t),/^(https?|wss?):\/\//.test(t)||(t=void 0!==n?n.protocol+"//"+t:"https://"+t),r=rt(t)),r.port||(/^(http|ws)$/.test(r.protocol)?r.port="80":/^(http|ws)s$/.test(r.protocol)&&(r.port="443")),r.path=r.path||"/";const i=-1!==r.host.indexOf(":")?"["+r.host+"]":r.host;return r.id=r.protocol+"://"+i+":"+r.port+e,r.href=r.protocol+"://"+i+(n&&n.port===r.port?"":":"+r.port),r}(t,(e=e||{}).path||"/socket.io"),r=n.source,i=n.id,o=n.path,s=Ct[i]&&o in Ct[i].nsps;let a;return e.forceNew||e["force new connection"]||!1===e.multiplex||s?a=new Rt(r,e):(Ct[i]||(Ct[i]=new Rt(r,e)),a=Ct[i]),n.query&&!e.query&&(e.query=n.queryKey),a.socket(n.path,e)}Object.assign(Ot,{Manager:Rt,Socket:St,io:Ot,connect:Ot});var Bt="8081",Pt=null;const Nt=function(){return Pt||(Pt=Ot("http://".concat(window.location.hostname,":").concat(Bt))),Pt};function xt(t){return xt="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},xt(t)}function Dt(t,e,n){return(e=function(t){var e=function(t,e){if("object"!=xt(t)||!t)return t;var n=t[Symbol.toPrimitive];if(void 0!==n){var r=n.call(t,e||"default");if("object"!=xt(r))return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===e?String:Number)(t)}(t,"string");return"symbol"==xt(e)?e:e+""}(e))in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}$(".select2").select2();var Lt="".concat(window.location.origin,"/api/productionplan/detail"),Ut=("".concat(window.location.origin,"/production-plan/detail/export-materials"),"".concat(window.location.origin,"/api/productionplan/detail/history")),Mt=Nt(),It=[];jQuery("input[name='statusId']").each((function(){this.checked&&It.push(this.value)}));var $t=$(".table-plan-detail").DataTable(Dt(Dt(Dt(Dt(Dt(Dt(Dt(Dt(Dt({scrollX:!0,language:__languages.table,aaSorting:[]},"language",{lengthMenu:o("Number of records _MENU_"),info:"",paginate:{previous:"‹",next:"›"}}),"processing",!0),"serverSide",!0),"searching",!1),"dom",'rt<"bottom"flp><"clear">'),"lengthMenu",[10,20,30,40,50]),"ajax",{url:Lt,dataSrc:"data",data:function(t){t.page=t.start/t.length+1,t.planId=$("#idPlan").val(),t.product=$(".product").val(),t.machine=$(".machine").val(),t.status=It,t.from=$("#from").val(),t.to=$("#to").val()}}),"columns",[{data:"Symbols",defaultContent:"",title:o("Symbols Plan"),render:function(t){if(t){var e=t.split("--");return"<p>"+e[0]+"</p><p>-"+e[1]+"-"+e[2]+"</p>"}return""}},{data:"machine.Name",defaultContent:"",title:o("Machine")},{data:"mold.Name",defaultContent:"",title:o("Mold")},{data:"product.Name",defaultContent:"",title:o("Product")},{data:"Date",defaultContent:"",title:o("Date")},{data:{id:"ID",status:"Status"},defaultContent:"",title:o("Output"),render:function(t){return(t.Quantity_Production?parseFloat(t.Quantity_Production):0)+" / "+parseFloat(t.Quantity)}},{data:"Quantity_Error",defaultContent:"",title:o("Quantity")+" "+o("Error"),render:function(t){return parseFloat(t||0)}},{data:"Time_Real_Start",defaultContent:"",title:o("Start"),render:function(t){if(t){var e=t.split(" ");return"<p>"+e[1]+"</p><p>"+e[0]+"</p>"}return""}},{data:"Time_Real_End",defaultContent:"",title:o("End"),render:function(t){if(t){var e=t.split(" ");return"<p>"+e[1]+"</p><p>"+e[0]+"</p>"}return""}},{data:"Version",defaultContent:"",title:o("Version")},{data:"His",defaultContent:"",title:o("His")},{data:"Status",title:o("Status"),render:function(t){return 0==t?'<p style="color:red">'+o("Dont Production")+"</p>":1==t?'<p style="color:Blue">'+o("Are Production")+"</p>":3==t?'<p style="color:Blue">Tạm dừng</p>':'<p style="color:green">'+o("Success")+"</p>"}},{data:{id:"ID",status:"Status"},title:o("Action"),render:function(t){if(0==t.Status){var e="";return role_edit_plan&&(e=e+'\n                        <button type="button" id="edit-'+t.ID+'"  class="btn btn-info btn-edit" >\n                        '+o("Edit")+"\n                        </button>"),role_delete_plan&&(e=e+'  <button id="del-'+t.ID+'"  class="btn btn-danger btn-delete" >\n                        '+o("Delete")+"\n                        </button>\n                        "),e}return 1!=t.Status?"\n\n                    ":role_end_plan?'\n                        <button id="end-'+t.ID+'"  class="btn btn-warning btn-end" style="width: 110px">\n                        '+o("End")+"\n                        </button>\n                        ":void 0}}]),"rowsGroup",[0,1,2,4,11]));$("table").on("page.dt",(function(){console.log($t.page.info())})),$(".filter").on("click",(function(){It=[],jQuery("input[name='statusId']").each((function(){this.checked&&It.push(this.value)})),$t.ajax.reload()})),$(".list_status").on("change",(function(){It=[],jQuery("input[name='statusId']").each((function(){this.checked&&It.push(this.value)})),console.log(It),$t.ajax.reload()})),$(document).on("click",".btn-delete",(function(){var t=$(this).attr("id"),e=$(this).parent().parent().children("td").first().text();$("#modalRequestDel").modal(),$("#nameDel").text(e),$("#idDel").val(t.split("-")[1]),$(".modal-footer > .btn-danger").on("click",(function(){Mt.emit("refresh-plan",{plan_id:$("#idPlan").val()})}))})),$(".btn-import").on("click",(function(){$("#modalImport").modal(),$("#importFile").val(""),$(".input-text").text(__input.file),$(".error-file").hide(),$(".btn-save-file").prop("disabled",!1),$("#product_id").val("")}));var jt=!1;$("#importFile").on("change",(function(){var t=$(this).val().split("\\").pop(),e=t.split(".").pop().toLowerCase();$(".input-text").text(t),$(".error-file").hide(),"xlsx"!=e&&"xls"!=e?($(".error-file").show(),$(".btn-save-file").prop("disabled",!0)):($(".btn-save-file").prop("disabled",!1),jt=!0)})),$(".btn-save-file").on("click",(function(){$(".error-file").hide(),jt?($(".btn-submit-file").click(),Mt.emit("refresh-plan",{plan_id:$("#idPlan").val()})):$(".error-file").show()})),$(document).on("click",".btn-detail",(function(){var t=$(this).attr("id"),e=$(this).parent().parent().children("td").first().text();$("#modalTableDetail").modal(),$("#idUnit").val(t.split("-")[1]),Yt.ajax.reload(),$("#nameDel").text(e)})),$(document).on("click",".btn-end",(function(){var t=$(this).attr("id");$(this).parent().parent().children("td").first().text();$("#modalend").modal(),$("#idEnd").val(t.split("-")[1])})),$(document).on("click",".btn-edit",(function(){$("#Product option:selected").attr("selected",!1),$("#Machine option:selected").attr("selected",!1),$("#Mold option:selected").attr("selected",!1),$("#Quantity").val(""),$("#Date").val(""),$("#Version").val(""),$("#His").val("");var t=$(this).closest("tr"),e=t.find("td:eq(1)").text(),n=t.find("td:eq(2)").text(),r=t.find("td:eq(3)").text(),i=t.find("td:eq(4)").text(),o=t.find("td:eq(5)").text(),s=t.find("td:eq(9)").text(),a=t.find("td:eq(10)").text(),h=$(this).attr("id");console.log(e,n,r,i,o,s,a);var c=o.split("/");console.log(c),$("#modalAddOrUpdate").modal(),$("#Product option:contains("+r+")").attr("selected","selected"),$("#Machine option:contains("+e+")").attr("selected","selected"),$("#Mold option:contains("+n+")").attr("selected","selected"),$("#Quantity").val(Number(c[1])),$("#Date").val(i),$("#Version").val(s),$("#His").val(a),$("#idDetail").val(h.split("-")[1])})),$(document).on("click",".btn-create",(function(){$("#modalAddOrUpdate").modal(),$("#Product").val(""),$("#Machine").val(""),$("#Mold").val(""),$("#Quantity").val(""),$("#Date").val(""),$("#Version").val(""),$("#His").val(""),$("#idDetail").val("")}));var qt=0,Yt=$(".table-his").DataTable(Dt(Dt(Dt(Dt(Dt({scrollX:!0,searching:!1,ordering:!1,language:{lengthMenu:o("Number of records _MENU_"),info:o("Showing _START_ to _END_ of _TOTAL_ entries"),paginate:{previous:"‹",next:"›"}},processing:!0,serverSide:!0},"searching",!1),"dom",'rt<"bottom"flp><"clear">'),"lengthMenu",[5,10,20,30,40]),"ajax",{url:Ut,dataSrc:"data",data:function(t){delete t.columns,delete t.order,delete t.search,t.page=t.start/t.length+1,t.idplan=qt}}),"columns",[{data:"ID",defaultContent:"",title:"ID"},{data:"Data_Table",defaultContent:"",title:o("Symbols"),render:function(t){var e=JSON.parse(t).Symbols.split("--");return"<p>"+e[0]+"</p><p>-"+e[1]+"-"+e[2]+"</p>"}},{data:"Data_Table",defaultContent:"",title:o("Machine"),render:function(t){return JSON.parse(t).Part_Action}},{data:"Data_Table",defaultContent:"",title:o("Mold"),render:function(t){return JSON.parse(t).Mold_ID}},{data:"Data_Table",defaultContent:"",title:o("Product"),render:function(t){return JSON.parse(t).Product_ID}},{data:"Data_Table",defaultContent:"",title:o("Date"),render:function(t){return JSON.parse(t).Date}},{data:"Data_Table",defaultContent:"",title:o("Quantity"),render:function(t){return JSON.parse(t).Quantity}},{data:"Data_Table",defaultContent:"",title:o("Note"),render:function(t){return JSON.parse(t).Note}},{data:"Action_Name",defaultContent:"",title:o("Action Name"),render:function(t){return o(t)}},{data:"Data_Table",defaultContent:"",title:o("User Updated"),render:function(t){return JSON.parse(t).User_Updated}},{data:"Data_Table",defaultContent:"",title:o("Time Updated"),render:function(t){var e=JSON.parse(t);return moment(e.Time_Updated,"MMMM Do YYYY h:mm:ss a").format("YYYY-MM-DD HH:mm:ss")}}]));$(document).on("click",".btn-history",(function(){var t=$(this).attr("id"),e=$(this).parent().parent().children("td").first().text();$("#modalTableHistory").modal(),$("#idUnit").val(t.split("-")[1]),qt=t.split("-")[1],Yt.ajax.reload(),$("#nameDel").text(e)})),Mt.on("start-plan",(function(t){$t.ajax.reload()})),Mt.on("end-plan",(function(t){$t.ajax.reload()}))})()})();
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./resources/js/lang/index.js":
+/*!************************************!*\
+  !*** ./resources/js/lang/index.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var lang = document.querySelector('html').getAttribute('lang');
+var translations = {};
+var requireModules = __webpack_require__("./resources/js/lang/translations sync \\.js$");
+requireModules.keys().forEach(function (modulePath) {
+  var key = modulePath.replace(/(^.\/)|(.js$)/g, '');
+  translations[key] = requireModules(modulePath)["default"];
+});
+var t = function t(text) {
+  return translations[lang][text] || text;
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (t);
+
+/***/ }),
+
+/***/ "./resources/js/lang/translations/en.js":
+/*!**********************************************!*\
+  !*** ./resources/js/lang/translations/en.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _vi__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vi */ "./resources/js/lang/translations/vi.js");
+
+var en = {};
+Object.keys(_vi__WEBPACK_IMPORTED_MODULE_0__["default"]).forEach(function (key) {
+  en[key] = key;
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (en);
+
+/***/ }),
+
+/***/ "./resources/js/lang/translations/ko.js":
+/*!**********************************************!*\
+  !*** ./resources/js/lang/translations/ko.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+
+/***/ }),
+
+/***/ "./resources/js/lang/translations/vi.js":
+/*!**********************************************!*\
+  !*** ./resources/js/lang/translations/vi.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var _NumberOfRecords_M;
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_NumberOfRecords_M = {
+  "Number of records _MENU_": "Số lượng bản ghi _MENU_",
+  "Showing _START_ to _END_ of _TOTAL_ entries": "Bản ghi từ _START_ đến _END_ của _TOTAL_ bản ghi",
+  "Name": "Tên",
+  "Symbols": "Mã",
+  "Type": "Loại",
+  "Note": "Ghi chú",
+  "User Created": "Người tạo",
+  "Time Created": "Thời gian tạo",
+  "User Updated": "Người cập nhật",
+  "Time Updated": "Thời gian cập nhật",
+  "Action": "Hành Động",
+  "Edit": "Sửa",
+  "Delete": "Xóa",
+  "Start Time": "Thời Gian Bắt Đầu",
+  "End Time": "Thời Gian Kết Thúc",
+  "Cycle Time": "Chu Kì Sản Xuất 1 Sản Phẩm ",
+  "Detail": "Chi Tiết",
+  "Month": "Tháng",
+  "Year": "Năm",
+  "Location Take Materials": "Vị Trí Lấy Hàng",
+  "Materials Return Location": "Vị Trí Trả Hàng",
+  "Destroy": "Hủy"
+}, _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Detail", "Chi Tiết"), "Success", "Hoàn Thành"), "Product", "Sản Phẩm"), "Machine", "Máy Sản Xuất"), "Dont Production", "Chưa Sản Xuất"), "Are Production", "Đang Sản Xuất"), "Success Production", "Hoàn Thành Sản Xuất"), "Status", "Trạng Thái"), "Export", "Xuất Kho"), "Materials", "Nguyên Vật Liệu"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Dont Export", "Chưa Xuất"), "Are Export", "Đang Xuất"), "Success Export", "Hoàn Thành Xuất"), "Stock Min", "Tồn Giới Hạn"), "Cavity", "Cavity"), "Mold", "Khuôn"), "Quantity Mold", "Số Lượng Khuôn"), "Quantity", "Số Lượng"), "Date", "Ngày"), "Unit", "Đơn Vị Tính"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Parking", "Đơn Vị Đóng Gói"), "History", "Lịch Sử"), "Return", "Khôi Phục"), "Update", "Cập Nhật"), "Delete", "Xóa"), "Processing", "Đang Thực Hiện"), "Enable", "Kích Hoạt"), "Disable", "Vô Hiệu Hóa"), "Part", "Bộ Phận"), "Time Start", "Thời Gian Bắt Đầu"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Time End", "Thời Gian Kết Thúc"), "Manager AGV", "Người Quản Lý AGV"), "Maintenance Time", "Thời Gian Bảo Trì"), "Maintenance Date", "Ngày Bảo Dưỡng"), "Warehouse", "Kho"), "Plan", "Kế Hoạch"), "Production", "Sản Xuất"), "Output", "Sản Lượng"), "End", "Kết Thúc"), "Error", "Lỗi"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Time Real Start", "Bắt Đầu Thực Tế"), "Time Real End", "Kết Thúc Thực Tế"), "Symbols Plan", "Mã Chỉ Thị"), "Infor", "Thông Tin"), "Normal", "Xuất Thường"), "Cancel", "Hủy"), "Confirm", "Xác nhận"), "Close", "Đóng"), "Start", "Bắt Đầu"), "User Name", "Tên Đăng Nhập"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "ENABLE", "Kích Hoạt"), "DISABLE", "Không Kích Hoạt"), "Action Name", "Kiểu Hành Động"), "INSERT", "Thêm Mới"), "Insert", "Thêm Mới"), "OEE", "Hiệu Suất Tổng Thể"), "Availability", "Khả Dụng"), "Performance", "Hiệu Suất"), "Quality", "Chất Lượng"), "shift", "ca"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Shift", "ca"), "day", "ngày"), "Description", "Chú Thích"), "Find AGV", "Tìm AGV"), "Role", "Vai Trò"), "Waiting for AGV", "Chờ AGV"), "AGV Shipping", "AGV Đang Chuyển Hàng"), "IsDelete", "Xóa"), "To", "Tới"), "Command", "Lệnh"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "INSERT_USER", "Thêm Mới Tài Khoản"), "INSERT_ROLE", "Thêm Mới Vai Trò"), "Update_User", "Cập Nhật Tài Khoản"), "Delete_Role", "Xóa Vai Trò"), "Command AGV Was Destroy", "Lệnh AGV đã bị hủy"), "Select machine", "Chọn máy sản xuất"), "Loading data", "Đang tải dữ liệu"), "Mold code", "Mã khuôn"), "Actual start time", "Bắt đầu thực tế"), "Cycle time", "Thời gian đóng mở khuôn"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Quantity NG", "Số lượng sản phẩm lỗi"), "Quantity NG of", "Số lượng sản phẩm lỗi của"), "OEE parameter chart", "Biểu đồ thông số hiệu suất OEE"), "Active timeline chart", "Biểu đồ thời gian hoạt động"), "minute", "phút"), "minutes", "phút"), "hour", "giờ"), "Machine stop logs", "Dừng máy"), "Defective products", "Sản phẩm lỗi"), "Statistical chart of OEE by machine", "Biểu đồ thống kê hiệu suất theo máy"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Statistical chart of OEE by day", "Biểu đồ thống kê hiệu suất theo ngày"), "View", "Xem"), "Rows per page", "Số lượng bản ghi"), "Error stop and no-error stop rate chart", "Biểu đồ tỷ lệ dừng lỗi và không lỗi"), "Machine error rate chart", "Biểu đồ tỷ lệ lỗi máy sản xuất"), "No-error stop rate chart", "Biểu đồ tỷ lệ dừng không lỗi"), "Machine stop rate chart due to quality", "Biểu đồ tỷ lệ dừng máy cho chất lượng"), "Statistics chart of machine time stop", "Biểu đồ thống kê thời gian dừng máy"), "Statistics chart of defective product", "Biểu đồ thống kê sản phẩm lỗi"), "Stop Time", "Thời Gian Dừng"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Error Code", "Mã Lỗi"), "Error Type", "Loại Lỗi"), "Quantity Error", "Số lượng lỗi"), "Iot disconnect", "Mất kết nối Iot"), "All machine", "Tất cả máy sản xuất"), "Quantity produced", "Số lượng đã sản xuất"), "Quantity produced of", "Số lượng đã sản xuất của"), "run", "Chạy"), "stopError", "Dừng do lỗi"), "stopNotError", "Dừng không lỗi"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "stop due to error", "Dừng do lỗi"), "stop not error", "Dừng không lỗi"), "stop due to quality", "Dừng do chất lượng"), "machine stop", "Dừng máy"), "products", "sản phẩm"), "Export excel", "Xuất excel"), "Duration", "Thời lượng"), "Total stop time", "Tổng thời gian dừng"), "Line", "Line sản xuất"), "Monitor", "Giám sát máy sản xuất"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_NumberOfRecords_M, "Monitor Line", "Giám sát máy sản xuất"), "Data analysis", "Phân tích dữ liệu"), "Check all", "Chọn tất cả"), "Submit", "Nhập"), "Disconnected", "Máy tắt"), "RUNNING", "Máy chạy"), "ERROR", "Máy lỗi"), "STOP", "Máy dừng"));
+
+/***/ }),
+
+/***/ "./resources/js/oee/socket/index.js":
+/*!******************************************!*\
+  !*** ./resources/js/oee/socket/index.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var socket_io_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! socket.io-client */ "./node_modules/socket.io-client/build/esm/index.js");
+
+var _process$env = ({"SOCKET_PORT":"8081","SOCKET_HOST":"192.168.1.29"}),
+  SOCKET_PORT = _process$env.SOCKET_PORT,
+  SOCKET_HOST = _process$env.SOCKET_HOST;
+var socket = null;
+var getConnection = function getConnection() {
+  if (!socket) socket = (0,socket_io_client__WEBPACK_IMPORTED_MODULE_0__.io)("http://".concat(window.location.hostname, ":").concat(SOCKET_PORT));
+  return socket;
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getConnection);
+
+/***/ }),
+
+/***/ "./node_modules/base64-js/index.js":
+/*!*****************************************!*\
+  !*** ./node_modules/base64-js/index.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+
+exports.byteLength = byteLength
+exports.toByteArray = toByteArray
+exports.fromByteArray = fromByteArray
+
+var lookup = []
+var revLookup = []
+var Arr = typeof Uint8Array !== 'undefined' ? Uint8Array : Array
+
+var code = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+for (var i = 0, len = code.length; i < len; ++i) {
+  lookup[i] = code[i]
+  revLookup[code.charCodeAt(i)] = i
+}
+
+// Support decoding URL-safe base64 strings, as Node.js does.
+// See: https://en.wikipedia.org/wiki/Base64#URL_applications
+revLookup['-'.charCodeAt(0)] = 62
+revLookup['_'.charCodeAt(0)] = 63
+
+function getLens (b64) {
+  var len = b64.length
+
+  if (len % 4 > 0) {
+    throw new Error('Invalid string. Length must be a multiple of 4')
+  }
+
+  // Trim off extra bytes after placeholder bytes are found
+  // See: https://github.com/beatgammit/base64-js/issues/42
+  var validLen = b64.indexOf('=')
+  if (validLen === -1) validLen = len
+
+  var placeHoldersLen = validLen === len
+    ? 0
+    : 4 - (validLen % 4)
+
+  return [validLen, placeHoldersLen]
+}
+
+// base64 is 4/3 + up to two characters of the original data
+function byteLength (b64) {
+  var lens = getLens(b64)
+  var validLen = lens[0]
+  var placeHoldersLen = lens[1]
+  return ((validLen + placeHoldersLen) * 3 / 4) - placeHoldersLen
+}
+
+function _byteLength (b64, validLen, placeHoldersLen) {
+  return ((validLen + placeHoldersLen) * 3 / 4) - placeHoldersLen
+}
+
+function toByteArray (b64) {
+  var tmp
+  var lens = getLens(b64)
+  var validLen = lens[0]
+  var placeHoldersLen = lens[1]
+
+  var arr = new Arr(_byteLength(b64, validLen, placeHoldersLen))
+
+  var curByte = 0
+
+  // if there are placeholders, only get up to the last complete 4 chars
+  var len = placeHoldersLen > 0
+    ? validLen - 4
+    : validLen
+
+  var i
+  for (i = 0; i < len; i += 4) {
+    tmp =
+      (revLookup[b64.charCodeAt(i)] << 18) |
+      (revLookup[b64.charCodeAt(i + 1)] << 12) |
+      (revLookup[b64.charCodeAt(i + 2)] << 6) |
+      revLookup[b64.charCodeAt(i + 3)]
+    arr[curByte++] = (tmp >> 16) & 0xFF
+    arr[curByte++] = (tmp >> 8) & 0xFF
+    arr[curByte++] = tmp & 0xFF
+  }
+
+  if (placeHoldersLen === 2) {
+    tmp =
+      (revLookup[b64.charCodeAt(i)] << 2) |
+      (revLookup[b64.charCodeAt(i + 1)] >> 4)
+    arr[curByte++] = tmp & 0xFF
+  }
+
+  if (placeHoldersLen === 1) {
+    tmp =
+      (revLookup[b64.charCodeAt(i)] << 10) |
+      (revLookup[b64.charCodeAt(i + 1)] << 4) |
+      (revLookup[b64.charCodeAt(i + 2)] >> 2)
+    arr[curByte++] = (tmp >> 8) & 0xFF
+    arr[curByte++] = tmp & 0xFF
+  }
+
+  return arr
+}
+
+function tripletToBase64 (num) {
+  return lookup[num >> 18 & 0x3F] +
+    lookup[num >> 12 & 0x3F] +
+    lookup[num >> 6 & 0x3F] +
+    lookup[num & 0x3F]
+}
+
+function encodeChunk (uint8, start, end) {
+  var tmp
+  var output = []
+  for (var i = start; i < end; i += 3) {
+    tmp =
+      ((uint8[i] << 16) & 0xFF0000) +
+      ((uint8[i + 1] << 8) & 0xFF00) +
+      (uint8[i + 2] & 0xFF)
+    output.push(tripletToBase64(tmp))
+  }
+  return output.join('')
+}
+
+function fromByteArray (uint8) {
+  var tmp
+  var len = uint8.length
+  var extraBytes = len % 3 // if we have 1 byte left, pad 2 bytes
+  var parts = []
+  var maxChunkLength = 16383 // must be multiple of 3
+
+  // go through the array every three bytes, we'll deal with trailing stuff later
+  for (var i = 0, len2 = len - extraBytes; i < len2; i += maxChunkLength) {
+    parts.push(encodeChunk(uint8, i, (i + maxChunkLength) > len2 ? len2 : (i + maxChunkLength)))
+  }
+
+  // pad the end with zeros, but make sure to not forget the extra bytes
+  if (extraBytes === 1) {
+    tmp = uint8[len - 1]
+    parts.push(
+      lookup[tmp >> 2] +
+      lookup[(tmp << 4) & 0x3F] +
+      '=='
+    )
+  } else if (extraBytes === 2) {
+    tmp = (uint8[len - 2] << 8) + uint8[len - 1]
+    parts.push(
+      lookup[tmp >> 10] +
+      lookup[(tmp >> 4) & 0x3F] +
+      lookup[(tmp << 2) & 0x3F] +
+      '='
+    )
+  }
+
+  return parts.join('')
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/buffer/index.js":
+/*!**************************************!*\
+  !*** ./node_modules/buffer/index.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <http://feross.org>
+ * @license  MIT
+ */
+/* eslint-disable no-proto */
+
+
+
+var base64 = __webpack_require__(/*! base64-js */ "./node_modules/base64-js/index.js")
+var ieee754 = __webpack_require__(/*! ieee754 */ "./node_modules/ieee754/index.js")
+var isArray = __webpack_require__(/*! isarray */ "./node_modules/isarray/index.js")
+
+exports.Buffer = Buffer
+exports.SlowBuffer = SlowBuffer
+exports.INSPECT_MAX_BYTES = 50
+
+/**
+ * If `Buffer.TYPED_ARRAY_SUPPORT`:
+ *   === true    Use Uint8Array implementation (fastest)
+ *   === false   Use Object implementation (most compatible, even IE6)
+ *
+ * Browsers that support typed arrays are IE 10+, Firefox 4+, Chrome 7+, Safari 5.1+,
+ * Opera 11.6+, iOS 4.2+.
+ *
+ * Due to various browser bugs, sometimes the Object implementation will be used even
+ * when the browser supports typed arrays.
+ *
+ * Note:
+ *
+ *   - Firefox 4-29 lacks support for adding new properties to `Uint8Array` instances,
+ *     See: https://bugzilla.mozilla.org/show_bug.cgi?id=695438.
+ *
+ *   - Chrome 9-10 is missing the `TypedArray.prototype.subarray` function.
+ *
+ *   - IE10 has a broken `TypedArray.prototype.subarray` function which returns arrays of
+ *     incorrect length in some situations.
+
+ * We detect these buggy browsers and set `Buffer.TYPED_ARRAY_SUPPORT` to `false` so they
+ * get the Object implementation, which is slower but behaves correctly.
+ */
+Buffer.TYPED_ARRAY_SUPPORT = __webpack_require__.g.TYPED_ARRAY_SUPPORT !== undefined
+  ? __webpack_require__.g.TYPED_ARRAY_SUPPORT
+  : typedArraySupport()
+
+/*
+ * Export kMaxLength after typed array support is determined.
+ */
+exports.kMaxLength = kMaxLength()
+
+function typedArraySupport () {
+  try {
+    var arr = new Uint8Array(1)
+    arr.__proto__ = {__proto__: Uint8Array.prototype, foo: function () { return 42 }}
+    return arr.foo() === 42 && // typed array instances can be augmented
+        typeof arr.subarray === 'function' && // chrome 9-10 lack `subarray`
+        arr.subarray(1, 1).byteLength === 0 // ie10 has broken `subarray`
+  } catch (e) {
+    return false
+  }
+}
+
+function kMaxLength () {
+  return Buffer.TYPED_ARRAY_SUPPORT
+    ? 0x7fffffff
+    : 0x3fffffff
+}
+
+function createBuffer (that, length) {
+  if (kMaxLength() < length) {
+    throw new RangeError('Invalid typed array length')
+  }
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    // Return an augmented `Uint8Array` instance, for best performance
+    that = new Uint8Array(length)
+    that.__proto__ = Buffer.prototype
+  } else {
+    // Fallback: Return an object instance of the Buffer class
+    if (that === null) {
+      that = new Buffer(length)
+    }
+    that.length = length
+  }
+
+  return that
+}
+
+/**
+ * The Buffer constructor returns instances of `Uint8Array` that have their
+ * prototype changed to `Buffer.prototype`. Furthermore, `Buffer` is a subclass of
+ * `Uint8Array`, so the returned instances will have all the node `Buffer` methods
+ * and the `Uint8Array` methods. Square bracket notation works as expected -- it
+ * returns a single octet.
+ *
+ * The `Uint8Array` prototype remains unmodified.
+ */
+
+function Buffer (arg, encodingOrOffset, length) {
+  if (!Buffer.TYPED_ARRAY_SUPPORT && !(this instanceof Buffer)) {
+    return new Buffer(arg, encodingOrOffset, length)
+  }
+
+  // Common case.
+  if (typeof arg === 'number') {
+    if (typeof encodingOrOffset === 'string') {
+      throw new Error(
+        'If encoding is specified then the first argument must be a string'
+      )
+    }
+    return allocUnsafe(this, arg)
+  }
+  return from(this, arg, encodingOrOffset, length)
+}
+
+Buffer.poolSize = 8192 // not used by this implementation
+
+// TODO: Legacy, not needed anymore. Remove in next major version.
+Buffer._augment = function (arr) {
+  arr.__proto__ = Buffer.prototype
+  return arr
+}
+
+function from (that, value, encodingOrOffset, length) {
+  if (typeof value === 'number') {
+    throw new TypeError('"value" argument must not be a number')
+  }
+
+  if (typeof ArrayBuffer !== 'undefined' && value instanceof ArrayBuffer) {
+    return fromArrayBuffer(that, value, encodingOrOffset, length)
+  }
+
+  if (typeof value === 'string') {
+    return fromString(that, value, encodingOrOffset)
+  }
+
+  return fromObject(that, value)
+}
+
+/**
+ * Functionally equivalent to Buffer(arg, encoding) but throws a TypeError
+ * if value is a number.
+ * Buffer.from(str[, encoding])
+ * Buffer.from(array)
+ * Buffer.from(buffer)
+ * Buffer.from(arrayBuffer[, byteOffset[, length]])
+ **/
+Buffer.from = function (value, encodingOrOffset, length) {
+  return from(null, value, encodingOrOffset, length)
+}
+
+if (Buffer.TYPED_ARRAY_SUPPORT) {
+  Buffer.prototype.__proto__ = Uint8Array.prototype
+  Buffer.__proto__ = Uint8Array
+  if (typeof Symbol !== 'undefined' && Symbol.species &&
+      Buffer[Symbol.species] === Buffer) {
+    // Fix subarray() in ES2016. See: https://github.com/feross/buffer/pull/97
+    Object.defineProperty(Buffer, Symbol.species, {
+      value: null,
+      configurable: true
+    })
+  }
+}
+
+function assertSize (size) {
+  if (typeof size !== 'number') {
+    throw new TypeError('"size" argument must be a number')
+  } else if (size < 0) {
+    throw new RangeError('"size" argument must not be negative')
+  }
+}
+
+function alloc (that, size, fill, encoding) {
+  assertSize(size)
+  if (size <= 0) {
+    return createBuffer(that, size)
+  }
+  if (fill !== undefined) {
+    // Only pay attention to encoding if it's a string. This
+    // prevents accidentally sending in a number that would
+    // be interpretted as a start offset.
+    return typeof encoding === 'string'
+      ? createBuffer(that, size).fill(fill, encoding)
+      : createBuffer(that, size).fill(fill)
+  }
+  return createBuffer(that, size)
+}
+
+/**
+ * Creates a new filled Buffer instance.
+ * alloc(size[, fill[, encoding]])
+ **/
+Buffer.alloc = function (size, fill, encoding) {
+  return alloc(null, size, fill, encoding)
+}
+
+function allocUnsafe (that, size) {
+  assertSize(size)
+  that = createBuffer(that, size < 0 ? 0 : checked(size) | 0)
+  if (!Buffer.TYPED_ARRAY_SUPPORT) {
+    for (var i = 0; i < size; ++i) {
+      that[i] = 0
+    }
+  }
+  return that
+}
+
+/**
+ * Equivalent to Buffer(num), by default creates a non-zero-filled Buffer instance.
+ * */
+Buffer.allocUnsafe = function (size) {
+  return allocUnsafe(null, size)
+}
+/**
+ * Equivalent to SlowBuffer(num), by default creates a non-zero-filled Buffer instance.
+ */
+Buffer.allocUnsafeSlow = function (size) {
+  return allocUnsafe(null, size)
+}
+
+function fromString (that, string, encoding) {
+  if (typeof encoding !== 'string' || encoding === '') {
+    encoding = 'utf8'
+  }
+
+  if (!Buffer.isEncoding(encoding)) {
+    throw new TypeError('"encoding" must be a valid string encoding')
+  }
+
+  var length = byteLength(string, encoding) | 0
+  that = createBuffer(that, length)
+
+  var actual = that.write(string, encoding)
+
+  if (actual !== length) {
+    // Writing a hex string, for example, that contains invalid characters will
+    // cause everything after the first invalid character to be ignored. (e.g.
+    // 'abxxcd' will be treated as 'ab')
+    that = that.slice(0, actual)
+  }
+
+  return that
+}
+
+function fromArrayLike (that, array) {
+  var length = array.length < 0 ? 0 : checked(array.length) | 0
+  that = createBuffer(that, length)
+  for (var i = 0; i < length; i += 1) {
+    that[i] = array[i] & 255
+  }
+  return that
+}
+
+function fromArrayBuffer (that, array, byteOffset, length) {
+  array.byteLength // this throws if `array` is not a valid ArrayBuffer
+
+  if (byteOffset < 0 || array.byteLength < byteOffset) {
+    throw new RangeError('\'offset\' is out of bounds')
+  }
+
+  if (array.byteLength < byteOffset + (length || 0)) {
+    throw new RangeError('\'length\' is out of bounds')
+  }
+
+  if (byteOffset === undefined && length === undefined) {
+    array = new Uint8Array(array)
+  } else if (length === undefined) {
+    array = new Uint8Array(array, byteOffset)
+  } else {
+    array = new Uint8Array(array, byteOffset, length)
+  }
+
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    // Return an augmented `Uint8Array` instance, for best performance
+    that = array
+    that.__proto__ = Buffer.prototype
+  } else {
+    // Fallback: Return an object instance of the Buffer class
+    that = fromArrayLike(that, array)
+  }
+  return that
+}
+
+function fromObject (that, obj) {
+  if (Buffer.isBuffer(obj)) {
+    var len = checked(obj.length) | 0
+    that = createBuffer(that, len)
+
+    if (that.length === 0) {
+      return that
+    }
+
+    obj.copy(that, 0, 0, len)
+    return that
+  }
+
+  if (obj) {
+    if ((typeof ArrayBuffer !== 'undefined' &&
+        obj.buffer instanceof ArrayBuffer) || 'length' in obj) {
+      if (typeof obj.length !== 'number' || isnan(obj.length)) {
+        return createBuffer(that, 0)
+      }
+      return fromArrayLike(that, obj)
+    }
+
+    if (obj.type === 'Buffer' && isArray(obj.data)) {
+      return fromArrayLike(that, obj.data)
+    }
+  }
+
+  throw new TypeError('First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.')
+}
+
+function checked (length) {
+  // Note: cannot use `length < kMaxLength()` here because that fails when
+  // length is NaN (which is otherwise coerced to zero.)
+  if (length >= kMaxLength()) {
+    throw new RangeError('Attempt to allocate Buffer larger than maximum ' +
+                         'size: 0x' + kMaxLength().toString(16) + ' bytes')
+  }
+  return length | 0
+}
+
+function SlowBuffer (length) {
+  if (+length != length) { // eslint-disable-line eqeqeq
+    length = 0
+  }
+  return Buffer.alloc(+length)
+}
+
+Buffer.isBuffer = function isBuffer (b) {
+  return !!(b != null && b._isBuffer)
+}
+
+Buffer.compare = function compare (a, b) {
+  if (!Buffer.isBuffer(a) || !Buffer.isBuffer(b)) {
+    throw new TypeError('Arguments must be Buffers')
+  }
+
+  if (a === b) return 0
+
+  var x = a.length
+  var y = b.length
+
+  for (var i = 0, len = Math.min(x, y); i < len; ++i) {
+    if (a[i] !== b[i]) {
+      x = a[i]
+      y = b[i]
+      break
+    }
+  }
+
+  if (x < y) return -1
+  if (y < x) return 1
+  return 0
+}
+
+Buffer.isEncoding = function isEncoding (encoding) {
+  switch (String(encoding).toLowerCase()) {
+    case 'hex':
+    case 'utf8':
+    case 'utf-8':
+    case 'ascii':
+    case 'latin1':
+    case 'binary':
+    case 'base64':
+    case 'ucs2':
+    case 'ucs-2':
+    case 'utf16le':
+    case 'utf-16le':
+      return true
+    default:
+      return false
+  }
+}
+
+Buffer.concat = function concat (list, length) {
+  if (!isArray(list)) {
+    throw new TypeError('"list" argument must be an Array of Buffers')
+  }
+
+  if (list.length === 0) {
+    return Buffer.alloc(0)
+  }
+
+  var i
+  if (length === undefined) {
+    length = 0
+    for (i = 0; i < list.length; ++i) {
+      length += list[i].length
+    }
+  }
+
+  var buffer = Buffer.allocUnsafe(length)
+  var pos = 0
+  for (i = 0; i < list.length; ++i) {
+    var buf = list[i]
+    if (!Buffer.isBuffer(buf)) {
+      throw new TypeError('"list" argument must be an Array of Buffers')
+    }
+    buf.copy(buffer, pos)
+    pos += buf.length
+  }
+  return buffer
+}
+
+function byteLength (string, encoding) {
+  if (Buffer.isBuffer(string)) {
+    return string.length
+  }
+  if (typeof ArrayBuffer !== 'undefined' && typeof ArrayBuffer.isView === 'function' &&
+      (ArrayBuffer.isView(string) || string instanceof ArrayBuffer)) {
+    return string.byteLength
+  }
+  if (typeof string !== 'string') {
+    string = '' + string
+  }
+
+  var len = string.length
+  if (len === 0) return 0
+
+  // Use a for loop to avoid recursion
+  var loweredCase = false
+  for (;;) {
+    switch (encoding) {
+      case 'ascii':
+      case 'latin1':
+      case 'binary':
+        return len
+      case 'utf8':
+      case 'utf-8':
+      case undefined:
+        return utf8ToBytes(string).length
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return len * 2
+      case 'hex':
+        return len >>> 1
+      case 'base64':
+        return base64ToBytes(string).length
+      default:
+        if (loweredCase) return utf8ToBytes(string).length // assume utf8
+        encoding = ('' + encoding).toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+Buffer.byteLength = byteLength
+
+function slowToString (encoding, start, end) {
+  var loweredCase = false
+
+  // No need to verify that "this.length <= MAX_UINT32" since it's a read-only
+  // property of a typed array.
+
+  // This behaves neither like String nor Uint8Array in that we set start/end
+  // to their upper/lower bounds if the value passed is out of range.
+  // undefined is handled specially as per ECMA-262 6th Edition,
+  // Section 13.3.3.7 Runtime Semantics: KeyedBindingInitialization.
+  if (start === undefined || start < 0) {
+    start = 0
+  }
+  // Return early if start > this.length. Done here to prevent potential uint32
+  // coercion fail below.
+  if (start > this.length) {
+    return ''
+  }
+
+  if (end === undefined || end > this.length) {
+    end = this.length
+  }
+
+  if (end <= 0) {
+    return ''
+  }
+
+  // Force coersion to uint32. This will also coerce falsey/NaN values to 0.
+  end >>>= 0
+  start >>>= 0
+
+  if (end <= start) {
+    return ''
+  }
+
+  if (!encoding) encoding = 'utf8'
+
+  while (true) {
+    switch (encoding) {
+      case 'hex':
+        return hexSlice(this, start, end)
+
+      case 'utf8':
+      case 'utf-8':
+        return utf8Slice(this, start, end)
+
+      case 'ascii':
+        return asciiSlice(this, start, end)
+
+      case 'latin1':
+      case 'binary':
+        return latin1Slice(this, start, end)
+
+      case 'base64':
+        return base64Slice(this, start, end)
+
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return utf16leSlice(this, start, end)
+
+      default:
+        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
+        encoding = (encoding + '').toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+
+// The property is used by `Buffer.isBuffer` and `is-buffer` (in Safari 5-7) to detect
+// Buffer instances.
+Buffer.prototype._isBuffer = true
+
+function swap (b, n, m) {
+  var i = b[n]
+  b[n] = b[m]
+  b[m] = i
+}
+
+Buffer.prototype.swap16 = function swap16 () {
+  var len = this.length
+  if (len % 2 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 16-bits')
+  }
+  for (var i = 0; i < len; i += 2) {
+    swap(this, i, i + 1)
+  }
+  return this
+}
+
+Buffer.prototype.swap32 = function swap32 () {
+  var len = this.length
+  if (len % 4 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 32-bits')
+  }
+  for (var i = 0; i < len; i += 4) {
+    swap(this, i, i + 3)
+    swap(this, i + 1, i + 2)
+  }
+  return this
+}
+
+Buffer.prototype.swap64 = function swap64 () {
+  var len = this.length
+  if (len % 8 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 64-bits')
+  }
+  for (var i = 0; i < len; i += 8) {
+    swap(this, i, i + 7)
+    swap(this, i + 1, i + 6)
+    swap(this, i + 2, i + 5)
+    swap(this, i + 3, i + 4)
+  }
+  return this
+}
+
+Buffer.prototype.toString = function toString () {
+  var length = this.length | 0
+  if (length === 0) return ''
+  if (arguments.length === 0) return utf8Slice(this, 0, length)
+  return slowToString.apply(this, arguments)
+}
+
+Buffer.prototype.equals = function equals (b) {
+  if (!Buffer.isBuffer(b)) throw new TypeError('Argument must be a Buffer')
+  if (this === b) return true
+  return Buffer.compare(this, b) === 0
+}
+
+Buffer.prototype.inspect = function inspect () {
+  var str = ''
+  var max = exports.INSPECT_MAX_BYTES
+  if (this.length > 0) {
+    str = this.toString('hex', 0, max).match(/.{2}/g).join(' ')
+    if (this.length > max) str += ' ... '
+  }
+  return '<Buffer ' + str + '>'
+}
+
+Buffer.prototype.compare = function compare (target, start, end, thisStart, thisEnd) {
+  if (!Buffer.isBuffer(target)) {
+    throw new TypeError('Argument must be a Buffer')
+  }
+
+  if (start === undefined) {
+    start = 0
+  }
+  if (end === undefined) {
+    end = target ? target.length : 0
+  }
+  if (thisStart === undefined) {
+    thisStart = 0
+  }
+  if (thisEnd === undefined) {
+    thisEnd = this.length
+  }
+
+  if (start < 0 || end > target.length || thisStart < 0 || thisEnd > this.length) {
+    throw new RangeError('out of range index')
+  }
+
+  if (thisStart >= thisEnd && start >= end) {
+    return 0
+  }
+  if (thisStart >= thisEnd) {
+    return -1
+  }
+  if (start >= end) {
+    return 1
+  }
+
+  start >>>= 0
+  end >>>= 0
+  thisStart >>>= 0
+  thisEnd >>>= 0
+
+  if (this === target) return 0
+
+  var x = thisEnd - thisStart
+  var y = end - start
+  var len = Math.min(x, y)
+
+  var thisCopy = this.slice(thisStart, thisEnd)
+  var targetCopy = target.slice(start, end)
+
+  for (var i = 0; i < len; ++i) {
+    if (thisCopy[i] !== targetCopy[i]) {
+      x = thisCopy[i]
+      y = targetCopy[i]
+      break
+    }
+  }
+
+  if (x < y) return -1
+  if (y < x) return 1
+  return 0
+}
+
+// Finds either the first index of `val` in `buffer` at offset >= `byteOffset`,
+// OR the last index of `val` in `buffer` at offset <= `byteOffset`.
+//
+// Arguments:
+// - buffer - a Buffer to search
+// - val - a string, Buffer, or number
+// - byteOffset - an index into `buffer`; will be clamped to an int32
+// - encoding - an optional encoding, relevant is val is a string
+// - dir - true for indexOf, false for lastIndexOf
+function bidirectionalIndexOf (buffer, val, byteOffset, encoding, dir) {
+  // Empty buffer means no match
+  if (buffer.length === 0) return -1
+
+  // Normalize byteOffset
+  if (typeof byteOffset === 'string') {
+    encoding = byteOffset
+    byteOffset = 0
+  } else if (byteOffset > 0x7fffffff) {
+    byteOffset = 0x7fffffff
+  } else if (byteOffset < -0x80000000) {
+    byteOffset = -0x80000000
+  }
+  byteOffset = +byteOffset  // Coerce to Number.
+  if (isNaN(byteOffset)) {
+    // byteOffset: it it's undefined, null, NaN, "foo", etc, search whole buffer
+    byteOffset = dir ? 0 : (buffer.length - 1)
+  }
+
+  // Normalize byteOffset: negative offsets start from the end of the buffer
+  if (byteOffset < 0) byteOffset = buffer.length + byteOffset
+  if (byteOffset >= buffer.length) {
+    if (dir) return -1
+    else byteOffset = buffer.length - 1
+  } else if (byteOffset < 0) {
+    if (dir) byteOffset = 0
+    else return -1
+  }
+
+  // Normalize val
+  if (typeof val === 'string') {
+    val = Buffer.from(val, encoding)
+  }
+
+  // Finally, search either indexOf (if dir is true) or lastIndexOf
+  if (Buffer.isBuffer(val)) {
+    // Special case: looking for empty string/buffer always fails
+    if (val.length === 0) {
+      return -1
+    }
+    return arrayIndexOf(buffer, val, byteOffset, encoding, dir)
+  } else if (typeof val === 'number') {
+    val = val & 0xFF // Search for a byte value [0-255]
+    if (Buffer.TYPED_ARRAY_SUPPORT &&
+        typeof Uint8Array.prototype.indexOf === 'function') {
+      if (dir) {
+        return Uint8Array.prototype.indexOf.call(buffer, val, byteOffset)
+      } else {
+        return Uint8Array.prototype.lastIndexOf.call(buffer, val, byteOffset)
+      }
+    }
+    return arrayIndexOf(buffer, [ val ], byteOffset, encoding, dir)
+  }
+
+  throw new TypeError('val must be string, number or Buffer')
+}
+
+function arrayIndexOf (arr, val, byteOffset, encoding, dir) {
+  var indexSize = 1
+  var arrLength = arr.length
+  var valLength = val.length
+
+  if (encoding !== undefined) {
+    encoding = String(encoding).toLowerCase()
+    if (encoding === 'ucs2' || encoding === 'ucs-2' ||
+        encoding === 'utf16le' || encoding === 'utf-16le') {
+      if (arr.length < 2 || val.length < 2) {
+        return -1
+      }
+      indexSize = 2
+      arrLength /= 2
+      valLength /= 2
+      byteOffset /= 2
+    }
+  }
+
+  function read (buf, i) {
+    if (indexSize === 1) {
+      return buf[i]
+    } else {
+      return buf.readUInt16BE(i * indexSize)
+    }
+  }
+
+  var i
+  if (dir) {
+    var foundIndex = -1
+    for (i = byteOffset; i < arrLength; i++) {
+      if (read(arr, i) === read(val, foundIndex === -1 ? 0 : i - foundIndex)) {
+        if (foundIndex === -1) foundIndex = i
+        if (i - foundIndex + 1 === valLength) return foundIndex * indexSize
+      } else {
+        if (foundIndex !== -1) i -= i - foundIndex
+        foundIndex = -1
+      }
+    }
+  } else {
+    if (byteOffset + valLength > arrLength) byteOffset = arrLength - valLength
+    for (i = byteOffset; i >= 0; i--) {
+      var found = true
+      for (var j = 0; j < valLength; j++) {
+        if (read(arr, i + j) !== read(val, j)) {
+          found = false
+          break
+        }
+      }
+      if (found) return i
+    }
+  }
+
+  return -1
+}
+
+Buffer.prototype.includes = function includes (val, byteOffset, encoding) {
+  return this.indexOf(val, byteOffset, encoding) !== -1
+}
+
+Buffer.prototype.indexOf = function indexOf (val, byteOffset, encoding) {
+  return bidirectionalIndexOf(this, val, byteOffset, encoding, true)
+}
+
+Buffer.prototype.lastIndexOf = function lastIndexOf (val, byteOffset, encoding) {
+  return bidirectionalIndexOf(this, val, byteOffset, encoding, false)
+}
+
+function hexWrite (buf, string, offset, length) {
+  offset = Number(offset) || 0
+  var remaining = buf.length - offset
+  if (!length) {
+    length = remaining
+  } else {
+    length = Number(length)
+    if (length > remaining) {
+      length = remaining
+    }
+  }
+
+  // must be an even number of digits
+  var strLen = string.length
+  if (strLen % 2 !== 0) throw new TypeError('Invalid hex string')
+
+  if (length > strLen / 2) {
+    length = strLen / 2
+  }
+  for (var i = 0; i < length; ++i) {
+    var parsed = parseInt(string.substr(i * 2, 2), 16)
+    if (isNaN(parsed)) return i
+    buf[offset + i] = parsed
+  }
+  return i
+}
+
+function utf8Write (buf, string, offset, length) {
+  return blitBuffer(utf8ToBytes(string, buf.length - offset), buf, offset, length)
+}
+
+function asciiWrite (buf, string, offset, length) {
+  return blitBuffer(asciiToBytes(string), buf, offset, length)
+}
+
+function latin1Write (buf, string, offset, length) {
+  return asciiWrite(buf, string, offset, length)
+}
+
+function base64Write (buf, string, offset, length) {
+  return blitBuffer(base64ToBytes(string), buf, offset, length)
+}
+
+function ucs2Write (buf, string, offset, length) {
+  return blitBuffer(utf16leToBytes(string, buf.length - offset), buf, offset, length)
+}
+
+Buffer.prototype.write = function write (string, offset, length, encoding) {
+  // Buffer#write(string)
+  if (offset === undefined) {
+    encoding = 'utf8'
+    length = this.length
+    offset = 0
+  // Buffer#write(string, encoding)
+  } else if (length === undefined && typeof offset === 'string') {
+    encoding = offset
+    length = this.length
+    offset = 0
+  // Buffer#write(string, offset[, length][, encoding])
+  } else if (isFinite(offset)) {
+    offset = offset | 0
+    if (isFinite(length)) {
+      length = length | 0
+      if (encoding === undefined) encoding = 'utf8'
+    } else {
+      encoding = length
+      length = undefined
+    }
+  // legacy write(string, encoding, offset, length) - remove in v0.13
+  } else {
+    throw new Error(
+      'Buffer.write(string, encoding, offset[, length]) is no longer supported'
+    )
+  }
+
+  var remaining = this.length - offset
+  if (length === undefined || length > remaining) length = remaining
+
+  if ((string.length > 0 && (length < 0 || offset < 0)) || offset > this.length) {
+    throw new RangeError('Attempt to write outside buffer bounds')
+  }
+
+  if (!encoding) encoding = 'utf8'
+
+  var loweredCase = false
+  for (;;) {
+    switch (encoding) {
+      case 'hex':
+        return hexWrite(this, string, offset, length)
+
+      case 'utf8':
+      case 'utf-8':
+        return utf8Write(this, string, offset, length)
+
+      case 'ascii':
+        return asciiWrite(this, string, offset, length)
+
+      case 'latin1':
+      case 'binary':
+        return latin1Write(this, string, offset, length)
+
+      case 'base64':
+        // Warning: maxLength not taken into account in base64Write
+        return base64Write(this, string, offset, length)
+
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return ucs2Write(this, string, offset, length)
+
+      default:
+        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
+        encoding = ('' + encoding).toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+
+Buffer.prototype.toJSON = function toJSON () {
+  return {
+    type: 'Buffer',
+    data: Array.prototype.slice.call(this._arr || this, 0)
+  }
+}
+
+function base64Slice (buf, start, end) {
+  if (start === 0 && end === buf.length) {
+    return base64.fromByteArray(buf)
+  } else {
+    return base64.fromByteArray(buf.slice(start, end))
+  }
+}
+
+function utf8Slice (buf, start, end) {
+  end = Math.min(buf.length, end)
+  var res = []
+
+  var i = start
+  while (i < end) {
+    var firstByte = buf[i]
+    var codePoint = null
+    var bytesPerSequence = (firstByte > 0xEF) ? 4
+      : (firstByte > 0xDF) ? 3
+      : (firstByte > 0xBF) ? 2
+      : 1
+
+    if (i + bytesPerSequence <= end) {
+      var secondByte, thirdByte, fourthByte, tempCodePoint
+
+      switch (bytesPerSequence) {
+        case 1:
+          if (firstByte < 0x80) {
+            codePoint = firstByte
+          }
+          break
+        case 2:
+          secondByte = buf[i + 1]
+          if ((secondByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0x1F) << 0x6 | (secondByte & 0x3F)
+            if (tempCodePoint > 0x7F) {
+              codePoint = tempCodePoint
+            }
+          }
+          break
+        case 3:
+          secondByte = buf[i + 1]
+          thirdByte = buf[i + 2]
+          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0xF) << 0xC | (secondByte & 0x3F) << 0x6 | (thirdByte & 0x3F)
+            if (tempCodePoint > 0x7FF && (tempCodePoint < 0xD800 || tempCodePoint > 0xDFFF)) {
+              codePoint = tempCodePoint
+            }
+          }
+          break
+        case 4:
+          secondByte = buf[i + 1]
+          thirdByte = buf[i + 2]
+          fourthByte = buf[i + 3]
+          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80 && (fourthByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0xF) << 0x12 | (secondByte & 0x3F) << 0xC | (thirdByte & 0x3F) << 0x6 | (fourthByte & 0x3F)
+            if (tempCodePoint > 0xFFFF && tempCodePoint < 0x110000) {
+              codePoint = tempCodePoint
+            }
+          }
+      }
+    }
+
+    if (codePoint === null) {
+      // we did not generate a valid codePoint so insert a
+      // replacement char (U+FFFD) and advance only 1 byte
+      codePoint = 0xFFFD
+      bytesPerSequence = 1
+    } else if (codePoint > 0xFFFF) {
+      // encode to utf16 (surrogate pair dance)
+      codePoint -= 0x10000
+      res.push(codePoint >>> 10 & 0x3FF | 0xD800)
+      codePoint = 0xDC00 | codePoint & 0x3FF
+    }
+
+    res.push(codePoint)
+    i += bytesPerSequence
+  }
+
+  return decodeCodePointsArray(res)
+}
+
+// Based on http://stackoverflow.com/a/22747272/680742, the browser with
+// the lowest limit is Chrome, with 0x10000 args.
+// We go 1 magnitude less, for safety
+var MAX_ARGUMENTS_LENGTH = 0x1000
+
+function decodeCodePointsArray (codePoints) {
+  var len = codePoints.length
+  if (len <= MAX_ARGUMENTS_LENGTH) {
+    return String.fromCharCode.apply(String, codePoints) // avoid extra slice()
+  }
+
+  // Decode in chunks to avoid "call stack size exceeded".
+  var res = ''
+  var i = 0
+  while (i < len) {
+    res += String.fromCharCode.apply(
+      String,
+      codePoints.slice(i, i += MAX_ARGUMENTS_LENGTH)
+    )
+  }
+  return res
+}
+
+function asciiSlice (buf, start, end) {
+  var ret = ''
+  end = Math.min(buf.length, end)
+
+  for (var i = start; i < end; ++i) {
+    ret += String.fromCharCode(buf[i] & 0x7F)
+  }
+  return ret
+}
+
+function latin1Slice (buf, start, end) {
+  var ret = ''
+  end = Math.min(buf.length, end)
+
+  for (var i = start; i < end; ++i) {
+    ret += String.fromCharCode(buf[i])
+  }
+  return ret
+}
+
+function hexSlice (buf, start, end) {
+  var len = buf.length
+
+  if (!start || start < 0) start = 0
+  if (!end || end < 0 || end > len) end = len
+
+  var out = ''
+  for (var i = start; i < end; ++i) {
+    out += toHex(buf[i])
+  }
+  return out
+}
+
+function utf16leSlice (buf, start, end) {
+  var bytes = buf.slice(start, end)
+  var res = ''
+  for (var i = 0; i < bytes.length; i += 2) {
+    res += String.fromCharCode(bytes[i] + bytes[i + 1] * 256)
+  }
+  return res
+}
+
+Buffer.prototype.slice = function slice (start, end) {
+  var len = this.length
+  start = ~~start
+  end = end === undefined ? len : ~~end
+
+  if (start < 0) {
+    start += len
+    if (start < 0) start = 0
+  } else if (start > len) {
+    start = len
+  }
+
+  if (end < 0) {
+    end += len
+    if (end < 0) end = 0
+  } else if (end > len) {
+    end = len
+  }
+
+  if (end < start) end = start
+
+  var newBuf
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    newBuf = this.subarray(start, end)
+    newBuf.__proto__ = Buffer.prototype
+  } else {
+    var sliceLen = end - start
+    newBuf = new Buffer(sliceLen, undefined)
+    for (var i = 0; i < sliceLen; ++i) {
+      newBuf[i] = this[i + start]
+    }
+  }
+
+  return newBuf
+}
+
+/*
+ * Need to make sure that buffer isn't trying to write out of bounds.
+ */
+function checkOffset (offset, ext, length) {
+  if ((offset % 1) !== 0 || offset < 0) throw new RangeError('offset is not uint')
+  if (offset + ext > length) throw new RangeError('Trying to access beyond buffer length')
+}
+
+Buffer.prototype.readUIntLE = function readUIntLE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var val = this[offset]
+  var mul = 1
+  var i = 0
+  while (++i < byteLength && (mul *= 0x100)) {
+    val += this[offset + i] * mul
+  }
+
+  return val
+}
+
+Buffer.prototype.readUIntBE = function readUIntBE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) {
+    checkOffset(offset, byteLength, this.length)
+  }
+
+  var val = this[offset + --byteLength]
+  var mul = 1
+  while (byteLength > 0 && (mul *= 0x100)) {
+    val += this[offset + --byteLength] * mul
+  }
+
+  return val
+}
+
+Buffer.prototype.readUInt8 = function readUInt8 (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 1, this.length)
+  return this[offset]
+}
+
+Buffer.prototype.readUInt16LE = function readUInt16LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  return this[offset] | (this[offset + 1] << 8)
+}
+
+Buffer.prototype.readUInt16BE = function readUInt16BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  return (this[offset] << 8) | this[offset + 1]
+}
+
+Buffer.prototype.readUInt32LE = function readUInt32LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return ((this[offset]) |
+      (this[offset + 1] << 8) |
+      (this[offset + 2] << 16)) +
+      (this[offset + 3] * 0x1000000)
+}
+
+Buffer.prototype.readUInt32BE = function readUInt32BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset] * 0x1000000) +
+    ((this[offset + 1] << 16) |
+    (this[offset + 2] << 8) |
+    this[offset + 3])
+}
+
+Buffer.prototype.readIntLE = function readIntLE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var val = this[offset]
+  var mul = 1
+  var i = 0
+  while (++i < byteLength && (mul *= 0x100)) {
+    val += this[offset + i] * mul
+  }
+  mul *= 0x80
+
+  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
+
+  return val
+}
+
+Buffer.prototype.readIntBE = function readIntBE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var i = byteLength
+  var mul = 1
+  var val = this[offset + --i]
+  while (i > 0 && (mul *= 0x100)) {
+    val += this[offset + --i] * mul
+  }
+  mul *= 0x80
+
+  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
+
+  return val
+}
+
+Buffer.prototype.readInt8 = function readInt8 (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 1, this.length)
+  if (!(this[offset] & 0x80)) return (this[offset])
+  return ((0xff - this[offset] + 1) * -1)
+}
+
+Buffer.prototype.readInt16LE = function readInt16LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  var val = this[offset] | (this[offset + 1] << 8)
+  return (val & 0x8000) ? val | 0xFFFF0000 : val
+}
+
+Buffer.prototype.readInt16BE = function readInt16BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  var val = this[offset + 1] | (this[offset] << 8)
+  return (val & 0x8000) ? val | 0xFFFF0000 : val
+}
+
+Buffer.prototype.readInt32LE = function readInt32LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset]) |
+    (this[offset + 1] << 8) |
+    (this[offset + 2] << 16) |
+    (this[offset + 3] << 24)
+}
+
+Buffer.prototype.readInt32BE = function readInt32BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset] << 24) |
+    (this[offset + 1] << 16) |
+    (this[offset + 2] << 8) |
+    (this[offset + 3])
+}
+
+Buffer.prototype.readFloatLE = function readFloatLE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+  return ieee754.read(this, offset, true, 23, 4)
+}
+
+Buffer.prototype.readFloatBE = function readFloatBE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+  return ieee754.read(this, offset, false, 23, 4)
+}
+
+Buffer.prototype.readDoubleLE = function readDoubleLE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 8, this.length)
+  return ieee754.read(this, offset, true, 52, 8)
+}
+
+Buffer.prototype.readDoubleBE = function readDoubleBE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 8, this.length)
+  return ieee754.read(this, offset, false, 52, 8)
+}
+
+function checkInt (buf, value, offset, ext, max, min) {
+  if (!Buffer.isBuffer(buf)) throw new TypeError('"buffer" argument must be a Buffer instance')
+  if (value > max || value < min) throw new RangeError('"value" argument is out of bounds')
+  if (offset + ext > buf.length) throw new RangeError('Index out of range')
+}
+
+Buffer.prototype.writeUIntLE = function writeUIntLE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) {
+    var maxBytes = Math.pow(2, 8 * byteLength) - 1
+    checkInt(this, value, offset, byteLength, maxBytes, 0)
+  }
+
+  var mul = 1
+  var i = 0
+  this[offset] = value & 0xFF
+  while (++i < byteLength && (mul *= 0x100)) {
+    this[offset + i] = (value / mul) & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeUIntBE = function writeUIntBE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) {
+    var maxBytes = Math.pow(2, 8 * byteLength) - 1
+    checkInt(this, value, offset, byteLength, maxBytes, 0)
+  }
+
+  var i = byteLength - 1
+  var mul = 1
+  this[offset + i] = value & 0xFF
+  while (--i >= 0 && (mul *= 0x100)) {
+    this[offset + i] = (value / mul) & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeUInt8 = function writeUInt8 (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 1, 0xff, 0)
+  if (!Buffer.TYPED_ARRAY_SUPPORT) value = Math.floor(value)
+  this[offset] = (value & 0xff)
+  return offset + 1
+}
+
+function objectWriteUInt16 (buf, value, offset, littleEndian) {
+  if (value < 0) value = 0xffff + value + 1
+  for (var i = 0, j = Math.min(buf.length - offset, 2); i < j; ++i) {
+    buf[offset + i] = (value & (0xff << (8 * (littleEndian ? i : 1 - i)))) >>>
+      (littleEndian ? i : 1 - i) * 8
+  }
+}
+
+Buffer.prototype.writeUInt16LE = function writeUInt16LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value & 0xff)
+    this[offset + 1] = (value >>> 8)
+  } else {
+    objectWriteUInt16(this, value, offset, true)
+  }
+  return offset + 2
+}
+
+Buffer.prototype.writeUInt16BE = function writeUInt16BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 8)
+    this[offset + 1] = (value & 0xff)
+  } else {
+    objectWriteUInt16(this, value, offset, false)
+  }
+  return offset + 2
+}
+
+function objectWriteUInt32 (buf, value, offset, littleEndian) {
+  if (value < 0) value = 0xffffffff + value + 1
+  for (var i = 0, j = Math.min(buf.length - offset, 4); i < j; ++i) {
+    buf[offset + i] = (value >>> (littleEndian ? i : 3 - i) * 8) & 0xff
+  }
+}
+
+Buffer.prototype.writeUInt32LE = function writeUInt32LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset + 3] = (value >>> 24)
+    this[offset + 2] = (value >>> 16)
+    this[offset + 1] = (value >>> 8)
+    this[offset] = (value & 0xff)
+  } else {
+    objectWriteUInt32(this, value, offset, true)
+  }
+  return offset + 4
+}
+
+Buffer.prototype.writeUInt32BE = function writeUInt32BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 24)
+    this[offset + 1] = (value >>> 16)
+    this[offset + 2] = (value >>> 8)
+    this[offset + 3] = (value & 0xff)
+  } else {
+    objectWriteUInt32(this, value, offset, false)
+  }
+  return offset + 4
+}
+
+Buffer.prototype.writeIntLE = function writeIntLE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) {
+    var limit = Math.pow(2, 8 * byteLength - 1)
+
+    checkInt(this, value, offset, byteLength, limit - 1, -limit)
+  }
+
+  var i = 0
+  var mul = 1
+  var sub = 0
+  this[offset] = value & 0xFF
+  while (++i < byteLength && (mul *= 0x100)) {
+    if (value < 0 && sub === 0 && this[offset + i - 1] !== 0) {
+      sub = 1
+    }
+    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeIntBE = function writeIntBE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) {
+    var limit = Math.pow(2, 8 * byteLength - 1)
+
+    checkInt(this, value, offset, byteLength, limit - 1, -limit)
+  }
+
+  var i = byteLength - 1
+  var mul = 1
+  var sub = 0
+  this[offset + i] = value & 0xFF
+  while (--i >= 0 && (mul *= 0x100)) {
+    if (value < 0 && sub === 0 && this[offset + i + 1] !== 0) {
+      sub = 1
+    }
+    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeInt8 = function writeInt8 (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 1, 0x7f, -0x80)
+  if (!Buffer.TYPED_ARRAY_SUPPORT) value = Math.floor(value)
+  if (value < 0) value = 0xff + value + 1
+  this[offset] = (value & 0xff)
+  return offset + 1
+}
+
+Buffer.prototype.writeInt16LE = function writeInt16LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value & 0xff)
+    this[offset + 1] = (value >>> 8)
+  } else {
+    objectWriteUInt16(this, value, offset, true)
+  }
+  return offset + 2
+}
+
+Buffer.prototype.writeInt16BE = function writeInt16BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 8)
+    this[offset + 1] = (value & 0xff)
+  } else {
+    objectWriteUInt16(this, value, offset, false)
+  }
+  return offset + 2
+}
+
+Buffer.prototype.writeInt32LE = function writeInt32LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value & 0xff)
+    this[offset + 1] = (value >>> 8)
+    this[offset + 2] = (value >>> 16)
+    this[offset + 3] = (value >>> 24)
+  } else {
+    objectWriteUInt32(this, value, offset, true)
+  }
+  return offset + 4
+}
+
+Buffer.prototype.writeInt32BE = function writeInt32BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
+  if (value < 0) value = 0xffffffff + value + 1
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 24)
+    this[offset + 1] = (value >>> 16)
+    this[offset + 2] = (value >>> 8)
+    this[offset + 3] = (value & 0xff)
+  } else {
+    objectWriteUInt32(this, value, offset, false)
+  }
+  return offset + 4
+}
+
+function checkIEEE754 (buf, value, offset, ext, max, min) {
+  if (offset + ext > buf.length) throw new RangeError('Index out of range')
+  if (offset < 0) throw new RangeError('Index out of range')
+}
+
+function writeFloat (buf, value, offset, littleEndian, noAssert) {
+  if (!noAssert) {
+    checkIEEE754(buf, value, offset, 4, 3.4028234663852886e+38, -3.4028234663852886e+38)
+  }
+  ieee754.write(buf, value, offset, littleEndian, 23, 4)
+  return offset + 4
+}
+
+Buffer.prototype.writeFloatLE = function writeFloatLE (value, offset, noAssert) {
+  return writeFloat(this, value, offset, true, noAssert)
+}
+
+Buffer.prototype.writeFloatBE = function writeFloatBE (value, offset, noAssert) {
+  return writeFloat(this, value, offset, false, noAssert)
+}
+
+function writeDouble (buf, value, offset, littleEndian, noAssert) {
+  if (!noAssert) {
+    checkIEEE754(buf, value, offset, 8, 1.7976931348623157E+308, -1.7976931348623157E+308)
+  }
+  ieee754.write(buf, value, offset, littleEndian, 52, 8)
+  return offset + 8
+}
+
+Buffer.prototype.writeDoubleLE = function writeDoubleLE (value, offset, noAssert) {
+  return writeDouble(this, value, offset, true, noAssert)
+}
+
+Buffer.prototype.writeDoubleBE = function writeDoubleBE (value, offset, noAssert) {
+  return writeDouble(this, value, offset, false, noAssert)
+}
+
+// copy(targetBuffer, targetStart=0, sourceStart=0, sourceEnd=buffer.length)
+Buffer.prototype.copy = function copy (target, targetStart, start, end) {
+  if (!start) start = 0
+  if (!end && end !== 0) end = this.length
+  if (targetStart >= target.length) targetStart = target.length
+  if (!targetStart) targetStart = 0
+  if (end > 0 && end < start) end = start
+
+  // Copy 0 bytes; we're done
+  if (end === start) return 0
+  if (target.length === 0 || this.length === 0) return 0
+
+  // Fatal error conditions
+  if (targetStart < 0) {
+    throw new RangeError('targetStart out of bounds')
+  }
+  if (start < 0 || start >= this.length) throw new RangeError('sourceStart out of bounds')
+  if (end < 0) throw new RangeError('sourceEnd out of bounds')
+
+  // Are we oob?
+  if (end > this.length) end = this.length
+  if (target.length - targetStart < end - start) {
+    end = target.length - targetStart + start
+  }
+
+  var len = end - start
+  var i
+
+  if (this === target && start < targetStart && targetStart < end) {
+    // descending copy from end
+    for (i = len - 1; i >= 0; --i) {
+      target[i + targetStart] = this[i + start]
+    }
+  } else if (len < 1000 || !Buffer.TYPED_ARRAY_SUPPORT) {
+    // ascending copy from start
+    for (i = 0; i < len; ++i) {
+      target[i + targetStart] = this[i + start]
+    }
+  } else {
+    Uint8Array.prototype.set.call(
+      target,
+      this.subarray(start, start + len),
+      targetStart
+    )
+  }
+
+  return len
+}
+
+// Usage:
+//    buffer.fill(number[, offset[, end]])
+//    buffer.fill(buffer[, offset[, end]])
+//    buffer.fill(string[, offset[, end]][, encoding])
+Buffer.prototype.fill = function fill (val, start, end, encoding) {
+  // Handle string cases:
+  if (typeof val === 'string') {
+    if (typeof start === 'string') {
+      encoding = start
+      start = 0
+      end = this.length
+    } else if (typeof end === 'string') {
+      encoding = end
+      end = this.length
+    }
+    if (val.length === 1) {
+      var code = val.charCodeAt(0)
+      if (code < 256) {
+        val = code
+      }
+    }
+    if (encoding !== undefined && typeof encoding !== 'string') {
+      throw new TypeError('encoding must be a string')
+    }
+    if (typeof encoding === 'string' && !Buffer.isEncoding(encoding)) {
+      throw new TypeError('Unknown encoding: ' + encoding)
+    }
+  } else if (typeof val === 'number') {
+    val = val & 255
+  }
+
+  // Invalid ranges are not set to a default, so can range check early.
+  if (start < 0 || this.length < start || this.length < end) {
+    throw new RangeError('Out of range index')
+  }
+
+  if (end <= start) {
+    return this
+  }
+
+  start = start >>> 0
+  end = end === undefined ? this.length : end >>> 0
+
+  if (!val) val = 0
+
+  var i
+  if (typeof val === 'number') {
+    for (i = start; i < end; ++i) {
+      this[i] = val
+    }
+  } else {
+    var bytes = Buffer.isBuffer(val)
+      ? val
+      : utf8ToBytes(new Buffer(val, encoding).toString())
+    var len = bytes.length
+    for (i = 0; i < end - start; ++i) {
+      this[i + start] = bytes[i % len]
+    }
+  }
+
+  return this
+}
+
+// HELPER FUNCTIONS
+// ================
+
+var INVALID_BASE64_RE = /[^+\/0-9A-Za-z-_]/g
+
+function base64clean (str) {
+  // Node strips out invalid characters like \n and \t from the string, base64-js does not
+  str = stringtrim(str).replace(INVALID_BASE64_RE, '')
+  // Node converts strings with length < 2 to ''
+  if (str.length < 2) return ''
+  // Node allows for non-padded base64 strings (missing trailing ===), base64-js does not
+  while (str.length % 4 !== 0) {
+    str = str + '='
+  }
+  return str
+}
+
+function stringtrim (str) {
+  if (str.trim) return str.trim()
+  return str.replace(/^\s+|\s+$/g, '')
+}
+
+function toHex (n) {
+  if (n < 16) return '0' + n.toString(16)
+  return n.toString(16)
+}
+
+function utf8ToBytes (string, units) {
+  units = units || Infinity
+  var codePoint
+  var length = string.length
+  var leadSurrogate = null
+  var bytes = []
+
+  for (var i = 0; i < length; ++i) {
+    codePoint = string.charCodeAt(i)
+
+    // is surrogate component
+    if (codePoint > 0xD7FF && codePoint < 0xE000) {
+      // last char was a lead
+      if (!leadSurrogate) {
+        // no lead yet
+        if (codePoint > 0xDBFF) {
+          // unexpected trail
+          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+          continue
+        } else if (i + 1 === length) {
+          // unpaired lead
+          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+          continue
+        }
+
+        // valid lead
+        leadSurrogate = codePoint
+
+        continue
+      }
+
+      // 2 leads in a row
+      if (codePoint < 0xDC00) {
+        if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+        leadSurrogate = codePoint
+        continue
+      }
+
+      // valid surrogate pair
+      codePoint = (leadSurrogate - 0xD800 << 10 | codePoint - 0xDC00) + 0x10000
+    } else if (leadSurrogate) {
+      // valid bmp char, but last char was a lead
+      if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+    }
+
+    leadSurrogate = null
+
+    // encode utf8
+    if (codePoint < 0x80) {
+      if ((units -= 1) < 0) break
+      bytes.push(codePoint)
+    } else if (codePoint < 0x800) {
+      if ((units -= 2) < 0) break
+      bytes.push(
+        codePoint >> 0x6 | 0xC0,
+        codePoint & 0x3F | 0x80
+      )
+    } else if (codePoint < 0x10000) {
+      if ((units -= 3) < 0) break
+      bytes.push(
+        codePoint >> 0xC | 0xE0,
+        codePoint >> 0x6 & 0x3F | 0x80,
+        codePoint & 0x3F | 0x80
+      )
+    } else if (codePoint < 0x110000) {
+      if ((units -= 4) < 0) break
+      bytes.push(
+        codePoint >> 0x12 | 0xF0,
+        codePoint >> 0xC & 0x3F | 0x80,
+        codePoint >> 0x6 & 0x3F | 0x80,
+        codePoint & 0x3F | 0x80
+      )
+    } else {
+      throw new Error('Invalid code point')
+    }
+  }
+
+  return bytes
+}
+
+function asciiToBytes (str) {
+  var byteArray = []
+  for (var i = 0; i < str.length; ++i) {
+    // Node's code seems to be doing this and not & 0x7F..
+    byteArray.push(str.charCodeAt(i) & 0xFF)
+  }
+  return byteArray
+}
+
+function utf16leToBytes (str, units) {
+  var c, hi, lo
+  var byteArray = []
+  for (var i = 0; i < str.length; ++i) {
+    if ((units -= 2) < 0) break
+
+    c = str.charCodeAt(i)
+    hi = c >> 8
+    lo = c % 256
+    byteArray.push(lo)
+    byteArray.push(hi)
+  }
+
+  return byteArray
+}
+
+function base64ToBytes (str) {
+  return base64.toByteArray(base64clean(str))
+}
+
+function blitBuffer (src, dst, offset, length) {
+  for (var i = 0; i < length; ++i) {
+    if ((i + offset >= dst.length) || (i >= src.length)) break
+    dst[i + offset] = src[i]
+  }
+  return i
+}
+
+function isnan (val) {
+  return val !== val // eslint-disable-line no-self-compare
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/ieee754/index.js":
+/*!***************************************!*\
+  !*** ./node_modules/ieee754/index.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+/*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
+exports.read = function (buffer, offset, isLE, mLen, nBytes) {
+  var e, m
+  var eLen = (nBytes * 8) - mLen - 1
+  var eMax = (1 << eLen) - 1
+  var eBias = eMax >> 1
+  var nBits = -7
+  var i = isLE ? (nBytes - 1) : 0
+  var d = isLE ? -1 : 1
+  var s = buffer[offset + i]
+
+  i += d
+
+  e = s & ((1 << (-nBits)) - 1)
+  s >>= (-nBits)
+  nBits += eLen
+  for (; nBits > 0; e = (e * 256) + buffer[offset + i], i += d, nBits -= 8) {}
+
+  m = e & ((1 << (-nBits)) - 1)
+  e >>= (-nBits)
+  nBits += mLen
+  for (; nBits > 0; m = (m * 256) + buffer[offset + i], i += d, nBits -= 8) {}
+
+  if (e === 0) {
+    e = 1 - eBias
+  } else if (e === eMax) {
+    return m ? NaN : ((s ? -1 : 1) * Infinity)
+  } else {
+    m = m + Math.pow(2, mLen)
+    e = e - eBias
+  }
+  return (s ? -1 : 1) * m * Math.pow(2, e - mLen)
+}
+
+exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
+  var e, m, c
+  var eLen = (nBytes * 8) - mLen - 1
+  var eMax = (1 << eLen) - 1
+  var eBias = eMax >> 1
+  var rt = (mLen === 23 ? Math.pow(2, -24) - Math.pow(2, -77) : 0)
+  var i = isLE ? 0 : (nBytes - 1)
+  var d = isLE ? 1 : -1
+  var s = value < 0 || (value === 0 && 1 / value < 0) ? 1 : 0
+
+  value = Math.abs(value)
+
+  if (isNaN(value) || value === Infinity) {
+    m = isNaN(value) ? 1 : 0
+    e = eMax
+  } else {
+    e = Math.floor(Math.log(value) / Math.LN2)
+    if (value * (c = Math.pow(2, -e)) < 1) {
+      e--
+      c *= 2
+    }
+    if (e + eBias >= 1) {
+      value += rt / c
+    } else {
+      value += rt * Math.pow(2, 1 - eBias)
+    }
+    if (value * c >= 2) {
+      e++
+      c /= 2
+    }
+
+    if (e + eBias >= eMax) {
+      m = 0
+      e = eMax
+    } else if (e + eBias >= 1) {
+      m = ((value * c) - 1) * Math.pow(2, mLen)
+      e = e + eBias
+    } else {
+      m = value * Math.pow(2, eBias - 1) * Math.pow(2, mLen)
+      e = 0
+    }
+  }
+
+  for (; mLen >= 8; buffer[offset + i] = m & 0xff, i += d, m /= 256, mLen -= 8) {}
+
+  e = (e << mLen) | m
+  eLen += mLen
+  for (; eLen > 0; buffer[offset + i] = e & 0xff, i += d, e /= 256, eLen -= 8) {}
+
+  buffer[offset + i - d] |= s * 128
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/isarray/index.js":
+/*!***************************************!*\
+  !*** ./node_modules/isarray/index.js ***!
+  \***************************************/
+/***/ ((module) => {
+
+var toString = {}.toString;
+
+module.exports = Array.isArray || function (arr) {
+  return toString.call(arr) == '[object Array]';
+};
+
+
+/***/ }),
+
+/***/ "./resources/js/lang/translations sync \\.js$":
+/*!*****************************************************************!*\
+  !*** ./resources/js/lang/translations/ sync nonrecursive \.js$ ***!
+  \*****************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var map = {
+	"./en.js": "./resources/js/lang/translations/en.js",
+	"./ko.js": "./resources/js/lang/translations/ko.js",
+	"./vi.js": "./resources/js/lang/translations/vi.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./resources/js/lang/translations sync \\.js$";
+
+/***/ }),
+
+/***/ "./node_modules/@socket.io/component-emitter/lib/esm/index.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@socket.io/component-emitter/lib/esm/index.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Emitter: () => (/* binding */ Emitter)
+/* harmony export */ });
+/**
+ * Initialize a new `Emitter`.
+ *
+ * @api public
+ */
+
+function Emitter(obj) {
+  if (obj) return mixin(obj);
+}
+
+/**
+ * Mixin the emitter properties.
+ *
+ * @param {Object} obj
+ * @return {Object}
+ * @api private
+ */
+
+function mixin(obj) {
+  for (var key in Emitter.prototype) {
+    obj[key] = Emitter.prototype[key];
+  }
+  return obj;
+}
+
+/**
+ * Listen on the given `event` with `fn`.
+ *
+ * @param {String} event
+ * @param {Function} fn
+ * @return {Emitter}
+ * @api public
+ */
+
+Emitter.prototype.on =
+Emitter.prototype.addEventListener = function(event, fn){
+  this._callbacks = this._callbacks || {};
+  (this._callbacks['$' + event] = this._callbacks['$' + event] || [])
+    .push(fn);
+  return this;
+};
+
+/**
+ * Adds an `event` listener that will be invoked a single
+ * time then automatically removed.
+ *
+ * @param {String} event
+ * @param {Function} fn
+ * @return {Emitter}
+ * @api public
+ */
+
+Emitter.prototype.once = function(event, fn){
+  function on() {
+    this.off(event, on);
+    fn.apply(this, arguments);
+  }
+
+  on.fn = fn;
+  this.on(event, on);
+  return this;
+};
+
+/**
+ * Remove the given callback for `event` or all
+ * registered callbacks.
+ *
+ * @param {String} event
+ * @param {Function} fn
+ * @return {Emitter}
+ * @api public
+ */
+
+Emitter.prototype.off =
+Emitter.prototype.removeListener =
+Emitter.prototype.removeAllListeners =
+Emitter.prototype.removeEventListener = function(event, fn){
+  this._callbacks = this._callbacks || {};
+
+  // all
+  if (0 == arguments.length) {
+    this._callbacks = {};
+    return this;
+  }
+
+  // specific event
+  var callbacks = this._callbacks['$' + event];
+  if (!callbacks) return this;
+
+  // remove all handlers
+  if (1 == arguments.length) {
+    delete this._callbacks['$' + event];
+    return this;
+  }
+
+  // remove specific handler
+  var cb;
+  for (var i = 0; i < callbacks.length; i++) {
+    cb = callbacks[i];
+    if (cb === fn || cb.fn === fn) {
+      callbacks.splice(i, 1);
+      break;
+    }
+  }
+
+  // Remove event specific arrays for event types that no
+  // one is subscribed for to avoid memory leak.
+  if (callbacks.length === 0) {
+    delete this._callbacks['$' + event];
+  }
+
+  return this;
+};
+
+/**
+ * Emit `event` with the given args.
+ *
+ * @param {String} event
+ * @param {Mixed} ...
+ * @return {Emitter}
+ */
+
+Emitter.prototype.emit = function(event){
+  this._callbacks = this._callbacks || {};
+
+  var args = new Array(arguments.length - 1)
+    , callbacks = this._callbacks['$' + event];
+
+  for (var i = 1; i < arguments.length; i++) {
+    args[i - 1] = arguments[i];
+  }
+
+  if (callbacks) {
+    callbacks = callbacks.slice(0);
+    for (var i = 0, len = callbacks.length; i < len; ++i) {
+      callbacks[i].apply(this, args);
+    }
+  }
+
+  return this;
+};
+
+// alias used for reserved events (protected method)
+Emitter.prototype.emitReserved = Emitter.prototype.emit;
+
+/**
+ * Return array of callbacks for `event`.
+ *
+ * @param {String} event
+ * @return {Array}
+ * @api public
+ */
+
+Emitter.prototype.listeners = function(event){
+  this._callbacks = this._callbacks || {};
+  return this._callbacks['$' + event] || [];
+};
+
+/**
+ * Check if this emitter has `event` handlers.
+ *
+ * @param {String} event
+ * @return {Boolean}
+ * @api public
+ */
+
+Emitter.prototype.hasListeners = function(event){
+  return !! this.listeners(event).length;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/build/esm/contrib/has-cors.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/engine.io-client/build/esm/contrib/has-cors.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   hasCORS: () => (/* binding */ hasCORS)
+/* harmony export */ });
+// imported from https://github.com/component/has-cors
+let value = false;
+try {
+    value = typeof XMLHttpRequest !== 'undefined' &&
+        'withCredentials' in new XMLHttpRequest();
+}
+catch (err) {
+    // if XMLHttp support is disabled in IE then it will throw
+    // when trying to create
+}
+const hasCORS = value;
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/build/esm/contrib/parseqs.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/engine.io-client/build/esm/contrib/parseqs.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   decode: () => (/* binding */ decode),
+/* harmony export */   encode: () => (/* binding */ encode)
+/* harmony export */ });
+// imported from https://github.com/galkn/querystring
+/**
+ * Compiles a querystring
+ * Returns string representation of the object
+ *
+ * @param {Object}
+ * @api private
+ */
+function encode(obj) {
+    let str = '';
+    for (let i in obj) {
+        if (obj.hasOwnProperty(i)) {
+            if (str.length)
+                str += '&';
+            str += encodeURIComponent(i) + '=' + encodeURIComponent(obj[i]);
+        }
+    }
+    return str;
+}
+/**
+ * Parses a simple querystring into an object
+ *
+ * @param {String} qs
+ * @api private
+ */
+function decode(qs) {
+    let qry = {};
+    let pairs = qs.split('&');
+    for (let i = 0, l = pairs.length; i < l; i++) {
+        let pair = pairs[i].split('=');
+        qry[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+    }
+    return qry;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/build/esm/contrib/parseuri.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/engine.io-client/build/esm/contrib/parseuri.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   parse: () => (/* binding */ parse)
+/* harmony export */ });
+// imported from https://github.com/galkn/parseuri
+/**
+ * Parses a URI
+ *
+ * Note: we could also have used the built-in URL object, but it isn't supported on all platforms.
+ *
+ * See:
+ * - https://developer.mozilla.org/en-US/docs/Web/API/URL
+ * - https://caniuse.com/url
+ * - https://www.rfc-editor.org/rfc/rfc3986#appendix-B
+ *
+ * History of the parse() method:
+ * - first commit: https://github.com/socketio/socket.io-client/commit/4ee1d5d94b3906a9c052b459f1a818b15f38f91c
+ * - export into its own module: https://github.com/socketio/engine.io-client/commit/de2c561e4564efeb78f1bdb1ba39ef81b2822cb3
+ * - reimport: https://github.com/socketio/engine.io-client/commit/df32277c3f6d622eec5ed09f493cae3f3391d242
+ *
+ * @author Steven Levithan <stevenlevithan.com> (MIT license)
+ * @api private
+ */
+const re = /^(?:(?![^:@\/?#]+:[^:@\/]*@)(http|https|ws|wss):\/\/)?((?:(([^:@\/?#]*)(?::([^:@\/?#]*))?)?@)?((?:[a-f0-9]{0,4}:){2,7}[a-f0-9]{0,4}|[^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/;
+const parts = [
+    'source', 'protocol', 'authority', 'userInfo', 'user', 'password', 'host', 'port', 'relative', 'path', 'directory', 'file', 'query', 'anchor'
+];
+function parse(str) {
+    if (str.length > 2000) {
+        throw "URI too long";
+    }
+    const src = str, b = str.indexOf('['), e = str.indexOf(']');
+    if (b != -1 && e != -1) {
+        str = str.substring(0, b) + str.substring(b, e).replace(/:/g, ';') + str.substring(e, str.length);
+    }
+    let m = re.exec(str || ''), uri = {}, i = 14;
+    while (i--) {
+        uri[parts[i]] = m[i] || '';
+    }
+    if (b != -1 && e != -1) {
+        uri.source = src;
+        uri.host = uri.host.substring(1, uri.host.length - 1).replace(/;/g, ':');
+        uri.authority = uri.authority.replace('[', '').replace(']', '').replace(/;/g, ':');
+        uri.ipv6uri = true;
+    }
+    uri.pathNames = pathNames(uri, uri['path']);
+    uri.queryKey = queryKey(uri, uri['query']);
+    return uri;
+}
+function pathNames(obj, path) {
+    const regx = /\/{2,9}/g, names = path.replace(regx, "/").split("/");
+    if (path.slice(0, 1) == '/' || path.length === 0) {
+        names.splice(0, 1);
+    }
+    if (path.slice(-1) == '/') {
+        names.splice(names.length - 1, 1);
+    }
+    return names;
+}
+function queryKey(uri, query) {
+    const data = {};
+    query.replace(/(?:^|&)([^&=]*)=?([^&]*)/g, function ($0, $1, $2) {
+        if ($1) {
+            data[$1] = $2;
+        }
+    });
+    return data;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/build/esm/contrib/yeast.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/engine.io-client/build/esm/contrib/yeast.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   decode: () => (/* binding */ decode),
+/* harmony export */   encode: () => (/* binding */ encode),
+/* harmony export */   yeast: () => (/* binding */ yeast)
+/* harmony export */ });
+// imported from https://github.com/unshiftio/yeast
+
+const alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_'.split(''), length = 64, map = {};
+let seed = 0, i = 0, prev;
+/**
+ * Return a string representing the specified number.
+ *
+ * @param {Number} num The number to convert.
+ * @returns {String} The string representation of the number.
+ * @api public
+ */
+function encode(num) {
+    let encoded = '';
+    do {
+        encoded = alphabet[num % length] + encoded;
+        num = Math.floor(num / length);
+    } while (num > 0);
+    return encoded;
+}
+/**
+ * Return the integer value specified by the given string.
+ *
+ * @param {String} str The string to convert.
+ * @returns {Number} The integer value represented by the string.
+ * @api public
+ */
+function decode(str) {
+    let decoded = 0;
+    for (i = 0; i < str.length; i++) {
+        decoded = decoded * length + map[str.charAt(i)];
+    }
+    return decoded;
+}
+/**
+ * Yeast: A tiny growing id generator.
+ *
+ * @returns {String} A unique id.
+ * @api public
+ */
+function yeast() {
+    const now = encode(+new Date());
+    if (now !== prev)
+        return seed = 0, prev = now;
+    return now + '.' + encode(seed++);
+}
+//
+// Map each character to its index.
+//
+for (; i < length; i++)
+    map[alphabet[i]] = i;
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/build/esm/globalThis.browser.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/engine.io-client/build/esm/globalThis.browser.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   globalThisShim: () => (/* binding */ globalThisShim)
+/* harmony export */ });
+const globalThisShim = (() => {
+    if (typeof self !== "undefined") {
+        return self;
+    }
+    else if (typeof window !== "undefined") {
+        return window;
+    }
+    else {
+        return Function("return this")();
+    }
+})();
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/build/esm/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/engine.io-client/build/esm/index.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Socket: () => (/* reexport safe */ _socket_js__WEBPACK_IMPORTED_MODULE_0__.Socket),
+/* harmony export */   Transport: () => (/* reexport safe */ _transport_js__WEBPACK_IMPORTED_MODULE_1__.Transport),
+/* harmony export */   TransportError: () => (/* reexport safe */ _transport_js__WEBPACK_IMPORTED_MODULE_1__.TransportError),
+/* harmony export */   installTimerFunctions: () => (/* reexport safe */ _util_js__WEBPACK_IMPORTED_MODULE_3__.installTimerFunctions),
+/* harmony export */   nextTick: () => (/* reexport safe */ _transports_websocket_constructor_js__WEBPACK_IMPORTED_MODULE_5__.nextTick),
+/* harmony export */   parse: () => (/* reexport safe */ _contrib_parseuri_js__WEBPACK_IMPORTED_MODULE_4__.parse),
+/* harmony export */   protocol: () => (/* binding */ protocol),
+/* harmony export */   transports: () => (/* reexport safe */ _transports_index_js__WEBPACK_IMPORTED_MODULE_2__.transports)
+/* harmony export */ });
+/* harmony import */ var _socket_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./socket.js */ "./node_modules/engine.io-client/build/esm/socket.js");
+/* harmony import */ var _transport_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./transport.js */ "./node_modules/engine.io-client/build/esm/transport.js");
+/* harmony import */ var _transports_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./transports/index.js */ "./node_modules/engine.io-client/build/esm/transports/index.js");
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./util.js */ "./node_modules/engine.io-client/build/esm/util.js");
+/* harmony import */ var _contrib_parseuri_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./contrib/parseuri.js */ "./node_modules/engine.io-client/build/esm/contrib/parseuri.js");
+/* harmony import */ var _transports_websocket_constructor_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./transports/websocket-constructor.js */ "./node_modules/engine.io-client/build/esm/transports/websocket-constructor.browser.js");
+
+
+const protocol = _socket_js__WEBPACK_IMPORTED_MODULE_0__.Socket.protocol;
+
+
+
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/build/esm/socket.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/engine.io-client/build/esm/socket.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Socket: () => (/* binding */ Socket)
+/* harmony export */ });
+/* harmony import */ var _transports_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./transports/index.js */ "./node_modules/engine.io-client/build/esm/transports/index.js");
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./util.js */ "./node_modules/engine.io-client/build/esm/util.js");
+/* harmony import */ var _contrib_parseqs_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contrib/parseqs.js */ "./node_modules/engine.io-client/build/esm/contrib/parseqs.js");
+/* harmony import */ var _contrib_parseuri_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contrib/parseuri.js */ "./node_modules/engine.io-client/build/esm/contrib/parseuri.js");
+/* harmony import */ var _socket_io_component_emitter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @socket.io/component-emitter */ "./node_modules/@socket.io/component-emitter/lib/esm/index.js");
+/* harmony import */ var engine_io_parser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! engine.io-parser */ "./node_modules/engine.io-parser/build/esm/index.js");
+/* harmony import */ var _transports_websocket_constructor_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./transports/websocket-constructor.js */ "./node_modules/engine.io-client/build/esm/transports/websocket-constructor.browser.js");
+
+
+
+
+
+
+
+class Socket extends _socket_io_component_emitter__WEBPACK_IMPORTED_MODULE_4__.Emitter {
+    /**
+     * Socket constructor.
+     *
+     * @param {String|Object} uri - uri or options
+     * @param {Object} opts - options
+     */
+    constructor(uri, opts = {}) {
+        super();
+        this.binaryType = _transports_websocket_constructor_js__WEBPACK_IMPORTED_MODULE_6__.defaultBinaryType;
+        this.writeBuffer = [];
+        if (uri && "object" === typeof uri) {
+            opts = uri;
+            uri = null;
+        }
+        if (uri) {
+            uri = (0,_contrib_parseuri_js__WEBPACK_IMPORTED_MODULE_3__.parse)(uri);
+            opts.hostname = uri.host;
+            opts.secure = uri.protocol === "https" || uri.protocol === "wss";
+            opts.port = uri.port;
+            if (uri.query)
+                opts.query = uri.query;
+        }
+        else if (opts.host) {
+            opts.hostname = (0,_contrib_parseuri_js__WEBPACK_IMPORTED_MODULE_3__.parse)(opts.host).host;
+        }
+        (0,_util_js__WEBPACK_IMPORTED_MODULE_1__.installTimerFunctions)(this, opts);
+        this.secure =
+            null != opts.secure
+                ? opts.secure
+                : typeof location !== "undefined" && "https:" === location.protocol;
+        if (opts.hostname && !opts.port) {
+            // if no port is specified manually, use the protocol default
+            opts.port = this.secure ? "443" : "80";
+        }
+        this.hostname =
+            opts.hostname ||
+                (typeof location !== "undefined" ? location.hostname : "localhost");
+        this.port =
+            opts.port ||
+                (typeof location !== "undefined" && location.port
+                    ? location.port
+                    : this.secure
+                        ? "443"
+                        : "80");
+        this.transports = opts.transports || [
+            "polling",
+            "websocket",
+            "webtransport",
+        ];
+        this.writeBuffer = [];
+        this.prevBufferLen = 0;
+        this.opts = Object.assign({
+            path: "/engine.io",
+            agent: false,
+            withCredentials: false,
+            upgrade: true,
+            timestampParam: "t",
+            rememberUpgrade: false,
+            addTrailingSlash: true,
+            rejectUnauthorized: true,
+            perMessageDeflate: {
+                threshold: 1024,
+            },
+            transportOptions: {},
+            closeOnBeforeunload: false,
+        }, opts);
+        this.opts.path =
+            this.opts.path.replace(/\/$/, "") +
+                (this.opts.addTrailingSlash ? "/" : "");
+        if (typeof this.opts.query === "string") {
+            this.opts.query = (0,_contrib_parseqs_js__WEBPACK_IMPORTED_MODULE_2__.decode)(this.opts.query);
+        }
+        // set on handshake
+        this.id = null;
+        this.upgrades = null;
+        this.pingInterval = null;
+        this.pingTimeout = null;
+        // set on heartbeat
+        this.pingTimeoutTimer = null;
+        if (typeof addEventListener === "function") {
+            if (this.opts.closeOnBeforeunload) {
+                // Firefox closes the connection when the "beforeunload" event is emitted but not Chrome. This event listener
+                // ensures every browser behaves the same (no "disconnect" event at the Socket.IO level when the page is
+                // closed/reloaded)
+                this.beforeunloadEventListener = () => {
+                    if (this.transport) {
+                        // silently close the transport
+                        this.transport.removeAllListeners();
+                        this.transport.close();
+                    }
+                };
+                addEventListener("beforeunload", this.beforeunloadEventListener, false);
+            }
+            if (this.hostname !== "localhost") {
+                this.offlineEventListener = () => {
+                    this.onClose("transport close", {
+                        description: "network connection lost",
+                    });
+                };
+                addEventListener("offline", this.offlineEventListener, false);
+            }
+        }
+        this.open();
+    }
+    /**
+     * Creates transport of the given type.
+     *
+     * @param {String} name - transport name
+     * @return {Transport}
+     * @private
+     */
+    createTransport(name) {
+        const query = Object.assign({}, this.opts.query);
+        // append engine.io protocol identifier
+        query.EIO = engine_io_parser__WEBPACK_IMPORTED_MODULE_5__.protocol;
+        // transport name
+        query.transport = name;
+        // session id if we already have one
+        if (this.id)
+            query.sid = this.id;
+        const opts = Object.assign({}, this.opts, {
+            query,
+            socket: this,
+            hostname: this.hostname,
+            secure: this.secure,
+            port: this.port,
+        }, this.opts.transportOptions[name]);
+        return new _transports_index_js__WEBPACK_IMPORTED_MODULE_0__.transports[name](opts);
+    }
+    /**
+     * Initializes transport to use and starts probe.
+     *
+     * @private
+     */
+    open() {
+        let transport;
+        if (this.opts.rememberUpgrade &&
+            Socket.priorWebsocketSuccess &&
+            this.transports.indexOf("websocket") !== -1) {
+            transport = "websocket";
+        }
+        else if (0 === this.transports.length) {
+            // Emit error on next tick so it can be listened to
+            this.setTimeoutFn(() => {
+                this.emitReserved("error", "No transports available");
+            }, 0);
+            return;
+        }
+        else {
+            transport = this.transports[0];
+        }
+        this.readyState = "opening";
+        // Retry with the next transport if the transport is disabled (jsonp: false)
+        try {
+            transport = this.createTransport(transport);
+        }
+        catch (e) {
+            this.transports.shift();
+            this.open();
+            return;
+        }
+        transport.open();
+        this.setTransport(transport);
+    }
+    /**
+     * Sets the current transport. Disables the existing one (if any).
+     *
+     * @private
+     */
+    setTransport(transport) {
+        if (this.transport) {
+            this.transport.removeAllListeners();
+        }
+        // set up transport
+        this.transport = transport;
+        // set up transport listeners
+        transport
+            .on("drain", this.onDrain.bind(this))
+            .on("packet", this.onPacket.bind(this))
+            .on("error", this.onError.bind(this))
+            .on("close", (reason) => this.onClose("transport close", reason));
+    }
+    /**
+     * Probes a transport.
+     *
+     * @param {String} name - transport name
+     * @private
+     */
+    probe(name) {
+        let transport = this.createTransport(name);
+        let failed = false;
+        Socket.priorWebsocketSuccess = false;
+        const onTransportOpen = () => {
+            if (failed)
+                return;
+            transport.send([{ type: "ping", data: "probe" }]);
+            transport.once("packet", (msg) => {
+                if (failed)
+                    return;
+                if ("pong" === msg.type && "probe" === msg.data) {
+                    this.upgrading = true;
+                    this.emitReserved("upgrading", transport);
+                    if (!transport)
+                        return;
+                    Socket.priorWebsocketSuccess = "websocket" === transport.name;
+                    this.transport.pause(() => {
+                        if (failed)
+                            return;
+                        if ("closed" === this.readyState)
+                            return;
+                        cleanup();
+                        this.setTransport(transport);
+                        transport.send([{ type: "upgrade" }]);
+                        this.emitReserved("upgrade", transport);
+                        transport = null;
+                        this.upgrading = false;
+                        this.flush();
+                    });
+                }
+                else {
+                    const err = new Error("probe error");
+                    // @ts-ignore
+                    err.transport = transport.name;
+                    this.emitReserved("upgradeError", err);
+                }
+            });
+        };
+        function freezeTransport() {
+            if (failed)
+                return;
+            // Any callback called by transport should be ignored since now
+            failed = true;
+            cleanup();
+            transport.close();
+            transport = null;
+        }
+        // Handle any error that happens while probing
+        const onerror = (err) => {
+            const error = new Error("probe error: " + err);
+            // @ts-ignore
+            error.transport = transport.name;
+            freezeTransport();
+            this.emitReserved("upgradeError", error);
+        };
+        function onTransportClose() {
+            onerror("transport closed");
+        }
+        // When the socket is closed while we're probing
+        function onclose() {
+            onerror("socket closed");
+        }
+        // When the socket is upgraded while we're probing
+        function onupgrade(to) {
+            if (transport && to.name !== transport.name) {
+                freezeTransport();
+            }
+        }
+        // Remove all listeners on the transport and on self
+        const cleanup = () => {
+            transport.removeListener("open", onTransportOpen);
+            transport.removeListener("error", onerror);
+            transport.removeListener("close", onTransportClose);
+            this.off("close", onclose);
+            this.off("upgrading", onupgrade);
+        };
+        transport.once("open", onTransportOpen);
+        transport.once("error", onerror);
+        transport.once("close", onTransportClose);
+        this.once("close", onclose);
+        this.once("upgrading", onupgrade);
+        if (this.upgrades.indexOf("webtransport") !== -1 &&
+            name !== "webtransport") {
+            // favor WebTransport
+            this.setTimeoutFn(() => {
+                if (!failed) {
+                    transport.open();
+                }
+            }, 200);
+        }
+        else {
+            transport.open();
+        }
+    }
+    /**
+     * Called when connection is deemed open.
+     *
+     * @private
+     */
+    onOpen() {
+        this.readyState = "open";
+        Socket.priorWebsocketSuccess = "websocket" === this.transport.name;
+        this.emitReserved("open");
+        this.flush();
+        // we check for `readyState` in case an `open`
+        // listener already closed the socket
+        if ("open" === this.readyState && this.opts.upgrade) {
+            let i = 0;
+            const l = this.upgrades.length;
+            for (; i < l; i++) {
+                this.probe(this.upgrades[i]);
+            }
+        }
+    }
+    /**
+     * Handles a packet.
+     *
+     * @private
+     */
+    onPacket(packet) {
+        if ("opening" === this.readyState ||
+            "open" === this.readyState ||
+            "closing" === this.readyState) {
+            this.emitReserved("packet", packet);
+            // Socket is live - any packet counts
+            this.emitReserved("heartbeat");
+            this.resetPingTimeout();
+            switch (packet.type) {
+                case "open":
+                    this.onHandshake(JSON.parse(packet.data));
+                    break;
+                case "ping":
+                    this.sendPacket("pong");
+                    this.emitReserved("ping");
+                    this.emitReserved("pong");
+                    break;
+                case "error":
+                    const err = new Error("server error");
+                    // @ts-ignore
+                    err.code = packet.data;
+                    this.onError(err);
+                    break;
+                case "message":
+                    this.emitReserved("data", packet.data);
+                    this.emitReserved("message", packet.data);
+                    break;
+            }
+        }
+        else {
+        }
+    }
+    /**
+     * Called upon handshake completion.
+     *
+     * @param {Object} data - handshake obj
+     * @private
+     */
+    onHandshake(data) {
+        this.emitReserved("handshake", data);
+        this.id = data.sid;
+        this.transport.query.sid = data.sid;
+        this.upgrades = this.filterUpgrades(data.upgrades);
+        this.pingInterval = data.pingInterval;
+        this.pingTimeout = data.pingTimeout;
+        this.maxPayload = data.maxPayload;
+        this.onOpen();
+        // In case open handler closes socket
+        if ("closed" === this.readyState)
+            return;
+        this.resetPingTimeout();
+    }
+    /**
+     * Sets and resets ping timeout timer based on server pings.
+     *
+     * @private
+     */
+    resetPingTimeout() {
+        this.clearTimeoutFn(this.pingTimeoutTimer);
+        this.pingTimeoutTimer = this.setTimeoutFn(() => {
+            this.onClose("ping timeout");
+        }, this.pingInterval + this.pingTimeout);
+        if (this.opts.autoUnref) {
+            this.pingTimeoutTimer.unref();
+        }
+    }
+    /**
+     * Called on `drain` event
+     *
+     * @private
+     */
+    onDrain() {
+        this.writeBuffer.splice(0, this.prevBufferLen);
+        // setting prevBufferLen = 0 is very important
+        // for example, when upgrading, upgrade packet is sent over,
+        // and a nonzero prevBufferLen could cause problems on `drain`
+        this.prevBufferLen = 0;
+        if (0 === this.writeBuffer.length) {
+            this.emitReserved("drain");
+        }
+        else {
+            this.flush();
+        }
+    }
+    /**
+     * Flush write buffers.
+     *
+     * @private
+     */
+    flush() {
+        if ("closed" !== this.readyState &&
+            this.transport.writable &&
+            !this.upgrading &&
+            this.writeBuffer.length) {
+            const packets = this.getWritablePackets();
+            this.transport.send(packets);
+            // keep track of current length of writeBuffer
+            // splice writeBuffer and callbackBuffer on `drain`
+            this.prevBufferLen = packets.length;
+            this.emitReserved("flush");
+        }
+    }
+    /**
+     * Ensure the encoded size of the writeBuffer is below the maxPayload value sent by the server (only for HTTP
+     * long-polling)
+     *
+     * @private
+     */
+    getWritablePackets() {
+        const shouldCheckPayloadSize = this.maxPayload &&
+            this.transport.name === "polling" &&
+            this.writeBuffer.length > 1;
+        if (!shouldCheckPayloadSize) {
+            return this.writeBuffer;
+        }
+        let payloadSize = 1; // first packet type
+        for (let i = 0; i < this.writeBuffer.length; i++) {
+            const data = this.writeBuffer[i].data;
+            if (data) {
+                payloadSize += (0,_util_js__WEBPACK_IMPORTED_MODULE_1__.byteLength)(data);
+            }
+            if (i > 0 && payloadSize > this.maxPayload) {
+                return this.writeBuffer.slice(0, i);
+            }
+            payloadSize += 2; // separator + packet type
+        }
+        return this.writeBuffer;
+    }
+    /**
+     * Sends a message.
+     *
+     * @param {String} msg - message.
+     * @param {Object} options.
+     * @param {Function} callback function.
+     * @return {Socket} for chaining.
+     */
+    write(msg, options, fn) {
+        this.sendPacket("message", msg, options, fn);
+        return this;
+    }
+    send(msg, options, fn) {
+        this.sendPacket("message", msg, options, fn);
+        return this;
+    }
+    /**
+     * Sends a packet.
+     *
+     * @param {String} type: packet type.
+     * @param {String} data.
+     * @param {Object} options.
+     * @param {Function} fn - callback function.
+     * @private
+     */
+    sendPacket(type, data, options, fn) {
+        if ("function" === typeof data) {
+            fn = data;
+            data = undefined;
+        }
+        if ("function" === typeof options) {
+            fn = options;
+            options = null;
+        }
+        if ("closing" === this.readyState || "closed" === this.readyState) {
+            return;
+        }
+        options = options || {};
+        options.compress = false !== options.compress;
+        const packet = {
+            type: type,
+            data: data,
+            options: options,
+        };
+        this.emitReserved("packetCreate", packet);
+        this.writeBuffer.push(packet);
+        if (fn)
+            this.once("flush", fn);
+        this.flush();
+    }
+    /**
+     * Closes the connection.
+     */
+    close() {
+        const close = () => {
+            this.onClose("forced close");
+            this.transport.close();
+        };
+        const cleanupAndClose = () => {
+            this.off("upgrade", cleanupAndClose);
+            this.off("upgradeError", cleanupAndClose);
+            close();
+        };
+        const waitForUpgrade = () => {
+            // wait for upgrade to finish since we can't send packets while pausing a transport
+            this.once("upgrade", cleanupAndClose);
+            this.once("upgradeError", cleanupAndClose);
+        };
+        if ("opening" === this.readyState || "open" === this.readyState) {
+            this.readyState = "closing";
+            if (this.writeBuffer.length) {
+                this.once("drain", () => {
+                    if (this.upgrading) {
+                        waitForUpgrade();
+                    }
+                    else {
+                        close();
+                    }
+                });
+            }
+            else if (this.upgrading) {
+                waitForUpgrade();
+            }
+            else {
+                close();
+            }
+        }
+        return this;
+    }
+    /**
+     * Called upon transport error
+     *
+     * @private
+     */
+    onError(err) {
+        Socket.priorWebsocketSuccess = false;
+        this.emitReserved("error", err);
+        this.onClose("transport error", err);
+    }
+    /**
+     * Called upon transport close.
+     *
+     * @private
+     */
+    onClose(reason, description) {
+        if ("opening" === this.readyState ||
+            "open" === this.readyState ||
+            "closing" === this.readyState) {
+            // clear timers
+            this.clearTimeoutFn(this.pingTimeoutTimer);
+            // stop event from firing again for transport
+            this.transport.removeAllListeners("close");
+            // ensure transport won't stay open
+            this.transport.close();
+            // ignore further transport communication
+            this.transport.removeAllListeners();
+            if (typeof removeEventListener === "function") {
+                removeEventListener("beforeunload", this.beforeunloadEventListener, false);
+                removeEventListener("offline", this.offlineEventListener, false);
+            }
+            // set ready state
+            this.readyState = "closed";
+            // clear session id
+            this.id = null;
+            // emit close event
+            this.emitReserved("close", reason, description);
+            // clean buffers after, so users can still
+            // grab the buffers on `close` event
+            this.writeBuffer = [];
+            this.prevBufferLen = 0;
+        }
+    }
+    /**
+     * Filters upgrades, returning only those matching client transports.
+     *
+     * @param {Array} upgrades - server upgrades
+     * @private
+     */
+    filterUpgrades(upgrades) {
+        const filteredUpgrades = [];
+        let i = 0;
+        const j = upgrades.length;
+        for (; i < j; i++) {
+            if (~this.transports.indexOf(upgrades[i]))
+                filteredUpgrades.push(upgrades[i]);
+        }
+        return filteredUpgrades;
+    }
+}
+Socket.protocol = engine_io_parser__WEBPACK_IMPORTED_MODULE_5__.protocol;
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/build/esm/transport.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/engine.io-client/build/esm/transport.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Transport: () => (/* binding */ Transport),
+/* harmony export */   TransportError: () => (/* binding */ TransportError)
+/* harmony export */ });
+/* harmony import */ var engine_io_parser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! engine.io-parser */ "./node_modules/engine.io-parser/build/esm/index.js");
+/* harmony import */ var _socket_io_component_emitter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @socket.io/component-emitter */ "./node_modules/@socket.io/component-emitter/lib/esm/index.js");
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./util.js */ "./node_modules/engine.io-client/build/esm/util.js");
+/* harmony import */ var _contrib_parseqs_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contrib/parseqs.js */ "./node_modules/engine.io-client/build/esm/contrib/parseqs.js");
+
+
+
+
+class TransportError extends Error {
+    constructor(reason, description, context) {
+        super(reason);
+        this.description = description;
+        this.context = context;
+        this.type = "TransportError";
+    }
+}
+class Transport extends _socket_io_component_emitter__WEBPACK_IMPORTED_MODULE_1__.Emitter {
+    /**
+     * Transport abstract constructor.
+     *
+     * @param {Object} opts - options
+     * @protected
+     */
+    constructor(opts) {
+        super();
+        this.writable = false;
+        (0,_util_js__WEBPACK_IMPORTED_MODULE_2__.installTimerFunctions)(this, opts);
+        this.opts = opts;
+        this.query = opts.query;
+        this.socket = opts.socket;
+    }
+    /**
+     * Emits an error.
+     *
+     * @param {String} reason
+     * @param description
+     * @param context - the error context
+     * @return {Transport} for chaining
+     * @protected
+     */
+    onError(reason, description, context) {
+        super.emitReserved("error", new TransportError(reason, description, context));
+        return this;
+    }
+    /**
+     * Opens the transport.
+     */
+    open() {
+        this.readyState = "opening";
+        this.doOpen();
+        return this;
+    }
+    /**
+     * Closes the transport.
+     */
+    close() {
+        if (this.readyState === "opening" || this.readyState === "open") {
+            this.doClose();
+            this.onClose();
+        }
+        return this;
+    }
+    /**
+     * Sends multiple packets.
+     *
+     * @param {Array} packets
+     */
+    send(packets) {
+        if (this.readyState === "open") {
+            this.write(packets);
+        }
+        else {
+            // this might happen if the transport was silently closed in the beforeunload event handler
+        }
+    }
+    /**
+     * Called upon open
+     *
+     * @protected
+     */
+    onOpen() {
+        this.readyState = "open";
+        this.writable = true;
+        super.emitReserved("open");
+    }
+    /**
+     * Called with data.
+     *
+     * @param {String} data
+     * @protected
+     */
+    onData(data) {
+        const packet = (0,engine_io_parser__WEBPACK_IMPORTED_MODULE_0__.decodePacket)(data, this.socket.binaryType);
+        this.onPacket(packet);
+    }
+    /**
+     * Called with a decoded packet.
+     *
+     * @protected
+     */
+    onPacket(packet) {
+        super.emitReserved("packet", packet);
+    }
+    /**
+     * Called upon close.
+     *
+     * @protected
+     */
+    onClose(details) {
+        this.readyState = "closed";
+        super.emitReserved("close", details);
+    }
+    /**
+     * Pauses the transport, in order not to lose packets during an upgrade.
+     *
+     * @param onPause
+     */
+    pause(onPause) { }
+    createUri(schema, query = {}) {
+        return (schema +
+            "://" +
+            this._hostname() +
+            this._port() +
+            this.opts.path +
+            this._query(query));
+    }
+    _hostname() {
+        const hostname = this.opts.hostname;
+        return hostname.indexOf(":") === -1 ? hostname : "[" + hostname + "]";
+    }
+    _port() {
+        if (this.opts.port &&
+            ((this.opts.secure && Number(this.opts.port !== 443)) ||
+                (!this.opts.secure && Number(this.opts.port) !== 80))) {
+            return ":" + this.opts.port;
+        }
+        else {
+            return "";
+        }
+    }
+    _query(query) {
+        const encodedQuery = (0,_contrib_parseqs_js__WEBPACK_IMPORTED_MODULE_3__.encode)(query);
+        return encodedQuery.length ? "?" + encodedQuery : "";
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/build/esm/transports/index.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/engine.io-client/build/esm/transports/index.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   transports: () => (/* binding */ transports)
+/* harmony export */ });
+/* harmony import */ var _polling_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./polling.js */ "./node_modules/engine.io-client/build/esm/transports/polling.js");
+/* harmony import */ var _websocket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./websocket.js */ "./node_modules/engine.io-client/build/esm/transports/websocket.js");
+/* harmony import */ var _webtransport_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./webtransport.js */ "./node_modules/engine.io-client/build/esm/transports/webtransport.js");
+
+
+
+const transports = {
+    websocket: _websocket_js__WEBPACK_IMPORTED_MODULE_1__.WS,
+    webtransport: _webtransport_js__WEBPACK_IMPORTED_MODULE_2__.WT,
+    polling: _polling_js__WEBPACK_IMPORTED_MODULE_0__.Polling,
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/build/esm/transports/polling.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/engine.io-client/build/esm/transports/polling.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Polling: () => (/* binding */ Polling),
+/* harmony export */   Request: () => (/* binding */ Request)
+/* harmony export */ });
+/* harmony import */ var _transport_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../transport.js */ "./node_modules/engine.io-client/build/esm/transport.js");
+/* harmony import */ var _contrib_yeast_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../contrib/yeast.js */ "./node_modules/engine.io-client/build/esm/contrib/yeast.js");
+/* harmony import */ var engine_io_parser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! engine.io-parser */ "./node_modules/engine.io-parser/build/esm/index.js");
+/* harmony import */ var _xmlhttprequest_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./xmlhttprequest.js */ "./node_modules/engine.io-client/build/esm/transports/xmlhttprequest.browser.js");
+/* harmony import */ var _socket_io_component_emitter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @socket.io/component-emitter */ "./node_modules/@socket.io/component-emitter/lib/esm/index.js");
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../util.js */ "./node_modules/engine.io-client/build/esm/util.js");
+/* harmony import */ var _globalThis_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../globalThis.js */ "./node_modules/engine.io-client/build/esm/globalThis.browser.js");
+
+
+
+
+
+
+
+function empty() { }
+const hasXHR2 = (function () {
+    const xhr = new _xmlhttprequest_js__WEBPACK_IMPORTED_MODULE_3__.XHR({
+        xdomain: false,
+    });
+    return null != xhr.responseType;
+})();
+class Polling extends _transport_js__WEBPACK_IMPORTED_MODULE_0__.Transport {
+    /**
+     * XHR Polling constructor.
+     *
+     * @param {Object} opts
+     * @package
+     */
+    constructor(opts) {
+        super(opts);
+        this.polling = false;
+        if (typeof location !== "undefined") {
+            const isSSL = "https:" === location.protocol;
+            let port = location.port;
+            // some user agents have empty `location.port`
+            if (!port) {
+                port = isSSL ? "443" : "80";
+            }
+            this.xd =
+                (typeof location !== "undefined" &&
+                    opts.hostname !== location.hostname) ||
+                    port !== opts.port;
+        }
+        /**
+         * XHR supports binary
+         */
+        const forceBase64 = opts && opts.forceBase64;
+        this.supportsBinary = hasXHR2 && !forceBase64;
+        if (this.opts.withCredentials) {
+            this.cookieJar = (0,_xmlhttprequest_js__WEBPACK_IMPORTED_MODULE_3__.createCookieJar)();
+        }
+    }
+    get name() {
+        return "polling";
+    }
+    /**
+     * Opens the socket (triggers polling). We write a PING message to determine
+     * when the transport is open.
+     *
+     * @protected
+     */
+    doOpen() {
+        this.poll();
+    }
+    /**
+     * Pauses polling.
+     *
+     * @param {Function} onPause - callback upon buffers are flushed and transport is paused
+     * @package
+     */
+    pause(onPause) {
+        this.readyState = "pausing";
+        const pause = () => {
+            this.readyState = "paused";
+            onPause();
+        };
+        if (this.polling || !this.writable) {
+            let total = 0;
+            if (this.polling) {
+                total++;
+                this.once("pollComplete", function () {
+                    --total || pause();
+                });
+            }
+            if (!this.writable) {
+                total++;
+                this.once("drain", function () {
+                    --total || pause();
+                });
+            }
+        }
+        else {
+            pause();
+        }
+    }
+    /**
+     * Starts polling cycle.
+     *
+     * @private
+     */
+    poll() {
+        this.polling = true;
+        this.doPoll();
+        this.emitReserved("poll");
+    }
+    /**
+     * Overloads onData to detect payloads.
+     *
+     * @protected
+     */
+    onData(data) {
+        const callback = (packet) => {
+            // if its the first message we consider the transport open
+            if ("opening" === this.readyState && packet.type === "open") {
+                this.onOpen();
+            }
+            // if its a close packet, we close the ongoing requests
+            if ("close" === packet.type) {
+                this.onClose({ description: "transport closed by the server" });
+                return false;
+            }
+            // otherwise bypass onData and handle the message
+            this.onPacket(packet);
+        };
+        // decode payload
+        (0,engine_io_parser__WEBPACK_IMPORTED_MODULE_2__.decodePayload)(data, this.socket.binaryType).forEach(callback);
+        // if an event did not trigger closing
+        if ("closed" !== this.readyState) {
+            // if we got data we're not polling
+            this.polling = false;
+            this.emitReserved("pollComplete");
+            if ("open" === this.readyState) {
+                this.poll();
+            }
+            else {
+            }
+        }
+    }
+    /**
+     * For polling, send a close packet.
+     *
+     * @protected
+     */
+    doClose() {
+        const close = () => {
+            this.write([{ type: "close" }]);
+        };
+        if ("open" === this.readyState) {
+            close();
+        }
+        else {
+            // in case we're trying to close while
+            // handshaking is in progress (GH-164)
+            this.once("open", close);
+        }
+    }
+    /**
+     * Writes a packets payload.
+     *
+     * @param {Array} packets - data packets
+     * @protected
+     */
+    write(packets) {
+        this.writable = false;
+        (0,engine_io_parser__WEBPACK_IMPORTED_MODULE_2__.encodePayload)(packets, (data) => {
+            this.doWrite(data, () => {
+                this.writable = true;
+                this.emitReserved("drain");
+            });
+        });
+    }
+    /**
+     * Generates uri for connection.
+     *
+     * @private
+     */
+    uri() {
+        const schema = this.opts.secure ? "https" : "http";
+        const query = this.query || {};
+        // cache busting is forced
+        if (false !== this.opts.timestampRequests) {
+            query[this.opts.timestampParam] = (0,_contrib_yeast_js__WEBPACK_IMPORTED_MODULE_1__.yeast)();
+        }
+        if (!this.supportsBinary && !query.sid) {
+            query.b64 = 1;
+        }
+        return this.createUri(schema, query);
+    }
+    /**
+     * Creates a request.
+     *
+     * @param {String} method
+     * @private
+     */
+    request(opts = {}) {
+        Object.assign(opts, { xd: this.xd, cookieJar: this.cookieJar }, this.opts);
+        return new Request(this.uri(), opts);
+    }
+    /**
+     * Sends data.
+     *
+     * @param {String} data to send.
+     * @param {Function} called upon flush.
+     * @private
+     */
+    doWrite(data, fn) {
+        const req = this.request({
+            method: "POST",
+            data: data,
+        });
+        req.on("success", fn);
+        req.on("error", (xhrStatus, context) => {
+            this.onError("xhr post error", xhrStatus, context);
+        });
+    }
+    /**
+     * Starts a poll cycle.
+     *
+     * @private
+     */
+    doPoll() {
+        const req = this.request();
+        req.on("data", this.onData.bind(this));
+        req.on("error", (xhrStatus, context) => {
+            this.onError("xhr poll error", xhrStatus, context);
+        });
+        this.pollXhr = req;
+    }
+}
+class Request extends _socket_io_component_emitter__WEBPACK_IMPORTED_MODULE_4__.Emitter {
+    /**
+     * Request constructor
+     *
+     * @param {Object} options
+     * @package
+     */
+    constructor(uri, opts) {
+        super();
+        (0,_util_js__WEBPACK_IMPORTED_MODULE_5__.installTimerFunctions)(this, opts);
+        this.opts = opts;
+        this.method = opts.method || "GET";
+        this.uri = uri;
+        this.data = undefined !== opts.data ? opts.data : null;
+        this.create();
+    }
+    /**
+     * Creates the XHR object and sends the request.
+     *
+     * @private
+     */
+    create() {
+        var _a;
+        const opts = (0,_util_js__WEBPACK_IMPORTED_MODULE_5__.pick)(this.opts, "agent", "pfx", "key", "passphrase", "cert", "ca", "ciphers", "rejectUnauthorized", "autoUnref");
+        opts.xdomain = !!this.opts.xd;
+        const xhr = (this.xhr = new _xmlhttprequest_js__WEBPACK_IMPORTED_MODULE_3__.XHR(opts));
+        try {
+            xhr.open(this.method, this.uri, true);
+            try {
+                if (this.opts.extraHeaders) {
+                    xhr.setDisableHeaderCheck && xhr.setDisableHeaderCheck(true);
+                    for (let i in this.opts.extraHeaders) {
+                        if (this.opts.extraHeaders.hasOwnProperty(i)) {
+                            xhr.setRequestHeader(i, this.opts.extraHeaders[i]);
+                        }
+                    }
+                }
+            }
+            catch (e) { }
+            if ("POST" === this.method) {
+                try {
+                    xhr.setRequestHeader("Content-type", "text/plain;charset=UTF-8");
+                }
+                catch (e) { }
+            }
+            try {
+                xhr.setRequestHeader("Accept", "*/*");
+            }
+            catch (e) { }
+            (_a = this.opts.cookieJar) === null || _a === void 0 ? void 0 : _a.addCookies(xhr);
+            // ie6 check
+            if ("withCredentials" in xhr) {
+                xhr.withCredentials = this.opts.withCredentials;
+            }
+            if (this.opts.requestTimeout) {
+                xhr.timeout = this.opts.requestTimeout;
+            }
+            xhr.onreadystatechange = () => {
+                var _a;
+                if (xhr.readyState === 3) {
+                    (_a = this.opts.cookieJar) === null || _a === void 0 ? void 0 : _a.parseCookies(xhr);
+                }
+                if (4 !== xhr.readyState)
+                    return;
+                if (200 === xhr.status || 1223 === xhr.status) {
+                    this.onLoad();
+                }
+                else {
+                    // make sure the `error` event handler that's user-set
+                    // does not throw in the same tick and gets caught here
+                    this.setTimeoutFn(() => {
+                        this.onError(typeof xhr.status === "number" ? xhr.status : 0);
+                    }, 0);
+                }
+            };
+            xhr.send(this.data);
+        }
+        catch (e) {
+            // Need to defer since .create() is called directly from the constructor
+            // and thus the 'error' event can only be only bound *after* this exception
+            // occurs.  Therefore, also, we cannot throw here at all.
+            this.setTimeoutFn(() => {
+                this.onError(e);
+            }, 0);
+            return;
+        }
+        if (typeof document !== "undefined") {
+            this.index = Request.requestsCount++;
+            Request.requests[this.index] = this;
+        }
+    }
+    /**
+     * Called upon error.
+     *
+     * @private
+     */
+    onError(err) {
+        this.emitReserved("error", err, this.xhr);
+        this.cleanup(true);
+    }
+    /**
+     * Cleans up house.
+     *
+     * @private
+     */
+    cleanup(fromError) {
+        if ("undefined" === typeof this.xhr || null === this.xhr) {
+            return;
+        }
+        this.xhr.onreadystatechange = empty;
+        if (fromError) {
+            try {
+                this.xhr.abort();
+            }
+            catch (e) { }
+        }
+        if (typeof document !== "undefined") {
+            delete Request.requests[this.index];
+        }
+        this.xhr = null;
+    }
+    /**
+     * Called upon load.
+     *
+     * @private
+     */
+    onLoad() {
+        const data = this.xhr.responseText;
+        if (data !== null) {
+            this.emitReserved("data", data);
+            this.emitReserved("success");
+            this.cleanup();
+        }
+    }
+    /**
+     * Aborts the request.
+     *
+     * @package
+     */
+    abort() {
+        this.cleanup();
+    }
+}
+Request.requestsCount = 0;
+Request.requests = {};
+/**
+ * Aborts pending requests when unloading the window. This is needed to prevent
+ * memory leaks (e.g. when using IE) and to ensure that no spurious error is
+ * emitted.
+ */
+if (typeof document !== "undefined") {
+    // @ts-ignore
+    if (typeof attachEvent === "function") {
+        // @ts-ignore
+        attachEvent("onunload", unloadHandler);
+    }
+    else if (typeof addEventListener === "function") {
+        const terminationEvent = "onpagehide" in _globalThis_js__WEBPACK_IMPORTED_MODULE_6__.globalThisShim ? "pagehide" : "unload";
+        addEventListener(terminationEvent, unloadHandler, false);
+    }
+}
+function unloadHandler() {
+    for (let i in Request.requests) {
+        if (Request.requests.hasOwnProperty(i)) {
+            Request.requests[i].abort();
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/build/esm/transports/websocket-constructor.browser.js":
+/*!*********************************************************************************************!*\
+  !*** ./node_modules/engine.io-client/build/esm/transports/websocket-constructor.browser.js ***!
+  \*********************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   WebSocket: () => (/* binding */ WebSocket),
+/* harmony export */   defaultBinaryType: () => (/* binding */ defaultBinaryType),
+/* harmony export */   nextTick: () => (/* binding */ nextTick),
+/* harmony export */   usingBrowserWebSocket: () => (/* binding */ usingBrowserWebSocket)
+/* harmony export */ });
+/* harmony import */ var _globalThis_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../globalThis.js */ "./node_modules/engine.io-client/build/esm/globalThis.browser.js");
+
+const nextTick = (() => {
+    const isPromiseAvailable = typeof Promise === "function" && typeof Promise.resolve === "function";
+    if (isPromiseAvailable) {
+        return (cb) => Promise.resolve().then(cb);
+    }
+    else {
+        return (cb, setTimeoutFn) => setTimeoutFn(cb, 0);
+    }
+})();
+const WebSocket = _globalThis_js__WEBPACK_IMPORTED_MODULE_0__.globalThisShim.WebSocket || _globalThis_js__WEBPACK_IMPORTED_MODULE_0__.globalThisShim.MozWebSocket;
+const usingBrowserWebSocket = true;
+const defaultBinaryType = "arraybuffer";
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/build/esm/transports/websocket.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/engine.io-client/build/esm/transports/websocket.js ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   WS: () => (/* binding */ WS)
+/* harmony export */ });
+/* harmony import */ var _transport_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../transport.js */ "./node_modules/engine.io-client/build/esm/transport.js");
+/* harmony import */ var _contrib_yeast_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../contrib/yeast.js */ "./node_modules/engine.io-client/build/esm/contrib/yeast.js");
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util.js */ "./node_modules/engine.io-client/build/esm/util.js");
+/* harmony import */ var _websocket_constructor_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./websocket-constructor.js */ "./node_modules/engine.io-client/build/esm/transports/websocket-constructor.browser.js");
+/* harmony import */ var engine_io_parser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! engine.io-parser */ "./node_modules/engine.io-parser/build/esm/index.js");
+/* provided dependency */ var Buffer = __webpack_require__(/*! buffer */ "./node_modules/buffer/index.js")["Buffer"];
+
+
+
+
+
+// detect ReactNative environment
+const isReactNative = typeof navigator !== "undefined" &&
+    typeof navigator.product === "string" &&
+    navigator.product.toLowerCase() === "reactnative";
+class WS extends _transport_js__WEBPACK_IMPORTED_MODULE_0__.Transport {
+    /**
+     * WebSocket transport constructor.
+     *
+     * @param {Object} opts - connection options
+     * @protected
+     */
+    constructor(opts) {
+        super(opts);
+        this.supportsBinary = !opts.forceBase64;
+    }
+    get name() {
+        return "websocket";
+    }
+    doOpen() {
+        if (!this.check()) {
+            // let probe timeout
+            return;
+        }
+        const uri = this.uri();
+        const protocols = this.opts.protocols;
+        // React Native only supports the 'headers' option, and will print a warning if anything else is passed
+        const opts = isReactNative
+            ? {}
+            : (0,_util_js__WEBPACK_IMPORTED_MODULE_2__.pick)(this.opts, "agent", "perMessageDeflate", "pfx", "key", "passphrase", "cert", "ca", "ciphers", "rejectUnauthorized", "localAddress", "protocolVersion", "origin", "maxPayload", "family", "checkServerIdentity");
+        if (this.opts.extraHeaders) {
+            opts.headers = this.opts.extraHeaders;
+        }
+        try {
+            this.ws =
+                _websocket_constructor_js__WEBPACK_IMPORTED_MODULE_3__.usingBrowserWebSocket && !isReactNative
+                    ? protocols
+                        ? new _websocket_constructor_js__WEBPACK_IMPORTED_MODULE_3__.WebSocket(uri, protocols)
+                        : new _websocket_constructor_js__WEBPACK_IMPORTED_MODULE_3__.WebSocket(uri)
+                    : new _websocket_constructor_js__WEBPACK_IMPORTED_MODULE_3__.WebSocket(uri, protocols, opts);
+        }
+        catch (err) {
+            return this.emitReserved("error", err);
+        }
+        this.ws.binaryType = this.socket.binaryType;
+        this.addEventListeners();
+    }
+    /**
+     * Adds event listeners to the socket
+     *
+     * @private
+     */
+    addEventListeners() {
+        this.ws.onopen = () => {
+            if (this.opts.autoUnref) {
+                this.ws._socket.unref();
+            }
+            this.onOpen();
+        };
+        this.ws.onclose = (closeEvent) => this.onClose({
+            description: "websocket connection closed",
+            context: closeEvent,
+        });
+        this.ws.onmessage = (ev) => this.onData(ev.data);
+        this.ws.onerror = (e) => this.onError("websocket error", e);
+    }
+    write(packets) {
+        this.writable = false;
+        // encodePacket efficient as it uses WS framing
+        // no need for encodePayload
+        for (let i = 0; i < packets.length; i++) {
+            const packet = packets[i];
+            const lastPacket = i === packets.length - 1;
+            (0,engine_io_parser__WEBPACK_IMPORTED_MODULE_4__.encodePacket)(packet, this.supportsBinary, (data) => {
+                // always create a new object (GH-437)
+                const opts = {};
+                if (!_websocket_constructor_js__WEBPACK_IMPORTED_MODULE_3__.usingBrowserWebSocket) {
+                    if (packet.options) {
+                        opts.compress = packet.options.compress;
+                    }
+                    if (this.opts.perMessageDeflate) {
+                        const len = 
+                        // @ts-ignore
+                        "string" === typeof data ? Buffer.byteLength(data) : data.length;
+                        if (len < this.opts.perMessageDeflate.threshold) {
+                            opts.compress = false;
+                        }
+                    }
+                }
+                // Sometimes the websocket has already been closed but the browser didn't
+                // have a chance of informing us about it yet, in that case send will
+                // throw an error
+                try {
+                    if (_websocket_constructor_js__WEBPACK_IMPORTED_MODULE_3__.usingBrowserWebSocket) {
+                        // TypeError is thrown when passing the second argument on Safari
+                        this.ws.send(data);
+                    }
+                    else {
+                        this.ws.send(data, opts);
+                    }
+                }
+                catch (e) {
+                }
+                if (lastPacket) {
+                    // fake drain
+                    // defer to next tick to allow Socket to clear writeBuffer
+                    (0,_websocket_constructor_js__WEBPACK_IMPORTED_MODULE_3__.nextTick)(() => {
+                        this.writable = true;
+                        this.emitReserved("drain");
+                    }, this.setTimeoutFn);
+                }
+            });
+        }
+    }
+    doClose() {
+        if (typeof this.ws !== "undefined") {
+            this.ws.close();
+            this.ws = null;
+        }
+    }
+    /**
+     * Generates uri for connection.
+     *
+     * @private
+     */
+    uri() {
+        const schema = this.opts.secure ? "wss" : "ws";
+        const query = this.query || {};
+        // append timestamp to URI
+        if (this.opts.timestampRequests) {
+            query[this.opts.timestampParam] = (0,_contrib_yeast_js__WEBPACK_IMPORTED_MODULE_1__.yeast)();
+        }
+        // communicate binary support capabilities
+        if (!this.supportsBinary) {
+            query.b64 = 1;
+        }
+        return this.createUri(schema, query);
+    }
+    /**
+     * Feature detection for WebSocket.
+     *
+     * @return {Boolean} whether this transport is available.
+     * @private
+     */
+    check() {
+        return !!_websocket_constructor_js__WEBPACK_IMPORTED_MODULE_3__.WebSocket;
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/build/esm/transports/webtransport.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/engine.io-client/build/esm/transports/webtransport.js ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   WT: () => (/* binding */ WT)
+/* harmony export */ });
+/* harmony import */ var _transport_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../transport.js */ "./node_modules/engine.io-client/build/esm/transport.js");
+/* harmony import */ var _websocket_constructor_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./websocket-constructor.js */ "./node_modules/engine.io-client/build/esm/transports/websocket-constructor.browser.js");
+/* harmony import */ var engine_io_parser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! engine.io-parser */ "./node_modules/engine.io-parser/build/esm/index.js");
+
+
+
+class WT extends _transport_js__WEBPACK_IMPORTED_MODULE_0__.Transport {
+    get name() {
+        return "webtransport";
+    }
+    doOpen() {
+        // @ts-ignore
+        if (typeof WebTransport !== "function") {
+            return;
+        }
+        // @ts-ignore
+        this.transport = new WebTransport(this.createUri("https"), this.opts.transportOptions[this.name]);
+        this.transport.closed
+            .then(() => {
+            this.onClose();
+        })
+            .catch((err) => {
+            this.onError("webtransport error", err);
+        });
+        // note: we could have used async/await, but that would require some additional polyfills
+        this.transport.ready.then(() => {
+            this.transport.createBidirectionalStream().then((stream) => {
+                const decoderStream = (0,engine_io_parser__WEBPACK_IMPORTED_MODULE_2__.createPacketDecoderStream)(Number.MAX_SAFE_INTEGER, this.socket.binaryType);
+                const reader = stream.readable.pipeThrough(decoderStream).getReader();
+                const encoderStream = (0,engine_io_parser__WEBPACK_IMPORTED_MODULE_2__.createPacketEncoderStream)();
+                encoderStream.readable.pipeTo(stream.writable);
+                this.writer = encoderStream.writable.getWriter();
+                const read = () => {
+                    reader
+                        .read()
+                        .then(({ done, value }) => {
+                        if (done) {
+                            return;
+                        }
+                        this.onPacket(value);
+                        read();
+                    })
+                        .catch((err) => {
+                    });
+                };
+                read();
+                const packet = { type: "open" };
+                if (this.query.sid) {
+                    packet.data = `{"sid":"${this.query.sid}"}`;
+                }
+                this.writer.write(packet).then(() => this.onOpen());
+            });
+        });
+    }
+    write(packets) {
+        this.writable = false;
+        for (let i = 0; i < packets.length; i++) {
+            const packet = packets[i];
+            const lastPacket = i === packets.length - 1;
+            this.writer.write(packet).then(() => {
+                if (lastPacket) {
+                    (0,_websocket_constructor_js__WEBPACK_IMPORTED_MODULE_1__.nextTick)(() => {
+                        this.writable = true;
+                        this.emitReserved("drain");
+                    }, this.setTimeoutFn);
+                }
+            });
+        }
+    }
+    doClose() {
+        var _a;
+        (_a = this.transport) === null || _a === void 0 ? void 0 : _a.close();
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/build/esm/transports/xmlhttprequest.browser.js":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/engine.io-client/build/esm/transports/xmlhttprequest.browser.js ***!
+  \**************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   XHR: () => (/* binding */ XHR),
+/* harmony export */   createCookieJar: () => (/* binding */ createCookieJar)
+/* harmony export */ });
+/* harmony import */ var _contrib_has_cors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../contrib/has-cors.js */ "./node_modules/engine.io-client/build/esm/contrib/has-cors.js");
+/* harmony import */ var _globalThis_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../globalThis.js */ "./node_modules/engine.io-client/build/esm/globalThis.browser.js");
+// browser shim for xmlhttprequest module
+
+
+function XHR(opts) {
+    const xdomain = opts.xdomain;
+    // XMLHttpRequest can be disabled on IE
+    try {
+        if ("undefined" !== typeof XMLHttpRequest && (!xdomain || _contrib_has_cors_js__WEBPACK_IMPORTED_MODULE_0__.hasCORS)) {
+            return new XMLHttpRequest();
+        }
+    }
+    catch (e) { }
+    if (!xdomain) {
+        try {
+            return new _globalThis_js__WEBPACK_IMPORTED_MODULE_1__.globalThisShim[["Active"].concat("Object").join("X")]("Microsoft.XMLHTTP");
+        }
+        catch (e) { }
+    }
+}
+function createCookieJar() { }
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-client/build/esm/util.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/engine.io-client/build/esm/util.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   byteLength: () => (/* binding */ byteLength),
+/* harmony export */   installTimerFunctions: () => (/* binding */ installTimerFunctions),
+/* harmony export */   pick: () => (/* binding */ pick)
+/* harmony export */ });
+/* harmony import */ var _globalThis_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./globalThis.js */ "./node_modules/engine.io-client/build/esm/globalThis.browser.js");
+
+function pick(obj, ...attr) {
+    return attr.reduce((acc, k) => {
+        if (obj.hasOwnProperty(k)) {
+            acc[k] = obj[k];
+        }
+        return acc;
+    }, {});
+}
+// Keep a reference to the real timeout functions so they can be used when overridden
+const NATIVE_SET_TIMEOUT = _globalThis_js__WEBPACK_IMPORTED_MODULE_0__.globalThisShim.setTimeout;
+const NATIVE_CLEAR_TIMEOUT = _globalThis_js__WEBPACK_IMPORTED_MODULE_0__.globalThisShim.clearTimeout;
+function installTimerFunctions(obj, opts) {
+    if (opts.useNativeTimers) {
+        obj.setTimeoutFn = NATIVE_SET_TIMEOUT.bind(_globalThis_js__WEBPACK_IMPORTED_MODULE_0__.globalThisShim);
+        obj.clearTimeoutFn = NATIVE_CLEAR_TIMEOUT.bind(_globalThis_js__WEBPACK_IMPORTED_MODULE_0__.globalThisShim);
+    }
+    else {
+        obj.setTimeoutFn = _globalThis_js__WEBPACK_IMPORTED_MODULE_0__.globalThisShim.setTimeout.bind(_globalThis_js__WEBPACK_IMPORTED_MODULE_0__.globalThisShim);
+        obj.clearTimeoutFn = _globalThis_js__WEBPACK_IMPORTED_MODULE_0__.globalThisShim.clearTimeout.bind(_globalThis_js__WEBPACK_IMPORTED_MODULE_0__.globalThisShim);
+    }
+}
+// base64 encoded buffers are about 33% bigger (https://en.wikipedia.org/wiki/Base64)
+const BASE64_OVERHEAD = 1.33;
+// we could also have used `new Blob([obj]).size`, but it isn't supported in IE9
+function byteLength(obj) {
+    if (typeof obj === "string") {
+        return utf8Length(obj);
+    }
+    // arraybuffer or blob
+    return Math.ceil((obj.byteLength || obj.size) * BASE64_OVERHEAD);
+}
+function utf8Length(str) {
+    let c = 0, length = 0;
+    for (let i = 0, l = str.length; i < l; i++) {
+        c = str.charCodeAt(i);
+        if (c < 0x80) {
+            length += 1;
+        }
+        else if (c < 0x800) {
+            length += 2;
+        }
+        else if (c < 0xd800 || c >= 0xe000) {
+            length += 3;
+        }
+        else {
+            i++;
+            length += 4;
+        }
+    }
+    return length;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-parser/build/esm/commons.js":
+/*!************************************************************!*\
+  !*** ./node_modules/engine.io-parser/build/esm/commons.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ERROR_PACKET: () => (/* binding */ ERROR_PACKET),
+/* harmony export */   PACKET_TYPES: () => (/* binding */ PACKET_TYPES),
+/* harmony export */   PACKET_TYPES_REVERSE: () => (/* binding */ PACKET_TYPES_REVERSE)
+/* harmony export */ });
+const PACKET_TYPES = Object.create(null); // no Map = no polyfill
+PACKET_TYPES["open"] = "0";
+PACKET_TYPES["close"] = "1";
+PACKET_TYPES["ping"] = "2";
+PACKET_TYPES["pong"] = "3";
+PACKET_TYPES["message"] = "4";
+PACKET_TYPES["upgrade"] = "5";
+PACKET_TYPES["noop"] = "6";
+const PACKET_TYPES_REVERSE = Object.create(null);
+Object.keys(PACKET_TYPES).forEach((key) => {
+    PACKET_TYPES_REVERSE[PACKET_TYPES[key]] = key;
+});
+const ERROR_PACKET = { type: "error", data: "parser error" };
+
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-parser/build/esm/contrib/base64-arraybuffer.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/engine.io-parser/build/esm/contrib/base64-arraybuffer.js ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   decode: () => (/* binding */ decode),
+/* harmony export */   encode: () => (/* binding */ encode)
+/* harmony export */ });
+// imported from https://github.com/socketio/base64-arraybuffer
+const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
+// Use a lookup table to find the index.
+const lookup = typeof Uint8Array === 'undefined' ? [] : new Uint8Array(256);
+for (let i = 0; i < chars.length; i++) {
+    lookup[chars.charCodeAt(i)] = i;
+}
+const encode = (arraybuffer) => {
+    let bytes = new Uint8Array(arraybuffer), i, len = bytes.length, base64 = '';
+    for (i = 0; i < len; i += 3) {
+        base64 += chars[bytes[i] >> 2];
+        base64 += chars[((bytes[i] & 3) << 4) | (bytes[i + 1] >> 4)];
+        base64 += chars[((bytes[i + 1] & 15) << 2) | (bytes[i + 2] >> 6)];
+        base64 += chars[bytes[i + 2] & 63];
+    }
+    if (len % 3 === 2) {
+        base64 = base64.substring(0, base64.length - 1) + '=';
+    }
+    else if (len % 3 === 1) {
+        base64 = base64.substring(0, base64.length - 2) + '==';
+    }
+    return base64;
+};
+const decode = (base64) => {
+    let bufferLength = base64.length * 0.75, len = base64.length, i, p = 0, encoded1, encoded2, encoded3, encoded4;
+    if (base64[base64.length - 1] === '=') {
+        bufferLength--;
+        if (base64[base64.length - 2] === '=') {
+            bufferLength--;
+        }
+    }
+    const arraybuffer = new ArrayBuffer(bufferLength), bytes = new Uint8Array(arraybuffer);
+    for (i = 0; i < len; i += 4) {
+        encoded1 = lookup[base64.charCodeAt(i)];
+        encoded2 = lookup[base64.charCodeAt(i + 1)];
+        encoded3 = lookup[base64.charCodeAt(i + 2)];
+        encoded4 = lookup[base64.charCodeAt(i + 3)];
+        bytes[p++] = (encoded1 << 2) | (encoded2 >> 4);
+        bytes[p++] = ((encoded2 & 15) << 4) | (encoded3 >> 2);
+        bytes[p++] = ((encoded3 & 3) << 6) | (encoded4 & 63);
+    }
+    return arraybuffer;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-parser/build/esm/decodePacket.browser.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/engine.io-parser/build/esm/decodePacket.browser.js ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   decodePacket: () => (/* binding */ decodePacket)
+/* harmony export */ });
+/* harmony import */ var _commons_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./commons.js */ "./node_modules/engine.io-parser/build/esm/commons.js");
+/* harmony import */ var _contrib_base64_arraybuffer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contrib/base64-arraybuffer.js */ "./node_modules/engine.io-parser/build/esm/contrib/base64-arraybuffer.js");
+
+
+const withNativeArrayBuffer = typeof ArrayBuffer === "function";
+const decodePacket = (encodedPacket, binaryType) => {
+    if (typeof encodedPacket !== "string") {
+        return {
+            type: "message",
+            data: mapBinary(encodedPacket, binaryType),
+        };
+    }
+    const type = encodedPacket.charAt(0);
+    if (type === "b") {
+        return {
+            type: "message",
+            data: decodeBase64Packet(encodedPacket.substring(1), binaryType),
+        };
+    }
+    const packetType = _commons_js__WEBPACK_IMPORTED_MODULE_0__.PACKET_TYPES_REVERSE[type];
+    if (!packetType) {
+        return _commons_js__WEBPACK_IMPORTED_MODULE_0__.ERROR_PACKET;
+    }
+    return encodedPacket.length > 1
+        ? {
+            type: _commons_js__WEBPACK_IMPORTED_MODULE_0__.PACKET_TYPES_REVERSE[type],
+            data: encodedPacket.substring(1),
+        }
+        : {
+            type: _commons_js__WEBPACK_IMPORTED_MODULE_0__.PACKET_TYPES_REVERSE[type],
+        };
+};
+const decodeBase64Packet = (data, binaryType) => {
+    if (withNativeArrayBuffer) {
+        const decoded = (0,_contrib_base64_arraybuffer_js__WEBPACK_IMPORTED_MODULE_1__.decode)(data);
+        return mapBinary(decoded, binaryType);
+    }
+    else {
+        return { base64: true, data }; // fallback for old browsers
+    }
+};
+const mapBinary = (data, binaryType) => {
+    switch (binaryType) {
+        case "blob":
+            if (data instanceof Blob) {
+                // from WebSocket + binaryType "blob"
+                return data;
+            }
+            else {
+                // from HTTP long-polling or WebTransport
+                return new Blob([data]);
+            }
+        case "arraybuffer":
+        default:
+            if (data instanceof ArrayBuffer) {
+                // from HTTP long-polling (base64) or WebSocket + binaryType "arraybuffer"
+                return data;
+            }
+            else {
+                // from WebTransport (Uint8Array)
+                return data.buffer;
+            }
+    }
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-parser/build/esm/encodePacket.browser.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/engine.io-parser/build/esm/encodePacket.browser.js ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   encodePacket: () => (/* binding */ encodePacket),
+/* harmony export */   encodePacketToBinary: () => (/* binding */ encodePacketToBinary)
+/* harmony export */ });
+/* harmony import */ var _commons_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./commons.js */ "./node_modules/engine.io-parser/build/esm/commons.js");
+
+const withNativeBlob = typeof Blob === "function" ||
+    (typeof Blob !== "undefined" &&
+        Object.prototype.toString.call(Blob) === "[object BlobConstructor]");
+const withNativeArrayBuffer = typeof ArrayBuffer === "function";
+// ArrayBuffer.isView method is not defined in IE10
+const isView = (obj) => {
+    return typeof ArrayBuffer.isView === "function"
+        ? ArrayBuffer.isView(obj)
+        : obj && obj.buffer instanceof ArrayBuffer;
+};
+const encodePacket = ({ type, data }, supportsBinary, callback) => {
+    if (withNativeBlob && data instanceof Blob) {
+        if (supportsBinary) {
+            return callback(data);
+        }
+        else {
+            return encodeBlobAsBase64(data, callback);
+        }
+    }
+    else if (withNativeArrayBuffer &&
+        (data instanceof ArrayBuffer || isView(data))) {
+        if (supportsBinary) {
+            return callback(data);
+        }
+        else {
+            return encodeBlobAsBase64(new Blob([data]), callback);
+        }
+    }
+    // plain string
+    return callback(_commons_js__WEBPACK_IMPORTED_MODULE_0__.PACKET_TYPES[type] + (data || ""));
+};
+const encodeBlobAsBase64 = (data, callback) => {
+    const fileReader = new FileReader();
+    fileReader.onload = function () {
+        const content = fileReader.result.split(",")[1];
+        callback("b" + (content || ""));
+    };
+    return fileReader.readAsDataURL(data);
+};
+function toArray(data) {
+    if (data instanceof Uint8Array) {
+        return data;
+    }
+    else if (data instanceof ArrayBuffer) {
+        return new Uint8Array(data);
+    }
+    else {
+        return new Uint8Array(data.buffer, data.byteOffset, data.byteLength);
+    }
+}
+let TEXT_ENCODER;
+function encodePacketToBinary(packet, callback) {
+    if (withNativeBlob && packet.data instanceof Blob) {
+        return packet.data.arrayBuffer().then(toArray).then(callback);
+    }
+    else if (withNativeArrayBuffer &&
+        (packet.data instanceof ArrayBuffer || isView(packet.data))) {
+        return callback(toArray(packet.data));
+    }
+    encodePacket(packet, false, (encoded) => {
+        if (!TEXT_ENCODER) {
+            TEXT_ENCODER = new TextEncoder();
+        }
+        callback(TEXT_ENCODER.encode(encoded));
+    });
+}
+
+
+
+/***/ }),
+
+/***/ "./node_modules/engine.io-parser/build/esm/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/engine.io-parser/build/esm/index.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   createPacketDecoderStream: () => (/* binding */ createPacketDecoderStream),
+/* harmony export */   createPacketEncoderStream: () => (/* binding */ createPacketEncoderStream),
+/* harmony export */   decodePacket: () => (/* reexport safe */ _decodePacket_js__WEBPACK_IMPORTED_MODULE_1__.decodePacket),
+/* harmony export */   decodePayload: () => (/* binding */ decodePayload),
+/* harmony export */   encodePacket: () => (/* reexport safe */ _encodePacket_js__WEBPACK_IMPORTED_MODULE_0__.encodePacket),
+/* harmony export */   encodePayload: () => (/* binding */ encodePayload),
+/* harmony export */   protocol: () => (/* binding */ protocol)
+/* harmony export */ });
+/* harmony import */ var _encodePacket_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./encodePacket.js */ "./node_modules/engine.io-parser/build/esm/encodePacket.browser.js");
+/* harmony import */ var _decodePacket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./decodePacket.js */ "./node_modules/engine.io-parser/build/esm/decodePacket.browser.js");
+/* harmony import */ var _commons_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./commons.js */ "./node_modules/engine.io-parser/build/esm/commons.js");
+
+
+
+const SEPARATOR = String.fromCharCode(30); // see https://en.wikipedia.org/wiki/Delimiter#ASCII_delimited_text
+const encodePayload = (packets, callback) => {
+    // some packets may be added to the array while encoding, so the initial length must be saved
+    const length = packets.length;
+    const encodedPackets = new Array(length);
+    let count = 0;
+    packets.forEach((packet, i) => {
+        // force base64 encoding for binary packets
+        (0,_encodePacket_js__WEBPACK_IMPORTED_MODULE_0__.encodePacket)(packet, false, (encodedPacket) => {
+            encodedPackets[i] = encodedPacket;
+            if (++count === length) {
+                callback(encodedPackets.join(SEPARATOR));
+            }
+        });
+    });
+};
+const decodePayload = (encodedPayload, binaryType) => {
+    const encodedPackets = encodedPayload.split(SEPARATOR);
+    const packets = [];
+    for (let i = 0; i < encodedPackets.length; i++) {
+        const decodedPacket = (0,_decodePacket_js__WEBPACK_IMPORTED_MODULE_1__.decodePacket)(encodedPackets[i], binaryType);
+        packets.push(decodedPacket);
+        if (decodedPacket.type === "error") {
+            break;
+        }
+    }
+    return packets;
+};
+function createPacketEncoderStream() {
+    // @ts-expect-error
+    return new TransformStream({
+        transform(packet, controller) {
+            (0,_encodePacket_js__WEBPACK_IMPORTED_MODULE_0__.encodePacketToBinary)(packet, (encodedPacket) => {
+                const payloadLength = encodedPacket.length;
+                let header;
+                // inspired by the WebSocket format: https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers#decoding_payload_length
+                if (payloadLength < 126) {
+                    header = new Uint8Array(1);
+                    new DataView(header.buffer).setUint8(0, payloadLength);
+                }
+                else if (payloadLength < 65536) {
+                    header = new Uint8Array(3);
+                    const view = new DataView(header.buffer);
+                    view.setUint8(0, 126);
+                    view.setUint16(1, payloadLength);
+                }
+                else {
+                    header = new Uint8Array(9);
+                    const view = new DataView(header.buffer);
+                    view.setUint8(0, 127);
+                    view.setBigUint64(1, BigInt(payloadLength));
+                }
+                // first bit indicates whether the payload is plain text (0) or binary (1)
+                if (packet.data && typeof packet.data !== "string") {
+                    header[0] |= 0x80;
+                }
+                controller.enqueue(header);
+                controller.enqueue(encodedPacket);
+            });
+        },
+    });
+}
+let TEXT_DECODER;
+function totalLength(chunks) {
+    return chunks.reduce((acc, chunk) => acc + chunk.length, 0);
+}
+function concatChunks(chunks, size) {
+    if (chunks[0].length === size) {
+        return chunks.shift();
+    }
+    const buffer = new Uint8Array(size);
+    let j = 0;
+    for (let i = 0; i < size; i++) {
+        buffer[i] = chunks[0][j++];
+        if (j === chunks[0].length) {
+            chunks.shift();
+            j = 0;
+        }
+    }
+    if (chunks.length && j < chunks[0].length) {
+        chunks[0] = chunks[0].slice(j);
+    }
+    return buffer;
+}
+function createPacketDecoderStream(maxPayload, binaryType) {
+    if (!TEXT_DECODER) {
+        TEXT_DECODER = new TextDecoder();
+    }
+    const chunks = [];
+    let state = 0 /* READ_HEADER */;
+    let expectedLength = -1;
+    let isBinary = false;
+    // @ts-expect-error
+    return new TransformStream({
+        transform(chunk, controller) {
+            chunks.push(chunk);
+            while (true) {
+                if (state === 0 /* READ_HEADER */) {
+                    if (totalLength(chunks) < 1) {
+                        break;
+                    }
+                    const header = concatChunks(chunks, 1);
+                    isBinary = (header[0] & 0x80) === 0x80;
+                    expectedLength = header[0] & 0x7f;
+                    if (expectedLength < 126) {
+                        state = 3 /* READ_PAYLOAD */;
+                    }
+                    else if (expectedLength === 126) {
+                        state = 1 /* READ_EXTENDED_LENGTH_16 */;
+                    }
+                    else {
+                        state = 2 /* READ_EXTENDED_LENGTH_64 */;
+                    }
+                }
+                else if (state === 1 /* READ_EXTENDED_LENGTH_16 */) {
+                    if (totalLength(chunks) < 2) {
+                        break;
+                    }
+                    const headerArray = concatChunks(chunks, 2);
+                    expectedLength = new DataView(headerArray.buffer, headerArray.byteOffset, headerArray.length).getUint16(0);
+                    state = 3 /* READ_PAYLOAD */;
+                }
+                else if (state === 2 /* READ_EXTENDED_LENGTH_64 */) {
+                    if (totalLength(chunks) < 8) {
+                        break;
+                    }
+                    const headerArray = concatChunks(chunks, 8);
+                    const view = new DataView(headerArray.buffer, headerArray.byteOffset, headerArray.length);
+                    const n = view.getUint32(0);
+                    if (n > Math.pow(2, 53 - 32) - 1) {
+                        // the maximum safe integer in JavaScript is 2^53 - 1
+                        controller.enqueue(_commons_js__WEBPACK_IMPORTED_MODULE_2__.ERROR_PACKET);
+                        break;
+                    }
+                    expectedLength = n * Math.pow(2, 32) + view.getUint32(4);
+                    state = 3 /* READ_PAYLOAD */;
+                }
+                else {
+                    if (totalLength(chunks) < expectedLength) {
+                        break;
+                    }
+                    const data = concatChunks(chunks, expectedLength);
+                    controller.enqueue((0,_decodePacket_js__WEBPACK_IMPORTED_MODULE_1__.decodePacket)(isBinary ? data : TEXT_DECODER.decode(data), binaryType));
+                    state = 0 /* READ_HEADER */;
+                }
+                if (expectedLength === 0 || expectedLength > maxPayload) {
+                    controller.enqueue(_commons_js__WEBPACK_IMPORTED_MODULE_2__.ERROR_PACKET);
+                    break;
+                }
+            }
+        },
+    });
+}
+const protocol = 4;
+
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/build/esm/contrib/backo2.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/socket.io-client/build/esm/contrib/backo2.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Backoff: () => (/* binding */ Backoff)
+/* harmony export */ });
+/**
+ * Initialize backoff timer with `opts`.
+ *
+ * - `min` initial timeout in milliseconds [100]
+ * - `max` max timeout [10000]
+ * - `jitter` [0]
+ * - `factor` [2]
+ *
+ * @param {Object} opts
+ * @api public
+ */
+function Backoff(opts) {
+    opts = opts || {};
+    this.ms = opts.min || 100;
+    this.max = opts.max || 10000;
+    this.factor = opts.factor || 2;
+    this.jitter = opts.jitter > 0 && opts.jitter <= 1 ? opts.jitter : 0;
+    this.attempts = 0;
+}
+/**
+ * Return the backoff duration.
+ *
+ * @return {Number}
+ * @api public
+ */
+Backoff.prototype.duration = function () {
+    var ms = this.ms * Math.pow(this.factor, this.attempts++);
+    if (this.jitter) {
+        var rand = Math.random();
+        var deviation = Math.floor(rand * this.jitter * ms);
+        ms = (Math.floor(rand * 10) & 1) == 0 ? ms - deviation : ms + deviation;
+    }
+    return Math.min(ms, this.max) | 0;
+};
+/**
+ * Reset the number of attempts.
+ *
+ * @api public
+ */
+Backoff.prototype.reset = function () {
+    this.attempts = 0;
+};
+/**
+ * Set the minimum duration
+ *
+ * @api public
+ */
+Backoff.prototype.setMin = function (min) {
+    this.ms = min;
+};
+/**
+ * Set the maximum duration
+ *
+ * @api public
+ */
+Backoff.prototype.setMax = function (max) {
+    this.max = max;
+};
+/**
+ * Set the jitter
+ *
+ * @api public
+ */
+Backoff.prototype.setJitter = function (jitter) {
+    this.jitter = jitter;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/build/esm/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/socket.io-client/build/esm/index.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Manager: () => (/* reexport safe */ _manager_js__WEBPACK_IMPORTED_MODULE_1__.Manager),
+/* harmony export */   Socket: () => (/* reexport safe */ _socket_js__WEBPACK_IMPORTED_MODULE_2__.Socket),
+/* harmony export */   connect: () => (/* binding */ lookup),
+/* harmony export */   "default": () => (/* binding */ lookup),
+/* harmony export */   io: () => (/* binding */ lookup),
+/* harmony export */   protocol: () => (/* reexport safe */ socket_io_parser__WEBPACK_IMPORTED_MODULE_3__.protocol)
+/* harmony export */ });
+/* harmony import */ var _url_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./url.js */ "./node_modules/socket.io-client/build/esm/url.js");
+/* harmony import */ var _manager_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./manager.js */ "./node_modules/socket.io-client/build/esm/manager.js");
+/* harmony import */ var _socket_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./socket.js */ "./node_modules/socket.io-client/build/esm/socket.js");
+/* harmony import */ var socket_io_parser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! socket.io-parser */ "./node_modules/socket.io-parser/build/esm/index.js");
+
+
+
+/**
+ * Managers cache.
+ */
+const cache = {};
+function lookup(uri, opts) {
+    if (typeof uri === "object") {
+        opts = uri;
+        uri = undefined;
+    }
+    opts = opts || {};
+    const parsed = (0,_url_js__WEBPACK_IMPORTED_MODULE_0__.url)(uri, opts.path || "/socket.io");
+    const source = parsed.source;
+    const id = parsed.id;
+    const path = parsed.path;
+    const sameNamespace = cache[id] && path in cache[id]["nsps"];
+    const newConnection = opts.forceNew ||
+        opts["force new connection"] ||
+        false === opts.multiplex ||
+        sameNamespace;
+    let io;
+    if (newConnection) {
+        io = new _manager_js__WEBPACK_IMPORTED_MODULE_1__.Manager(source, opts);
+    }
+    else {
+        if (!cache[id]) {
+            cache[id] = new _manager_js__WEBPACK_IMPORTED_MODULE_1__.Manager(source, opts);
+        }
+        io = cache[id];
+    }
+    if (parsed.query && !opts.query) {
+        opts.query = parsed.queryKey;
+    }
+    return io.socket(parsed.path, opts);
+}
+// so that "lookup" can be used both as a function (e.g. `io(...)`) and as a
+// namespace (e.g. `io.connect(...)`), for backward compatibility
+Object.assign(lookup, {
+    Manager: _manager_js__WEBPACK_IMPORTED_MODULE_1__.Manager,
+    Socket: _socket_js__WEBPACK_IMPORTED_MODULE_2__.Socket,
+    io: lookup,
+    connect: lookup,
+});
+/**
+ * Protocol version.
+ *
+ * @public
+ */
+
+/**
+ * Expose constructors for standalone build.
+ *
+ * @public
+ */
+
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/build/esm/manager.js":
+/*!************************************************************!*\
+  !*** ./node_modules/socket.io-client/build/esm/manager.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Manager: () => (/* binding */ Manager)
+/* harmony export */ });
+/* harmony import */ var engine_io_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! engine.io-client */ "./node_modules/engine.io-client/build/esm/index.js");
+/* harmony import */ var _socket_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./socket.js */ "./node_modules/socket.io-client/build/esm/socket.js");
+/* harmony import */ var socket_io_parser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! socket.io-parser */ "./node_modules/socket.io-parser/build/esm/index.js");
+/* harmony import */ var _on_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./on.js */ "./node_modules/socket.io-client/build/esm/on.js");
+/* harmony import */ var _contrib_backo2_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./contrib/backo2.js */ "./node_modules/socket.io-client/build/esm/contrib/backo2.js");
+/* harmony import */ var _socket_io_component_emitter__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @socket.io/component-emitter */ "./node_modules/@socket.io/component-emitter/lib/esm/index.js");
+
+
+
+
+
+
+class Manager extends _socket_io_component_emitter__WEBPACK_IMPORTED_MODULE_5__.Emitter {
+    constructor(uri, opts) {
+        var _a;
+        super();
+        this.nsps = {};
+        this.subs = [];
+        if (uri && "object" === typeof uri) {
+            opts = uri;
+            uri = undefined;
+        }
+        opts = opts || {};
+        opts.path = opts.path || "/socket.io";
+        this.opts = opts;
+        (0,engine_io_client__WEBPACK_IMPORTED_MODULE_0__.installTimerFunctions)(this, opts);
+        this.reconnection(opts.reconnection !== false);
+        this.reconnectionAttempts(opts.reconnectionAttempts || Infinity);
+        this.reconnectionDelay(opts.reconnectionDelay || 1000);
+        this.reconnectionDelayMax(opts.reconnectionDelayMax || 5000);
+        this.randomizationFactor((_a = opts.randomizationFactor) !== null && _a !== void 0 ? _a : 0.5);
+        this.backoff = new _contrib_backo2_js__WEBPACK_IMPORTED_MODULE_4__.Backoff({
+            min: this.reconnectionDelay(),
+            max: this.reconnectionDelayMax(),
+            jitter: this.randomizationFactor(),
+        });
+        this.timeout(null == opts.timeout ? 20000 : opts.timeout);
+        this._readyState = "closed";
+        this.uri = uri;
+        const _parser = opts.parser || socket_io_parser__WEBPACK_IMPORTED_MODULE_2__;
+        this.encoder = new _parser.Encoder();
+        this.decoder = new _parser.Decoder();
+        this._autoConnect = opts.autoConnect !== false;
+        if (this._autoConnect)
+            this.open();
+    }
+    reconnection(v) {
+        if (!arguments.length)
+            return this._reconnection;
+        this._reconnection = !!v;
+        return this;
+    }
+    reconnectionAttempts(v) {
+        if (v === undefined)
+            return this._reconnectionAttempts;
+        this._reconnectionAttempts = v;
+        return this;
+    }
+    reconnectionDelay(v) {
+        var _a;
+        if (v === undefined)
+            return this._reconnectionDelay;
+        this._reconnectionDelay = v;
+        (_a = this.backoff) === null || _a === void 0 ? void 0 : _a.setMin(v);
+        return this;
+    }
+    randomizationFactor(v) {
+        var _a;
+        if (v === undefined)
+            return this._randomizationFactor;
+        this._randomizationFactor = v;
+        (_a = this.backoff) === null || _a === void 0 ? void 0 : _a.setJitter(v);
+        return this;
+    }
+    reconnectionDelayMax(v) {
+        var _a;
+        if (v === undefined)
+            return this._reconnectionDelayMax;
+        this._reconnectionDelayMax = v;
+        (_a = this.backoff) === null || _a === void 0 ? void 0 : _a.setMax(v);
+        return this;
+    }
+    timeout(v) {
+        if (!arguments.length)
+            return this._timeout;
+        this._timeout = v;
+        return this;
+    }
+    /**
+     * Starts trying to reconnect if reconnection is enabled and we have not
+     * started reconnecting yet
+     *
+     * @private
+     */
+    maybeReconnectOnOpen() {
+        // Only try to reconnect if it's the first time we're connecting
+        if (!this._reconnecting &&
+            this._reconnection &&
+            this.backoff.attempts === 0) {
+            // keeps reconnection from firing twice for the same reconnection loop
+            this.reconnect();
+        }
+    }
+    /**
+     * Sets the current transport `socket`.
+     *
+     * @param {Function} fn - optional, callback
+     * @return self
+     * @public
+     */
+    open(fn) {
+        if (~this._readyState.indexOf("open"))
+            return this;
+        this.engine = new engine_io_client__WEBPACK_IMPORTED_MODULE_0__.Socket(this.uri, this.opts);
+        const socket = this.engine;
+        const self = this;
+        this._readyState = "opening";
+        this.skipReconnect = false;
+        // emit `open`
+        const openSubDestroy = (0,_on_js__WEBPACK_IMPORTED_MODULE_3__.on)(socket, "open", function () {
+            self.onopen();
+            fn && fn();
+        });
+        const onError = (err) => {
+            this.cleanup();
+            this._readyState = "closed";
+            this.emitReserved("error", err);
+            if (fn) {
+                fn(err);
+            }
+            else {
+                // Only do this if there is no fn to handle the error
+                this.maybeReconnectOnOpen();
+            }
+        };
+        // emit `error`
+        const errorSub = (0,_on_js__WEBPACK_IMPORTED_MODULE_3__.on)(socket, "error", onError);
+        if (false !== this._timeout) {
+            const timeout = this._timeout;
+            // set timer
+            const timer = this.setTimeoutFn(() => {
+                openSubDestroy();
+                onError(new Error("timeout"));
+                socket.close();
+            }, timeout);
+            if (this.opts.autoUnref) {
+                timer.unref();
+            }
+            this.subs.push(() => {
+                this.clearTimeoutFn(timer);
+            });
+        }
+        this.subs.push(openSubDestroy);
+        this.subs.push(errorSub);
+        return this;
+    }
+    /**
+     * Alias for open()
+     *
+     * @return self
+     * @public
+     */
+    connect(fn) {
+        return this.open(fn);
+    }
+    /**
+     * Called upon transport open.
+     *
+     * @private
+     */
+    onopen() {
+        // clear old subs
+        this.cleanup();
+        // mark as open
+        this._readyState = "open";
+        this.emitReserved("open");
+        // add new subs
+        const socket = this.engine;
+        this.subs.push((0,_on_js__WEBPACK_IMPORTED_MODULE_3__.on)(socket, "ping", this.onping.bind(this)), (0,_on_js__WEBPACK_IMPORTED_MODULE_3__.on)(socket, "data", this.ondata.bind(this)), (0,_on_js__WEBPACK_IMPORTED_MODULE_3__.on)(socket, "error", this.onerror.bind(this)), (0,_on_js__WEBPACK_IMPORTED_MODULE_3__.on)(socket, "close", this.onclose.bind(this)), (0,_on_js__WEBPACK_IMPORTED_MODULE_3__.on)(this.decoder, "decoded", this.ondecoded.bind(this)));
+    }
+    /**
+     * Called upon a ping.
+     *
+     * @private
+     */
+    onping() {
+        this.emitReserved("ping");
+    }
+    /**
+     * Called with data.
+     *
+     * @private
+     */
+    ondata(data) {
+        try {
+            this.decoder.add(data);
+        }
+        catch (e) {
+            this.onclose("parse error", e);
+        }
+    }
+    /**
+     * Called when parser fully decodes a packet.
+     *
+     * @private
+     */
+    ondecoded(packet) {
+        // the nextTick call prevents an exception in a user-provided event listener from triggering a disconnection due to a "parse error"
+        (0,engine_io_client__WEBPACK_IMPORTED_MODULE_0__.nextTick)(() => {
+            this.emitReserved("packet", packet);
+        }, this.setTimeoutFn);
+    }
+    /**
+     * Called upon socket error.
+     *
+     * @private
+     */
+    onerror(err) {
+        this.emitReserved("error", err);
+    }
+    /**
+     * Creates a new socket for the given `nsp`.
+     *
+     * @return {Socket}
+     * @public
+     */
+    socket(nsp, opts) {
+        let socket = this.nsps[nsp];
+        if (!socket) {
+            socket = new _socket_js__WEBPACK_IMPORTED_MODULE_1__.Socket(this, nsp, opts);
+            this.nsps[nsp] = socket;
+        }
+        else if (this._autoConnect && !socket.active) {
+            socket.connect();
+        }
+        return socket;
+    }
+    /**
+     * Called upon a socket close.
+     *
+     * @param socket
+     * @private
+     */
+    _destroy(socket) {
+        const nsps = Object.keys(this.nsps);
+        for (const nsp of nsps) {
+            const socket = this.nsps[nsp];
+            if (socket.active) {
+                return;
+            }
+        }
+        this._close();
+    }
+    /**
+     * Writes a packet.
+     *
+     * @param packet
+     * @private
+     */
+    _packet(packet) {
+        const encodedPackets = this.encoder.encode(packet);
+        for (let i = 0; i < encodedPackets.length; i++) {
+            this.engine.write(encodedPackets[i], packet.options);
+        }
+    }
+    /**
+     * Clean up transport subscriptions and packet buffer.
+     *
+     * @private
+     */
+    cleanup() {
+        this.subs.forEach((subDestroy) => subDestroy());
+        this.subs.length = 0;
+        this.decoder.destroy();
+    }
+    /**
+     * Close the current socket.
+     *
+     * @private
+     */
+    _close() {
+        this.skipReconnect = true;
+        this._reconnecting = false;
+        this.onclose("forced close");
+        if (this.engine)
+            this.engine.close();
+    }
+    /**
+     * Alias for close()
+     *
+     * @private
+     */
+    disconnect() {
+        return this._close();
+    }
+    /**
+     * Called upon engine close.
+     *
+     * @private
+     */
+    onclose(reason, description) {
+        this.cleanup();
+        this.backoff.reset();
+        this._readyState = "closed";
+        this.emitReserved("close", reason, description);
+        if (this._reconnection && !this.skipReconnect) {
+            this.reconnect();
+        }
+    }
+    /**
+     * Attempt a reconnection.
+     *
+     * @private
+     */
+    reconnect() {
+        if (this._reconnecting || this.skipReconnect)
+            return this;
+        const self = this;
+        if (this.backoff.attempts >= this._reconnectionAttempts) {
+            this.backoff.reset();
+            this.emitReserved("reconnect_failed");
+            this._reconnecting = false;
+        }
+        else {
+            const delay = this.backoff.duration();
+            this._reconnecting = true;
+            const timer = this.setTimeoutFn(() => {
+                if (self.skipReconnect)
+                    return;
+                this.emitReserved("reconnect_attempt", self.backoff.attempts);
+                // check again for the case socket closed in above events
+                if (self.skipReconnect)
+                    return;
+                self.open((err) => {
+                    if (err) {
+                        self._reconnecting = false;
+                        self.reconnect();
+                        this.emitReserved("reconnect_error", err);
+                    }
+                    else {
+                        self.onreconnect();
+                    }
+                });
+            }, delay);
+            if (this.opts.autoUnref) {
+                timer.unref();
+            }
+            this.subs.push(() => {
+                this.clearTimeoutFn(timer);
+            });
+        }
+    }
+    /**
+     * Called upon successful reconnect.
+     *
+     * @private
+     */
+    onreconnect() {
+        const attempt = this.backoff.attempts;
+        this._reconnecting = false;
+        this.backoff.reset();
+        this.emitReserved("reconnect", attempt);
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/build/esm/on.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/socket.io-client/build/esm/on.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   on: () => (/* binding */ on)
+/* harmony export */ });
+function on(obj, ev, fn) {
+    obj.on(ev, fn);
+    return function subDestroy() {
+        obj.off(ev, fn);
+    };
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/build/esm/socket.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/socket.io-client/build/esm/socket.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Socket: () => (/* binding */ Socket)
+/* harmony export */ });
+/* harmony import */ var socket_io_parser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! socket.io-parser */ "./node_modules/socket.io-parser/build/esm/index.js");
+/* harmony import */ var _on_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./on.js */ "./node_modules/socket.io-client/build/esm/on.js");
+/* harmony import */ var _socket_io_component_emitter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @socket.io/component-emitter */ "./node_modules/@socket.io/component-emitter/lib/esm/index.js");
+
+
+
+/**
+ * Internal events.
+ * These events can't be emitted by the user.
+ */
+const RESERVED_EVENTS = Object.freeze({
+    connect: 1,
+    connect_error: 1,
+    disconnect: 1,
+    disconnecting: 1,
+    // EventEmitter reserved events: https://nodejs.org/api/events.html#events_event_newlistener
+    newListener: 1,
+    removeListener: 1,
+});
+/**
+ * A Socket is the fundamental class for interacting with the server.
+ *
+ * A Socket belongs to a certain Namespace (by default /) and uses an underlying {@link Manager} to communicate.
+ *
+ * @example
+ * const socket = io();
+ *
+ * socket.on("connect", () => {
+ *   console.log("connected");
+ * });
+ *
+ * // send an event to the server
+ * socket.emit("foo", "bar");
+ *
+ * socket.on("foobar", () => {
+ *   // an event was received from the server
+ * });
+ *
+ * // upon disconnection
+ * socket.on("disconnect", (reason) => {
+ *   console.log(`disconnected due to ${reason}`);
+ * });
+ */
+class Socket extends _socket_io_component_emitter__WEBPACK_IMPORTED_MODULE_2__.Emitter {
+    /**
+     * `Socket` constructor.
+     */
+    constructor(io, nsp, opts) {
+        super();
+        /**
+         * Whether the socket is currently connected to the server.
+         *
+         * @example
+         * const socket = io();
+         *
+         * socket.on("connect", () => {
+         *   console.log(socket.connected); // true
+         * });
+         *
+         * socket.on("disconnect", () => {
+         *   console.log(socket.connected); // false
+         * });
+         */
+        this.connected = false;
+        /**
+         * Whether the connection state was recovered after a temporary disconnection. In that case, any missed packets will
+         * be transmitted by the server.
+         */
+        this.recovered = false;
+        /**
+         * Buffer for packets received before the CONNECT packet
+         */
+        this.receiveBuffer = [];
+        /**
+         * Buffer for packets that will be sent once the socket is connected
+         */
+        this.sendBuffer = [];
+        /**
+         * The queue of packets to be sent with retry in case of failure.
+         *
+         * Packets are sent one by one, each waiting for the server acknowledgement, in order to guarantee the delivery order.
+         * @private
+         */
+        this._queue = [];
+        /**
+         * A sequence to generate the ID of the {@link QueuedPacket}.
+         * @private
+         */
+        this._queueSeq = 0;
+        this.ids = 0;
+        /**
+         * A map containing acknowledgement handlers.
+         *
+         * The `withError` attribute is used to differentiate handlers that accept an error as first argument:
+         *
+         * - `socket.emit("test", (err, value) => { ... })` with `ackTimeout` option
+         * - `socket.timeout(5000).emit("test", (err, value) => { ... })`
+         * - `const value = await socket.emitWithAck("test")`
+         *
+         * From those that don't:
+         *
+         * - `socket.emit("test", (value) => { ... });`
+         *
+         * In the first case, the handlers will be called with an error when:
+         *
+         * - the timeout is reached
+         * - the socket gets disconnected
+         *
+         * In the second case, the handlers will be simply discarded upon disconnection, since the client will never receive
+         * an acknowledgement from the server.
+         *
+         * @private
+         */
+        this.acks = {};
+        this.flags = {};
+        this.io = io;
+        this.nsp = nsp;
+        if (opts && opts.auth) {
+            this.auth = opts.auth;
+        }
+        this._opts = Object.assign({}, opts);
+        if (this.io._autoConnect)
+            this.open();
+    }
+    /**
+     * Whether the socket is currently disconnected
+     *
+     * @example
+     * const socket = io();
+     *
+     * socket.on("connect", () => {
+     *   console.log(socket.disconnected); // false
+     * });
+     *
+     * socket.on("disconnect", () => {
+     *   console.log(socket.disconnected); // true
+     * });
+     */
+    get disconnected() {
+        return !this.connected;
+    }
+    /**
+     * Subscribe to open, close and packet events
+     *
+     * @private
+     */
+    subEvents() {
+        if (this.subs)
+            return;
+        const io = this.io;
+        this.subs = [
+            (0,_on_js__WEBPACK_IMPORTED_MODULE_1__.on)(io, "open", this.onopen.bind(this)),
+            (0,_on_js__WEBPACK_IMPORTED_MODULE_1__.on)(io, "packet", this.onpacket.bind(this)),
+            (0,_on_js__WEBPACK_IMPORTED_MODULE_1__.on)(io, "error", this.onerror.bind(this)),
+            (0,_on_js__WEBPACK_IMPORTED_MODULE_1__.on)(io, "close", this.onclose.bind(this)),
+        ];
+    }
+    /**
+     * Whether the Socket will try to reconnect when its Manager connects or reconnects.
+     *
+     * @example
+     * const socket = io();
+     *
+     * console.log(socket.active); // true
+     *
+     * socket.on("disconnect", (reason) => {
+     *   if (reason === "io server disconnect") {
+     *     // the disconnection was initiated by the server, you need to manually reconnect
+     *     console.log(socket.active); // false
+     *   }
+     *   // else the socket will automatically try to reconnect
+     *   console.log(socket.active); // true
+     * });
+     */
+    get active() {
+        return !!this.subs;
+    }
+    /**
+     * "Opens" the socket.
+     *
+     * @example
+     * const socket = io({
+     *   autoConnect: false
+     * });
+     *
+     * socket.connect();
+     */
+    connect() {
+        if (this.connected)
+            return this;
+        this.subEvents();
+        if (!this.io["_reconnecting"])
+            this.io.open(); // ensure open
+        if ("open" === this.io._readyState)
+            this.onopen();
+        return this;
+    }
+    /**
+     * Alias for {@link connect()}.
+     */
+    open() {
+        return this.connect();
+    }
+    /**
+     * Sends a `message` event.
+     *
+     * This method mimics the WebSocket.send() method.
+     *
+     * @see https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/send
+     *
+     * @example
+     * socket.send("hello");
+     *
+     * // this is equivalent to
+     * socket.emit("message", "hello");
+     *
+     * @return self
+     */
+    send(...args) {
+        args.unshift("message");
+        this.emit.apply(this, args);
+        return this;
+    }
+    /**
+     * Override `emit`.
+     * If the event is in `events`, it's emitted normally.
+     *
+     * @example
+     * socket.emit("hello", "world");
+     *
+     * // all serializable datastructures are supported (no need to call JSON.stringify)
+     * socket.emit("hello", 1, "2", { 3: ["4"], 5: Uint8Array.from([6]) });
+     *
+     * // with an acknowledgement from the server
+     * socket.emit("hello", "world", (val) => {
+     *   // ...
+     * });
+     *
+     * @return self
+     */
+    emit(ev, ...args) {
+        if (RESERVED_EVENTS.hasOwnProperty(ev)) {
+            throw new Error('"' + ev.toString() + '" is a reserved event name');
+        }
+        args.unshift(ev);
+        if (this._opts.retries && !this.flags.fromQueue && !this.flags.volatile) {
+            this._addToQueue(args);
+            return this;
+        }
+        const packet = {
+            type: socket_io_parser__WEBPACK_IMPORTED_MODULE_0__.PacketType.EVENT,
+            data: args,
+        };
+        packet.options = {};
+        packet.options.compress = this.flags.compress !== false;
+        // event ack callback
+        if ("function" === typeof args[args.length - 1]) {
+            const id = this.ids++;
+            const ack = args.pop();
+            this._registerAckCallback(id, ack);
+            packet.id = id;
+        }
+        const isTransportWritable = this.io.engine &&
+            this.io.engine.transport &&
+            this.io.engine.transport.writable;
+        const discardPacket = this.flags.volatile && (!isTransportWritable || !this.connected);
+        if (discardPacket) {
+        }
+        else if (this.connected) {
+            this.notifyOutgoingListeners(packet);
+            this.packet(packet);
+        }
+        else {
+            this.sendBuffer.push(packet);
+        }
+        this.flags = {};
+        return this;
+    }
+    /**
+     * @private
+     */
+    _registerAckCallback(id, ack) {
+        var _a;
+        const timeout = (_a = this.flags.timeout) !== null && _a !== void 0 ? _a : this._opts.ackTimeout;
+        if (timeout === undefined) {
+            this.acks[id] = ack;
+            return;
+        }
+        // @ts-ignore
+        const timer = this.io.setTimeoutFn(() => {
+            delete this.acks[id];
+            for (let i = 0; i < this.sendBuffer.length; i++) {
+                if (this.sendBuffer[i].id === id) {
+                    this.sendBuffer.splice(i, 1);
+                }
+            }
+            ack.call(this, new Error("operation has timed out"));
+        }, timeout);
+        const fn = (...args) => {
+            // @ts-ignore
+            this.io.clearTimeoutFn(timer);
+            ack.apply(this, args);
+        };
+        fn.withError = true;
+        this.acks[id] = fn;
+    }
+    /**
+     * Emits an event and waits for an acknowledgement
+     *
+     * @example
+     * // without timeout
+     * const response = await socket.emitWithAck("hello", "world");
+     *
+     * // with a specific timeout
+     * try {
+     *   const response = await socket.timeout(1000).emitWithAck("hello", "world");
+     * } catch (err) {
+     *   // the server did not acknowledge the event in the given delay
+     * }
+     *
+     * @return a Promise that will be fulfilled when the server acknowledges the event
+     */
+    emitWithAck(ev, ...args) {
+        return new Promise((resolve, reject) => {
+            const fn = (arg1, arg2) => {
+                return arg1 ? reject(arg1) : resolve(arg2);
+            };
+            fn.withError = true;
+            args.push(fn);
+            this.emit(ev, ...args);
+        });
+    }
+    /**
+     * Add the packet to the queue.
+     * @param args
+     * @private
+     */
+    _addToQueue(args) {
+        let ack;
+        if (typeof args[args.length - 1] === "function") {
+            ack = args.pop();
+        }
+        const packet = {
+            id: this._queueSeq++,
+            tryCount: 0,
+            pending: false,
+            args,
+            flags: Object.assign({ fromQueue: true }, this.flags),
+        };
+        args.push((err, ...responseArgs) => {
+            if (packet !== this._queue[0]) {
+                // the packet has already been acknowledged
+                return;
+            }
+            const hasError = err !== null;
+            if (hasError) {
+                if (packet.tryCount > this._opts.retries) {
+                    this._queue.shift();
+                    if (ack) {
+                        ack(err);
+                    }
+                }
+            }
+            else {
+                this._queue.shift();
+                if (ack) {
+                    ack(null, ...responseArgs);
+                }
+            }
+            packet.pending = false;
+            return this._drainQueue();
+        });
+        this._queue.push(packet);
+        this._drainQueue();
+    }
+    /**
+     * Send the first packet of the queue, and wait for an acknowledgement from the server.
+     * @param force - whether to resend a packet that has not been acknowledged yet
+     *
+     * @private
+     */
+    _drainQueue(force = false) {
+        if (!this.connected || this._queue.length === 0) {
+            return;
+        }
+        const packet = this._queue[0];
+        if (packet.pending && !force) {
+            return;
+        }
+        packet.pending = true;
+        packet.tryCount++;
+        this.flags = packet.flags;
+        this.emit.apply(this, packet.args);
+    }
+    /**
+     * Sends a packet.
+     *
+     * @param packet
+     * @private
+     */
+    packet(packet) {
+        packet.nsp = this.nsp;
+        this.io._packet(packet);
+    }
+    /**
+     * Called upon engine `open`.
+     *
+     * @private
+     */
+    onopen() {
+        if (typeof this.auth == "function") {
+            this.auth((data) => {
+                this._sendConnectPacket(data);
+            });
+        }
+        else {
+            this._sendConnectPacket(this.auth);
+        }
+    }
+    /**
+     * Sends a CONNECT packet to initiate the Socket.IO session.
+     *
+     * @param data
+     * @private
+     */
+    _sendConnectPacket(data) {
+        this.packet({
+            type: socket_io_parser__WEBPACK_IMPORTED_MODULE_0__.PacketType.CONNECT,
+            data: this._pid
+                ? Object.assign({ pid: this._pid, offset: this._lastOffset }, data)
+                : data,
+        });
+    }
+    /**
+     * Called upon engine or manager `error`.
+     *
+     * @param err
+     * @private
+     */
+    onerror(err) {
+        if (!this.connected) {
+            this.emitReserved("connect_error", err);
+        }
+    }
+    /**
+     * Called upon engine `close`.
+     *
+     * @param reason
+     * @param description
+     * @private
+     */
+    onclose(reason, description) {
+        this.connected = false;
+        delete this.id;
+        this.emitReserved("disconnect", reason, description);
+        this._clearAcks();
+    }
+    /**
+     * Clears the acknowledgement handlers upon disconnection, since the client will never receive an acknowledgement from
+     * the server.
+     *
+     * @private
+     */
+    _clearAcks() {
+        Object.keys(this.acks).forEach((id) => {
+            const isBuffered = this.sendBuffer.some((packet) => String(packet.id) === id);
+            if (!isBuffered) {
+                // note: handlers that do not accept an error as first argument are ignored here
+                const ack = this.acks[id];
+                delete this.acks[id];
+                if (ack.withError) {
+                    ack.call(this, new Error("socket has been disconnected"));
+                }
+            }
+        });
+    }
+    /**
+     * Called with socket packet.
+     *
+     * @param packet
+     * @private
+     */
+    onpacket(packet) {
+        const sameNamespace = packet.nsp === this.nsp;
+        if (!sameNamespace)
+            return;
+        switch (packet.type) {
+            case socket_io_parser__WEBPACK_IMPORTED_MODULE_0__.PacketType.CONNECT:
+                if (packet.data && packet.data.sid) {
+                    this.onconnect(packet.data.sid, packet.data.pid);
+                }
+                else {
+                    this.emitReserved("connect_error", new Error("It seems you are trying to reach a Socket.IO server in v2.x with a v3.x client, but they are not compatible (more information here: https://socket.io/docs/v3/migrating-from-2-x-to-3-0/)"));
+                }
+                break;
+            case socket_io_parser__WEBPACK_IMPORTED_MODULE_0__.PacketType.EVENT:
+            case socket_io_parser__WEBPACK_IMPORTED_MODULE_0__.PacketType.BINARY_EVENT:
+                this.onevent(packet);
+                break;
+            case socket_io_parser__WEBPACK_IMPORTED_MODULE_0__.PacketType.ACK:
+            case socket_io_parser__WEBPACK_IMPORTED_MODULE_0__.PacketType.BINARY_ACK:
+                this.onack(packet);
+                break;
+            case socket_io_parser__WEBPACK_IMPORTED_MODULE_0__.PacketType.DISCONNECT:
+                this.ondisconnect();
+                break;
+            case socket_io_parser__WEBPACK_IMPORTED_MODULE_0__.PacketType.CONNECT_ERROR:
+                this.destroy();
+                const err = new Error(packet.data.message);
+                // @ts-ignore
+                err.data = packet.data.data;
+                this.emitReserved("connect_error", err);
+                break;
+        }
+    }
+    /**
+     * Called upon a server event.
+     *
+     * @param packet
+     * @private
+     */
+    onevent(packet) {
+        const args = packet.data || [];
+        if (null != packet.id) {
+            args.push(this.ack(packet.id));
+        }
+        if (this.connected) {
+            this.emitEvent(args);
+        }
+        else {
+            this.receiveBuffer.push(Object.freeze(args));
+        }
+    }
+    emitEvent(args) {
+        if (this._anyListeners && this._anyListeners.length) {
+            const listeners = this._anyListeners.slice();
+            for (const listener of listeners) {
+                listener.apply(this, args);
+            }
+        }
+        super.emit.apply(this, args);
+        if (this._pid && args.length && typeof args[args.length - 1] === "string") {
+            this._lastOffset = args[args.length - 1];
+        }
+    }
+    /**
+     * Produces an ack callback to emit with an event.
+     *
+     * @private
+     */
+    ack(id) {
+        const self = this;
+        let sent = false;
+        return function (...args) {
+            // prevent double callbacks
+            if (sent)
+                return;
+            sent = true;
+            self.packet({
+                type: socket_io_parser__WEBPACK_IMPORTED_MODULE_0__.PacketType.ACK,
+                id: id,
+                data: args,
+            });
+        };
+    }
+    /**
+     * Called upon a server acknowledgement.
+     *
+     * @param packet
+     * @private
+     */
+    onack(packet) {
+        const ack = this.acks[packet.id];
+        if (typeof ack !== "function") {
+            return;
+        }
+        delete this.acks[packet.id];
+        // @ts-ignore FIXME ack is incorrectly inferred as 'never'
+        if (ack.withError) {
+            packet.data.unshift(null);
+        }
+        // @ts-ignore
+        ack.apply(this, packet.data);
+    }
+    /**
+     * Called upon server connect.
+     *
+     * @private
+     */
+    onconnect(id, pid) {
+        this.id = id;
+        this.recovered = pid && this._pid === pid;
+        this._pid = pid; // defined only if connection state recovery is enabled
+        this.connected = true;
+        this.emitBuffered();
+        this.emitReserved("connect");
+        this._drainQueue(true);
+    }
+    /**
+     * Emit buffered events (received and emitted).
+     *
+     * @private
+     */
+    emitBuffered() {
+        this.receiveBuffer.forEach((args) => this.emitEvent(args));
+        this.receiveBuffer = [];
+        this.sendBuffer.forEach((packet) => {
+            this.notifyOutgoingListeners(packet);
+            this.packet(packet);
+        });
+        this.sendBuffer = [];
+    }
+    /**
+     * Called upon server disconnect.
+     *
+     * @private
+     */
+    ondisconnect() {
+        this.destroy();
+        this.onclose("io server disconnect");
+    }
+    /**
+     * Called upon forced client/server side disconnections,
+     * this method ensures the manager stops tracking us and
+     * that reconnections don't get triggered for this.
+     *
+     * @private
+     */
+    destroy() {
+        if (this.subs) {
+            // clean subscriptions to avoid reconnections
+            this.subs.forEach((subDestroy) => subDestroy());
+            this.subs = undefined;
+        }
+        this.io["_destroy"](this);
+    }
+    /**
+     * Disconnects the socket manually. In that case, the socket will not try to reconnect.
+     *
+     * If this is the last active Socket instance of the {@link Manager}, the low-level connection will be closed.
+     *
+     * @example
+     * const socket = io();
+     *
+     * socket.on("disconnect", (reason) => {
+     *   // console.log(reason); prints "io client disconnect"
+     * });
+     *
+     * socket.disconnect();
+     *
+     * @return self
+     */
+    disconnect() {
+        if (this.connected) {
+            this.packet({ type: socket_io_parser__WEBPACK_IMPORTED_MODULE_0__.PacketType.DISCONNECT });
+        }
+        // remove socket from pool
+        this.destroy();
+        if (this.connected) {
+            // fire events
+            this.onclose("io client disconnect");
+        }
+        return this;
+    }
+    /**
+     * Alias for {@link disconnect()}.
+     *
+     * @return self
+     */
+    close() {
+        return this.disconnect();
+    }
+    /**
+     * Sets the compress flag.
+     *
+     * @example
+     * socket.compress(false).emit("hello");
+     *
+     * @param compress - if `true`, compresses the sending data
+     * @return self
+     */
+    compress(compress) {
+        this.flags.compress = compress;
+        return this;
+    }
+    /**
+     * Sets a modifier for a subsequent event emission that the event message will be dropped when this socket is not
+     * ready to send messages.
+     *
+     * @example
+     * socket.volatile.emit("hello"); // the server may or may not receive it
+     *
+     * @returns self
+     */
+    get volatile() {
+        this.flags.volatile = true;
+        return this;
+    }
+    /**
+     * Sets a modifier for a subsequent event emission that the callback will be called with an error when the
+     * given number of milliseconds have elapsed without an acknowledgement from the server:
+     *
+     * @example
+     * socket.timeout(5000).emit("my-event", (err) => {
+     *   if (err) {
+     *     // the server did not acknowledge the event in the given delay
+     *   }
+     * });
+     *
+     * @returns self
+     */
+    timeout(timeout) {
+        this.flags.timeout = timeout;
+        return this;
+    }
+    /**
+     * Adds a listener that will be fired when any event is emitted. The event name is passed as the first argument to the
+     * callback.
+     *
+     * @example
+     * socket.onAny((event, ...args) => {
+     *   console.log(`got ${event}`);
+     * });
+     *
+     * @param listener
+     */
+    onAny(listener) {
+        this._anyListeners = this._anyListeners || [];
+        this._anyListeners.push(listener);
+        return this;
+    }
+    /**
+     * Adds a listener that will be fired when any event is emitted. The event name is passed as the first argument to the
+     * callback. The listener is added to the beginning of the listeners array.
+     *
+     * @example
+     * socket.prependAny((event, ...args) => {
+     *   console.log(`got event ${event}`);
+     * });
+     *
+     * @param listener
+     */
+    prependAny(listener) {
+        this._anyListeners = this._anyListeners || [];
+        this._anyListeners.unshift(listener);
+        return this;
+    }
+    /**
+     * Removes the listener that will be fired when any event is emitted.
+     *
+     * @example
+     * const catchAllListener = (event, ...args) => {
+     *   console.log(`got event ${event}`);
+     * }
+     *
+     * socket.onAny(catchAllListener);
+     *
+     * // remove a specific listener
+     * socket.offAny(catchAllListener);
+     *
+     * // or remove all listeners
+     * socket.offAny();
+     *
+     * @param listener
+     */
+    offAny(listener) {
+        if (!this._anyListeners) {
+            return this;
+        }
+        if (listener) {
+            const listeners = this._anyListeners;
+            for (let i = 0; i < listeners.length; i++) {
+                if (listener === listeners[i]) {
+                    listeners.splice(i, 1);
+                    return this;
+                }
+            }
+        }
+        else {
+            this._anyListeners = [];
+        }
+        return this;
+    }
+    /**
+     * Returns an array of listeners that are listening for any event that is specified. This array can be manipulated,
+     * e.g. to remove listeners.
+     */
+    listenersAny() {
+        return this._anyListeners || [];
+    }
+    /**
+     * Adds a listener that will be fired when any event is emitted. The event name is passed as the first argument to the
+     * callback.
+     *
+     * Note: acknowledgements sent to the server are not included.
+     *
+     * @example
+     * socket.onAnyOutgoing((event, ...args) => {
+     *   console.log(`sent event ${event}`);
+     * });
+     *
+     * @param listener
+     */
+    onAnyOutgoing(listener) {
+        this._anyOutgoingListeners = this._anyOutgoingListeners || [];
+        this._anyOutgoingListeners.push(listener);
+        return this;
+    }
+    /**
+     * Adds a listener that will be fired when any event is emitted. The event name is passed as the first argument to the
+     * callback. The listener is added to the beginning of the listeners array.
+     *
+     * Note: acknowledgements sent to the server are not included.
+     *
+     * @example
+     * socket.prependAnyOutgoing((event, ...args) => {
+     *   console.log(`sent event ${event}`);
+     * });
+     *
+     * @param listener
+     */
+    prependAnyOutgoing(listener) {
+        this._anyOutgoingListeners = this._anyOutgoingListeners || [];
+        this._anyOutgoingListeners.unshift(listener);
+        return this;
+    }
+    /**
+     * Removes the listener that will be fired when any event is emitted.
+     *
+     * @example
+     * const catchAllListener = (event, ...args) => {
+     *   console.log(`sent event ${event}`);
+     * }
+     *
+     * socket.onAnyOutgoing(catchAllListener);
+     *
+     * // remove a specific listener
+     * socket.offAnyOutgoing(catchAllListener);
+     *
+     * // or remove all listeners
+     * socket.offAnyOutgoing();
+     *
+     * @param [listener] - the catch-all listener (optional)
+     */
+    offAnyOutgoing(listener) {
+        if (!this._anyOutgoingListeners) {
+            return this;
+        }
+        if (listener) {
+            const listeners = this._anyOutgoingListeners;
+            for (let i = 0; i < listeners.length; i++) {
+                if (listener === listeners[i]) {
+                    listeners.splice(i, 1);
+                    return this;
+                }
+            }
+        }
+        else {
+            this._anyOutgoingListeners = [];
+        }
+        return this;
+    }
+    /**
+     * Returns an array of listeners that are listening for any event that is specified. This array can be manipulated,
+     * e.g. to remove listeners.
+     */
+    listenersAnyOutgoing() {
+        return this._anyOutgoingListeners || [];
+    }
+    /**
+     * Notify the listeners for each packet sent
+     *
+     * @param packet
+     *
+     * @private
+     */
+    notifyOutgoingListeners(packet) {
+        if (this._anyOutgoingListeners && this._anyOutgoingListeners.length) {
+            const listeners = this._anyOutgoingListeners.slice();
+            for (const listener of listeners) {
+                listener.apply(this, packet.data);
+            }
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/build/esm/url.js":
+/*!********************************************************!*\
+  !*** ./node_modules/socket.io-client/build/esm/url.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   url: () => (/* binding */ url)
+/* harmony export */ });
+/* harmony import */ var engine_io_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! engine.io-client */ "./node_modules/engine.io-client/build/esm/index.js");
+
+/**
+ * URL parser.
+ *
+ * @param uri - url
+ * @param path - the request path of the connection
+ * @param loc - An object meant to mimic window.location.
+ *        Defaults to window.location.
+ * @public
+ */
+function url(uri, path = "", loc) {
+    let obj = uri;
+    // default to window.location
+    loc = loc || (typeof location !== "undefined" && location);
+    if (null == uri)
+        uri = loc.protocol + "//" + loc.host;
+    // relative path support
+    if (typeof uri === "string") {
+        if ("/" === uri.charAt(0)) {
+            if ("/" === uri.charAt(1)) {
+                uri = loc.protocol + uri;
+            }
+            else {
+                uri = loc.host + uri;
+            }
+        }
+        if (!/^(https?|wss?):\/\//.test(uri)) {
+            if ("undefined" !== typeof loc) {
+                uri = loc.protocol + "//" + uri;
+            }
+            else {
+                uri = "https://" + uri;
+            }
+        }
+        // parse
+        obj = (0,engine_io_client__WEBPACK_IMPORTED_MODULE_0__.parse)(uri);
+    }
+    // make sure we treat `localhost:80` and `localhost` equally
+    if (!obj.port) {
+        if (/^(http|ws)$/.test(obj.protocol)) {
+            obj.port = "80";
+        }
+        else if (/^(http|ws)s$/.test(obj.protocol)) {
+            obj.port = "443";
+        }
+    }
+    obj.path = obj.path || "/";
+    const ipv6 = obj.host.indexOf(":") !== -1;
+    const host = ipv6 ? "[" + obj.host + "]" : obj.host;
+    // define unique id
+    obj.id = obj.protocol + "://" + host + ":" + obj.port + path;
+    // define href
+    obj.href =
+        obj.protocol +
+            "://" +
+            host +
+            (loc && loc.port === obj.port ? "" : ":" + obj.port);
+    return obj;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-parser/build/esm/binary.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/socket.io-parser/build/esm/binary.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   deconstructPacket: () => (/* binding */ deconstructPacket),
+/* harmony export */   reconstructPacket: () => (/* binding */ reconstructPacket)
+/* harmony export */ });
+/* harmony import */ var _is_binary_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./is-binary.js */ "./node_modules/socket.io-parser/build/esm/is-binary.js");
+
+/**
+ * Replaces every Buffer | ArrayBuffer | Blob | File in packet with a numbered placeholder.
+ *
+ * @param {Object} packet - socket.io event packet
+ * @return {Object} with deconstructed packet and list of buffers
+ * @public
+ */
+function deconstructPacket(packet) {
+    const buffers = [];
+    const packetData = packet.data;
+    const pack = packet;
+    pack.data = _deconstructPacket(packetData, buffers);
+    pack.attachments = buffers.length; // number of binary 'attachments'
+    return { packet: pack, buffers: buffers };
+}
+function _deconstructPacket(data, buffers) {
+    if (!data)
+        return data;
+    if ((0,_is_binary_js__WEBPACK_IMPORTED_MODULE_0__.isBinary)(data)) {
+        const placeholder = { _placeholder: true, num: buffers.length };
+        buffers.push(data);
+        return placeholder;
+    }
+    else if (Array.isArray(data)) {
+        const newData = new Array(data.length);
+        for (let i = 0; i < data.length; i++) {
+            newData[i] = _deconstructPacket(data[i], buffers);
+        }
+        return newData;
+    }
+    else if (typeof data === "object" && !(data instanceof Date)) {
+        const newData = {};
+        for (const key in data) {
+            if (Object.prototype.hasOwnProperty.call(data, key)) {
+                newData[key] = _deconstructPacket(data[key], buffers);
+            }
+        }
+        return newData;
+    }
+    return data;
+}
+/**
+ * Reconstructs a binary packet from its placeholder packet and buffers
+ *
+ * @param {Object} packet - event packet with placeholders
+ * @param {Array} buffers - binary buffers to put in placeholder positions
+ * @return {Object} reconstructed packet
+ * @public
+ */
+function reconstructPacket(packet, buffers) {
+    packet.data = _reconstructPacket(packet.data, buffers);
+    delete packet.attachments; // no longer useful
+    return packet;
+}
+function _reconstructPacket(data, buffers) {
+    if (!data)
+        return data;
+    if (data && data._placeholder === true) {
+        const isIndexValid = typeof data.num === "number" &&
+            data.num >= 0 &&
+            data.num < buffers.length;
+        if (isIndexValid) {
+            return buffers[data.num]; // appropriate buffer (should be natural order anyway)
+        }
+        else {
+            throw new Error("illegal attachments");
+        }
+    }
+    else if (Array.isArray(data)) {
+        for (let i = 0; i < data.length; i++) {
+            data[i] = _reconstructPacket(data[i], buffers);
+        }
+    }
+    else if (typeof data === "object") {
+        for (const key in data) {
+            if (Object.prototype.hasOwnProperty.call(data, key)) {
+                data[key] = _reconstructPacket(data[key], buffers);
+            }
+        }
+    }
+    return data;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-parser/build/esm/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/socket.io-parser/build/esm/index.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Decoder: () => (/* binding */ Decoder),
+/* harmony export */   Encoder: () => (/* binding */ Encoder),
+/* harmony export */   PacketType: () => (/* binding */ PacketType),
+/* harmony export */   protocol: () => (/* binding */ protocol)
+/* harmony export */ });
+/* harmony import */ var _socket_io_component_emitter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @socket.io/component-emitter */ "./node_modules/@socket.io/component-emitter/lib/esm/index.js");
+/* harmony import */ var _binary_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./binary.js */ "./node_modules/socket.io-parser/build/esm/binary.js");
+/* harmony import */ var _is_binary_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./is-binary.js */ "./node_modules/socket.io-parser/build/esm/is-binary.js");
+
+
+
+/**
+ * These strings must not be used as event names, as they have a special meaning.
+ */
+const RESERVED_EVENTS = [
+    "connect",
+    "connect_error",
+    "disconnect",
+    "disconnecting",
+    "newListener",
+    "removeListener", // used by the Node.js EventEmitter
+];
+/**
+ * Protocol version.
+ *
+ * @public
+ */
+const protocol = 5;
+var PacketType;
+(function (PacketType) {
+    PacketType[PacketType["CONNECT"] = 0] = "CONNECT";
+    PacketType[PacketType["DISCONNECT"] = 1] = "DISCONNECT";
+    PacketType[PacketType["EVENT"] = 2] = "EVENT";
+    PacketType[PacketType["ACK"] = 3] = "ACK";
+    PacketType[PacketType["CONNECT_ERROR"] = 4] = "CONNECT_ERROR";
+    PacketType[PacketType["BINARY_EVENT"] = 5] = "BINARY_EVENT";
+    PacketType[PacketType["BINARY_ACK"] = 6] = "BINARY_ACK";
+})(PacketType || (PacketType = {}));
+/**
+ * A socket.io Encoder instance
+ */
+class Encoder {
+    /**
+     * Encoder constructor
+     *
+     * @param {function} replacer - custom replacer to pass down to JSON.parse
+     */
+    constructor(replacer) {
+        this.replacer = replacer;
+    }
+    /**
+     * Encode a packet as a single string if non-binary, or as a
+     * buffer sequence, depending on packet type.
+     *
+     * @param {Object} obj - packet object
+     */
+    encode(obj) {
+        if (obj.type === PacketType.EVENT || obj.type === PacketType.ACK) {
+            if ((0,_is_binary_js__WEBPACK_IMPORTED_MODULE_2__.hasBinary)(obj)) {
+                return this.encodeAsBinary({
+                    type: obj.type === PacketType.EVENT
+                        ? PacketType.BINARY_EVENT
+                        : PacketType.BINARY_ACK,
+                    nsp: obj.nsp,
+                    data: obj.data,
+                    id: obj.id,
+                });
+            }
+        }
+        return [this.encodeAsString(obj)];
+    }
+    /**
+     * Encode packet as string.
+     */
+    encodeAsString(obj) {
+        // first is type
+        let str = "" + obj.type;
+        // attachments if we have them
+        if (obj.type === PacketType.BINARY_EVENT ||
+            obj.type === PacketType.BINARY_ACK) {
+            str += obj.attachments + "-";
+        }
+        // if we have a namespace other than `/`
+        // we append it followed by a comma `,`
+        if (obj.nsp && "/" !== obj.nsp) {
+            str += obj.nsp + ",";
+        }
+        // immediately followed by the id
+        if (null != obj.id) {
+            str += obj.id;
+        }
+        // json data
+        if (null != obj.data) {
+            str += JSON.stringify(obj.data, this.replacer);
+        }
+        return str;
+    }
+    /**
+     * Encode packet as 'buffer sequence' by removing blobs, and
+     * deconstructing packet into object with placeholders and
+     * a list of buffers.
+     */
+    encodeAsBinary(obj) {
+        const deconstruction = (0,_binary_js__WEBPACK_IMPORTED_MODULE_1__.deconstructPacket)(obj);
+        const pack = this.encodeAsString(deconstruction.packet);
+        const buffers = deconstruction.buffers;
+        buffers.unshift(pack); // add packet info to beginning of data list
+        return buffers; // write all the buffers
+    }
+}
+// see https://stackoverflow.com/questions/8511281/check-if-a-value-is-an-object-in-javascript
+function isObject(value) {
+    return Object.prototype.toString.call(value) === "[object Object]";
+}
+/**
+ * A socket.io Decoder instance
+ *
+ * @return {Object} decoder
+ */
+class Decoder extends _socket_io_component_emitter__WEBPACK_IMPORTED_MODULE_0__.Emitter {
+    /**
+     * Decoder constructor
+     *
+     * @param {function} reviver - custom reviver to pass down to JSON.stringify
+     */
+    constructor(reviver) {
+        super();
+        this.reviver = reviver;
+    }
+    /**
+     * Decodes an encoded packet string into packet JSON.
+     *
+     * @param {String} obj - encoded packet
+     */
+    add(obj) {
+        let packet;
+        if (typeof obj === "string") {
+            if (this.reconstructor) {
+                throw new Error("got plaintext data when reconstructing a packet");
+            }
+            packet = this.decodeString(obj);
+            const isBinaryEvent = packet.type === PacketType.BINARY_EVENT;
+            if (isBinaryEvent || packet.type === PacketType.BINARY_ACK) {
+                packet.type = isBinaryEvent ? PacketType.EVENT : PacketType.ACK;
+                // binary packet's json
+                this.reconstructor = new BinaryReconstructor(packet);
+                // no attachments, labeled binary but no binary data to follow
+                if (packet.attachments === 0) {
+                    super.emitReserved("decoded", packet);
+                }
+            }
+            else {
+                // non-binary full packet
+                super.emitReserved("decoded", packet);
+            }
+        }
+        else if ((0,_is_binary_js__WEBPACK_IMPORTED_MODULE_2__.isBinary)(obj) || obj.base64) {
+            // raw binary data
+            if (!this.reconstructor) {
+                throw new Error("got binary data when not reconstructing a packet");
+            }
+            else {
+                packet = this.reconstructor.takeBinaryData(obj);
+                if (packet) {
+                    // received final buffer
+                    this.reconstructor = null;
+                    super.emitReserved("decoded", packet);
+                }
+            }
+        }
+        else {
+            throw new Error("Unknown type: " + obj);
+        }
+    }
+    /**
+     * Decode a packet String (JSON data)
+     *
+     * @param {String} str
+     * @return {Object} packet
+     */
+    decodeString(str) {
+        let i = 0;
+        // look up type
+        const p = {
+            type: Number(str.charAt(0)),
+        };
+        if (PacketType[p.type] === undefined) {
+            throw new Error("unknown packet type " + p.type);
+        }
+        // look up attachments if type binary
+        if (p.type === PacketType.BINARY_EVENT ||
+            p.type === PacketType.BINARY_ACK) {
+            const start = i + 1;
+            while (str.charAt(++i) !== "-" && i != str.length) { }
+            const buf = str.substring(start, i);
+            if (buf != Number(buf) || str.charAt(i) !== "-") {
+                throw new Error("Illegal attachments");
+            }
+            p.attachments = Number(buf);
+        }
+        // look up namespace (if any)
+        if ("/" === str.charAt(i + 1)) {
+            const start = i + 1;
+            while (++i) {
+                const c = str.charAt(i);
+                if ("," === c)
+                    break;
+                if (i === str.length)
+                    break;
+            }
+            p.nsp = str.substring(start, i);
+        }
+        else {
+            p.nsp = "/";
+        }
+        // look up id
+        const next = str.charAt(i + 1);
+        if ("" !== next && Number(next) == next) {
+            const start = i + 1;
+            while (++i) {
+                const c = str.charAt(i);
+                if (null == c || Number(c) != c) {
+                    --i;
+                    break;
+                }
+                if (i === str.length)
+                    break;
+            }
+            p.id = Number(str.substring(start, i + 1));
+        }
+        // look up json data
+        if (str.charAt(++i)) {
+            const payload = this.tryParse(str.substr(i));
+            if (Decoder.isPayloadValid(p.type, payload)) {
+                p.data = payload;
+            }
+            else {
+                throw new Error("invalid payload");
+            }
+        }
+        return p;
+    }
+    tryParse(str) {
+        try {
+            return JSON.parse(str, this.reviver);
+        }
+        catch (e) {
+            return false;
+        }
+    }
+    static isPayloadValid(type, payload) {
+        switch (type) {
+            case PacketType.CONNECT:
+                return isObject(payload);
+            case PacketType.DISCONNECT:
+                return payload === undefined;
+            case PacketType.CONNECT_ERROR:
+                return typeof payload === "string" || isObject(payload);
+            case PacketType.EVENT:
+            case PacketType.BINARY_EVENT:
+                return (Array.isArray(payload) &&
+                    (typeof payload[0] === "number" ||
+                        (typeof payload[0] === "string" &&
+                            RESERVED_EVENTS.indexOf(payload[0]) === -1)));
+            case PacketType.ACK:
+            case PacketType.BINARY_ACK:
+                return Array.isArray(payload);
+        }
+    }
+    /**
+     * Deallocates a parser's resources
+     */
+    destroy() {
+        if (this.reconstructor) {
+            this.reconstructor.finishedReconstruction();
+            this.reconstructor = null;
+        }
+    }
+}
+/**
+ * A manager of a binary event's 'buffer sequence'. Should
+ * be constructed whenever a packet of type BINARY_EVENT is
+ * decoded.
+ *
+ * @param {Object} packet
+ * @return {BinaryReconstructor} initialized reconstructor
+ */
+class BinaryReconstructor {
+    constructor(packet) {
+        this.packet = packet;
+        this.buffers = [];
+        this.reconPack = packet;
+    }
+    /**
+     * Method to be called when binary data received from connection
+     * after a BINARY_EVENT packet.
+     *
+     * @param {Buffer | ArrayBuffer} binData - the raw binary data received
+     * @return {null | Object} returns null if more binary data is expected or
+     *   a reconstructed packet object if all buffers have been received.
+     */
+    takeBinaryData(binData) {
+        this.buffers.push(binData);
+        if (this.buffers.length === this.reconPack.attachments) {
+            // done with buffer list
+            const packet = (0,_binary_js__WEBPACK_IMPORTED_MODULE_1__.reconstructPacket)(this.reconPack, this.buffers);
+            this.finishedReconstruction();
+            return packet;
+        }
+        return null;
+    }
+    /**
+     * Cleans up binary packet reconstruction variables.
+     */
+    finishedReconstruction() {
+        this.reconPack = null;
+        this.buffers = [];
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-parser/build/esm/is-binary.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/socket.io-parser/build/esm/is-binary.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   hasBinary: () => (/* binding */ hasBinary),
+/* harmony export */   isBinary: () => (/* binding */ isBinary)
+/* harmony export */ });
+const withNativeArrayBuffer = typeof ArrayBuffer === "function";
+const isView = (obj) => {
+    return typeof ArrayBuffer.isView === "function"
+        ? ArrayBuffer.isView(obj)
+        : obj.buffer instanceof ArrayBuffer;
+};
+const toString = Object.prototype.toString;
+const withNativeBlob = typeof Blob === "function" ||
+    (typeof Blob !== "undefined" &&
+        toString.call(Blob) === "[object BlobConstructor]");
+const withNativeFile = typeof File === "function" ||
+    (typeof File !== "undefined" &&
+        toString.call(File) === "[object FileConstructor]");
+/**
+ * Returns true if obj is a Buffer, an ArrayBuffer, a Blob or a File.
+ *
+ * @private
+ */
+function isBinary(obj) {
+    return ((withNativeArrayBuffer && (obj instanceof ArrayBuffer || isView(obj))) ||
+        (withNativeBlob && obj instanceof Blob) ||
+        (withNativeFile && obj instanceof File));
+}
+function hasBinary(obj, toJSON) {
+    if (!obj || typeof obj !== "object") {
+        return false;
+    }
+    if (Array.isArray(obj)) {
+        for (let i = 0, l = obj.length; i < l; i++) {
+            if (hasBinary(obj[i])) {
+                return true;
+            }
+        }
+        return false;
+    }
+    if (isBinary(obj)) {
+        return true;
+    }
+    if (obj.toJSON &&
+        typeof obj.toJSON === "function" &&
+        arguments.length === 1) {
+        return hasBinary(obj.toJSON(), true);
+    }
+    for (const key in obj) {
+        if (Object.prototype.hasOwnProperty.call(obj, key) && hasBinary(obj[key])) {
+            return true;
+        }
+    }
+    return false;
+}
+
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+(() => {
+"use strict";
+/*!************************************************!*\
+  !*** ./resources/js/production-plan/detail.js ***!
+  \************************************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _lang__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../lang */ "./resources/js/lang/index.js");
+/* harmony import */ var _oee_socket__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../oee/socket */ "./resources/js/oee/socket/index.js");
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+$('.select2').select2();
+
+
+var route = "".concat(window.location.origin, "/api/productionplan/detail");
+var route_export = "".concat(window.location.origin, "/production-plan/detail/export-materials");
+var route_his = "".concat(window.location.origin, "/api/productionplan/detail/history");
+var socket = (0,_oee_socket__WEBPACK_IMPORTED_MODULE_1__["default"])();
+var arr_status = [];
+jQuery("input[name='statusId']").each(function () {
+  if (this.checked) {
+    arr_status.push(this.value);
+  }
+});
+var table = $('.table-plan-detail').DataTable(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
+  scrollX: true,
+  // infoCallback: ( settings, start, end, max, total, pre ) => {
+  //     console.log({settings, start, end, max, total, pre})
+  // },
+  language: __languages.table,
+  aaSorting: []
+}, "language", {
+  lengthMenu: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Number of records _MENU_'),
+  info: '',
+  paginate: {
+    previous: '‹',
+    next: '›'
+  }
+}), "processing", true), "serverSide", true), "searching", false), "dom", 'rt<"bottom"flp><"clear">'), "lengthMenu", [10, 20, 30, 40, 50]), "ajax", {
+  url: route,
+  dataSrc: 'data',
+  data: function data(d) {
+    d.page = d.start / d.length + 1;
+    d.planId = $('#idPlan').val();
+    d.product = $('.product').val();
+    d.machine = $('.machine').val();
+    d.status = arr_status;
+    d.from = $('#from').val();
+    d.to = $('#to').val();
+  }
+}), "columns", [{
+  data: 'Symbols',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Symbols Plan'),
+  render: function render(data) {
+    if (data) {
+      var explode = data.split("--");
+      // console.log(explode);
+      return "<p>" + explode[0] + "</p><p>-" + explode[1] + "-" + explode[2] + "</p>";
+    } else {
+      return "";
+    }
+  }
+}, {
+  data: 'machine.Name',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Machine')
+}, {
+  data: 'mold.Name',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Mold')
+}, {
+  data: 'product.Name',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Product')
+}, {
+  data: 'Date',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Date')
+}, {
+  data: {
+    id: 'ID',
+    status: 'Status'
+  },
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Output'),
+  render: function render(data) {
+    return (data.Quantity_Production ? parseFloat(data.Quantity_Production) : 0) + " / " + parseFloat(data.Quantity);
+  }
+}, {
+  data: 'Quantity_Error',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Quantity') + ' ' + (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Error'),
+  render: function render(data) {
+    return parseFloat(data ? data : 0);
+  }
+}, {
+  data: 'Time_Real_Start',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Start'),
+  render: function render(data) {
+    if (data) {
+      var explode = data.split(" ");
+      // console.log(explode);
+      return "<p>" + explode[1] + "</p><p>" + explode[0] + "</p>";
+    } else {
+      return "";
+    }
+  }
+}, {
+  data: 'Time_Real_End',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('End'),
+  render: function render(data) {
+    if (data) {
+      var explode = data.split(" ");
+      // console.log(explode);
+      return "<p>" + explode[1] + "</p><p>" + explode[0] + "</p>";
+    } else {
+      return "";
+    }
+  }
+}, {
+  data: 'Version',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Version')
+}, {
+  data: 'His',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('His')
+}, {
+  data: 'Status',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Status'),
+  render: function render(data) {
+    if (data == 0) {
+      return "<p style=\"color:red\">" + (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Dont Production') + "</p>";
+    } else if (data == 1) {
+      return "<p style=\"color:Blue\">" + (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Are Production') + "</p>";
+    } else if (data == 3) {
+      return "<p style=\"color:Blue\">" + "T\u1EA1m d\u1EEBng" + "</p>";
+    } else {
+      return "<p style=\"color:green\">" + (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Success') + "</p>";
+    }
+  }
+}, {
+  data: {
+    id: 'ID',
+    status: 'Status'
+  },
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Action'),
+  render: function render(data) {
+    if (data.Status == 0) {
+      // return `
+      //     <button type="button" id="edit-` + data.ID + `"  class="btn btn-info btn-edit" >
+      //     ` + t('Edit') + `
+      //     </button>
+      //     <button id="del-` + data.ID + `"  class="btn btn-danger btn-delete" >
+      //     ` + t('Delete') + `
+      //     </button>
+      // `;
+      var bt = "";
+      if (role_edit_plan) {
+        bt = bt + "\n                        <button type=\"button\" id=\"edit-" + data.ID + "\"  class=\"btn btn-info btn-edit\" >\n                        " + (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Edit') + "\n                        </button>";
+      }
+      if (role_delete_plan) {
+        bt = bt + "  <button id=\"del-" + data.ID + "\"  class=\"btn btn-danger btn-delete\" >\n                        " + (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Delete') + "\n                        </button>\n                        ";
+      }
+      return bt;
+    } else if (data.Status == 1) {
+      if (role_end_plan) {
+        return "\n                        <button id=\"end-" + data.ID + "\"  class=\"btn btn-warning btn-end\" style=\"width: 110px\">\n                        " + (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('End') + "\n                        </button>\n                        ";
+      }
+    } else {
+      return "\n\n                    ";
+    }
+  }
+}]), "rowsGroup", [0, 1, 2, 4, 11]));
+$('table').on('page.dt', function () {
+  console.log(table.page.info());
+});
+$('.filter').on('click', function () {
+  arr_status = [];
+  jQuery("input[name='statusId']").each(function () {
+    if (this.checked) {
+      arr_status.push(this.value);
+    }
+  });
+  table.ajax.reload();
+});
+$('.list_status').on('change', function () {
+  arr_status = [];
+  jQuery("input[name='statusId']").each(function () {
+    if (this.checked) {
+      arr_status.push(this.value);
+    }
+  });
+  console.log(arr_status);
+  table.ajax.reload();
+});
+$(document).on('click', '.btn-delete', function () {
+  var id = $(this).attr('id');
+  var name = $(this).parent().parent().children('td').first().text();
+  $('#modalRequestDel').modal();
+  $('#nameDel').text(name);
+  $('#idDel').val(id.split('-')[1]);
+  $(".modal-footer > .btn-danger").on("click", function () {
+    socket.emit("refresh-plan", {
+      plan_id: $("#idPlan").val()
+    });
+  });
+});
+$('.btn-import').on('click', function () {
+  $('#modalImport').modal();
+  $('#importFile').val('');
+  $('.input-text').text(__input.file);
+  $('.error-file').hide();
+  $('.btn-save-file').prop('disabled', false);
+  $('#product_id').val('');
+});
+var check_file = false;
+$('#importFile').on('change', function () {
+  var val = $(this).val();
+  var name = val.split('\\').pop();
+  var typeFile = name.split('.').pop().toLowerCase();
+  $('.input-text').text(name);
+  $('.error-file').hide();
+  if (typeFile != 'xlsx' && typeFile != 'xls') {
+    $('.error-file').show();
+    $('.btn-save-file').prop('disabled', true);
+  } else {
+    $('.btn-save-file').prop('disabled', false);
+    check_file = true;
+  }
+});
+$('.btn-save-file').on('click', function () {
+  $('.error-file').hide();
+  if (check_file) {
+    $('.btn-submit-file').click();
+    socket.emit('refresh-plan', {
+      plan_id: $('#idPlan').val()
+    });
+  } else {
+    $('.error-file').show();
+  }
+});
+$(document).on('click', '.btn-detail', function () {
+  var id = $(this).attr('id');
+  var name = $(this).parent().parent().children('td').first().text();
+  $('#modalTableDetail').modal();
+  $('#idUnit').val(id.split('-')[1]);
+  tablehis.ajax.reload();
+  $('#nameDel').text(name);
+});
+$(document).on('click', '.btn-end', function () {
+  var id = $(this).attr('id');
+  var name = $(this).parent().parent().children('td').first().text();
+  $('#modalend').modal();
+  $('#idEnd').val(id.split('-')[1]);
+});
+$(document).on('click', '.btn-edit', function () {
+  $("#Product option:selected").attr('selected', false);
+  $("#Machine option:selected").attr('selected', false);
+  $("#Mold option:selected").attr('selected', false);
+  $("#Quantity").val('');
+  $("#Date").val('');
+  $("#Version").val('');
+  $("#His").val('');
+  var currentRow = $(this).closest("tr");
+  var col1 = currentRow.find("td:eq(1)").text();
+  var col2 = currentRow.find("td:eq(2)").text();
+  var col3 = currentRow.find("td:eq(3)").text();
+  var col4 = currentRow.find("td:eq(4)").text();
+  var col5 = currentRow.find("td:eq(5)").text();
+  var col9 = currentRow.find("td:eq(9)").text();
+  var col10 = currentRow.find("td:eq(10)").text();
+  var id = $(this).attr('id');
+  console.log(col1, col2, col3, col4, col5, col9, col10);
+  var explode = col5.split("/");
+  console.log(explode);
+  $('#modalAddOrUpdate').modal();
+  $("#Product option:contains(" + col3 + ")").attr('selected', 'selected');
+  $("#Machine option:contains(" + col1 + ")").attr('selected', 'selected');
+  $("#Mold option:contains(" + col2 + ")").attr('selected', 'selected');
+  $("#Quantity").val(Number(explode[1]));
+  $("#Date").val(col4);
+  $("#Version").val(col9);
+  $("#His").val(col10);
+  $('#idDetail').val(id.split('-')[1]);
+});
+$(document).on('click', '.btn-create', function () {
+  $('#modalAddOrUpdate').modal();
+  $("#Product").val('');
+  $("#Machine").val('');
+  $("#Mold").val('');
+  $("#Quantity").val('');
+  $("#Date").val('');
+  $("#Version").val('');
+  $("#His").val('');
+  $('#idDetail').val('');
+});
+var idplan = 0;
+var tablehis = $('.table-his').DataTable(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
+  scrollX: true,
+  searching: false,
+  ordering: false,
+  language: {
+    lengthMenu: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Number of records _MENU_'),
+    info: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Showing _START_ to _END_ of _TOTAL_ entries'),
+    paginate: {
+      previous: '‹',
+      next: '›'
+    }
+  },
+  processing: true,
+  serverSide: true
+}, "searching", false), "dom", 'rt<"bottom"flp><"clear">'), "lengthMenu", [5, 10, 20, 30, 40]), "ajax", {
+  url: route_his,
+  dataSrc: 'data',
+  data: function data(d) {
+    delete d.columns;
+    delete d.order;
+    delete d.search;
+    d.page = d.start / d.length + 1;
+    d.idplan = idplan;
+  }
+}), "columns", [{
+  data: 'ID',
+  defaultContent: '',
+  title: 'ID'
+}, {
+  data: 'Data_Table',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Symbols'),
+  render: function render(data) {
+    var datas = JSON.parse(data);
+    var explode = datas.Symbols.split("--");
+    return "<p>" + explode[0] + "</p><p>-" + explode[1] + "-" + explode[2] + "</p>";
+  }
+}, {
+  data: 'Data_Table',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Machine'),
+  render: function render(data) {
+    var datas = JSON.parse(data);
+    return datas.Part_Action;
+  }
+}, {
+  data: 'Data_Table',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Mold'),
+  render: function render(data) {
+    var datas = JSON.parse(data);
+    return datas.Mold_ID;
+  }
+}, {
+  data: 'Data_Table',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Product'),
+  render: function render(data) {
+    var datas = JSON.parse(data);
+    return datas.Product_ID;
+  }
+}, {
+  data: 'Data_Table',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Date'),
+  render: function render(data) {
+    var datas = JSON.parse(data);
+    return datas.Date;
+  }
+}, {
+  data: 'Data_Table',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Quantity'),
+  render: function render(data) {
+    var datas = JSON.parse(data);
+    return datas.Quantity;
+  }
+}, {
+  data: 'Data_Table',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Note'),
+  render: function render(data) {
+    var datas = JSON.parse(data);
+    return datas.Note;
+  }
+}, {
+  data: 'Action_Name',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Action Name'),
+  render: function render(data) {
+    return (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])(data);
+  }
+}, {
+  data: 'Data_Table',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('User Updated'),
+  render: function render(data) {
+    var datas = JSON.parse(data);
+    return datas.User_Updated;
+  }
+}, {
+  data: 'Data_Table',
+  defaultContent: '',
+  title: (0,_lang__WEBPACK_IMPORTED_MODULE_0__["default"])('Time Updated'),
+  render: function render(data) {
+    var datas = JSON.parse(data);
+    var timecreated = moment(datas.Time_Updated, 'MMMM Do YYYY h:mm:ss a').format('YYYY-MM-DD HH:mm:ss');
+    return timecreated;
+  }
+}]));
+$(document).on('click', '.btn-history', function () {
+  var id = $(this).attr('id');
+  var name = $(this).parent().parent().children('td').first().text();
+  $('#modalTableHistory').modal();
+  $('#idUnit').val(id.split('-')[1]);
+  idplan = id.split('-')[1];
+  tablehis.ajax.reload();
+  $('#nameDel').text(name);
+});
+socket.on('start-plan', function (message) {
+  table.ajax.reload();
+});
+socket.on('end-plan', function (message) {
+  table.ajax.reload();
+});
+})();
+
+/******/ })()
+;

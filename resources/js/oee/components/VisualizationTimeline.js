@@ -163,7 +163,7 @@ const VisualizationTimeline = ({ data, index }) => {
                 axisLabel: {
                     margin: 2,
                     lineHeight: 10,
-                    fontSize: 11,
+                    fontSize: 9,
                     show: index === 0,
                     color: "rgba(255, 255, 255, 1)",
                     fontWeight: "bold",

@@ -67,6 +67,7 @@ const StatisticStop = ({ data, onExport }) => {
                 yAxisIndex: 0,
                 name: t('machine stop'),
                 type: 'bar',
+                stack: 'value',
                 interval: 50,
                 data: chartDatasheets
             },
